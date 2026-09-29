@@ -1,0 +1,585 @@
+import React from 'react';
+import { 
+  Users, 
+  HeartHandshake, 
+  GraduationCap, 
+  Building2, 
+  Sparkles, 
+  ArrowRight, 
+  Calendar, 
+  Newspaper, 
+  ShieldCheck, 
+  CheckCircle2, 
+  Award, 
+  ChevronRight,
+  Phone
+} from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { TRANSLATIONS } from '../data/translations';
+import { 
+  KEY_ACTIVITIES, 
+  UPCOMING_EVENTS, 
+  LATEST_NEWS_UPDATES 
+} from '../data/ngoData';
+import { IndianPatternDivider } from './IndianPatternDivider';
+import { PageId, PAGE_ROUTES } from '../types';
+
+interface HomeViewProps {
+  onNavigate: (page: PageId) => void;
+  onDonateClick: () => void;
+}
+
+export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick }) => {
+  const { lang, isBengali } = useLanguage();
+  const t = TRANSLATIONS[lang];
+
+  return (
+    <div className="space-y-16 pb-12">
+      {/* 1. HERO SECTION (As requested) */}
+      <section className="relative bg-gradient-to-b from-blue-900 via-blue-950 to-slate-900 text-white pt-12 pb-20 border-b-4 border-orange-500">
+        {/* Subtle decorative background pattern */}
+        <div 
+          className="absolute inset-0 opacity-[0.05] pointer-events-none"
+          style={{
+            backgroundImage: `radial-gradient(#FFFFFF 1.5px, transparent 1.5px), radial-gradient(#EA580C 1.5px, transparent 1.5px)`,
+            backgroundSize: '32px 32px',
+            backgroundPosition: '0 0, 16px 16px'
+          }}
+          aria-hidden="true"
+        />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            {/* Left: Main Titles and Action Buttons */}
+            <div className="lg:col-span-7 space-y-6">
+              {/* Exact Requested Headline */}
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif-heading font-bold text-white leading-[1.2] tracking-tight">
+                {isBengali 
+                  ? 'ঐক্য, ঐতিহ্য ও সামাজিক উন্নয়নের মাধ্যমে শুঁড়ি সমাজের ক্ষমতায়ন'
+                  : 'Empowering the Sunri Community Through Unity, Heritage & Social Development'}
+              </h1>
+
+              {/* Exact Requested Subheadline */}
+              <p className="text-lg sm:text-xl text-blue-100/90 leading-relaxed font-normal">
+                {isBengali
+                  ? 'আমাদের সমৃদ্ধ সাংস্কৃতিক ঐতিহ্য অক্ষুণ্ণ রেখে একটি উন্নত ও স্বনির্ভর ভবিষ্যৎ নির্মাণ।'
+                  : 'Building a stronger future while preserving our rich cultural heritage.'}
+              </p>
+
+              {/* Summary bullets of verified facts */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-blue-100/80 pt-1">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0" />
+                  <span>{isBengali ? '৭৭ মানিকতলা স্ট্রিটে শুভ প্রতিষ্ঠা (১৯৩৪)' : 'Founded 1934 at 77 Manicktala St (Simla)'}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0" />
+                  <span>{isBengali ? '৫২বি ইন্ডিয়ান মিরর স্ট্রিটে চারতলা ভবন (১৯৫৬)' : '4-Storey Head Office at 52B Indian Mirror St'}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0" />
+                  <span>{isBengali ? '৫০ আসনের ছাত্রাবাস (২০১৮ সাল থেকে ছাত্রী শাখা)' : '50-Seat Hostel with Female Wing (Est. 2018)'}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0" />
+                  <span>{isBengali ? 'সুপ্রিম কোর্টের ঐতিহাসিক জয় (৫ সেপ্টেম্বর ২০০০)' : 'Supreme Court Victory Restoring SC (2000)'}</span>
+                </div>
+              </div>
+
+              {/* Requested Buttons: Become a Member & Contact Us + Donate */}
+              <div className="flex flex-wrap items-center gap-4 pt-4">
+                <a
+                  id="hero-become-member-btn"
+                  href={PAGE_ROUTES.membership}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('membership');
+                  }}
+                  className="px-6 py-3.5 rounded-xl font-bold text-sm sm:text-base text-white bg-orange-600 hover:bg-orange-500 shadow-md hover:shadow-lg transition-all flex items-center gap-2 active:scale-[0.98] border border-orange-400"
+                >
+                  <Users className="w-4 h-4" />
+                  <span>{isBengali ? 'সদস্য হন' : 'Become a Member'}</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+
+                <a
+                  id="hero-contact-us-btn"
+                  href={PAGE_ROUTES.contact}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('contact');
+                  }}
+                  className="px-6 py-3.5 rounded-xl font-semibold text-sm sm:text-base text-white bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-xs transition-colors flex items-center gap-2"
+                >
+                  <Phone className="w-4 h-4 text-orange-400" />
+                  <span>{isBengali ? 'যোগাযোগ করুন' : 'Contact Us'}</span>
+                </a>
+
+                <button
+                  id="hero-donate-btn"
+                  onClick={onDonateClick}
+                  className="px-5 py-3.5 rounded-xl font-semibold text-sm sm:text-base text-amber-200 hover:text-white border border-amber-400/40 hover:border-amber-400 transition-colors flex items-center gap-1.5 cursor-pointer"
+                >
+                  <HeartHandshake className="w-4 h-4 text-orange-400" />
+                  <span>{isBengali ? 'সহায়তা ও অনুদান' : 'Donate / Support'}</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Right: Grounded Photo & Institutional Badge (Sticky within column) */}
+            <div className="lg:col-span-5 relative">
+              <div className="lg:sticky lg:top-8 w-full max-w-[340px] sm:max-w-[360px] mx-auto lg:ml-auto">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 bg-blue-900">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=1000&q=80"
+                      alt="Bangiya Saha Samity Head Office and Students Hostel"
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-blue-950/30 to-transparent"></div>
+                    
+                    <div className="absolute top-2.5 left-2.5 bg-blue-900/90 backdrop-blur-xs text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full border border-white/30 flex items-center gap-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                      <span>{isBengali ? '৫২বি ইন্ডিয়ান মিরর স্ট্রিট' : '52B Indian Mirror Street'}</span>
+                    </div>
+
+                    <div className="absolute bottom-2.5 inset-x-2.5 text-white">
+                      <p className="text-[11px] italic text-blue-100 leading-snug font-serif-heading line-clamp-3">
+                        {isBengali 
+                          ? '"১৯৩৪ সালে মা জগজ্জননী এস্টেটের মন্দিরে শুরু হয়ে আজ ৫০ জন শিক্ষার্থীর নিরাপদ ছাত্রাবাস ও সমগ্র পশ্চিমবঙ্গের শুঁড়ি সমাজের আশ্রয়স্থল।"'
+                          : '"Founded in 1934 in the temple of Maa Jagathanani Estate, growing into a sanctuary for 50 student residents."'}
+                      </p>
+                      <p className="text-[10px] text-amber-300 font-semibold pt-0.5">
+                        {isBengali ? '— বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ)' : '— Bangiya Saha Samity (Sunri Samaj)'}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. ABOUT PREVIEW (Brief introduction to Bangiya Saha Samity) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-2xl p-8 sm:p-10 shadow-sm border border-slate-200">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-8 space-y-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-800 text-xs font-bold uppercase tracking-wider">
+                <Building2 className="w-3.5 h-3.5 text-blue-800" />
+                <span>{isBengali ? 'সংগঠনের পরিচিতি' : 'About The Organization'}</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-blue-900">
+                {isBengali ? 'বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ)-র গৌরবময় ইতিবৃত্ত' : 'Brief Introduction to Bangiya Saha Samity'}
+              </h2>
+              <p className="text-slate-700 leading-relaxed text-base">
+                {isBengali 
+                  ? 'বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) ১৯৩৪ সালে কলকাতার ৭৭ মানিকতলা স্ট্রিটের (সিমলা) মা জগজ্জননী এস্টেটের মন্দিরে সমাজের শ্রদ্ধেয় ব্যক্তিবর্গের উদ্যোগে প্রতিষ্ঠিত হয় এবং ১৯৩৬-৩৭ সালে বিধিবদ্ধভাবে নিবন্ধিত হয় (নিবন্ধন নং ৪৫২২)। ১৯৫০ সালে বাবাসাহেব ড. বি. আর. আম্বেদকর ভারতের সংবিধানে শুঁড়ি সম্প্রদায়কে তপশিলি জাতি হিসেবে অন্তর্ভুক্ত করেন। ১৯৫৬ সালে ৫২বি ইন্ডিয়ান মিরর স্ট্রিটে নিজস্ব জমিতে ৪ তলা প্রধান কার্যালয় নির্মিত হয়, যার ৩য় ও ৪র্থ তলায় বর্তমানে ৫০ জন গ্রামীণ শিক্ষার্থীর জন্য ছাত্রাবাস পরিচালিত হচ্ছে (২০১৮ সালে ছাত্রীদের পৃথক শাখা চালু হয়)।'
+                  : 'Bangiya Saha Samity (Sunri Samaj) was established in 1934 in the temple of Maa Jagathanani Estate at 77 Manicktala Street, Kolkata (Simla) by respectable community leaders, and formally incorporated under Registration No. 4522 of 1936–37. In 1950, Babasaheb Dr. B. R. Ambedkar enshrined the Sunri community in the Constitution of India as a Scheduled Caste. In 1956, our four-storeyed head office was purchased and erected at 52B Indian Mirror Street, currently operating a 50-student residential hostel (with a dedicated female wing introduced in 2018).'}
+              </p>
+              <div className="flex flex-wrap gap-4 pt-2">
+                <a
+                  id="about-preview-read-more-btn"
+                  href={PAGE_ROUTES.about}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('about');
+                  }}
+                  className="inline-flex items-center gap-2 text-sm font-bold text-blue-900 hover:text-orange-600 transition-colors group"
+                >
+                  <span>{isBengali ? 'সম্পূর্ণ ইতিহাস ও নেতৃত্ব জানুন' : 'Read Full History & Leadership'}</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform text-orange-600" />
+                </a>
+                <a
+                  id="about-preview-heritage-btn"
+                  href={PAGE_ROUTES.heritage}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('heritage');
+                  }}
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors"
+                >
+                  <span>{isBengali ? 'সাংস্কৃতিক ঐতিহ্য দেখুন' : 'Explore Cultural Heritage'}</span>
+                  <ChevronRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Quick Metrics highlight */}
+            <div className="lg:col-span-4 bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-4">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                {isBengali ? 'প্রধান স্তম্ভসমূহ' : 'Key Pillars at a Glance'}
+              </h3>
+              <div className="space-y-3 text-sm">
+                <div className="p-3 bg-white rounded-lg border border-slate-200">
+                  <div className="text-xs text-slate-500">{isBengali ? 'প্রতিষ্ঠা ও নিবন্ধন' : 'Foundation & Registration'}</div>
+                  <div className="font-bold text-blue-900">1934 / 1936–37 (Regd. 4522)</div>
+                </div>
+                <div className="p-3 bg-white rounded-lg border border-slate-200">
+                  <div className="text-xs text-slate-500">{isBengali ? 'ছাত্রাবাস ক্ষমতা' : 'Hostel Capacity'}</div>
+                  <div className="font-bold text-orange-600">Up to 50 Students (Female Wing 2018)</div>
+                </div>
+                <div className="p-3 bg-white rounded-lg border border-slate-200">
+                  <div className="text-xs text-slate-500">{isBengali ? 'সুপ্রিম কোর্ট রায়' : 'Supreme Court Verdict'}</div>
+                  <div className="font-bold text-blue-900">Sept 5, 2000 (SC Certificates Restored)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. MISSION & VISION (Separate Cards as requested) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-10 space-y-2">
+          <span className="text-xs font-bold uppercase tracking-widest text-orange-600">
+            {isBengali ? 'আদর্শ ও দর্শন' : 'Guiding Philosophy'}
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-blue-900">
+            {isBengali ? 'আমাদের লক্ষ্য ও দর্শন' : 'Our Mission & Vision'}
+          </h2>
+          <p className="text-slate-600 text-sm sm:text-base">
+            {isBengali
+              ? 'বঙ্গীয় সাহা সমিতির মূল চালিকাশক্তি সমাজের সর্বাঙ্গীণ অগ্রগতি ও মানবিক বিকাশ।'
+              : 'The core tenets guiding Bangiya Saha Samity across generations of community advancement.'}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Mission Card */}
+          <div className="bg-white rounded-2xl p-8 shadow-sm border-t-4 border-blue-900 border-x border-b border-slate-200 space-y-4 hover:shadow-md transition-shadow">
+            <div className="w-12 h-12 rounded-xl bg-blue-100 text-blue-900 flex items-center justify-center">
+              <ShieldCheck className="w-6 h-6" />
+            </div>
+            <h3 className="text-2xl font-serif-heading font-bold text-blue-900">
+              {isBengali ? 'আমাদের লক্ষ্য (Our Mission)' : 'Our Mission'}
+            </h3>
+            <p className="text-base text-slate-700 leading-relaxed font-medium line-clamp-2">
+              {isBengali 
+                ? 'পশ্চিমবঙ্গের তপশিলি জাতি শুঁড়ি সমাজের শিক্ষা, পারস্পরিক ঐক্য ও সর্বাঙ্গীণ সামাজিক উন্নয়নের বিস্তার ঘটানো।'
+                : 'Promoting education, social welfare, and unified community advancement across the Sunri community in West Bengal.'}
+            </p>
+            <ul className="space-y-2.5 text-sm text-slate-600 pt-2">
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 text-blue-900 shrink-0 mt-0.5" />
+                <span>{isBengali ? 'উচ্চশিক্ষায় মেধাবী ছাত্রছাত্রী ও বিশেষত কন্যাদের শিক্ষাবৃত্তি প্রদান।' : 'College scholarships with special priority for female higher education.'}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 text-blue-900 shrink-0 mt-0.5" />
+                <span>{isBengali ? 'কলকাতায় অধ্যয়নরত ৫০ জন গ্রামীণ দরিদ্র শিক্ষার্থীর জন্য ছাত্রাবাস পরিচালনা।' : 'Operating 50-student subsidized hostel at 52B Indian Mirror Street.'}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 text-blue-900 shrink-0 mt-0.5" />
+                <span>{isBengali ? 'কুপ্রথা নির্মূল, সামাজিক সংস্কার এবং নিঃস্ব অসহায়দের সরাসরি অনুদান প্রদান।' : 'Eradicating social evils and extending distress relief to helpless members.'}</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Vision Card */}
+          <div className="bg-white rounded-2xl p-8 shadow-sm border-t-4 border-orange-500 border-x border-b border-slate-200 space-y-4 hover:shadow-md transition-shadow">
+            <div className="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center">
+              <Sparkles className="w-6 h-6" />
+            </div>
+            <h3 className="text-2xl font-serif-heading font-bold text-blue-900">
+              {isBengali ? 'আমাদের দর্শন (Our Vision)' : 'Our Vision'}
+            </h3>
+            <p className="text-base text-slate-700 leading-relaxed font-medium line-clamp-2">
+              {isBengali 
+                ? 'একটি আত্মমর্যাদাশীল, সুশিক্ষিত, ঐক্যবদ্ধ ও সাংবিধানিক অধিকার সচেতন সমৃদ্ধ সমাজ গঠন করা।'
+                : 'Building an empowered, educated, and self-reliant community thriving with unity and constitutional dignity.'}
+            </p>
+            <ul className="space-y-2.5 text-sm text-slate-600 pt-2">
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0 mt-0.5" />
+                <span>{isBengali ? 'ভারতের সংবিধানে প্রদত্ত তপশিলি জাতি সংরক্ষণের পূর্ণ সুরক্ষা।' : 'Defending Scheduled Caste constitutional reservation and dignity.'}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0 mt-0.5" />
+                <span>{isBengali ? 'পশ্চিমবঙ্গের ২৩টি জেলায় শক্তিশালী সামাজিক সমন্বয় পরিষদ গড়ে তোলা।' : 'Active district liaison chapters across all 23 districts of West Bengal.'}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0 mt-0.5" />
+                <span>{isBengali ? 'নবীন প্রজন্মের মধ্যে স্বাবলম্বন, উদ্যোক্তা চেতনা ও সাংস্কৃতিক অহংকার জাগরণ।' : 'Fostering youth entrepreneurship, civil service aspirants, and cultural pride.'}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Cultural Divider */}
+      <IndianPatternDivider variant="simple" />
+
+      {/* 4. KEY ACTIVITIES (Social Welfare, Community Development, Cultural Preservation, Educational Support, Community Engagement) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-10 space-y-2">
+          <span className="text-xs font-bold uppercase tracking-widest text-orange-600">
+            {isBengali ? 'কর্মসূচিসমূহ' : 'Core Focus Areas'}
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-blue-900">
+            {isBengali ? 'আমাদের পঞ্চমুখী মূল কার্যক্রম' : 'Key Activities'}
+          </h2>
+          <p className="text-slate-600 text-sm sm:text-base">
+            {isBengali
+              ? 'সমাজকল্যাণ থেকে শিক্ষা বিস্তার—সমগ্র পশ্চিমবঙ্গে পরিচালিত পাঁচটি সুনির্দিষ্ট কর্মসূচি।'
+              : 'Dedicated welfare and development initiatives fulfilling our 1936-37 constitutional mandate.'}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {KEY_ACTIVITIES.map((activity, idx) => {
+            const isBlue = idx % 2 === 0;
+            return (
+              <div 
+                key={activity.id}
+                className="bg-white rounded-xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between"
+              >
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <div className={`p-3 rounded-xl ${isBlue ? 'bg-blue-100 text-blue-900' : 'bg-orange-100 text-orange-600'}`}>
+                      {activity.id === 'social-welfare' && <HeartHandshake className="w-6 h-6" />}
+                      {activity.id === 'community-development' && <Building2 className="w-6 h-6" />}
+                      {activity.id === 'cultural-preservation' && <Sparkles className="w-6 h-6" />}
+                      {activity.id === 'educational-support' && <GraduationCap className="w-6 h-6" />}
+                      {activity.id === 'community-engagement' && <Users className="w-6 h-6" />}
+                    </div>
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 text-slate-600">
+                      {activity.badge}
+                    </span>
+                  </div>
+
+                  <h3 className="text-lg font-bold text-blue-900">
+                    {isBengali ? activity.bengaliTitle : activity.title}
+                  </h3>
+
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    {isBengali ? activity.bengaliDescription : activity.description}
+                  </p>
+
+                  <div className="pt-2 border-t border-slate-100 space-y-1.5">
+                    {activity.highlights.slice(0, 3).map((item, i) => (
+                      <div key={i} className="flex items-center gap-2 text-xs text-slate-500">
+                        <span className="w-1.5 h-1.5 rounded-full bg-orange-500 shrink-0"></span>
+                        <span className="truncate">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* 5. LATEST NEWS & ANNOUNCEMENTS (Card layout) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-8">
+          <div>
+            <span className="text-xs font-bold uppercase tracking-widest text-orange-600">
+              {isBengali ? 'বিজ্ঞপ্তি ও সংবাদ' : 'Updates'}
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-blue-900">
+              {isBengali ? 'সর্বশেষ সংবাদ ও ঘোষণাবলী' : 'Latest News & Announcements'}
+            </h2>
+          </div>
+          <a
+            href={PAGE_ROUTES.news}
+            onClick={(e) => {
+              e.preventDefault();
+              onNavigate('news');
+            }}
+            className="inline-flex items-center gap-1.5 text-sm font-bold text-blue-900 hover:text-orange-600 transition-colors"
+          >
+            <span>{isBengali ? 'সকল বিজ্ঞপ্তি দেখুন' : 'View All Updates'}</span>
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {LATEST_NEWS_UPDATES.slice(0, 3).map((news) => (
+            <div 
+              key={news.id}
+              className="bg-white rounded-xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-md transition-shadow"
+            >
+              <div className="space-y-3">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-900 font-semibold">
+                    {news.category}
+                  </span>
+                  <span className="text-slate-400 font-medium">{news.readTime}</span>
+                </div>
+
+                <h3 className="text-base font-bold text-blue-950 leading-snug hover:text-orange-600 transition-colors">
+                  {isBengali ? news.bengaliTitle : news.title}
+                </h3>
+
+                <p className="text-xs text-slate-600 leading-relaxed line-clamp-3">
+                  {isBengali ? news.bengaliSummary : news.summary}
+                </p>
+              </div>
+
+              <div className="pt-4 mt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                <span className="text-slate-500 font-medium">{news.author}</span>
+                <a
+                  href={PAGE_ROUTES.news}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('news');
+                  }}
+                  className="font-bold text-orange-600 hover:text-orange-700"
+                >
+                  {isBengali ? 'পড়ুন →' : 'Read →'}
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 6. UPCOMING EVENTS (Event card layout with date and description) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-8">
+          <div>
+            <span className="text-xs font-bold uppercase tracking-widest text-orange-600">
+              {isBengali ? 'কার্যসূচি' : 'Calendar'}
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-blue-900">
+              {isBengali ? 'আসন্ন অনুষ্ঠান ও সম্মেলন' : 'Upcoming Events'}
+            </h2>
+          </div>
+          <a
+            href={PAGE_ROUTES.events}
+            onClick={(e) => {
+              e.preventDefault();
+              onNavigate('events');
+            }}
+            className="inline-flex items-center gap-1.5 text-sm font-bold text-blue-900 hover:text-orange-600 transition-colors"
+          >
+            <span>{isBengali ? 'সকল অনুষ্ঠান ও আর্কাইভ' : 'View Full Schedule'}</span>
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {UPCOMING_EVENTS.map((event) => (
+            <div 
+              key={event.id}
+              className="bg-white rounded-xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between hover:border-orange-500 transition-colors"
+            >
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2 text-xs font-bold text-orange-600">
+                    <Calendar className="w-4 h-4 text-orange-500" />
+                    <span>{isBengali ? event.bengaliDate : event.date}</span>
+                  </div>
+                  {event.isFeatured && (
+                    <span className="px-2 py-0.5 rounded text-[11px] font-bold bg-amber-100 text-amber-800">
+                      Featured
+                    </span>
+                  )}
+                </div>
+
+                <h3 className="text-base font-bold text-blue-900 leading-snug">
+                  {isBengali ? event.bengaliTitle : event.title}
+                </h3>
+
+                <p className="text-xs text-slate-500 leading-snug">
+                  📍 {isBengali ? event.bengaliVenue : event.venue}
+                </p>
+
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {isBengali ? event.bengaliDescription : event.description}
+                </p>
+              </div>
+
+              <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                <span className="text-[11px] text-slate-500">{event.time || '10:00 AM onwards'}</span>
+                <a
+                  href={PAGE_ROUTES.events}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('events');
+                  }}
+                  className="px-3 py-1.5 rounded-lg text-xs font-bold text-blue-900 hover:bg-blue-50 transition-colors"
+                >
+                  {isBengali ? 'অংশগ্রহণ বিবরণ' : 'RSVP & Details'}
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 7. MEMBERSHIP CTA (Encourage visitors to join the organization) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white rounded-3xl p-8 sm:p-12 shadow-xl border-2 border-orange-500 relative overflow-hidden">
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-8 space-y-4">
+              <span className="inline-block px-3 py-1 rounded-full bg-orange-500/20 text-orange-300 text-xs font-bold uppercase tracking-wider border border-orange-400/30">
+                {isBengali ? 'শুঁড়ি সমাজের ঐক্যে শামিল হন' : 'Unite With Sunri Samaj'}
+              </span>
+              <h2 className="text-2xl sm:text-4xl font-serif-heading font-bold text-white leading-tight">
+                {isBengali
+                  ? 'বঙ্গীয় সাহা সমিতির আজীবন সদস্যপদ গ্রহণ করুন'
+                  : 'Join Bangiya Saha Samity as an Esteemed Life Member'}
+              </h2>
+              <p className="text-blue-100 text-base leading-relaxed max-w-2xl">
+                {isBengali
+                  ? 'আমাদের সংবিধানে কোনো মাসিক ফি নেই—কেবল এককালীন আজীবন সদস্যপদ তালিকাভুক্তি। সদস্যপদ সরাসরি আমাদের কেন্দ্রীয় কার্যালয় বা জেলা প্রতিনিধিদের মাধ্যমে প্রদান করা হয় (অনলাইনে সদস্যপদ প্রদান করা হয় না)।'
+                  : 'Our organization operates strictly under a Life Membership model with no recurring monthly subscriptions. Please note that membership is processed directly through our head office and district representatives (not online).'}
+              </p>
+              
+              <div className="flex flex-wrap gap-4 pt-2">
+                <a
+                  id="membership-cta-apply-btn"
+                  href="tel:+919433041597"
+                  className="px-6 py-3.5 rounded-xl font-bold text-sm sm:text-base text-white bg-orange-600 hover:bg-orange-500 shadow-lg hover:shadow-xl transition-all flex items-center gap-2.5 active:scale-[0.98] border border-orange-400 group cursor-pointer"
+                >
+                  <Phone className="w-4 h-4 text-white group-hover:scale-110 transition-transform shrink-0" />
+                  <span>{isBengali ? 'কল করুন: 033-22271599 / 9433041597' : 'Call: 033-22271599 / 9433041597'}</span>
+                </a>
+                <a
+                  id="membership-cta-criteria-btn"
+                  href={PAGE_ROUTES.contact}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('contact');
+                  }}
+                  className="px-5 py-3.5 rounded-xl font-semibold text-sm sm:text-base text-blue-100 hover:text-white border border-white/30 hover:border-white transition-colors flex items-center gap-2"
+                >
+                  <span>{isBengali ? 'কার্যালয়ে যোগাযোগ' : 'Contact Office'}</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            <div className="lg:col-span-4 bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 space-y-3">
+              <h3 className="text-sm font-bold text-amber-300 uppercase tracking-wider">
+                {isBengali ? 'আজীবন সদস্যপদের বিশেষ দিক' : 'Life Membership Highlights'}
+              </h3>
+              <ul className="space-y-2.5 text-xs text-blue-100">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
+                  <span>{isBengali ? 'কোনো মাসিক চাঁদা নেই (No Monthly Subscription)' : 'Zero monthly subscriptions; single Life Membership enrolment'}</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
+                  <span>{isBengali ? 'বার্ষিক সম্মেলন ও ভোটাধিকারে সক্রিয় অংশগ্রহণ' : 'Direct voting and deliberative participation in General Meetings'}</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
+                  <span>{isBengali ? 'ছাত্রাবাস ও ছাত্রবৃত্তিতে পরিবারের অগ্রাধিকার' : 'Priority hostel and scholarship support for student wards'}</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
+                  <span>{isBengali ? 'তপশিলি জাতি শংসাপত্র ও আইনি সহায়তা ডেস্ক' : 'Complimentary legal aid & SC caste certificate guidance'}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};

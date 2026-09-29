@@ -1,0 +1,203 @@
+import React, { useState, useEffect } from 'react';
+import { LanguageProvider, useLanguage } from './context/LanguageContext';
+import { PageId, PAGE_ROUTES, getPageFromPath } from './types';
+import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
+import { HomeView } from './components/HomeView';
+import { AboutView } from './components/AboutView';
+import { CulturalHeritageView } from './components/CulturalHeritageView';
+import { MembershipView } from './components/MembershipView';
+import { EventsActivitiesView } from './components/EventsActivitiesView';
+import { NewsUpdatesView } from './components/NewsUpdatesView';
+import { GalleryView } from './components/GalleryView';
+import { DonateSupportView } from './components/DonateSupportView';
+import { ContactView } from './components/ContactView';
+import { DonationModal } from './components/DonationModal';
+
+function MainApp() {
+  const { isBengali } = useLanguage();
+  const [activePage, setActivePage] = useState<PageId>(() => {
+    return getPageFromPath(window.location.pathname, window.location.hash);
+  });
+  const [donationModalOpen, setDonationModalOpen] = useState(false);
+  const [donationCause, setDonationCause] = useState<string>('Student Hostel & Education Fund');
+
+  // Sync path-based routing with browser window location & history
+  useEffect(() => {
+    // If arriving with a legacy hash (e.g. /#about or #about), migrate cleanly to /about
+    if (window.location.hash) {
+      const pageFromHash = getPageFromPath(window.location.pathname, window.location.hash);
+      const targetPath = PAGE_ROUTES[pageFromHash] || '/';
+      window.history.replaceState({ page: pageFromHash }, '', targetPath);
+      setActivePage(pageFromHash);
+    } else {
+      const page = getPageFromPath(window.location.pathname);
+      setActivePage(page);
+    }
+
+    const handlePopState = () => {
+      const page = getPageFromPath(window.location.pathname);
+      setActivePage(page);
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  // Update dynamic document title for each distinct URL page
+  useEffect(() => {
+    const pageTitles: Record<PageId, { en: string; bn: string }> = {
+      home: {
+        en: 'Bangiya Saha Samity (Sunri Samaj) - A Social Organisation of the Scheduled Caste Sunri Community of W.B',
+        bn: 'বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) - পশ্চিমবঙ্গের তপশিলি জাতি শুঁড়ি সমাজের সামাজিক প্রতিষ্ঠান',
+      },
+      about: {
+        en: 'About Us & History | Bangiya Saha Samity (Sunri Samaj)',
+        bn: 'আমাদের সম্পর্কে ও ইতিবৃত্ত | বঙ্গীয় সাহা সমিতি',
+      },
+      heritage: {
+        en: 'Cultural Heritage & History | Bangiya Saha Samity',
+        bn: 'সাংস্কৃতিক ঐতিহ্য ও ইতিবৃত্ত | বঙ্গীয় সাহা সমিতি',
+      },
+      membership: {
+        en: 'Membership Application Form | Bangiya Saha Samity',
+        bn: 'সদস্যপদ আবেদন ফরম | বঙ্গীয় সাহা সমিতি',
+      },
+      events: {
+        en: 'Events, Conventions & Activities | Bangiya Saha Samity',
+        bn: 'কর্মসূচি ও সম্মেলন | বঙ্গীয় সাহা সমিতি',
+      },
+      news: {
+        en: 'News, Notices & Press Releases | Bangiya Saha Samity',
+        bn: 'সংবাদ ও বিজ্ঞপ্তি | বঙ্গীয় সাহা সমিতি',
+      },
+      gallery: {
+        en: 'Photo & Video Gallery | Bangiya Saha Samity',
+        bn: 'চিত্রসম্ভার ও ভিডিও | বঙ্গীয় সাহা সমিতি',
+      },
+      donate: {
+        en: 'Donate & Support | Bangiya Saha Samity',
+        bn: 'অনুদান ও সহায়তা | বঙ্গীয় সাহা সমিতি',
+      },
+      contact: {
+        en: 'Contact Us & Head Office | Bangiya Saha Samity',
+        bn: 'যোগাযোগ ও কেন্দ্রীয় কার্যালয় | বঙ্গীয় সাহা সমিতি',
+      },
+    };
+
+    const titleConfig = pageTitles[activePage];
+    if (titleConfig) {
+      document.title = isBengali ? titleConfig.bn : titleConfig.en;
+    }
+  }, [activePage, isBengali]);
+
+  const navigateTo = (page: PageId) => {
+    setActivePage(page);
+    const targetPath = PAGE_ROUTES[page] || '/';
+    if (window.location.pathname !== targetPath) {
+      window.history.pushState({ page }, '', targetPath);
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleOpenDonateModal = (cause?: string) => {
+    if (cause) {
+      setDonationCause(cause);
+    }
+    setDonationModalOpen(true);
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans selection:bg-orange-500 selection:text-white">
+      {/* Sticky White & Blue Header with Saffron Accents */}
+      <Navbar
+        activePage={activePage}
+        onNavigate={navigateTo}
+        onDonateClick={() => handleOpenDonateModal()}
+      />
+
+      {/* Dynamic View Display */}
+      <main className="flex-grow">
+        {activePage === 'home' && (
+          <HomeView
+            onNavigate={navigateTo}
+            onDonateClick={handleOpenDonateModal}
+          />
+        )}
+
+        {activePage === 'about' && (
+          <AboutView
+            onNavigate={navigateTo}
+            onDonateClick={handleOpenDonateModal}
+            onLegalAidClick={() => handleOpenDonateModal('Legal Aid & SC Rights Protection')}
+          />
+        )}
+
+        {activePage === 'heritage' && (
+          <CulturalHeritageView
+            onNavigate={navigateTo}
+            onDonateClick={handleOpenDonateModal}
+          />
+        )}
+
+        {activePage === 'membership' && (
+          <MembershipView
+            onNavigate={navigateTo}
+          />
+        )}
+
+        {activePage === 'events' && (
+          <EventsActivitiesView
+            onNavigate={navigateTo}
+            onDonateClick={handleOpenDonateModal}
+          />
+        )}
+
+        {activePage === 'news' && (
+          <NewsUpdatesView
+            onNavigate={navigateTo}
+          />
+        )}
+
+        {activePage === 'gallery' && (
+          <GalleryView
+            onNavigate={navigateTo}
+          />
+        )}
+
+        {activePage === 'donate' && (
+          <DonateSupportView
+            onNavigate={navigateTo}
+            onDonateClick={handleOpenDonateModal}
+          />
+        )}
+
+        {activePage === 'contact' && (
+          <ContactView />
+        )}
+      </main>
+
+      {/* Global White, Blue, Saffron Footer */}
+      <Footer
+        activePage={activePage}
+        onNavigate={navigateTo}
+        onDonateClick={() => handleOpenDonateModal()}
+      />
+
+      {/* Interactive Donation Modal */}
+      <DonationModal
+        isOpen={donationModalOpen}
+        onClose={() => setDonationModalOpen(false)}
+        initialCause={donationCause}
+      />
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <LanguageProvider>
+      <MainApp />
+    </LanguageProvider>
+  );
+}
