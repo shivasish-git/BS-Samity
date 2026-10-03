@@ -78,7 +78,7 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="inline-flex items-center gap-1.5 shrink-0 text-slate-400">
               <span className="hidden sm:inline text-slate-600">•</span>
               <span className="px-2 py-0.5 rounded-md bg-slate-800/90 border border-slate-700/70 text-[11px] font-medium text-amber-300/90 tracking-wide">
-                Dr. B. R. Ambedkar (1950)
+                {isBengali ? 'ড. বি. আর. আম্বেদকর (১৯৫০)' : 'Dr. B. R. Ambedkar (1950)'}
               </span>
             </div>
           </div>
@@ -160,9 +160,9 @@ export const Footer: React.FC<FooterProps> = ({
               <div className="font-bold text-orange-400">
                 {isBengali ? 'আইনি ও সরকারি নিবন্ধন:' : 'Official Credentials:'}
               </div>
-              <div className="text-[11px]">• Registration No: 4522 of 1936–37 (Govt. of West Bengal)</div>
-              <div className="text-[11px]">• Registered Non-Profit Social Welfare Organisation</div>
-              <div className="text-[11px]">• NITI Aayog NGO Darpan UID: WB/2026/045220</div>
+              <div className="text-[11px]">• {isBengali ? 'রেজিস্ট্রেশন নং: ৪৫২২ (১৯৩৬-৩৭) পশ্চিমবঙ্গ সরকার' : 'Registration No: 4522 of 1936–37 (Govt. of West Bengal)'}</div>
+              <div className="text-[11px]">• {isBengali ? 'বিধিবদ্ধ অলাভজনক তপশিলি জাতি সামাজিক কল্যাণ সংস্থা' : 'Registered Non-Profit Social Welfare Organisation'}</div>
+              <div className="text-[11px]">• {isBengali ? 'নীতি আয়োগ এনজিও দর্পণ ইউআইডি: WB/2026/045220' : 'NITI Aayog NGO Darpan UID: WB/2026/045220'}</div>
             </div>
           </div>
 
@@ -204,10 +204,10 @@ export const Footer: React.FC<FooterProps> = ({
                   <Building2 className="w-3.5 h-3.5 text-orange-400" />
                   <span>{isBengali ? 'কেন্দ্রীয় প্রধান কার্যালয় ও ৫০ আসনের ছাত্রাবাস' : 'Head Office & 50-Seat Hostel'}</span>
                 </div>
-                <p className="text-[11px] text-slate-300">{NGO_DETAILS.headOffice.address}</p>
-                <p className="text-[11px] text-slate-400">{NGO_DETAILS.headOffice.landmark}</p>
+                <p className="text-[11px] text-slate-300">{isBengali ? (NGO_DETAILS.bengaliHeadOffice?.address || '৫২বি, ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩ (তালতলা)') : NGO_DETAILS.headOffice.address}</p>
+                <p className="text-[11px] text-slate-400">{isBengali ? (NGO_DETAILS.bengaliHeadOffice?.landmark || 'জি. ডি. হাসপাতালের বিপরীতে') : NGO_DETAILS.headOffice.landmark}</p>
                 <div className="text-[11px] text-orange-300 pt-0.5">
-                  📞 {NGO_DETAILS.headOffice.phone} | ✉️ {NGO_DETAILS.headOffice.email}
+                  📞 {isBengali ? (NGO_DETAILS.bengaliHeadOffice?.phone || '০৩৩-২২২৭১৫৯৯ / ৯৪৩৩০৪১৫৯৭') : NGO_DETAILS.headOffice.phone} | ✉️ {NGO_DETAILS.headOffice.email}
                 </div>
               </div>
 
@@ -217,8 +217,8 @@ export const Footer: React.FC<FooterProps> = ({
                   <MapPin className="w-3.5 h-3.5 text-blue-400" />
                   <span>{isBengali ? 'ঐতিহাসিক জন্মস্থান (প্রতিষ্ঠা ১৯৩৪)' : 'Foundational Birthplace (1934)'}</span>
                 </div>
-                <p className="text-[11px] text-slate-300">{NGO_DETAILS.registeredSite.templeName}, {NGO_DETAILS.registeredSite.address}</p>
-                <p className="text-[11px] text-slate-400">{NGO_DETAILS.registeredSite.historicalSignificance}</p>
+                <p className="text-[11px] text-slate-300">{isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.templeName || 'মা জগজ্জননী এস্টেট মন্দির') : NGO_DETAILS.registeredSite.templeName}, {isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.address || '৭৭ মানিকতলা স্ট্রিট, সিমলা, কলকাতা') : NGO_DETAILS.registeredSite.address}</p>
+                <p className="text-[11px] text-slate-400">{isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.historicalSignificance || '১৯৩৪ সালে স্থাপিত মূল জন্মস্থান ও ঐতিহাসিক তীর্থ') : NGO_DETAILS.registeredSite.historicalSignificance}</p>
               </div>
 
               {/* Newsletter subscription */}
@@ -233,7 +233,7 @@ export const Footer: React.FC<FooterProps> = ({
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Enter email address"
+                      placeholder={isBengali ? 'আপনার ইমেল ঠিকানা লিখুন' : 'Enter email address'}
                       className="px-3 py-2 bg-slate-800 border border-slate-700 rounded-lg text-xs text-white outline-none focus:border-orange-500 flex-1"
                     />
                     <button
@@ -257,14 +257,14 @@ export const Footer: React.FC<FooterProps> = ({
         {/* Bottom Bar */}
         <div className="pt-8 mt-10 border-t border-slate-800 text-xs text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <p>
-            © 1936 – 2026 <span className="text-slate-200 font-semibold">Bangiya Saha Samity (Sunri Samaj)</span>. All rights reserved.
+            {isBengali ? '© ১৯৩৬ – ২০২৬ বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ)। সর্বস্বত্ব সংরক্ষিত।' : '© 1936 – 2026 Bangiya Saha Samity (Sunri Samaj). All rights reserved.'}
           </p>
           <div className="flex flex-wrap items-center gap-4 text-[11px]">
-            <span>West Bengal Societies Registration Act 1961</span>
+            <span>{isBengali ? 'পশ্চিমবঙ্গ সমিতি নিবন্ধন আইন ১৯৬১' : 'West Bengal Societies Registration Act 1961'}</span>
             <span>•</span>
-            <span>Est. 1934 (Regd. 1936-37)</span>
+            <span>{isBengali ? 'স্থাপিত ১৯৩৪ (রেজি. ১৯৩৬-৩৭)' : 'Est. 1934 (Regd. 1936-37)'}</span>
             <span>•</span>
-            <span>Opp. G.D. Hospital, Taltala</span>
+            <span>{isBengali ? 'জি. ডি. হাসপাতালের বিপরীতে, তালতলা' : 'Opp. G.D. Hospital, Taltala'}</span>
           </div>
         </div>
       </div>

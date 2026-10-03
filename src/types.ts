@@ -78,7 +78,9 @@ export interface ActivityCard {
   bengaliDescription: string;
   icon: string;
   highlights: string[];
+  bengaliHighlights?: string[];
   badge: string;
+  bengaliBadge?: string;
 }
 
 export interface LeadershipMember {
@@ -91,6 +93,7 @@ export interface LeadershipMember {
   bio: string;
   bengaliBio: string;
   contactNote?: string;
+  bengaliContactNote?: string;
   imageUrl?: string;
   district?: string;
   bengaliDistrict?: string;
@@ -103,12 +106,14 @@ export interface EventItem {
   date: string;
   bengaliDate: string;
   time?: string;
+  bengaliTime?: string;
   venue: string;
   bengaliVenue: string;
   category: 'Upcoming' | 'Past';
   description: string;
   bengaliDescription: string;
   attendees?: string;
+  bengaliAttendees?: string;
   isFeatured?: boolean;
 }
 
@@ -118,13 +123,17 @@ export interface NewsItem {
   bengaliTitle: string;
   date: string;
   category: 'Announcement' | 'Community News' | 'Press Release' | 'Newsletter';
+  bengaliCategory?: string;
   summary: string;
   bengaliSummary: string;
   content: string;
   bengaliContent: string;
   author: string;
+  bengaliAuthor?: string;
   readTime: string;
+  bengaliReadTime?: string;
   badge: string;
+  bengaliBadge?: string;
   downloadUrl?: string;
 }
 
@@ -133,12 +142,15 @@ export interface GalleryItem {
   title: string;
   bengaliTitle: string;
   category: 'Photos' | 'Videos' | 'Community Activities' | 'Cultural Programs';
+  bengaliCategory?: string;
   imageUrl: string;
   videoUrl?: string;
   description: string;
   bengaliDescription: string;
   date: string;
+  bengaliDate?: string;
   location: string;
+  bengaliLocation?: string;
 }
 
 export interface HeritageItem {
@@ -146,6 +158,7 @@ export interface HeritageItem {
   title: string;
   bengaliTitle: string;
   era: string;
+  bengaliEra?: string;
   summary: string;
   bengaliSummary: string;
   details: string[];
@@ -158,13 +171,15 @@ export interface HeritageItem {
 export interface MembershipFormData {
   fullName: string;
   fatherName: string;
-  dob: string;
+  dob?: string;
+  dateOfBirth?: string;
   occupation: string;
   address: string;
   mobileNumber: string;
   email: string;
   district: string;
-  membershipType: 'Life Member' | 'Patron Member' | 'Student Associate';
+  membershipType: 'Life Member' | 'Patron Member' | 'Student Associate' | string;
+  notes?: string;
 }
 
 export interface ContactFormData {

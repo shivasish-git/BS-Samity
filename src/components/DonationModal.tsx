@@ -43,6 +43,19 @@ export const DonationModal: React.FC<DonationModalProps> = ({
   const presetAmounts = [500, 1000, 2500, 5000, 18000];
   const activeAmount = customAmount ? parseInt(customAmount, 10) || 0 : selectedAmount;
 
+  const getLocalizedCause = (c: string) => {
+    if (!isBengali) return c;
+    const causeMap: Record<string, string> = {
+      'Student Hostel & Education Fund': 'ছাত্রাবাস ও শিক্ষা তহবিল',
+      'Sponsor a Rural Student Bed (₹18,000/yr)': '১ জন ছাত্রের বার্ষিক আবাসন (₹১৮,০০০)',
+      'Female Higher Education Scholarship': 'নারী শিক্ষা বৃত্তি',
+      'Community Library & Publications': 'পাঠাগার ও প্রকাশনা',
+      'General Social Welfare & Health Relief': 'সাধারণ সমাজকল্যাণ ও স্বাস্থ্য ত্রাণ',
+      'Legal Aid & SC Rights Protection': 'আইনি সহায়তা ও তপশিলি অধিকার সংরক্ষণ'
+    };
+    return causeMap[c] || c;
+  };
+
   const handleCopy = (text: string, field: string) => {
     navigator.clipboard.writeText(text);
     setCopiedField(field);
@@ -99,7 +112,7 @@ export const DonationModal: React.FC<DonationModalProps> = ({
           <button
             onClick={onClose}
             className="p-1.5 rounded-full hover:bg-white/10 text-white transition-colors"
-            aria-label="Close modal"
+            aria-label={isBengali ? 'মডাল বন্ধ করুন' : 'Close modal'}
           >
             <X className="w-5 h-5" />
           </button>
@@ -124,27 +137,29 @@ export const DonationModal: React.FC<DonationModalProps> = ({
               {/* Receipt slip */}
               <div className="p-5 bg-slate-50 rounded-2xl border border-slate-200 text-left space-y-2 text-xs">
                 <div className="flex justify-between border-b border-slate-200 pb-2">
-                  <span className="text-slate-500">Receipt Ref:</span>
-                  <span className="font-mono font-bold text-orange-600">{successRecord.receiptNo}</span>
+                  <span className="text-slate-500">{isBengali ? 'রসিদ রেফারেন্স নং:' : 'Receipt Ref:'}</span>
+                  <span className="font-mono font-bold text-orange-600">
+                    {isBengali ? successRecord.receiptNo.replace('BSS-DON-', 'বিএসএস-রসিদ-') : successRecord.receiptNo}
+                  </span>
                 </div>
                 <div className="flex justify-between border-b border-slate-200 pb-2">
-                  <span className="text-slate-500">Donor Name:</span>
+                  <span className="text-slate-500">{isBengali ? 'দাতার নাম:' : 'Donor Name:'}</span>
                   <span className="font-bold text-blue-950">{donorName}</span>
                 </div>
                 <div className="flex justify-between border-b border-slate-200 pb-2">
-                  <span className="text-slate-500">Amount Contributed:</span>
-                  <span className="font-bold text-emerald-700 text-sm">₹{activeAmount.toLocaleString()}</span>
+                  <span className="text-slate-500">{isBengali ? 'অনুদানের পরিমাণ:' : 'Amount Contributed:'}</span>
+                  <span className="font-bold text-emerald-700 text-sm">₹{isBengali ? activeAmount.toLocaleString('bn-IN') : activeAmount.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between border-b border-slate-200 pb-2">
-                  <span className="text-slate-500">Cause:</span>
-                  <span className="font-medium text-slate-700">{cause}</span>
+                  <span className="text-slate-500">{isBengali ? 'অনুদানের খাত:' : 'Cause:'}</span>
+                  <span className="font-medium text-slate-700">{getLocalizedCause(cause)}</span>
                 </div>
                 <div className="flex justify-between border-b border-slate-200 pb-2">
-                  <span className="text-slate-500">Organization:</span>
-                  <span className="font-bold text-blue-900">Bangiya Saha Samity (Regd. 4522)</span>
+                  <span className="text-slate-500">{isBengali ? 'সংগঠন:' : 'Organization:'}</span>
+                  <span className="font-bold text-blue-900">{isBengali ? 'বঙ্গীয় সাহা সমিতি (রেজি. ৪৫২২)' : 'Bangiya Saha Samity (Regd. 4522)'}</span>
                 </div>
                 <div className="flex justify-between pt-1">
-                  <span className="text-slate-500">Date:</span>
+                  <span className="text-slate-500">{isBengali ? 'তারিখ:' : 'Date:'}</span>
                   <span className="text-slate-700">{successRecord.date}</span>
                 </div>
               </div>
@@ -177,11 +192,11 @@ export const DonationModal: React.FC<DonationModalProps> = ({
                   onChange={(e) => setCause(e.target.value)}
                   className="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:border-blue-900 text-xs sm:text-sm bg-white outline-none"
                 >
-                  <option value="Student Hostel & Education Fund">Student Hostel & Education Fund (ছাত্রাবাস ও শিক্ষা তহবিল)</option>
-                  <option value="Sponsor a Rural Student Bed (₹18,000/yr)">Sponsor a Rural Student Bed (১ জন ছাত্রের বার্ষিক আবাসন - ₹১৮,০০০)</option>
-                  <option value="Female Higher Education Scholarship">Female Higher Education Scholarship (নারী শিক্ষা বৃত্তি)</option>
-                  <option value="Community Library & Publications">Community Library & Publications (পাঠাগার ও প্রকাশনা)</option>
-                  <option value="General Social Welfare & Health Relief">General Social Welfare & Health Relief (সাধারণ সমাজকল্যাণ ও ত্রাণ)</option>
+                  <option value="Student Hostel & Education Fund">{isBengali ? 'ছাত্রাবাস ও শিক্ষা তহবিল' : 'Student Hostel & Education Fund (ছাত্রাবাস ও শিক্ষা তহবিল)'}</option>
+                  <option value="Sponsor a Rural Student Bed (₹18,000/yr)">{isBengali ? '১ জন ছাত্রের বার্ষিক আবাসন (₹১৮,০০০)' : 'Sponsor a Rural Student Bed (১ জন ছাত্রের বার্ষিক আবাসন - ₹১৮,০০০)'}</option>
+                  <option value="Female Higher Education Scholarship">{isBengali ? 'নারী শিক্ষা বৃত্তি' : 'Female Higher Education Scholarship (নারী শিক্ষা বৃত্তি)'}</option>
+                  <option value="Community Library & Publications">{isBengali ? 'পাঠাগার ও প্রকাশনা' : 'Community Library & Publications (পাঠাগার ও প্রকাশনা)'}</option>
+                  <option value="General Social Welfare & Health Relief">{isBengali ? 'সাধারণ সমাজকল্যাণ ও স্বাস্থ্য ত্রাণ' : 'General Social Welfare & Health Relief (সাধারণ সমাজকল্যাণ ও ত্রাণ)'}</option>
                 </select>
               </div>
 
@@ -205,7 +220,9 @@ export const DonationModal: React.FC<DonationModalProps> = ({
                           : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
                       }`}
                     >
-                      ₹{amt >= 1000 ? `${amt / 1000}k` : amt}
+                      ₹{isBengali 
+                        ? (amt >= 1000 ? `${(amt / 1000).toLocaleString('bn-IN')} হাজার` : amt.toLocaleString('bn-IN')) 
+                        : (amt >= 1000 ? `${amt / 1000}k` : amt)}
                     </button>
                   ))}
                 </div>
@@ -233,7 +250,7 @@ export const DonationModal: React.FC<DonationModalProps> = ({
                     required
                     value={donorName}
                     onChange={(e) => setDonorName(e.target.value)}
-                    placeholder="Subir Saha"
+                    placeholder={isBengali ? 'যেমন: সুবীর সাহা' : 'Subir Saha'}
                     className="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs outline-none focus:border-blue-900"
                   />
                 </div>
@@ -247,7 +264,7 @@ export const DonationModal: React.FC<DonationModalProps> = ({
                     required
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder="+91 98300 00000"
+                    placeholder={isBengali ? '+৯১ ৯৮৩০০ ০০০০০' : '+91 98300 00000'}
                     className="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs outline-none focus:border-blue-900"
                   />
                 </div>
@@ -260,7 +277,7 @@ export const DonationModal: React.FC<DonationModalProps> = ({
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="donor@example.com"
+                    placeholder={isBengali ? 'ইমেল ঠিকানা (যেমনঃ donor@example.com)' : 'donor@example.com'}
                     className="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs outline-none focus:border-blue-900"
                   />
                 </div>
@@ -273,7 +290,7 @@ export const DonationModal: React.FC<DonationModalProps> = ({
                     type="text"
                     value={pan}
                     onChange={(e) => setPan(e.target.value.toUpperCase())}
-                    placeholder="ABCDE1234F"
+                    placeholder={isBengali ? 'প্যান নম্বর (যেমনঃ ABCDE1234F)' : 'ABCDE1234F'}
                     className="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs outline-none focus:border-blue-900 uppercase"
                   />
                 </div>
@@ -282,18 +299,18 @@ export const DonationModal: React.FC<DonationModalProps> = ({
               {/* Bank Account Direct Credentials Quick Reference */}
               <div className="p-3 bg-blue-50/70 rounded-xl border border-blue-100 space-y-1 text-xs text-slate-600">
                 <div className="font-bold text-blue-950 flex items-center justify-between">
-                  <span>State Bank of India (Bowbazar/Esplanade Branch)</span>
+                  <span>{isBengali ? 'স্টেট ব্যাংক অব ইন্ডিয়া (বৌবাজার/তালতলা শাখা)' : 'State Bank of India (Bowbazar/Esplanade Branch)'}</span>
                   <button
                     type="button"
                     onClick={() => handleCopy(BANK_DETAILS.accountNumber, 'acc')}
                     className="text-orange-600 hover:text-orange-700 flex items-center gap-1"
                   >
                     {copiedField === 'acc' ? <Check className="w-3 h-3 text-emerald-600" /> : <Copy className="w-3 h-3" />}
-                    <span>Copy A/C</span>
+                    <span>{isBengali ? 'অ্যাকাউন্ট কপি' : 'Copy A/C'}</span>
                   </button>
                 </div>
                 <div className="font-mono text-[11px] text-slate-600">
-                  A/C: <span className="font-bold text-blue-900">{BANK_DETAILS.accountNumber}</span> | IFSC: <span className="font-bold text-orange-600">{BANK_DETAILS.ifscCode}</span>
+                  {isBengali ? 'হিসাব নং:' : 'A/C:'} <span className="font-bold text-blue-900">{isBengali ? '৩৮১৯২০১৯৩৬০' : BANK_DETAILS.accountNumber}</span> | {isBengali ? 'আইএফএসসি (IFSC):' : 'IFSC:'} <span className="font-bold text-orange-600">{BANK_DETAILS.ifscCode}</span>
                 </div>
               </div>
 

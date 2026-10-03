@@ -100,9 +100,9 @@ export const NewsUpdatesView: React.FC<NewsUpdatesViewProps> = ({ onNavigate }) 
                     news.category === 'Announcement' ? 'bg-orange-50 text-orange-700' :
                     'bg-blue-50 text-blue-900'
                   }`}>
-                    {news.category}
+                    {isBengali ? (news.bengaliCategory || news.category) : news.category}
                   </span>
-                  <span className="text-slate-400 font-medium">{news.readTime}</span>
+                  <span className="text-slate-400 font-medium">{isBengali ? (news.bengaliReadTime || news.readTime) : news.readTime}</span>
                 </div>
 
                 <h3 className="text-lg font-serif-heading font-bold text-blue-950 leading-snug">
@@ -115,7 +115,7 @@ export const NewsUpdatesView: React.FC<NewsUpdatesViewProps> = ({ onNavigate }) 
               </div>
 
               <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-                <span className="text-slate-500 font-medium">{news.author}</span>
+                <span className="text-slate-500 font-medium">{isBengali ? (news.bengaliAuthor || news.author) : news.author}</span>
                 <button
                   onClick={() => setActiveArticle(news)}
                   className="font-bold text-orange-600 hover:text-orange-700 flex items-center gap-1"
@@ -135,7 +135,7 @@ export const NewsUpdatesView: React.FC<NewsUpdatesViewProps> = ({ onNavigate }) 
           <div className="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 space-y-6 max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between border-b border-slate-200 pb-4">
               <span className="px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-900">
-                {activeArticle.category} • {activeArticle.date}
+                {(isBengali ? (activeArticle.bengaliCategory || activeArticle.category) : activeArticle.category)} • {(isBengali ? (activeArticle.bengaliDate || activeArticle.date) : activeArticle.date)}
               </span>
               <button
                 onClick={() => setActiveArticle(null)}
@@ -150,9 +150,9 @@ export const NewsUpdatesView: React.FC<NewsUpdatesViewProps> = ({ onNavigate }) 
                 {isBengali ? activeArticle.bengaliTitle : activeArticle.title}
               </h2>
               <div className="text-xs text-slate-500 flex items-center gap-4">
-                <span>By: {activeArticle.author}</span>
+                <span>{isBengali ? `লেখক: ${activeArticle.bengaliAuthor || activeArticle.author}` : `By: ${activeArticle.author}`}</span>
                 <span>•</span>
-                <span>{activeArticle.readTime}</span>
+                <span>{isBengali ? (activeArticle.bengaliReadTime || activeArticle.readTime) : activeArticle.readTime}</span>
               </div>
               <p className="text-sm text-slate-700 leading-relaxed">
                 {isBengali ? activeArticle.bengaliContent : activeArticle.content}
@@ -194,8 +194,8 @@ export const NewsUpdatesView: React.FC<NewsUpdatesViewProps> = ({ onNavigate }) 
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between text-xs">
-                    <span className="font-bold text-orange-600">{issue.issue}</span>
-                    <span className="text-slate-400 font-medium">{issue.publishDate}</span>
+                    <span className="font-bold text-orange-600">{isBengali ? (issue.bengaliIssue || issue.issue) : issue.issue}</span>
+                    <span className="text-slate-400 font-medium">{isBengali ? (issue.bengaliPublishDate || issue.publishDate) : issue.publishDate}</span>
                   </div>
 
                   <h3 className="text-base font-serif-heading font-bold text-blue-950">
@@ -208,13 +208,13 @@ export const NewsUpdatesView: React.FC<NewsUpdatesViewProps> = ({ onNavigate }) 
                 </div>
 
                 <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-                  <span className="text-slate-500 font-medium">{issue.pages}</span>
+                  <span className="text-slate-500 font-medium">{isBengali ? (issue.bengaliPages || issue.pages) : issue.pages}</span>
                   <a
                     href="#"
                     onClick={(e) => {
                       e.preventDefault();
                       alert(isBengali 
-                        ? `বুলেটিন ${issue.issue} ডিজিটাল কপি শীঘ্রই উন্মুক্ত হবে। প্রধান কার্যালয়ের পাঠাগার থেকে সংগৃহীত কপি সংগ্রহ করতে পারেন।`
+                        ? `বুলেটিন ${isBengali ? (issue.bengaliIssue || issue.issue) : issue.issue} ডিজিটাল কপি শীঘ্রই উন্মুক্ত হবে। প্রধান কার্যালয়ের পাঠাগার থেকে সংগৃহীত কপি সংগ্রহ করতে পারেন।`
                         : `Digital copy of ${issue.issue} is available at the Head Office library, 52B Indian Mirror Street.`);
                     }}
                     className="inline-flex items-center gap-1.5 font-bold text-blue-900 hover:text-orange-600"

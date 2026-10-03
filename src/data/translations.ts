@@ -155,7 +155,7 @@ export const TRANSLATIONS = {
     helplineTitle: 'প্রধান কার্যালয় হেল্পলাইন:',
     orgName: 'বঙ্গীয় সাহা সমিতি',
     orgFullTitle: 'বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ)',
-    orgSubtitle: 'A Social Organisation of the Scheduled Caste Sunri Community of W.B',
+    orgSubtitle: 'পশ্চিমবঙ্গের তপশিলি জাতি শুঁড়ি সমাজের একটি সামাজিক সংগঠন',
     navHome: 'মূল পাতা',
     navAbout: 'আমাদের সম্পর্কে',
     navHeritage: 'সাংস্কৃতিক ঐতিহ্য',

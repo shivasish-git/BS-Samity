@@ -102,20 +102,20 @@ export const ContactView: React.FC = () => {
               
               <div className="space-y-2 text-sm text-slate-700">
                 <p className="font-bold text-blue-950 text-base">
-                  {NGO_DETAILS.headOffice.address}
+                  {isBengali ? (NGO_DETAILS.bengaliHeadOffice?.address || '৫২বি, ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩ (তালতলা)') : NGO_DETAILS.headOffice.address}
                 </p>
                 <p className="text-xs text-slate-500">
-                  {NGO_DETAILS.headOffice.landmark}
+                  {isBengali ? (NGO_DETAILS.bengaliHeadOffice?.landmark || 'জি. ডি. হাসপাতালের বিপরীতে') : NGO_DETAILS.headOffice.landmark}
                 </p>
                 <div className="inline-block px-2.5 py-1 rounded bg-blue-50 text-blue-900 font-mono text-xs font-bold">
-                  {NGO_DETAILS.headOffice.regdNo}
+                  {isBengali ? (NGO_DETAILS.bengaliHeadOffice?.regdNo || 'সোসাইটি রেজিস্ট্রেশন নং ৪৫২২ (১৯৩৬-৩৭)') : NGO_DETAILS.headOffice.regdNo}
                 </div>
               </div>
 
               <div className="pt-2 border-t border-slate-100 space-y-2 text-xs text-slate-600">
                 <div className="flex items-center gap-2.5">
                   <Phone className="w-4 h-4 text-orange-600 shrink-0" />
-                  <span>{NGO_DETAILS.headOffice.phone}</span>
+                  <span>{isBengali ? (NGO_DETAILS.bengaliHeadOffice?.phone || '০৩৩-২২২৭১৫৯৯ / ৯৪৩৩০৪১৫৯৭') : NGO_DETAILS.headOffice.phone}</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Mail className="w-4 h-4 text-blue-900 shrink-0" />
@@ -135,9 +135,9 @@ export const ContactView: React.FC = () => {
                 <span>{isBengali ? 'ঐতিহাসিক জন্মস্থান (প্রতিষ্ঠা ১৯৩৪)' : 'Foundational Birthplace (1934)'}</span>
               </div>
               <div className="text-sm text-slate-700 space-y-1">
-                <div className="font-bold text-blue-950">{NGO_DETAILS.registeredSite.templeName}</div>
-                <div className="text-xs text-slate-600">{NGO_DETAILS.registeredSite.address}</div>
-                <div className="text-[11px] text-slate-500">{NGO_DETAILS.registeredSite.historicalSignificance}</div>
+                <div className="font-bold text-blue-950">{isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.templeName || 'মা জগজ্জননী এস্টেট মন্দির') : NGO_DETAILS.registeredSite.templeName}</div>
+                <div className="text-xs text-slate-600">{isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.address || '৭৭ মানিকতলা স্ট্রিট, সিমলা, কলকাতা') : NGO_DETAILS.registeredSite.address}</div>
+                <div className="text-[11px] text-slate-500">{isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.historicalSignificance || '১৯৩৪ সালে স্থাপিত মূল জন্মস্থান ও ঐতিহাসিক তীর্থ') : NGO_DETAILS.registeredSite.historicalSignificance}</div>
               </div>
             </div>
 
@@ -153,7 +153,7 @@ export const ContactView: React.FC = () => {
                   : 'For caste certificate verification inquiries, educational bursaries, or student lodging:'}
               </p>
               <div className="text-lg font-mono font-bold text-white pt-1">
-                033-22271599 / 9433041597 (M)
+                {isBengali ? '০৩৩-২২২৭১৫৯৯ / ৯৪৩৩০৪১৫৯৭ (মোবাইল)' : '033-22271599 / 9433041597 (M)'}
               </div>
             </div>
           </div>
@@ -212,7 +212,7 @@ export const ContactView: React.FC = () => {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="e.g. Animesh Saha"
+                        placeholder={isBengali ? 'যেমন: অনিমেষ সাহা' : 'e.g. Animesh Saha'}
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900/10 text-xs sm:text-sm outline-none transition-all"
                       />
                     </div>
@@ -228,7 +228,7 @@ export const ContactView: React.FC = () => {
                         required
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+91 98300 00000"
+                        placeholder={isBengali ? '+৯১ ৯৮৩০০ ০০০০০' : '+91 98300 00000'}
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900/10 text-xs sm:text-sm outline-none transition-all"
                       />
                     </div>
@@ -245,7 +245,7 @@ export const ContactView: React.FC = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="name@example.com"
+                        placeholder={isBengali ? 'ইমেল ঠিকানা (যেমনঃ name@example.com)' : 'name@example.com'}
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900/10 text-xs sm:text-sm outline-none transition-all"
                       />
                     </div>
@@ -260,7 +260,7 @@ export const ContactView: React.FC = () => {
                         name="subject"
                         value={formData.subject}
                         onChange={handleChange}
-                        placeholder="e.g. Hostel Admission / Membership inquiry"
+                        placeholder={isBengali ? 'যেমন: ছাত্রাবাস ভর্তি / সদস্যপদ অনুসন্ধান' : 'e.g. Hostel Admission / Membership inquiry'}
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900/10 text-xs sm:text-sm outline-none transition-all"
                       />
                     </div>
@@ -277,7 +277,7 @@ export const ContactView: React.FC = () => {
                       rows={4}
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Write your inquiry or feedback..."
+                      placeholder={isBengali ? 'আপনার প্রশ্ন বা বার্তা বিস্তারিত লিখুন...' : 'Write your inquiry or feedback...'}
                       className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900/10 text-xs sm:text-sm outline-none transition-all"
                     />
                   </div>
@@ -305,7 +305,7 @@ export const ContactView: React.FC = () => {
               <div className="p-5 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
                 <div className="flex items-center gap-2 text-xs font-bold text-blue-950">
                   <MapPin className="w-4 h-4 text-orange-600" />
-                  <span>Kolkata Central Office Location Map</span>
+                  <span>{isBengali ? 'কলকাতা কেন্দ্রীয় কার্যালয়ের মানচিত্র' : 'Kolkata Central Office Location Map'}</span>
                 </div>
                 <a
                   href="https://maps.google.com/?q=52B+Indian+Mirror+Street+Kolkata"
@@ -330,7 +330,7 @@ export const ContactView: React.FC = () => {
               </div>
 
               <div className="p-4 text-xs text-slate-500 bg-white">
-                💡 <span className="font-semibold text-slate-700">Direction hint:</span> Opposite G.D. Hospital, Taltala, Kolkata – 700013. Accessible from Esplanade / Chandni Chowk / Sealdah Railway Station.
+                💡 <span className="font-semibold text-slate-700">{isBengali ? 'দিকনির্দেশনা:' : 'Direction hint:'}</span> {isBengali ? 'জি. ডি. হাসপাতালের বিপরীতে, তালতলা, কলকাতা – ৭০০০১৩। এসপ্ল্যানেড / চাঁদনি চক / শিয়ালদহ স্টেশন থেকে সহজে গম্য।' : 'Opposite G.D. Hospital, Taltala, Kolkata – 700013. Accessible from Esplanade / Chandni Chowk / Sealdah Railway Station.'}
               </div>
             </div>
           </div>

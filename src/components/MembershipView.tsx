@@ -13,7 +13,7 @@ import {
   Check
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import { WEST_BENGAL_DISTRICTS, NGO_DETAILS } from '../data/ngoData';
+import { WEST_BENGAL_DISTRICTS, WEST_BENGAL_DISTRICTS_BN, NGO_DETAILS } from '../data/ngoData';
 import { MembershipFormData, PageId } from '../types';
 import { IndianPatternDivider } from './IndianPatternDivider';
 
@@ -147,7 +147,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
               <div className="p-4 bg-orange-50/70 rounded-xl border border-orange-100 flex items-start gap-3">
                 <Sparkles className="w-5 h-5 text-orange-600 shrink-0 mt-0.5" />
                 <div>
-                  <div className="font-bold text-blue-950">{isBengali ? 'মাসিক চাঁদা নেই (No Monthly Subscription)' : 'No Monthly Subscription'}</div>
+                  <div className="font-bold text-blue-950">{isBengali ? 'কোনো মাসিক চাঁদা নেই' : 'No Monthly Subscription'}</div>
                   <p className="text-xs text-slate-600 pt-0.5">
                     {isBengali 
                       ? 'সমিতির বিধিমতে কোনো মাসিক চাঁদা গ্রহণ করা হয় না—কেবল এককালীন আজীবন সদস্যপদ প্রদান করা হয়।' 
@@ -188,7 +188,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                   1
                 </div>
                 <h3 className="text-base font-bold text-blue-950">
-                  {isBengali ? '১. সামাজিক অংশগ্রহণ (Community Participation)' : 'Community Participation'}
+                  {isBengali ? '১. সামাজিক অংশগ্রহণ' : 'Community Participation'}
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
                   {isBengali
@@ -203,7 +203,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                   2
                 </div>
                 <h3 className="text-base font-bold text-blue-950">
-                  {isBengali ? '২. সামাজিক নেটওয়ার্ক (Networking Opportunities)' : 'Networking Opportunities'}
+                  {isBengali ? '২. সামাজিক নেটওয়ার্ক' : 'Networking Opportunities'}
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
                   {isBengali
@@ -218,7 +218,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                   3
                 </div>
                 <h3 className="text-base font-bold text-blue-950">
-                  {isBengali ? '৩. সাংস্কৃতিক সক্রিয়তা (Cultural Engagement)' : 'Cultural Engagement'}
+                  {isBengali ? '৩. সাংস্কৃতিক সক্রিয়তা' : 'Cultural Engagement'}
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
                   {isBengali
@@ -233,7 +233,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                   4
                 </div>
                 <h3 className="text-base font-bold text-blue-950">
-                  {isBengali ? '৪. সমাজকল্যাণ সহায়তা (Social Welfare Support)' : 'Social Welfare Support'}
+                  {isBengali ? '৪. সমাজকল্যাণ সহায়তা' : 'Social Welfare Support'}
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
                   {isBengali
@@ -281,11 +281,11 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
               </p>
 
               <div className="bg-white p-4 rounded-xl border border-emerald-200 text-left max-w-md mx-auto text-xs space-y-1.5">
-                <div className="flex justify-between"><span className="text-slate-500">Applicant:</span> <span className="font-bold text-blue-950">{formData.fullName}</span></div>
-                <div className="flex justify-between"><span className="text-slate-500">Father's Name:</span> <span className="font-medium text-slate-700">{formData.fatherName}</span></div>
-                <div className="flex justify-between"><span className="text-slate-500">District:</span> <span className="font-medium text-slate-700">{formData.district}</span></div>
-                <div className="flex justify-between"><span className="text-slate-500">Category:</span> <span className="font-bold text-orange-600">{formData.membershipType}</span></div>
-                <div className="flex justify-between"><span className="text-slate-500">Mobile:</span> <span className="font-medium text-slate-700">{formData.mobileNumber}</span></div>
+                <div className="flex justify-between"><span className="text-slate-500">{isBengali ? 'আবেদনকারী:' : 'Applicant:'}</span> <span className="font-bold text-blue-950">{formData.fullName}</span></div>
+                <div className="flex justify-between"><span className="text-slate-500">{isBengali ? 'পিতার নাম:' : "Father's Name:"}</span> <span className="font-medium text-slate-700">{formData.fatherName}</span></div>
+                <div className="flex justify-between"><span className="text-slate-500">{isBengali ? 'জেলা:' : 'District:'}</span> <span className="font-medium text-slate-700">{isBengali && WEST_BENGAL_DISTRICTS_BN[formData.district] ? WEST_BENGAL_DISTRICTS_BN[formData.district] : formData.district}</span></div>
+                <div className="flex justify-between"><span className="text-slate-500">{isBengali ? 'সদস্যপদ বিভাগ:' : 'Category:'}</span> <span className="font-bold text-orange-600">{isBengali ? (formData.membershipType === 'Life Member' ? 'আজীবন সদস্য' : formData.membershipType === 'Patron Member' ? 'পৃষ্ঠপোষক সদস্য' : 'ছাত্র সহযোগী') : formData.membershipType}</span></div>
+                <div className="flex justify-between"><span className="text-slate-500">{isBengali ? 'মোবাইল নম্বর:' : 'Mobile:'}</span> <span className="font-medium text-slate-700">{formData.mobileNumber}</span></div>
               </div>
 
               <div className="pt-2 flex flex-wrap justify-center gap-3">
@@ -326,7 +326,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                     required
                     value={formData.fullName}
                     onChange={handleChange}
-                    placeholder="e.g. Subir Kumar Saha"
+                    placeholder={isBengali ? 'যেমন: সুবীর কুমার সাহা' : 'e.g. Subir Kumar Saha'}
                     className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900/10 text-sm outline-none transition-all"
                   />
                 </div>
@@ -343,7 +343,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                     required
                     value={formData.fatherName}
                     onChange={handleChange}
-                    placeholder="e.g. Late Narayan Chandra Saha"
+                    placeholder={isBengali ? 'যেমন: স্বর্গীয় নারায়ণ চন্দ্র সাহা' : 'e.g. Late Narayan Chandra Saha'}
                     className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900/10 text-sm outline-none transition-all"
                   />
                 </div>
@@ -372,7 +372,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                     name="occupation"
                     value={formData.occupation}
                     onChange={handleChange}
-                    placeholder="e.g. Service / Business / Teacher / Student"
+                    placeholder={isBengali ? 'যেমন: চাকুরী / ব্যবসা / শিক্ষকতা / শিক্ষার্থী' : 'e.g. Service / Business / Teacher / Student'}
                     className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900/10 text-sm outline-none transition-all"
                   />
                 </div>
@@ -389,7 +389,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                     required
                     value={formData.mobileNumber}
                     onChange={handleChange}
-                    placeholder="+91 98300 00000"
+                    placeholder={isBengali ? '+৯১ ৯৮৩০০ ০০০০০' : '+91 98300 00000'}
                     className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900/10 text-sm outline-none transition-all"
                   />
                 </div>
@@ -404,7 +404,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="subir.saha@example.com"
+                    placeholder={isBengali ? 'ইমেল (যেমনঃ subir.saha@example.com)' : 'subir.saha@example.com'}
                     className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900/10 text-sm outline-none transition-all"
                   />
                 </div>
@@ -425,7 +425,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                     <option value="">{isBengali ? '-- জেলা নির্বাচন করুন --' : '-- Select District --'}</option>
                     {WEST_BENGAL_DISTRICTS.map((dist) => (
                       <option key={dist} value={dist}>
-                        {dist}
+                        {isBengali && WEST_BENGAL_DISTRICTS_BN[dist] ? WEST_BENGAL_DISTRICTS_BN[dist] : dist}
                       </option>
                     ))}
                   </select>
@@ -442,9 +442,9 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900/10 text-sm outline-none transition-all bg-white"
                   >
-                    <option value="Life Member">Life Member (আজীবন সদস্য - No Monthly Fee)</option>
-                    <option value="Patron Member">Patron Member (পৃষ্ঠপোষক সদস্য)</option>
-                    <option value="Student Associate">Student Associate (ছাত্র সহযোগী)</option>
+                    <option value="Life Member">{isBengali ? 'আজীবন সদস্য (এককালীন সদস্যপদ)' : 'Life Member (আজীবন সদস্য - No Monthly Fee)'}</option>
+                    <option value="Patron Member">{isBengali ? 'পৃষ্ঠপোষক সদস্য' : 'Patron Member (পৃষ্ঠপোষক সদস্য)'}</option>
+                    <option value="Student Associate">{isBengali ? 'ছাত্র সহযোগী' : 'Student Associate (ছাত্র সহযোগী)'}</option>
                   </select>
                 </div>
               </div>
@@ -461,7 +461,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                   rows={3}
                   value={formData.address}
                   onChange={handleChange}
-                  placeholder="Village / Road, Post Office, Police Station, PIN Code"
+                  placeholder={isBengali ? 'গ্রাম / রাস্তা, ডাকঘর, থানা, পিন কোড' : 'Village / Road, Post Office, Police Station, PIN Code'}
                   className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900/10 text-sm outline-none transition-all"
                 />
               </div>
@@ -469,14 +469,14 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
               {/* Notes or community details */}
               <div className="space-y-1.5">
                 <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">
-                  {isBengali ? 'অতিরিক্ত বিবরণ (ঐচ্ছিক)' : 'Additional Notes / SC Certificate No. (Optional)'}
+                  {isBengali ? 'অতিরিক্ত বিবরণ / এসসি শংসাপত্র নং (ঐচ্ছিক)' : 'Additional Notes / SC Certificate No. (Optional)'}
                 </label>
                 <input
                   type="text"
                   name="notes"
                   value={formData.notes}
                   onChange={handleChange}
-                  placeholder="e.g. SC Digital Certificate number or ancestral village"
+                  placeholder={isBengali ? 'যেমন: এসসি ডিজিটাল সার্টিফিকেট নম্বর বা পৈতৃক গ্রাম' : 'e.g. SC Digital Certificate number or ancestral village'}
                   className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-blue-900 focus:ring-2 focus:ring-blue-900/10 text-sm outline-none transition-all"
                 />
               </div>

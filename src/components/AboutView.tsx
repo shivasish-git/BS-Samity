@@ -114,8 +114,8 @@ export const AboutView: React.FC<AboutViewProps> = ({
             </p>
             <p>
               {isBengali
-                ? '১৯৬৫ ও ১৯৯৬ সালে রাজ্য সরকারের ভুল নির্দেশিকার বিরুদ্ধে সমিতি সুপ্রিম কোর্ট পর্যন্ত আইনি লড়াই পরিচালনা করে। ২০০০ সালের ৫ সেপ্টেম্বর তৎকালীন বিধায়ক শ্রী সাধন পাণ্ডে মহাশয়ের নেতৃত্বে কলকাতার রবীন্দ্রসদন থেকে ধর্মতলা ও সেন্ট্রাল পার্ক পর্যন্ত ঐতিহাসিক মহামিছিলের পর সুপ্রিম কোর্টের নির্দেশে শুঁড়ি সমাজের তপশিলি শংসাপত্র প্রদান পুনঃপ্রতিষ্ঠিত হয়।'
-                : 'In response to discriminatory administrative circulars in 1965 and 1996, the Samity mounted landmark legal battles before the Hon\'ble Supreme Court. On September 5, 2000, under the leadership of MLA Shri Sadhan Pande, thousands marched from Rabindra Sadan to Esplanade, securing complete restoration of Scheduled Caste certificate issuances for the Sunri community.'}
+                ? '১৯৬৫ ও ১৯৯৬ সালে রাজ্য সরকারের ভুল নির্দেশিকার বিরুদ্ধে সমিতি সুপ্রিম কোর্ট পর্যন্ত ঐতিহাসিক আইনি লড়াই পরিচালনা করে সম্প্রদায়ের তপশিলি অধিকার রক্ষা করে।'
+                : 'In response to discriminatory administrative circulars in 1965 and 1996, the Samity mounted landmark legal battles before the Hon\'ble Supreme Court to protect community rights.'}
             </p>
           </div>
 
@@ -129,19 +129,19 @@ export const AboutView: React.FC<AboutViewProps> = ({
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold font-serif-heading text-orange-600 bg-orange-50 px-3 py-1 rounded-lg border border-orange-200">
-                      {item.year}
+                      {isBengali && item.year === '1934 - 1935' ? '১৯৩৪ - ১৯৩৫' : isBengali && item.year === '1936 - 1937' ? '১৯৩৬ - ১৯৩৭' : isBengali && item.year === '1950' ? '১৯৫০' : isBengali && item.year === '1956' ? '১৯৫৬' : isBengali && item.year === '2000' ? '২০০০' : isBengali && item.year === '2018 - 2026' ? '২০১৮ - ২০২৬' : item.year}
                     </span>
                     <span className="text-xs font-semibold px-2.5 py-1 rounded bg-blue-50 text-blue-900">
-                      {item.badge}
+                      {isBengali ? (item.bengaliBadge || item.badge) : item.badge}
                     </span>
                   </div>
 
                   <h3 className="text-base font-bold text-blue-950 leading-snug">
-                    {item.title}
+                    {isBengali ? (item.bengaliTitle || item.title) : item.title}
                   </h3>
 
                   <p className="text-xs text-slate-500 font-medium">
-                    📍 {item.location}
+                    📍 {isBengali ? (item.bengaliLocation || item.location) : item.location}
                   </p>
 
                   <p className="text-xs text-slate-600 leading-relaxed">
@@ -163,7 +163,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
               <ShieldCheck className="w-6 h-6" />
             </div>
             <h2 className="text-2xl font-serif-heading font-bold text-blue-900">
-              {isBengali ? 'আমাদের লক্ষ্য (Our Mission)' : 'Our Mission'}
+              {isBengali ? 'আমাদের লক্ষ্য' : 'Our Mission'}
             </h2>
             <p className="text-base text-slate-700 leading-relaxed">
               {isBengali
@@ -178,7 +178,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
                 {SOCIETY_OBJECTIVES.map((obj, i) => (
                   <li key={obj.id} className="flex items-start gap-2">
                     <span className="w-4 h-4 rounded-full bg-blue-100 text-blue-900 text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">
-                      {i + 1}
+                      {isBengali ? ['১','২','৩','৪','৫'][i] || i + 1 : i + 1}
                     </span>
                     <span>{isBengali ? obj.hindiTitle : obj.title}</span>
                   </li>
@@ -193,7 +193,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
               <Sparkles className="w-6 h-6" />
             </div>
             <h2 className="text-2xl font-serif-heading font-bold text-blue-900">
-              {isBengali ? 'আমাদের দর্শন (Our Vision)' : 'Our Vision'}
+              {isBengali ? 'আমাদের দর্শন' : 'Our Vision'}
             </h2>
             <p className="text-base text-slate-700 leading-relaxed">
               {isBengali
@@ -305,7 +305,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
                   <div className="relative h-64 bg-gradient-to-tr from-slate-900 via-slate-800 to-blue-950 overflow-hidden">
                     <img
                       src={member.imageUrl}
-                      alt={member.name}
+                      alt={isBengali ? member.bengaliName : member.name}
                       className={
                         isNamitaSaha
                           ? "w-full h-full object-contain object-top origin-top scale-[1.25] drop-shadow-xl opacity-95 transition-transform duration-300 group-hover:scale-[1.28]"
@@ -349,10 +349,10 @@ export const AboutView: React.FC<AboutViewProps> = ({
                 </div>
 
                 <div className="px-6 py-3 bg-slate-50 border-t border-slate-100 text-[11px] text-slate-500 flex items-center justify-between">
-                  <span>📍 {member.contactNote || '52B Indian Mirror St, Kolkata'}</span>
+                  <span>📍 {isBengali ? ((member as any).bengaliContactNote || '৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা') : (member.contactNote || '52B Indian Mirror St, Kolkata')}</span>
                   <span className="font-semibold text-blue-900 flex items-center gap-1">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Official</span>
+                    <span>{isBengali ? 'অনুমোদিত' : 'Official'}</span>
                   </span>
                 </div>
               </div>
@@ -388,21 +388,21 @@ export const AboutView: React.FC<AboutViewProps> = ({
               {isBengali ? "বঙ্গীয় সাহা সমিতি • পশ্চিমবঙ্গ 'শুঁড়ি' সমাজ" : "BANGIYA SAHA SAMITY • West Bengal 'Sunri' Samaj"}
             </div>
             <p className="text-xs sm:text-sm font-semibold text-blue-950">
-              52B, INDIAN MIRROR STREET, KOLKATA-700013 (Opposite G. D. Hospital), Taltala
+              {isBengali ? '৫২বি, ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা-৭০০০১৩ (জি. ডি. হাসপাতালের বিপরীতে), তালতলা' : '52B, INDIAN MIRROR STREET, KOLKATA-700013 (Opposite G. D. Hospital), Taltala'}
             </p>
             <div className="text-xs sm:text-sm text-slate-700 font-mono flex flex-wrap items-center justify-center gap-x-4 gap-y-1 pt-1">
               <span className="flex items-center gap-1.5">
                 <Phone className="w-3.5 h-3.5 text-orange-600" />
-                <span>Phone: 033-22271599 / 9433041597 (M)</span>
+                <span>{isBengali ? 'ফোন: ০৩৩-২২২৭১৫৯৯ / ৯৪৩৩০৪১৫৯৭' : 'Phone: 033-22271599 / 9433041597 (M)'}</span>
               </span>
               <span>•</span>
               <span className="flex items-center gap-1.5">
                 <Mail className="w-3.5 h-3.5 text-blue-900" />
-                <span>E-mail: bangiyasahasamity1@gmail.com</span>
+                <span>{isBengali ? 'ইমেল: bangiyasahasamity1@gmail.com' : 'E-mail: bangiyasahasamity1@gmail.com'}</span>
               </span>
             </div>
             <p className="text-xs text-slate-500">
-              Regd. No. 4522 of 1936–37 • Estd. 1934
+              {isBengali ? 'নিবন্ধন নং ৪৫২২ (১৯৩৬-৩৭) • স্থাপিত ১৯৩৪' : 'Regd. No. 4522 of 1936–37 • Estd. 1934'}
             </p>
           </div>
 
@@ -410,15 +410,15 @@ export const AboutView: React.FC<AboutViewProps> = ({
             {/* 1. ADVISORY BOARD */}
             <div className="text-center space-y-4">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-800 text-white font-serif-heading font-bold text-sm tracking-widest uppercase shadow-sm">
-                <span>— ADVISORY BOARD (উপদেষ্টা মণ্ডলী) —</span>
+                <span>{isBengali ? '— উপদেষ্টা মণ্ডলী —' : '— ADVISORY BOARD (উপদেষ্টা মণ্ডলী) —'}</span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto pt-2">
                 <div className="bg-white p-5 rounded-2xl border-2 border-emerald-700/30 shadow-xs space-y-1 text-center">
                   <span className="inline-block px-2.5 py-0.5 rounded-full bg-red-100 text-red-700 text-xs font-extrabold uppercase tracking-wider">
-                    CHAIRPERSON
+                    {isBengali ? 'সভানেত্রী' : 'CHAIRPERSON'}
                   </span>
                   <h4 className="text-lg font-serif-heading font-bold text-blue-950">
-                    Mrs. NAMITA SAHA <span className="text-xs font-semibold text-slate-500">(Ex. M.L.A)</span>
+                    {isBengali ? 'শ্রীমতী নমিতা সাহা' : 'Mrs. NAMITA SAHA'} <span className="text-xs font-semibold text-slate-500">{isBengali ? '(প্রাক্তন বিধায়ক)' : '(Ex. M.L.A)'}</span>
                   </h4>
                   <p className="text-xs text-slate-600 font-medium">
                     {isBengali ? 'শ্রীমতী নমিতা সাহা (প্রাক্তন বিধায়ক) — সভানেত্রী' : 'Former Member of the Legislative Assembly'}
@@ -427,10 +427,10 @@ export const AboutView: React.FC<AboutViewProps> = ({
 
                 <div className="bg-white p-5 rounded-2xl border-2 border-emerald-700/30 shadow-xs space-y-1 text-center">
                   <span className="inline-block px-2.5 py-0.5 rounded-full bg-red-100 text-red-700 text-xs font-extrabold uppercase tracking-wider">
-                    CHIEF ADVISOR
+                    {isBengali ? 'প্রধান উপদেষ্টা' : 'CHIEF ADVISOR'}
                   </span>
                   <h4 className="text-lg font-serif-heading font-bold text-blue-950">
-                    KRISHNA KANTA SAHA <span className="text-xs font-bold text-orange-600">(KESTO DA)</span>
+                    {isBengali ? 'কৃষ্ণ কান্ত সাহা' : 'KRISHNA KANTA SAHA'} <span className="text-xs font-bold text-orange-600">{isBengali ? '(কেষ্ট দা)' : '(KESTO DA)'}</span>
                   </h4>
                   <p className="text-xs text-slate-600 font-medium">
                     {isBengali ? 'কৃষ্ণ কান্ত সাহা (কেষ্ট দা) — প্রধান উপদেষ্টা' : 'Veteran Community Patron & Elder Guide'}
@@ -442,11 +442,11 @@ export const AboutView: React.FC<AboutViewProps> = ({
             {/* 2. PRESIDENT */}
             <div className="text-center space-y-2 max-w-md mx-auto">
               <span className="inline-block px-3 py-0.5 rounded-full bg-red-600 text-white text-xs font-extrabold uppercase tracking-wider shadow-xs">
-                PRESIDENT
+                {isBengali ? 'সভাপতি' : 'PRESIDENT'}
               </span>
               <div className="bg-white p-4 rounded-2xl border-2 border-blue-900/30 shadow-xs">
                 <h4 className="text-xl font-serif-heading font-bold text-blue-950">
-                  BIKASH BISWAS
+                  {isBengali ? 'বিকাশ বিশ্বাস' : 'BIKASH BISWAS'}
                 </h4>
                 <p className="text-xs text-slate-600 font-medium">
                   {isBengali ? 'বিকাশ বিশ্বাস — সভাপতি' : 'President, Central Executive Council'}
@@ -458,7 +458,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
             <div className="space-y-4">
               <div className="text-center">
                 <span className="inline-block px-4 py-1 rounded-full bg-red-600 text-white text-xs font-extrabold uppercase tracking-wider shadow-xs">
-                  VICE PRESIDENT'S (সহ-সভাপতিমণ্ডলী)
+                  {isBengali ? 'সহ-সভাপতিমণ্ডলী (৮ জন বিশিষ্ট সদস্য)' : "VICE PRESIDENT'S (সহ-সভাপতিমণ্ডলী)"}
                 </span>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-4xl mx-auto">
@@ -469,20 +469,20 @@ export const AboutView: React.FC<AboutViewProps> = ({
                   >
                     <div className="flex items-center gap-3">
                       <span className="w-6 h-6 rounded-full bg-blue-100 text-blue-900 font-bold text-xs flex items-center justify-center shrink-0">
-                        {vp.slNo}
+                        {isBengali ? (vp.slNo === 1 ? '১' : vp.slNo === 2 ? '২' : vp.slNo === 3 ? '৩' : vp.slNo === 4 ? '৪' : vp.slNo === 5 ? '৫' : vp.slNo === 6 ? '৬' : vp.slNo === 7 ? '৭' : '৮') : vp.slNo}
                       </span>
                       <div>
                         <div className="font-bold text-blue-950 text-sm">
-                          {vp.name}
+                          {isBengali ? vp.bengaliName : vp.name}
                         </div>
                         <div className="text-[11px] text-slate-500">
-                          {isBengali ? vp.bengaliName : vp.region}
+                          {isBengali ? (vp.bengaliRegion || vp.region) : vp.region}
                         </div>
                       </div>
                     </div>
                     {vp.district && (
                       <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-orange-50 text-orange-700 border border-orange-200">
-                        {vp.district}
+                        {isBengali ? (vp.bengaliDistrict || vp.district) : vp.district}
                       </span>
                     )}
                   </div>
@@ -495,10 +495,10 @@ export const AboutView: React.FC<AboutViewProps> = ({
               {/* Secretary */}
               <div className="bg-white p-5 rounded-2xl border-2 border-blue-900/30 shadow-xs text-center space-y-2">
                 <span className="inline-block px-3 py-0.5 rounded-full bg-red-600 text-white text-xs font-extrabold uppercase tracking-wider">
-                  SECRETARY
+                  {isBengali ? 'সাধারণ সম্পাদক' : 'SECRETARY'}
                 </span>
                 <h4 className="text-xl font-serif-heading font-bold text-blue-950">
-                  SUBIR SAHA
+                  {isBengali ? 'সুবীর সাহা' : 'SUBIR SAHA'}
                 </h4>
                 <p className="text-xs text-slate-600 font-medium">
                   {isBengali ? 'সুবীর সাহা — সাধারণ সম্পাদক' : 'Secretary, Bangiya Saha Samity'}
@@ -508,11 +508,11 @@ export const AboutView: React.FC<AboutViewProps> = ({
               {/* Asstt. Secretaries */}
               <div className="bg-white p-5 rounded-2xl border-2 border-slate-300 shadow-xs text-center space-y-2">
                 <span className="inline-block px-3 py-0.5 rounded-full bg-red-600 text-white text-xs font-extrabold uppercase tracking-wider">
-                  ASSTT. SECRETARIES
+                  {isBengali ? 'সহকারী সম্পাদকবৃন্দ' : 'ASSTT. SECRETARIES'}
                 </span>
                 <div className="space-y-1">
-                  <div className="font-bold text-blue-950 text-sm">SANDIP KHAN</div>
-                  <div className="font-bold text-blue-950 text-sm">SNEHASISH BISWAS</div>
+                  <div className="font-bold text-blue-950 text-sm">{isBengali ? '১) সন্দীপ খাঁ' : '1) SANDIP KHAN'}</div>
+                  <div className="font-bold text-blue-950 text-sm">{isBengali ? '২) স্নেহাশিস বিশ্বাস' : '2) SNEHASISH BISWAS'}</div>
                 </div>
                 <p className="text-[11px] text-slate-500 font-medium">
                   {isBengali ? 'সন্দীপ খাঁ • স্নেহাশিস বিশ্বাস (সহকারী সম্পাদক)' : 'Assistant Secretaries (Administration & Outreach)'}
@@ -525,10 +525,10 @@ export const AboutView: React.FC<AboutViewProps> = ({
               {/* Treasurer */}
               <div className="bg-white p-5 rounded-2xl border-2 border-blue-900/30 shadow-xs text-center space-y-2">
                 <span className="inline-block px-3 py-0.5 rounded-full bg-red-600 text-white text-xs font-extrabold uppercase tracking-wider">
-                  TREASURER
+                  {isBengali ? 'কোষাধ্যক্ষ' : 'TREASURER'}
                 </span>
                 <h4 className="text-xl font-serif-heading font-bold text-blue-950">
-                  ASHIS KUMAR SAHA
+                  {isBengali ? 'আশিস কুমার সাহা' : 'ASHIS KUMAR SAHA'}
                 </h4>
                 <p className="text-xs text-slate-600 font-medium">
                   {isBengali ? 'আশিস কুমার সাহা — কোষাধ্যক্ষ' : 'Treasurer & Finance Custodian'}
@@ -538,11 +538,11 @@ export const AboutView: React.FC<AboutViewProps> = ({
               {/* Asstt. Treasurers */}
               <div className="bg-white p-5 rounded-2xl border-2 border-slate-300 shadow-xs text-center space-y-2">
                 <span className="inline-block px-3 py-0.5 rounded-full bg-red-600 text-white text-xs font-extrabold uppercase tracking-wider">
-                  ASSTT. TREASURER
+                  {isBengali ? 'সহকারী কোষাধ্যক্ষবৃন্দ' : 'ASSTT. TREASURER'}
                 </span>
                 <div className="space-y-1">
-                  <div className="font-bold text-blue-950 text-sm">1) UJJAL BISWAS (BISWAI)</div>
-                  <div className="font-bold text-blue-950 text-sm">2) MRINAL SAHA</div>
+                  <div className="font-bold text-blue-950 text-sm">{isBengali ? '১) উজ্জ্বল বিশ্বাস' : '1) UJJAL BISWAS (BISWAI)'}</div>
+                  <div className="font-bold text-blue-950 text-sm">{isBengali ? '২) মৃণাল সাহা' : '2) MRINAL SAHA'}</div>
                 </div>
                 <p className="text-[11px] text-slate-500 font-medium">
                   {isBengali ? 'উজ্জ্বল বিশ্বাস • মৃণাল সাহা (সহকারী কোষাধ্যক্ষ)' : 'Assistant Treasurers (Ledger & Accounting)'}
@@ -554,7 +554,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
             <div className="space-y-4">
               <div className="text-center">
                 <span className="inline-block px-4 py-1 rounded-full bg-red-600 text-white text-xs font-extrabold uppercase tracking-wider shadow-xs">
-                  EXECUTIVE COMMITTEE (কার্যনির্বাহী পরিষদ - ১৬ জন সদস্য)
+                  {isBengali ? 'কার্যনির্বাহী পরিষদ (১৬ জন সদস্য)' : 'EXECUTIVE COMMITTEE (কার্যনির্বাহী পরিষদ - ১৬ জন সদস্য)'}
                 </span>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-4xl mx-auto">
@@ -565,18 +565,18 @@ export const AboutView: React.FC<AboutViewProps> = ({
                   >
                     <div className="flex items-center gap-2.5">
                       <span className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-900 font-bold text-[11px] flex items-center justify-center shrink-0">
-                        {member.slNo}
+                        {isBengali ? (member.slNo === 1 ? '১' : member.slNo === 2 ? '২' : member.slNo === 3 ? '৩' : member.slNo === 4 ? '৪' : member.slNo === 5 ? '৫' : member.slNo === 6 ? '৬' : member.slNo === 7 ? '৭' : member.slNo === 8 ? '৮' : member.slNo === 9 ? '৯' : member.slNo === 10 ? '১০' : member.slNo === 11 ? '১১' : member.slNo === 12 ? '১২' : member.slNo === 13 ? '১৩' : member.slNo === 14 ? '১৪' : member.slNo === 15 ? '১৫' : '১৬') : member.slNo}
                       </span>
                       <div>
-                        <span className="font-bold text-slate-900">{member.name}</span>
+                        <span className="font-bold text-slate-900">{isBengali ? member.bengaliName : member.name}</span>
                         <div className="text-[10px] text-slate-500">
-                          {isBengali ? member.bengaliName : member.portfolio}
+                          {isBengali ? (member.bengaliPortfolio || member.portfolio) : member.portfolio}
                         </div>
                       </div>
                     </div>
                     {member.district && (
                       <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-100 text-blue-900 border border-slate-200">
-                        {member.district}
+                        {isBengali ? (member.bengaliDistrict || member.district) : member.district}
                       </span>
                     )}
                   </div>
@@ -597,7 +597,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
             {isBengali ? 'সাংগঠনিক সোপান ও কাঠামো' : 'Governance Framework'}
           </span>
           <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-blue-900">
-            {isBengali ? 'সাংগঠনিক কাঠামো (5-Tier Organizational Hierarchy)' : 'Organizational Structure (5-Tier Hierarchy)'}
+            {isBengali ? 'সাংগঠনিক কাঠামো (৫-স্তরীয় প্রশাসনিক রূপরেখা)' : 'Organizational Structure (5-Tier Hierarchy)'}
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 max-w-3xl">
             {isBengali
@@ -617,14 +617,14 @@ export const AboutView: React.FC<AboutViewProps> = ({
                 <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2.5">
                   <div className="flex items-center gap-2">
                     <span className="w-7 h-7 rounded-lg bg-orange-600 text-white font-bold text-xs flex items-center justify-center shadow-xs">
-                      {idx + 1}
+                      {isBengali ? (idx === 0 ? '১' : idx === 1 ? '২' : idx === 2 ? '৩' : idx === 3 ? '৪' : '৫') : idx + 1}
                     </span>
                     <h3 className="font-serif-heading font-bold text-blue-950 text-base sm:text-lg">
                       {isBengali ? level.bengaliLevel : level.level}
                     </h3>
                   </div>
                   <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-900 border border-blue-200">
-                    Tier {idx + 1}
+                    {isBengali ? `${idx === 0 ? '১' : idx === 1 ? '২' : idx === 2 ? '৩' : idx === 3 ? '৪' : '৫'}-ম স্তর` : `Tier ${idx + 1}`}
                   </span>
                 </div>
 
@@ -636,33 +636,33 @@ export const AboutView: React.FC<AboutViewProps> = ({
                 <div className="pt-2 flex flex-wrap gap-2 text-[11px]">
                   {idx === 0 && (
                     <>
-                      <span className="px-2 py-0.5 rounded bg-amber-50 text-amber-900 font-medium">Mrs. Namita Saha (Ex-MLA)</span>
-                      <span className="px-2 py-0.5 rounded bg-amber-50 text-amber-900 font-medium">Krishna Kanta Saha (Kesto Da)</span>
+                      <span className="px-2 py-0.5 rounded bg-amber-50 text-amber-900 font-medium">{isBengali ? 'শ্রীমতী নমিতা সাহা (প্রাক্তন বিধায়ক)' : 'Mrs. Namita Saha (Ex-MLA)'}</span>
+                      <span className="px-2 py-0.5 rounded bg-amber-50 text-amber-900 font-medium">{isBengali ? 'কৃষ্ণ কান্ত সাহা (কেষ্ট দা)' : 'Krishna Kanta Saha (Kesto Da)'}</span>
                     </>
                   )}
                   {idx === 1 && (
                     <>
-                      <span className="px-2 py-0.5 rounded bg-blue-50 text-blue-900 font-medium">President: Bikash Biswas</span>
-                      <span className="px-2 py-0.5 rounded bg-blue-50 text-blue-900 font-medium">Secretary: Subir Saha</span>
-                      <span className="px-2 py-0.5 rounded bg-blue-50 text-blue-900 font-medium">Treasurer: Ashis Kumar Saha</span>
+                      <span className="px-2 py-0.5 rounded bg-blue-50 text-blue-900 font-medium">{isBengali ? 'সভাপতি: বিকাশ বিশ্বাস' : 'President: Bikash Biswas'}</span>
+                      <span className="px-2 py-0.5 rounded bg-blue-50 text-blue-900 font-medium">{isBengali ? 'সম্পাদক: সুবীর সাহা' : 'Secretary: Subir Saha'}</span>
+                      <span className="px-2 py-0.5 rounded bg-blue-50 text-blue-900 font-medium">{isBengali ? 'কোষাধ্যক্ষ: আশিস কুমার সাহা' : 'Treasurer: Ashis Kumar Saha'}</span>
                     </>
                   )}
                   {idx === 2 && (
                     <>
-                      <span className="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-medium">8 Vice Presidents (Birbhum, Bankura, Hooghly, etc.)</span>
-                      <span className="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-medium">2 Asstt. Secretaries & 2 Asstt. Treasurers</span>
+                      <span className="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-medium">{isBengali ? '৮ জন সহ-সভাপতি (বীরভূম, বাঁকুড়া, হুগলি প্রভৃতি)' : '8 Vice Presidents (Birbhum, Bankura, Hooghly, etc.)'}</span>
+                      <span className="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-medium">{isBengali ? '২ জন সহ-সম্পাদক ও ২ জন সহকারী কোষাধ্যক্ষ' : '2 Asstt. Secretaries & 2 Asstt. Treasurers'}</span>
                     </>
                   )}
                   {idx === 3 && (
                     <>
-                      <span className="px-2 py-0.5 rounded bg-emerald-50 text-emerald-900 font-medium">16 General Executive Committee Members</span>
-                      <span className="px-2 py-0.5 rounded bg-emerald-50 text-emerald-900 font-medium">Healthcare, Hostel, Legal & District Liaison Desks</span>
+                      <span className="px-2 py-0.5 rounded bg-emerald-50 text-emerald-900 font-medium">{isBengali ? '১৬ জন সাধারণ কার্যনির্বাহী সদস্য' : '16 General Executive Committee Members'}</span>
+                      <span className="px-2 py-0.5 rounded bg-emerald-50 text-emerald-900 font-medium">{isBengali ? 'স্বাস্থ্যসেবা, ছাত্রাবাস, আইনি ও জেলা সমন্বয় ডেস্ক' : 'Healthcare, Hostel, Legal & District Liaison Desks'}</span>
                     </>
                   )}
                   {idx === 4 && (
                     <>
-                      <span className="px-2 py-0.5 rounded bg-orange-50 text-orange-900 font-medium">1000+ Enrolled Life Members</span>
-                      <span className="px-2 py-0.5 rounded bg-orange-50 text-orange-900 font-medium">23 District Coordinating Chapters</span>
+                      <span className="px-2 py-0.5 rounded bg-orange-50 text-orange-900 font-medium">{isBengali ? '১০০০+ আজীবন সদস্য' : '1000+ Enrolled Life Members'}</span>
+                      <span className="px-2 py-0.5 rounded bg-orange-50 text-orange-900 font-medium">{isBengali ? '২৩টি জেলা সমন্বয় কমিটি' : '23 District Coordinating Chapters'}</span>
                     </>
                   )}
                 </div>

@@ -215,15 +215,15 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
               <div className="space-y-3 text-sm">
                 <div className="p-3 bg-white rounded-lg border border-slate-200">
                   <div className="text-xs text-slate-500">{isBengali ? 'প্রতিষ্ঠা ও নিবন্ধন' : 'Foundation & Registration'}</div>
-                  <div className="font-bold text-blue-900">1934 / 1936–37 (Regd. 4522)</div>
+                  <div className="font-bold text-blue-900">{isBengali ? '১৯৩৪ / ১৯৩৬–৩৭ (রেজি. ৪৫২২)' : '1934 / 1936–37 (Regd. 4522)'}</div>
                 </div>
                 <div className="p-3 bg-white rounded-lg border border-slate-200">
                   <div className="text-xs text-slate-500">{isBengali ? 'ছাত্রাবাস ক্ষমতা' : 'Hostel Capacity'}</div>
-                  <div className="font-bold text-orange-600">Up to 50 Students (Female Wing 2018)</div>
+                  <div className="font-bold text-orange-600">{isBengali ? '৫০ জন শিক্ষার্থী (ছাত্রী শাখা ২০১৮)' : 'Up to 50 Students (Female Wing 2018)'}</div>
                 </div>
                 <div className="p-3 bg-white rounded-lg border border-slate-200">
                   <div className="text-xs text-slate-500">{isBengali ? 'সুপ্রিম কোর্ট রায়' : 'Supreme Court Verdict'}</div>
-                  <div className="font-bold text-blue-900">Sept 5, 2000 (SC Certificates Restored)</div>
+                  <div className="font-bold text-blue-900">{isBengali ? '৫ সেপ্টেম্বর ২০০০ (তপশিলি জাতি অধিকার বহাল)' : 'Sept 5, 2000 (SC Certificates Restored)'}</div>
                 </div>
               </div>
             </div>
@@ -254,7 +254,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
               <ShieldCheck className="w-6 h-6" />
             </div>
             <h3 className="text-2xl font-serif-heading font-bold text-blue-900">
-              {isBengali ? 'আমাদের লক্ষ্য (Our Mission)' : 'Our Mission'}
+              {isBengali ? 'আমাদের লক্ষ্য' : 'Our Mission'}
             </h3>
             <p className="text-base text-slate-700 leading-relaxed font-medium line-clamp-2">
               {isBengali 
@@ -283,7 +283,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
               <Sparkles className="w-6 h-6" />
             </div>
             <h3 className="text-2xl font-serif-heading font-bold text-blue-900">
-              {isBengali ? 'আমাদের দর্শন (Our Vision)' : 'Our Vision'}
+              {isBengali ? 'আমাদের দর্শন' : 'Our Vision'}
             </h3>
             <p className="text-base text-slate-700 leading-relaxed font-medium line-clamp-2">
               {isBengali 
@@ -345,7 +345,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
                       {activity.id === 'community-engagement' && <Users className="w-6 h-6" />}
                     </div>
                     <span className="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 text-slate-600">
-                      {activity.badge}
+                      {isBengali ? (activity.bengaliBadge || activity.badge) : activity.badge}
                     </span>
                   </div>
 
@@ -358,7 +358,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
                   </p>
 
                   <div className="pt-2 border-t border-slate-100 space-y-1.5">
-                    {activity.highlights.slice(0, 3).map((item, i) => (
+                    {(isBengali && activity.bengaliHighlights ? activity.bengaliHighlights : activity.highlights).slice(0, 3).map((item, i) => (
                       <div key={i} className="flex items-center gap-2 text-xs text-slate-500">
                         <span className="w-1.5 h-1.5 rounded-full bg-orange-500 shrink-0"></span>
                         <span className="truncate">{item}</span>
@@ -405,9 +405,9 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
               <div className="space-y-3">
                 <div className="flex items-center justify-between text-xs">
                   <span className="px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-900 font-semibold">
-                    {news.category}
+                    {isBengali ? (news.bengaliCategory || news.category) : news.category}
                   </span>
-                  <span className="text-slate-400 font-medium">{news.readTime}</span>
+                  <span className="text-slate-400 font-medium">{isBengali ? (news.bengaliReadTime || news.readTime) : news.readTime}</span>
                 </div>
 
                 <h3 className="text-base font-bold text-blue-950 leading-snug hover:text-orange-600 transition-colors">
@@ -420,7 +420,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
               </div>
 
               <div className="pt-4 mt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-                <span className="text-slate-500 font-medium">{news.author}</span>
+                <span className="text-slate-500 font-medium">{isBengali ? (news.bengaliAuthor || news.author) : news.author}</span>
                 <a
                   href={PAGE_ROUTES.news}
                   onClick={(e) => {
@@ -475,7 +475,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
                   </div>
                   {event.isFeatured && (
                     <span className="px-2 py-0.5 rounded text-[11px] font-bold bg-amber-100 text-amber-800">
-                      Featured
+                      {isBengali ? 'বিশেষ' : 'Featured'}
                     </span>
                   )}
                 </div>
@@ -494,7 +494,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
               </div>
 
               <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                <span className="text-[11px] text-slate-500">{event.time || '10:00 AM onwards'}</span>
+                <span className="text-[11px] text-slate-500">{isBengali ? (event.bengaliTime || event.time || 'সকাল ১০:০০ ঘটিকা হতে') : (event.time || '10:00 AM onwards')}</span>
                 <a
                   href={PAGE_ROUTES.events}
                   onClick={(e) => {
@@ -537,7 +537,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
                   className="px-6 py-3.5 rounded-xl font-bold text-sm sm:text-base text-white bg-orange-600 hover:bg-orange-500 shadow-lg hover:shadow-xl transition-all flex items-center gap-2.5 active:scale-[0.98] border border-orange-400 group cursor-pointer"
                 >
                   <Phone className="w-4 h-4 text-white group-hover:scale-110 transition-transform shrink-0" />
-                  <span>{isBengali ? 'কল করুন: 033-22271599 / 9433041597' : 'Call: 033-22271599 / 9433041597'}</span>
+                  <span>{isBengali ? 'কল করুন: ০৩৩-২২২৭১৫৯৯ / ৯৪৩৩০৪১৫৯৭' : 'Call: 033-22271599 / 9433041597'}</span>
                 </a>
                 <a
                   id="membership-cta-criteria-btn"
@@ -561,7 +561,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
               <ul className="space-y-2.5 text-xs text-blue-100">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
-                  <span>{isBengali ? 'কোনো মাসিক চাঁদা নেই (No Monthly Subscription)' : 'Zero monthly subscriptions; single Life Membership enrolment'}</span>
+                  <span>{isBengali ? 'কোনো মাসিক চাঁদা নেই (এককালীন আজীবন সদস্যপদ)' : 'Zero monthly subscriptions; single Life Membership enrolment'}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />

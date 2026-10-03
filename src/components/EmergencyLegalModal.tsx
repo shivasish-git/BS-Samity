@@ -88,7 +88,7 @@ export const EmergencyLegalModal: React.FC<EmergencyLegalModalProps> = ({ isOpen
                     {isBengali ? 'সরাসরি হেল্পলাইন' : 'Direct Helpline'}
                   </div>
                   <div className="text-lg font-mono font-bold text-[#2D6A4F]">
-                    {NGO_DETAILS.helpline}
+                    {isBengali ? '০৩৩-২২২৭১৫৯৯ / ৯৪৩৩০৪১৫৯৭' : NGO_DETAILS.helpline}
                   </div>
                 </div>
                 <a
@@ -130,7 +130,7 @@ export const EmergencyLegalModal: React.FC<EmergencyLegalModalProps> = ({ isOpen
                       required
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
-                      placeholder="+91 98765 43210"
+                      placeholder={isBengali ? '+৯১ ৯৮৭৬৫ ৪৩২১০' : '+91 98765 43210'}
                       className="w-full px-3 py-2 rounded-lg bg-white border border-[#8A5A36]/30 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#2D6A4F]"
                     />
                   </div>

@@ -27,10 +27,23 @@ export const NGO_DETAILS = {
     email: 'bangiyasahasamity1@gmail.com',
     visitingHours: 'Mon - Sat: 10:00 AM - 7:00 PM | Sun: 11:00 AM - 4:00 PM',
   },
+  bengaliHeadOffice: {
+    address: '৫২বি, ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩',
+    landmark: '(জি.ডি. হাসপাতালের বিপরীতে), তালতলা',
+    regdNo: 'রেজিস্ট্রি নং ৪৫২২ অব ১৯৩৬–৩৭',
+    phone: '033-22271599 / 9433041597 (M)',
+    email: 'bangiyasahasamity1@gmail.com',
+    visitingHours: 'সোম - শনি: সকাল ১০:০০ - সন্ধ্যা ৭:০০ | রবি: সকাল ১১:০০ - বিকাল ৪:০০',
+  },
   registeredSite: {
     templeName: 'Temple of Maa Jagathanani Estate',
     address: '77, Manicktala Street, Kolkata – 700006 (Simla)',
     historicalSignificance: 'Birthplace where community elders established the Samity in 1934.',
+  },
+  bengaliRegisteredSite: {
+    templeName: 'মা জগজ্জননী এস্টেটের মন্দির',
+    address: '৭৭, মানিকতলা স্ট্রিট, কলকাতা – ৭০০০১৬ (সিমলা)',
+    historicalSignificance: '১৯৩৪ সালে যে পবিত্র স্থানে সমাজের শ্রদ্ধেয় ব্যক্তিবর্গ সমিতি প্রতিষ্ঠা করেছিলেন।',
   },
   membershipPolicy: 'Life Membership Enrolment (No recurring monthly subscriptions) & Voluntary Contributions',
   motto: 'Education • Unity • Social Reform • Constitutional Rights | শিক্ষা, ঐক্য, সমাজ সংস্কার ও সাংবিধানিক অধিকার'
@@ -51,45 +64,55 @@ export const HISTORICAL_MILESTONES = [
     title: 'Founding at 77 Maniktala St & 1935 Government of India Act',
     bengaliTitle: '৭৭ মানিকতলা স্ট্রিটে শুভ প্রতিষ্ঠা ও ১৯৩৫ সালের ভারত শাসন আইন',
     location: '77, Maniktala Street, Kolkata – 700006 (Simla)',
+    bengaliLocation: '৭৭, মানিকতলা স্ট্রিট, কলকাতা – ৭০০০১৬ (সিমলা)',
     description: 'Under the Government of India Act of 1935 enacted by the British administration, the economically and socially backward Sunri community was designated as a "Scheduled Caste" due to official government notifications citing occupational segregation, alongside large numbers of impoverished laborers and agricultural workers. Under these circumstances, benevolent individuals established Bangiya Saha Samity (Sunri Samaj) in 1934 at 77, Maniktala Street (Simla) in the temple of Maa Jagathanani Estate, accommodating underprivileged rural students pursuing higher education.',
     bengaliDescription: 'ব্রিটিশ প্রশাসনের ১৯৩৫ সালের ভারত শাসন আইনের অধীনে শুঁড়ি সমাজকে "তপশিলি জাতি" (Scheduled Caste) হিসেবে চিহ্নিত করা হয়। এই পরিস্থিতিতে সমাজের মহানুভব ব্যক্তিদের উদ্যোগে ১৯৩৪ সালে কলকাতার ৭৭, মানিকতলা স্ট্রিটে (সিমলা) মা জগজ্জননী এস্টেটের মন্দিরে বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) প্রতিষ্ঠিত হয় এবং দরিদ্র গ্রামীণ ছাত্রদের উচ্চশিক্ষার জন্য আশ্রয়ের ব্যবস্থা করা হয়।',
-    badge: 'Foundation Era'
+    badge: 'Foundation Era',
+    bengaliBadge: 'প্রতিষ্ঠা পর্ব (১৯৩৪-৩৫)'
   },
   {
     year: '1936–37',
     title: 'Official Registration: Regd. No. 4522 of 1936–37',
     bengaliTitle: 'সোসাইটি হিসেবে বিধিবদ্ধ নিবন্ধন: নং ৪৫২২ (১৯৩৬-৩৭)',
     location: 'Kolkata, West Bengal',
+    bengaliLocation: 'কলকাতা, পশ্চিমবঙ্গ',
     description: 'The society was formally incorporated and registered under the Societies Registration Act as Bangiya Saha Samity (Sunri Samaj) under Registration No. 4522 of 1936–37 with its 5 sacred objectives.',
     bengaliDescription: 'সোসাইটি রেজিস্ট্রেশন অ্যাক্টের অধীনে ৪৫২২ অব ১৯৩৬-৩৭ নম্বরে বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) বিধিবদ্ধভাবে নিবন্ধিত হয় এবং তার ৫টি মূল সাংবিধানিক উদ্দেশ্য গৃহীত হয়।',
-    badge: 'Official Registration'
+    badge: 'Official Registration',
+    bengaliBadge: 'বিধিবদ্ধ নিবন্ধন (১৯৩৬-৩৭)'
   },
   {
     year: '1950 & 1956',
     title: 'Dr. Ambedkar Constitutional Inclusion & 52B Indian Mirror St Purchase',
     bengaliTitle: 'ড. আম্বেদকর কর্তৃক সংবিধানে অন্তর্ভুক্তি ও ৫২বি ইন্ডিয়ান মিরর স্ট্রিট ক্রয়',
     location: 'Constitution of India & 52B Indian Mirror St, Kol-13',
+    bengaliLocation: 'ভারতের সংবিধান ও ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কোল-১৩',
     description: 'In 1950, the chief architect of the Indian Constitution, Babasaheb Dr. B. R. Ambedkar, reaffirmed our inclusion in the Scheduled Caste list. Later in 1956, our classification was listed as "Sunri (Excluding Saha)". Around that time, with financial assistance of well-wishers and community families, a parcel of land with a single room was purchased at 52B, Indian Mirror Street, Kolkata – 700013 (Opposite G.D. Hospital, Taltala). Within a few years, a four-storey building was erected, serving as state headquarters and free hostel for rural students.',
     bengaliDescription: '১৯৫০ সালে ভারতীয় সংবিধানের প্রধান রূপকার বাবাসাহেব ড. বি. আর. আম্বেদকর শুঁড়ি সম্প্রদায়কে তপশিলি জাতি তালিকায় অন্তর্ভুক্ত করেন। ১৯৫৬ সালে সংশোধনের পর শ্রেণিবিন্যাস হয় "Sunri (Excluding Saha)"। একই সময়ে সমাজের সদস্যদের আর্থিক সহায়তায় ৫২বি, ইন্ডিয়ান মিরর স্ট্রিটে (জি.ডি. হাসপাতালের বিপরীতে, তালতলা) এক কামরাসহ জমি ক্রয় করা হয় ও চারতলা ভবন নির্মাণ করে প্রধান কার্যালয় ও ছাত্রাবাস চালু হয়।',
-    badge: 'Ambedkar & Headquarters'
+    badge: 'Ambedkar & Headquarters',
+    bengaliBadge: 'ড. আম্বেদকর ও ৫২বি ভবন'
   },
   {
     year: '1965 – 2000',
     title: 'Supreme Court Stays & Historic Victory of Sept 5, 2000',
     bengaliTitle: 'সুপ্রিম কোর্টে আইনি লড়াই ও ৫ সেপ্টেম্বর ২০০০-এর ঐতিহাসিক বিজয়',
     location: 'Supreme Court of India & Govt of West Bengal',
+    bengaliLocation: 'ভারতের সুপ্রিম কোর্ট ও পশ্চিমবঙ্গ সরকার',
     description: 'Issuance of Scheduled Caste certificates to the "Saha Sunri" community was stayed by Supreme Court orders twice—first in 1965, and again in 1996. The Samity waged an unyielding legal battle and secured a favorable verdict in the Supreme Court. Effective September 5, 2000, issuance of SC certificates was restored under directions from the Chief Secretary, Govt of West Bengal, with the instrumental intervention of then MLA, Shri Sadhan Pande.',
     bengaliDescription: 'সাহা শুঁড়ি সম্প্রদায়ের তপশিলি জাতি শংসাপত্র প্রদান সুপ্রিম কোর্টের নির্দেশে দুবার স্থগিত হয়—প্রথমবার ১৯৬৫ সালে এবং পুনরায় ১৯৯৬ সালে। সমিতি সুপ্রিম কোর্টে দীর্ঘ আইনি লড়াই চালিয়ে বিজয় ছিনিয়ে আনে এবং তৎকালীন বিধায়ক শ্রী সাধন পাণ্ডের সক্রিয় হস্তক্ষেপে ও মুখ্যসচিবের নির্দেশে ৫ সেপ্টেম্বর ২০০০ থেকে শংসাপত্র প্রদান পুনরায় চালু হয়।',
-    badge: 'Legal Milestone'
+    badge: 'Legal Milestone',
+    bengaliBadge: 'সুপ্রিম কোর্টে ঐতিহাসিক জয়'
   },
   {
     year: '2018 – Present',
     title: 'Hostel Expansion to 50 Students & Dedicated Female Wing',
     bengaliTitle: 'ছাত্রাবাস সম্প্রসারণ (৫০ জন ছাত্র-ছাত্রী) ও ছাত্রী বিভাগ স্থাপন',
     location: '52B, Indian Mirror Street, Kolkata – 700013',
+    bengaliLocation: '৫২বি, ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩',
     description: 'Under the guidance of the Executive Committee, the hostel facilities were modernized to accommodate up to 50 rural students with dedicated female student facilities instituted in 2018. The Samity continues its welfare outreach, organizing medical camps, educational stipends, and constitutional advocacy across West Bengal.',
     bengaliDescription: 'কার্যনির্বাহী সমিতির পরিচালনায় কেন্দ্রীয় ছাত্রাবাস আধুনিকীকরণ করে ৫০ জন দরিদ্র গ্রামীণ ছাত্র-ছাত্রীর বাসযোগ্য করা হয় এবং ২০১৮ সালে ছাত্রীদের জন্য স্বতন্ত্র আবাসন ব্যবস্থা চালু হয়। সমিতি নিয়মিত শিক্ষাবৃত্তি, স্বাস্থ্যশিবির ও সমাজকল্যাণমূলক কর্মকাণ্ড অব্যাহত রেখেছে।',
-    badge: 'Modern Revival'
+    badge: 'Modern Revival',
+    bengaliBadge: 'আধুনিক সংস্কার ও ৫০ আসন'
   }
 ];
 
@@ -274,6 +297,32 @@ export const WEST_BENGAL_DISTRICTS = [
   'Kalimpong'
 ];
 
+export const WEST_BENGAL_DISTRICTS_BN: Record<string, string> = {
+  'Kolkata': 'কলকাতা',
+  'North 24 Parganas': 'উত্তর ২৪ পরগনা',
+  'South 24 Parganas': 'দক্ষিণ ২৪ পরগনা',
+  'Howrah': 'হাওড়া',
+  'Hooghly': 'হুগলি',
+  'Purba Medinipur': 'পূর্ব মেদিনীপুর',
+  'Paschim Medinipur': 'পশ্চিম মেদিনীপুর',
+  'Jhargram': 'ঝাড়গ্রাম',
+  'Purba Bardhaman': 'পূর্ব বর্ধমান',
+  'Paschim Bardhaman': 'পশ্চিম বর্ধমান',
+  'Birbhum': 'বীরভূম',
+  'Bankura': 'বাঁকুড়া',
+  'Purulia': 'পুরুলিয়া',
+  'Nadia': 'নদিয়া',
+  'Murshidabad': 'মুর্শিদাবাদ',
+  'Malda': 'মালদা',
+  'Uttar Dinajpur': 'উত্তর দিনাজপুর',
+  'Dakshin Dinajpur': 'দক্ষিণ দিনাজপুর',
+  'Jalpaiguri': 'জলপাইগুড়ি',
+  'Alipurduar': 'আলিপুরদুয়ার',
+  'Cooch Behar': 'কোচবিহার',
+  'Darjeeling': 'দার্জিলিং',
+  'Kalimpong': 'কালিম্পং'
+};
+
 export const KEY_ACTIVITIES = [
   {
     id: 'social-welfare',
@@ -284,7 +333,9 @@ export const KEY_ACTIVITIES = [
     bengaliDescription: 'সমাজের চরম দরিদ্র, বৃদ্ধ, বিধবা ও বিপন্ন পরিবারবর্গকে সরাসরি আর্থিক অনুদান, আপৎকালীন চিকিৎসা সহায়তা এবং সামাজিক সুরক্ষা প্রদান।',
     icon: 'HeartHandshake',
     highlights: ['Medical emergency relief funds', 'Support for destitute widows and elderly', 'Disaster & crisis interventions', 'Helpline assistance'],
-    badge: 'Benevolence'
+    bengaliHighlights: ['আপৎকালীন চিকিৎসা ত্রাণ তহবিল', 'অসহায় বিধবা ও প্রবীণদের সহায়তা', 'সংকটকালীন ও দুর্যোগে পাশে দাঁড়ানো', 'জরুরি সহায়তা হেল্পলাইন'],
+    badge: 'Benevolence',
+    bengaliBadge: 'নিঃস্ব সেবা'
   },
   {
     id: 'community-development',
@@ -295,7 +346,9 @@ export const KEY_ACTIVITIES = [
     bengaliDescription: 'পশ্চিমবঙ্গের প্রতিটি জেলা ও মহকুমায় শাখা গঠন, তরুণ উদ্যোক্তাদের বাণিজ্যিক সহায়তা এবং সামাজিক ঐক্য সুদৃঢ়করণ।',
     icon: 'Building2',
     highlights: ['Head Office 4-storey infrastructure', 'District coordination councils', 'Youth self-reliance initiatives', 'Community assemblies'],
-    badge: 'Empowerment'
+    bengaliHighlights: ['প্রধান কার্যালয়ের ৪ তলা পরিকাঠামো', 'জেলা সমন্বয় ও শাখা কাউন্সিল', 'যুব সম্প্রদায়ের স্বনির্ভরতা উদ্যোগ', 'সামাজিক সম্মেলন ও সমাবেশ'],
+    badge: 'Empowerment',
+    bengaliBadge: 'ক্ষমতায়ন'
   },
   {
     id: 'cultural-preservation',
@@ -306,7 +359,9 @@ export const KEY_ACTIVITIES = [
     bengaliDescription: 'শুঁড়ি সমাজের প্রাচীন ঐতিহ্য, লোকসংস্কৃতি ও ইতিহাস সংরক্ষণ, ঐতিহাসিক সাময়িকী ও গবেষণা পুস্তিকা প্রকাশনা।',
     icon: 'Sparkles',
     highlights: ['Maa Jagathanani & Jagaddhatri Puja', 'Publication of journals & pamphlets', 'Historical documentation', 'Annual commemorative gatherings'],
-    badge: 'Heritage'
+    bengaliHighlights: ['মা জগজ্জননী ও জগদ্ধাত্রী পূজা', 'ঐতিহাসিক সাময়িকী ও পুস্তিকা প্রকাশনা', 'গবেষণাধর্মী নথি সংরক্ষণ', 'বার্ষিক স্মৃতি সম্মেলন ও মিলনমেলা'],
+    badge: 'Heritage',
+    bengaliBadge: 'ঐতিহ্য'
   },
   {
     id: 'educational-support',
@@ -317,7 +372,9 @@ export const KEY_ACTIVITIES = [
     bengaliDescription: 'কলকাতায় উচ্চশিক্ষারত ৫০ জন গ্রামীণ শিক্ষার্থীর জন্য ছাত্রাবাস পরিচালনা (২০১৮ সাল থেকে ছাত্রী শাখা) এবং বিশেষ নারী শিক্ষা বৃত্তি।',
     icon: 'GraduationCap',
     highlights: ['50-student capacity hostel (4th floor)', 'Female student facilities (since 2018)', 'Merit-cum-means college scholarships', 'Educational book grants'],
-    badge: 'Education'
+    bengaliHighlights: ['৫০ আসনের ছাত্রাবাস (৪র্থ তল)', 'ছাত্রী আবাসিক সুবিধা (২০১৮ থেকে)', 'মেধা-ভিত্তিক কলেজ শিক্ষাবৃত্তি', 'বিনামূল্যে পাঠ্যপুস্তক অনুদান'],
+    badge: 'Education',
+    bengaliBadge: 'শিক্ষা বিস্তার'
   },
   {
     id: 'community-engagement',
@@ -328,7 +385,9 @@ export const KEY_ACTIVITIES = [
     bengaliDescription: 'বার্ষিক সম্মেলন, যুব সম্মেলন, পারস্পরিক যোগাযোগ বৃদ্ধি এবং সামাজিক অধিকার সচেতনতা ক্যাম্পের ধারাবাহিক আয়োজন।',
     icon: 'Users',
     highlights: ['Get-Together assemblies (Vivekananda Hall)', 'Life membership outreach drives', 'Legal awareness workshops', 'Career guidance symposiums'],
-    badge: 'Unity'
+    bengaliHighlights: ['বিবেকানন্দ হলে প্রীতি সম্মেলন', 'আজীবন সদস্যপদ প্রসার কর্মসূচি', 'আইনি সচেতনতা ও পরামর্শ কর্মশালা', 'কর্মমুখী দিকনির্দেশনা সভা'],
+    badge: 'Unity',
+    bengaliBadge: 'সামাজিক ঐক্য'
   }
 ];
 
@@ -867,6 +926,7 @@ export const CULTURAL_HERITAGE_ITEMS = [
     title: 'Historical Origin & The 1935 Government of India Act',
     bengaliTitle: 'ঐতিহাসিক পটভূমি ও ১৯৩৫ সালের ভারত শাসন আইন',
     era: 'Pre-Independence & 1935',
+    bengaliEra: 'স্বাধীনতা-পূর্ব ও ১৯৩৫',
     summary: 'The Sunri community carries a deep socio-cultural history in Bengal. Designated as a Scheduled Caste under the Government of India Act of 1935.',
     bengaliSummary: 'ব্রিটিশ প্রশাসন প্রণীত ১৯৩৫ সালের ভারত শাসন আইনের অধীনে অর্থনৈতিক ও সামাজিকভাবে অনগ্রসর শুঁড়ি সমাজকে তপশিলি জাতি হিসেবে ঘোষণা করা হয়।',
     culturalSignificance: 'Formally established community identity in public statute, leading directly to the founding of Bangiya Saha Samity in 1934.',
@@ -890,6 +950,7 @@ export const CULTURAL_HERITAGE_ITEMS = [
     title: 'Dr. B. R. Ambedkar’s Constitutional Inclusion (1950)',
     bengaliTitle: 'ড. বাবাসাহেব আম্বেদকর কর্তৃক সংবিধানে অন্তর্ভুক্তি (১৯৫০)',
     era: '1950 & 1956 Amendment',
+    bengaliEra: '১৯৫০ ও ১৯৫৬ সংশোধন',
     summary: 'Babasaheb Dr. B. R. Ambedkar enshrined the Sunri community in the Constitution (Scheduled Castes) Order, 1950.',
     bengaliSummary: 'স্বাধীন ভারতের সংবিধানে বাবাসাহেব ড. আম্বেদকর শুঁড়ি সম্প্রদায়কে স্থায়ীভাবে তপশিলি তালিকায় অন্তর্ভুক্ত করেন।',
     culturalSignificance: 'Guaranteed affirmative representation in legislature, public services, and universities.',
@@ -913,6 +974,7 @@ export const CULTURAL_HERITAGE_ITEMS = [
     title: 'Supreme Court Stays & Victory of September 5, 2000',
     bengaliTitle: 'সুপ্রিম কোর্টে আইনি লড়াই ও ৫ সেপ্টেম্বর ২০০০-এর ঐতিহাসিক জয়',
     era: '1965 – 2000',
+    bengaliEra: '১৯৬৫ – ২০০০',
     summary: 'A 35-year legal resistance against arbitrary stays on Scheduled Caste certificate issuance.',
     bengaliSummary: 'সাহা শুঁড়ি সম্প্রদায়ের শংসাপত্র প্রদান বন্ধের বিরুদ্ধে ৩৫ বছরের দীর্ঘ আইনি লড়াই ও সুপ্রিম কোর্টের চূড়ান্ত রায়।',
     culturalSignificance: 'Landmark victory restoring democratic and educational rights to tens of thousands of Sunri youths.',
@@ -936,6 +998,7 @@ export const CULTURAL_HERITAGE_ITEMS = [
     title: 'Festivals, Cultural Traditions & Maa Jagathanani',
     bengaliTitle: 'উৎসব, ঐতিহ্য ও শ্রীশ্রী মা জগজ্জননী পূজা',
     era: 'Living Tradition',
+    bengaliEra: 'জীবন্ত ঐতিহ্য',
     summary: 'Celebration of sacred community observances centered around Maa Jagathanani, Saraswati Puja, and Ambedkar Jayanti.',
     bengaliSummary: 'মা জগজ্জননী ও জগদ্ধাত্রী পূজা, সরস্বতী পূজা, আম্বেদকর জয়ন্তী ও পহেলা বৈশাখ উদযাপন।',
     culturalSignificance: 'Strengthens community fraternity and cultural identity across generations.',
@@ -962,14 +1025,16 @@ export const UPCOMING_EVENTS = [
     title: 'Annual State Convention & Community Get-Together 2026',
     bengaliTitle: 'বার্ষিক রাজ্য সম্মেলন ও শুঁড়ি সমাজের মিলনমেলা ২০২৬',
     date: 'April 19, 2026',
-    bengaliDate: '৬ই বৈশাখ, ১৪৩৩',
+    bengaliDate: '১৯ এপ্রিল ২০২৬',
     time: '10:30 AM – 5:00 PM',
+    bengaliTime: 'সকাল ১০:৩০ – বিকাল ৫:০০',
     venue: 'Vivekananda Society Hall, 151 Vivekananda Rd, Kolkata – 700006',
     bengaliVenue: 'বিবেকানন্দ সোসাইটি হল, ১৫১ বিবেকানন্দ রোড, কলকাতা – ৭০০০১৬',
     category: 'Upcoming' as const,
     description: 'Special plenary session of the Sunri community to review student hostel development, district outreach, and ongoing constitutional representations in New Delhi.',
     bengaliDescription: 'ছাত্রাবাস উন্নয়ন, জেলা শাখা সম্প্রসারণ ও নয়া দিল্লিতে সাংবিধানিক অধিকার বিষয়ে শুঁড়ি সমাজের বিশেষ সম্মেলন।',
     attendees: '500+ Community Delegates Expected',
+    bengaliAttendees: '৫০০+ সমাজের প্রতিনিধিবৃন্দ',
     isFeatured: true
   },
   {
@@ -977,26 +1042,32 @@ export const UPCOMING_EVENTS = [
     title: 'Dr. B. R. Ambedkar Commemorative Lecture & Youth Career Workshop',
     bengaliTitle: 'ড. বাবাসাহেব আম্বেদকর স্মারক বক্তৃতা ও যুব কর্মশালা',
     date: 'May 10, 2026',
-    bengaliDate: '২৭শে বৈশাখ, ১৪৩৩',
+    bengaliDate: '১০ মে ২০২৬',
     time: '2:00 PM – 6:00 PM',
+    bengaliTime: 'দুপুর ২:০০ – সন্ধ্যা ৬:০০',
     venue: 'Head Office Auditorium, 52B Indian Mirror Street, Kolkata – 700013',
     bengaliVenue: 'প্রধান কার্যালয় প্রেক্ষাগৃহ, ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩',
     category: 'Upcoming' as const,
     description: 'Career counseling for Sunri college students, guidance on West Bengal Civil Service (WBCS) examinations, and digital SC certificate verification.',
-    bengaliDescription: 'কলেজের ছাত্রছাত্রীদের জন্য কর্মমুখী প্রশিক্ষণ, ডব্লিউবিসিএস পরীক্ষার প্রস্তুতি ও ডিজিটাল কাস্ট সার্টিফিকেট সংক্রান্ত সহায়তা।'
+    bengaliDescription: 'কলেজের ছাত্রছাত্রীদের জন্য কর্মমুখী প্রশিক্ষণ, ডব্লিউবিসিএস পরীক্ষার প্রস্তুতি ও ডিজিটাল কাস্ট সার্টিফিকেট সংক্রান্ত সহায়তা।',
+    attendees: 'Students & Youth',
+    bengaliAttendees: 'কলেজ শিক্ষার্থী ও যুব সমাজ'
   },
   {
     id: 'event-3',
     title: 'Sunri Student Merit Scholarship & Book Distribution Drive',
     bengaliTitle: 'মেধাবী ছাত্রবৃত্তি ও পাঠ্যপুস্তক বিতরণ উৎসব',
     date: 'June 21, 2026',
-    bengaliDate: '৭ই আষাঢ়, ১৪৩৩',
+    bengaliDate: '২১ জুন ২০২৬',
     time: '11:00 AM – 3:30 PM',
+    bengaliTime: 'সকাল ১১:০০ – বিকাল ৩:৩০',
     venue: 'Student Hostel Annex, 52B Indian Mirror Street (4th Floor), Kolkata',
     bengaliVenue: 'ছাত্রাবাস প্রাঙ্গণ, ৫২বি ইন্ডিয়ান মিরর স্ট্রিট (৪র্থ তল), কলকাতা',
     category: 'Upcoming' as const,
     description: 'Distribution of semester book grants and scholarships for undergraduate and postgraduate Sunri students, prioritizing female higher education.',
-    bengaliDescription: 'উচ্চশিক্ষারত ছাত্রছাত্রীদের শিক্ষাবৃত্তি ও বিনামূল্যে পাঠ্যপুস্তক বিতরণ, বিশেষ করে ছাত্রীদের অগ্রাধিকার।'
+    bengaliDescription: 'উচ্চশিক্ষারত ছাত্রছাত্রীদের শিক্ষাবৃত্তি ও বিনামূল্যে পাঠ্যপুস্তক বিতরণ, বিশেষ করে ছাত্রীদের অগ্রাধিকার।',
+    attendees: 'Scholarship Recipients & Guardians',
+    bengaliAttendees: 'বৃত্তিপ্রাপ্ত শিক্ষার্থী ও অভিভাবকবৃন্দ'
   }
 ];
 
@@ -1006,7 +1077,7 @@ export const PAST_EVENTS = [
     title: 'Historic Sunri Community Get-Together at Vivekananda Society Hall',
     bengaliTitle: 'বিবেকানন্দ সোসাইটি হলে শুঁড়ি সমাজের ঐতিহাসিক মিলনমেলা',
     date: 'March 24, 2019',
-    bengaliDate: '৯ই চৈত্র, ১৪২৫',
+    bengaliDate: '২৪ মার্চ ২০১৯',
     venue: '151 Vivekananda Road, Kolkata – 700006',
     bengaliVenue: '১৫১ বিবেকানন্দ রোড, কলকাতা – ৭০০০১৬',
     category: 'Past' as const,
@@ -1018,7 +1089,7 @@ export const PAST_EVENTS = [
     title: 'Female Student Wing Inauguration at 52B Indian Mirror Street',
     bengaliTitle: '৫২বি ইন্ডিয়ান মিরর স্ট্রিটে ছাত্রী শাখার শুভ উদ্বোধন',
     date: 'August 15, 2018',
-    bengaliDate: '২৯শে শ্রাবণ, ১৪২৫',
+    bengaliDate: '১৫ আগস্ট ২০১৮',
     venue: 'Head Office Building, 52B Indian Mirror Street, Kolkata – 700013',
     bengaliVenue: 'প্রধান কার্যালয় ভবন, ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩',
     category: 'Past' as const,
@@ -1030,7 +1101,7 @@ export const PAST_EVENTS = [
     title: 'SC Certificate Restoration Declaration Rally (Historic Sept 5, 2000)',
     bengaliTitle: 'তপশিলি জাতি শংসাপত্র পুনরুদ্ধার সংবর্ধনা সমাবেশ (২০০০)',
     date: 'September 5, 2000',
-    bengaliDate: '২০শে ভাদ্র, ১৪০৭',
+    bengaliDate: '৫ সেপ্টেম্বর ২০০০',
     venue: '77 Manicktala Street & Kolkata Secretariat',
     bengaliVenue: '৭৭ মানিকতলা স্ট্রিট ও কলকাতা মহাকরণ চত্বর',
     category: 'Past' as const,
@@ -1045,56 +1116,76 @@ export const LATEST_NEWS_UPDATES = [
     title: 'Comprehensive Upgradation of Central Student Hostel & Study Facilities',
     bengaliTitle: 'কেন্দ্রীয় ছাত্রাবাস ও পাঠাগার সুযোগ-সুবিধার সার্বিক মানোন্নয়ন',
     date: 'Official Notice',
+    bengaliDate: 'অফিসিয়াল নোটিশ',
     category: 'Announcement' as const,
+    bengaliCategory: 'বিজ্ঞপ্তি',
     summary: 'The Executive Committee announces upgraded hostel amenities and digital study resources for collegiate students.',
     bengaliSummary: 'কার্যনির্বাহী সমিতির উদ্যোগে ছাত্রাবাসের সুযোগ-সুবিধা ও ডিজিটাল অধ্যয়ন কেন্দ্রের মানোন্নয়ন সম্পন্ন।',
     content: 'Bangiya Saha Samity has completed modernization works at the four-storey head office and central student hostel at 52B Indian Mirror Street. Rural students from economically backward backgrounds pursuing higher studies in Kolkata now enjoy expanded hostel accommodations, dedicated quiet study rooms, and enhanced welfare support.',
     bengaliContent: '৫২বি ইন্ডিয়ান মিরর স্ট্রিটের চারতলা ভবনে গ্রামীণ ছাত্রদের জন্য উন্নত স্টাডি হল, বিশুদ্ধ পানীয় জল এবং শিক্ষাগত সহায়তা প্রকল্প পুরোদমে কার্যকর রয়েছে।',
     author: 'Executive Committee',
+    bengaliAuthor: 'কার্যনির্বাহী সমিতি',
     readTime: '3 min read',
-    badge: 'Official Notice'
+    bengaliReadTime: '৩ মিনিট পাঠ',
+    badge: 'Official Notice',
+    bengaliBadge: 'অফিসিয়াল নোটিশ'
   },
   {
     id: 'news-2',
     title: 'Delegation to National Commission for Scheduled Castes in New Delhi',
     bengaliTitle: 'নয়া দিল্লিতে জাতীয় তপশিলি জাতি কমিশনে প্রতিনিধি দলের স্মারকলিপি',
     date: 'Legal Defense Cell',
+    bengaliDate: 'আইনি সেল বিজ্ঞপ্তি',
     category: 'Press Release' as const,
+    bengaliCategory: 'প্রেস রিলিজ',
     summary: 'Formal memorandum submitted concerning Union Ministry of Home Affairs ambiguous remarks on "Sunri (Excluding Saha)".',
     bengaliSummary: 'কেন্দ্রীয় তালিকায় "Sunri (Excluding Saha)" সংক্রান্ত বিভ্রান্তি দূর করতে নয়া দিল্লিতে আনুষ্ঠানিক স্মারকলিপি পেশ।',
     content: 'A high-level Samity delegation held meetings with the Chairman of the National Commission for Scheduled Castes in New Delhi and previously with the Minister for Backward Classes Welfare Shri Churamoni Mahato, urging swift corrective notifications so no eligible family is harassed during digital verification.',
     bengaliContent: 'নয়া দিল্লিতে জাতীয় কমিশনের চেয়ারম্যানের সাথে বৈঠকে স্পষ্ট নির্দেশিকা জারির দাবি জানানো হয় যাতে কোনো শুঁড়ি পরিবার বিভ্রান্তির শিকার না হয়।',
     author: 'Legal Advocacy Wing',
+    bengaliAuthor: 'আইনি সুরক্ষা সেল',
     readTime: '4 min read',
-    badge: 'Constitutional Rights'
+    bengaliReadTime: '৪ মিনিট পাঠ',
+    badge: 'Constitutional Rights',
+    bengaliBadge: 'সাংবিধানিক অধিকার'
   },
   {
     id: 'news-3',
     title: 'Hostel Admissions Open for Rural Students (50 Capacity with Female Wing)',
     bengaliTitle: 'গ্রামীণ ছাত্রছাত্রীদের জন্য ছাত্রাবাসে ভর্তি প্রক্রিয়া শুরু (৫০ আসন)',
     date: 'Academic Session 2026',
+    bengaliDate: 'শিক্ষাবর্ষ ২০২৬',
     category: 'Community News' as const,
+    bengaliCategory: 'সমাজ সংবাদ',
     summary: 'Applications invited from underprivileged students from West Bengal districts admitted to colleges in Kolkata.',
     bengaliSummary: 'কলকাতার কলেজ ও বিশ্ববিদ্যালয়ে পাঠরত দূরবর্তী জেলার শিক্ষার্থীদের জন্য স্বল্পব্যয়ে আবাসনের আবেদন শুরু।',
     content: 'The 4th floor hostel provides clean lodging, study desks, electricity, and community mentorship. Under our open educational charter, vacant seats are also extended to deserving students outside our community.',
     bengaliContent: 'পড়াশোনার সুব্যবস্থাসহ আসন শূন্য থাকলে সমাজের বাইরের শিক্ষার্থীদেরও সমান সুযোগ দেওয়া হয়।',
     author: 'Hostel Superintendent',
+    bengaliAuthor: 'ছাত্রাবাস তত্ত্বাবধায়ক',
     readTime: '2 min read',
-    badge: 'Admissions'
+    bengaliReadTime: '২ মিনিট পাঠ',
+    badge: 'Admissions',
+    bengaliBadge: 'ভর্তি প্রক্রিয়া'
   },
   {
     id: 'news-4',
     title: 'Quarterly Research Journal & Community Bulletin: Volume 48 Released',
     bengaliTitle: 'ত্রৈমাসিক গবেষণাধর্মী পত্রিকা ও বুলেটিন: ৪৮তম সংখ্যা প্রকাশিত',
     date: 'Publication Wing',
+    bengaliDate: 'প্রকাশনা সেল',
     category: 'Newsletter' as const,
+    bengaliCategory: 'বুলেটিন',
     summary: 'Featuring articles on Sunri community history, constitutional reservation jurisprudence, and student academic honors.',
     bengaliSummary: 'শুঁড়ি সমাজের ইতিহাস, আইনগত অধিকার ও কৃতি শিক্ষার্থীদের সাফল্যের বিবরণ সম্বলিত নতুন সংখ্যা প্রকাশিত।',
     content: 'Available for digital download or collection from the library room at 52B Indian Mirror Street, Kolkata – 700013.',
     bengaliContent: 'প্রধান কার্যালয়ের পাঠাগার থেকে সরাসরি অথবা অনলাইনে পিডিএফ আকারে সংগ্রহের সুব্যবস্থা রয়েছে।',
     author: 'Editorial Board',
+    bengaliAuthor: 'সম্পাদনা পর্ষদ',
     readTime: '5 min read',
+    bengaliReadTime: '৫ মিনিট পাঠ',
     badge: 'Publication',
+    bengaliBadge: 'প্রকাশনা',
     downloadUrl: '#'
   }
 ];
@@ -1105,67 +1196,85 @@ export const GALLERY_ITEMS = [
     title: 'Head Office & Student Hostel at 52B Indian Mirror Street',
     bengaliTitle: '৫২বি ইন্ডিয়ান মিরর স্ট্রিটে কেন্দ্রীয় প্রধান কার্যালয় ও ছাত্রাবাস',
     category: 'Photos' as const,
+    bengaliCategory: 'আলোকচিত্র',
     imageUrl: 'https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80',
     description: 'The renovated four-storeyed building in Kolkata housing central offices, library, and 50-student residential hostel.',
     bengaliDescription: 'কলকাতায় অবস্থিত চারতলা ভবন—যেখানে প্রধান কার্যালয়, পাঠাগার ও ৫০ আসনের ছাত্রাবাস রয়েছে।',
     date: 'Established 1956 • Renovated 2018–2022',
-    location: '52B, Indian Mirror Street, Kolkata – 700013 (Opp. G.D. Hospital, Taltala)'
+    bengaliDate: 'স্থাপিত ১৯৫৬ • সংস্কার ২০১৮–২০২২',
+    location: '52B, Indian Mirror Street, Kolkata – 700013 (Opp. G.D. Hospital, Taltala)',
+    bengaliLocation: '৫২বি, ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩ (জি.ডি. হাসপাতালের বিপরীতে, তালতলা)'
   },
   {
     id: 'gal-2',
     title: 'Foundational Birthplace: Temple of Maa Jagathanani Estate',
     bengaliTitle: 'ঐতিহাসিক জন্মস্থান: শ্রীশ্রী মা জগজ্জননী এস্টেটের মন্দির',
     category: 'Cultural Programs' as const,
+    bengaliCategory: 'সাংস্কৃতিক',
     imageUrl: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80',
     description: 'The revered site in Simla, North Kolkata where community elders founded Bangiya Saha Samity in 1934.',
     bengaliDescription: '১৯৩৪ সালে যে পবিত্র স্থানে সমাজের গণ্যমান্য ব্যক্তিরা বঙ্গীয় সাহা সমিতির সূচনা করেছিলেন।',
     date: 'Founded 1934 (Regd. 1936–37)',
-    location: '77, Manicktala Street, Kolkata – 700006 (Simla)'
+    bengaliDate: 'প্রতিষ্ঠা ১৯৩৪ (নিবন্ধন ১৯৩৬-৩৭)',
+    location: '77, Manicktala Street, Kolkata – 700006 (Simla)',
+    bengaliLocation: '৭৭, মানিকতলা স্ট্রিট, কলকাতা – ৭০০০১৬ (সিমলা)'
   },
   {
     id: 'gal-3',
     title: 'Annual State Get-Together & Convention at Vivekananda Society Hall',
     bengaliTitle: 'বিবেকানন্দ সোসাইটি হলে শুঁড়ি সমাজের বার্ষিক সম্মেলন',
     category: 'Community Activities' as const,
+    bengaliCategory: 'সমাজ কর্মকাণ্ড',
     imageUrl: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80',
     description: 'Community members from across 23 districts gathering to celebrate unity, student awards, and civic progress.',
     bengaliDescription: 'পশ্চিমবঙ্গের বিভিন্ন জেলা থেকে সমবেত সদস্যদের নিয়ে মহা সম্মেলন ও ছাত্র সংবর্ধনা।',
     date: 'March 24, 2019 & Annual Assemblies',
-    location: 'Vivekananda Society Hall, Kolkata'
+    bengaliDate: '২৪ মার্চ ২০১৯ ও বার্ষিক সমাবেশ',
+    location: 'Vivekananda Society Hall, Kolkata',
+    bengaliLocation: 'বিবেকানন্দ সোসাইটি হল, কলকাতা'
   },
   {
     id: 'gal-4',
     title: 'Hostel Students Academic Study Circle & Library',
     bengaliTitle: 'ছাত্রাবাসের অধ্যয়ন চক্র ও পাঠাগার কার্যক্রম',
     category: 'Community Activities' as const,
+    bengaliCategory: 'সমাজ কর্মকাণ্ড',
     imageUrl: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80',
     description: 'Rural collegiate students in Kolkata utilizing the quiet study room, reference books, and academic counseling.',
     bengaliDescription: 'দূরবর্তী জেলার কলেজ শিক্ষার্থীদের পড়াশোনা ও প্রতিযোগিতামূলক পরীক্ষার প্রস্তুতি।',
     date: 'Active Daily',
-    location: '3rd & 4th Floor, 52B Indian Mirror Street'
+    bengaliDate: 'নিয়মিত পরিচালিত',
+    location: '3rd & 4th Floor, 52B Indian Mirror Street',
+    bengaliLocation: '৩য় ও ৪র্থ তল, ৫২বি ইন্ডিয়ান মিরর স্ট্রিট'
   },
   {
     id: 'gal-5',
     title: 'Saraswati Puja & Cultural Celebration by Hostel Residents',
     bengaliTitle: 'ছাত্রাবাসে ঐতিহ্যবাহী সরস্বতী পূজা ও সাংস্কৃতিক উৎসব',
     category: 'Cultural Programs' as const,
+    bengaliCategory: 'সাংস্কৃতিক',
     imageUrl: 'https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=800&q=80',
     description: 'Traditional celebration of art, learning, and cultural fellowship organized by student residents and members.',
     bengaliDescription: 'বিদ্যার দেবী মা সরস্বতীর আরাধনা এবং ছাত্রছাত্রীদের সাংস্কৃতিক পরিবেশনা।',
     date: 'Annual Vasant Panchami',
-    location: 'Central Courtyard, 52B Indian Mirror Street'
+    bengaliDate: 'বার্ষিক বসন্ত পঞ্চমী',
+    location: 'Central Courtyard, 52B Indian Mirror Street',
+    bengaliLocation: 'কেন্দ্রীয় প্রাঙ্গণ, ৫২বি ইন্ডিয়ান মিরর স্ট্রিট'
   },
   {
     id: 'gal-6',
     title: 'Historic Legal Archiving & Video Documentary on Sept 5, 2000',
     bengaliTitle: 'ভিডিও তথ্যচিত্র: ২০০০ সালের সুপ্রিম কোর্টের ঐতিহাসিক বিজয়',
     category: 'Videos' as const,
+    bengaliCategory: 'ভিডিও ও তথ্যচিত্র',
     imageUrl: 'https://images.unsplash.com/photo-1453733197781-704fa5988299?auto=format&fit=crop&w=800&q=80',
     videoUrl: 'https://www.youtube.com',
     description: 'Archival documentation of the 35-year legal campaign leading to the Supreme Court order and restoration circular.',
     bengaliDescription: 'আইনি বিজয়ের নথিপত্র এবং তৎকালীন বিধায়ক শ্রী সাধন পাণ্ডের হস্তক্ষেপে সরকারি নির্দেশিকার ইতিহাস।',
     date: 'Sept 5, 2000 Archive',
-    location: 'Supreme Court of India & State Secretariat'
+    bengaliDate: '৫ সেপ্টেম্বর ২০০০ আর্কাইভ',
+    location: 'Supreme Court of India & State Secretariat',
+    bengaliLocation: 'ভারতের সুপ্রিম কোর্ট ও রাজ্য সচিবালয়'
   }
 ];
 
@@ -1246,34 +1355,43 @@ export const NEWSLETTER_ARCHIVE = [
   {
     id: 'arch-1',
     issue: 'Volume 48 (Spring 2026)',
+    bengaliIssue: 'খণ্ড ৪৮ (বসন্ত সংখ্যা ২০২৬)',
     publishDate: 'March 2026',
+    bengaliPublishDate: 'মার্চ ২০২৬',
     title: 'Constitutional Safeguards & Sunri Scheduled Caste Heritage',
     bengaliTitle: 'সাংবিধানিক রক্ষাকবচ ও শুঁড়ি সমাজের তপশিলি ঐতিহ্য',
     description: 'Quarterly review of higher education scholarships, hostel improvements, and historic court precedents.',
     bengaliDescription: 'উচ্চশিক্ষা বৃত্তি, ছাত্রাবাস উন্নয়ন এবং সুপ্রিম কোর্টের নজিরসমূহ নিয়ে বিশদ আলোচনা।',
     pages: '36 Pages',
+    bengaliPages: '৩৬ পৃষ্ঠা',
     pdfUrl: '#'
   },
   {
     id: 'arch-2',
     issue: 'Volume 47 (Winter 2025)',
+    bengaliIssue: 'খণ্ড ৪৭ (শীত সংখ্যা ২০২৫)',
     publishDate: 'December 2025',
+    bengaliPublishDate: 'ডিসেম্বর ২০২৫',
     title: 'Hostel Students Academic Excellence & Rural Outreach',
     bengaliTitle: 'ছাত্রাবাসের শিক্ষার্থীদের সাফল্য ও গ্রামীণ সংহতি',
     description: 'Profiles of Sunri civil service exam qualifiers and state university rank holders residing at 52B.',
     bengaliDescription: '৫২বি ভবনে থাকা কৃতি শিক্ষার্থীদের সরকারি চাকুরির সাফল্য ও অনুপ্রেরণামূলক কাহিনী।',
     pages: '28 Pages',
+    bengaliPages: '২৮ পৃষ্ঠা',
     pdfUrl: '#'
   },
   {
     id: 'arch-3',
     issue: 'Volume 46 (Autumn 2025)',
+    bengaliIssue: 'খণ্ড ৪৬ (শরৎ সংখ্যা ২০২৫)',
     publishDate: 'September 2025',
+    bengaliPublishDate: 'সেপ্টেম্বর ২০২৫',
     title: 'Special Commemorative Issue: 88 Years of Continuous Service',
     bengaliTitle: 'বিশেষ স্মারক সংখ্যা: ৮৮ বছরের নিরবচ্ছিন্ন সমাজসেবা',
     description: 'Archival letters from 1936 founders, temple resolutions at 77 Manicktala St, and future vision.',
     bengaliDescription: '১৯৩৬ সালের প্রতিষ্ঠাতাদের পত্রাবলী ও আগামী দিনের উন্নয়ন পরিকল্পনা।',
     pages: '44 Pages',
+    bengaliPages: '৪৪ পৃষ্ঠা',
     pdfUrl: '#'
   }
 ];

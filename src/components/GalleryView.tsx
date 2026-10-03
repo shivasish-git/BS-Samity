@@ -122,7 +122,7 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ onNavigate }) => {
                 <div className="relative aspect-[4/3] bg-slate-100 overflow-hidden">
                   <img
                     src={item.imageUrl}
-                    alt={item.title}
+                    alt={isBengali ? (item.bengaliTitle || item.title) : item.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     referrerPolicy="no-referrer"
                   />
@@ -132,7 +132,7 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ onNavigate }) => {
                     </div>
                   </div>
                   <div className="absolute top-3 left-3 bg-blue-950/80 backdrop-blur-xs text-white text-[11px] font-bold px-2.5 py-1 rounded">
-                    {item.category}
+                    {isBengali ? (item.bengaliCategory || (item.category === 'Photos' ? 'আলোকচিত্র' : item.category === 'Videos' ? 'ভিডিও ও তথ্যচিত্র' : item.category === 'Community Activities' ? 'সমাজ কর্মকাণ্ড' : 'সাংস্কৃতিক অনুষ্ঠান')) : item.category}
                   </div>
                 </div>
 
@@ -147,8 +147,8 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ onNavigate }) => {
               </div>
 
               <div className="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
-                <span className="truncate max-w-[180px]">📍 {item.location}</span>
-                <span className="font-semibold text-blue-900">{item.date}</span>
+                <span className="truncate max-w-[180px]">📍 {isBengali ? (item.bengaliLocation || item.location) : item.location}</span>
+                <span className="font-semibold text-blue-900">{isBengali ? (item.bengaliDate || item.date) : item.date}</span>
               </div>
             </div>
           ))}
@@ -162,14 +162,16 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ onNavigate }) => {
             {/* Top Toolbar */}
             <div className="flex items-center justify-between px-6 py-4 bg-blue-950 text-white">
               <div className="flex items-center gap-2 text-xs">
-                <span className="px-2.5 py-0.5 rounded bg-orange-500 font-bold">{activeItem.category}</span>
+                <span className="px-2.5 py-0.5 rounded bg-orange-500 font-bold">
+                  {isBengali ? (activeItem.bengaliCategory || (activeItem.category === 'Photos' ? 'আলোকচিত্র' : activeItem.category === 'Videos' ? 'ভিডিও ও তথ্যচিত্র' : activeItem.category === 'Community Activities' ? 'সমাজ কর্মকাণ্ড' : 'সাংস্কৃতিক অনুষ্ঠান')) : activeItem.category}
+                </span>
                 <span>•</span>
-                <span>{activeItem.date}</span>
+                <span>{isBengali ? (activeItem.bengaliDate || activeItem.date) : activeItem.date}</span>
               </div>
               <button
                 onClick={closeLightbox}
                 className="p-1 rounded-full text-white/70 hover:text-white hover:bg-white/10 transition-colors"
-                aria-label="Close Lightbox"
+                aria-label={isBengali ? 'ছবি বন্ধ করুন' : 'Close Lightbox'}
               >
                 <X className="w-6 h-6" />
               </button>
@@ -179,7 +181,7 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ onNavigate }) => {
             <div className="relative bg-black flex items-center justify-center min-h-[300px] sm:min-h-[420px] max-h-[58vh]">
               <img
                 src={activeItem.imageUrl}
-                alt={activeItem.title}
+                alt={isBengali ? (activeItem.bengaliTitle || activeItem.title) : activeItem.title}
                 className="max-h-[58vh] max-w-full object-contain"
                 referrerPolicy="no-referrer"
               />
@@ -188,7 +190,7 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ onNavigate }) => {
               <button
                 onClick={(e) => { e.stopPropagation(); prevLightbox(); }}
                 className="absolute left-3 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-black/50 hover:bg-black/80 text-white transition-colors"
-                aria-label="Previous image"
+                aria-label={isBengali ? 'পূর্ববর্তী ছবি' : 'Previous image'}
               >
                 <ChevronLeft className="w-6 h-6" />
               </button>
@@ -197,7 +199,7 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ onNavigate }) => {
               <button
                 onClick={(e) => { e.stopPropagation(); nextLightbox(); }}
                 className="absolute right-3 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-black/50 hover:bg-black/80 text-white transition-colors"
-                aria-label="Next image"
+                aria-label={isBengali ? 'পরবর্তী ছবি' : 'Next image'}
               >
                 <ChevronRight className="w-6 h-6" />
               </button>
@@ -213,7 +215,7 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ onNavigate }) => {
               </p>
               <div className="pt-2 text-xs text-slate-500 flex items-center gap-1">
                 <MapPin className="w-3.5 h-3.5 text-orange-500" />
-                <span>{activeItem.location}</span>
+                <span>{isBengali ? (activeItem.bengaliLocation || activeItem.location) : activeItem.location}</span>
               </div>
             </div>
           </div>

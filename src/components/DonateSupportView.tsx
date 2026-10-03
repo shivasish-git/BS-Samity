@@ -98,12 +98,12 @@ export const DonateSupportView: React.FC<DonateSupportViewProps> = ({
             <div className="p-4 rounded-2xl bg-blue-50/60 border border-blue-100 space-y-3 text-xs sm:text-sm">
               <div className="flex flex-col sm:flex-row justify-between sm:items-center py-2 border-b border-blue-200/60 gap-1">
                 <span className="text-slate-500">{isBengali ? 'ব্যাংকের নাম' : 'Bank Name'}</span>
-                <span className="font-bold text-blue-950">{BANK_DETAILS.bankName}</span>
+                <span className="font-bold text-blue-950">{isBengali ? 'স্টেট ব্যাংক অব ইন্ডিয়া' : BANK_DETAILS.bankName}</span>
               </div>
 
               <div className="flex flex-col sm:flex-row justify-between sm:items-center py-2 border-b border-blue-200/60 gap-1">
                 <span className="text-slate-500">{isBengali ? 'অ্যাকাউন্টের নাম' : 'Account Name'}</span>
-                <span className="font-bold text-blue-950">{BANK_DETAILS.accountName}</span>
+                <span className="font-bold text-blue-950">{isBengali ? 'বঙ্গীয় সাহা সমিতি' : BANK_DETAILS.accountName}</span>
               </div>
 
               <div className="flex flex-col sm:flex-row justify-between sm:items-center py-2 border-b border-blue-200/60 gap-1">
@@ -136,7 +136,7 @@ export const DonateSupportView: React.FC<DonateSupportViewProps> = ({
 
               <div className="flex flex-col sm:flex-row justify-between sm:items-center py-2 gap-1">
                 <span className="text-slate-500">{isBengali ? 'শাখা' : 'Branch Location'}</span>
-                <span className="font-medium text-slate-700">{BANK_DETAILS.branch}</span>
+                <span className="font-medium text-slate-700">{isBengali ? 'তালতলা শাখা, কলকাতা' : BANK_DETAILS.branch}</span>
               </div>
             </div>
 
@@ -198,7 +198,7 @@ export const DonateSupportView: React.FC<DonateSupportViewProps> = ({
 
               <div className="p-4 rounded-xl bg-blue-50/80 border border-blue-200 text-xs text-slate-600">
                 <span className="font-bold text-blue-900">{isBengali ? 'নিবন্ধন তথ্য: ' : 'Registration: '}</span>
-                <span>Regd. No. 4522 of 1936–37 • Head Office: 52B Indian Mirror Street, Kolkata – 700013.</span>
+                <span>{isBengali ? 'নিবন্ধন নং ৪৫২২ (১৯৩৬-৩৭) • প্রধান কার্যালয়: ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩।' : 'Regd. No. 4522 of 1936–37 • Head Office: 52B Indian Mirror Street, Kolkata – 700013.'}</span>
               </div>
             </div>
           </div>
@@ -329,7 +329,7 @@ export const DonateSupportView: React.FC<DonateSupportViewProps> = ({
               {isBengali ? 'স্বেচ্ছাসেবী আবেদন পত্র' : 'Volunteer Registration'}
             </h3>
             <p className="text-xs text-slate-500">
-              Role: <span className="font-bold text-orange-600">{volunteerRole}</span>
+              {isBengali ? 'দায়িত্ব:' : 'Role:'} <span className="font-bold text-orange-600">{volunteerRole}</span>
             </p>
 
             {volunteerSubmitted ? (
@@ -345,7 +345,7 @@ export const DonateSupportView: React.FC<DonateSupportViewProps> = ({
                     required
                     value={volName}
                     onChange={(e) => setVolName(e.target.value)}
-                    placeholder="Enter full name"
+                    placeholder={isBengali ? 'আপনার পূর্ণ নাম লিখুন' : 'Enter full name'}
                     className="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs outline-none focus:border-blue-900"
                   />
                 </div>
@@ -356,7 +356,7 @@ export const DonateSupportView: React.FC<DonateSupportViewProps> = ({
                     required
                     value={volPhone}
                     onChange={(e) => setVolPhone(e.target.value)}
-                    placeholder="+91 98300 00000"
+                    placeholder={isBengali ? '+৯১ ৯৮৩০০ ০০০০০' : '+91 98300 00000'}
                     className="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs outline-none focus:border-blue-900"
                   />
                 </div>
@@ -366,7 +366,7 @@ export const DonateSupportView: React.FC<DonateSupportViewProps> = ({
                     type="text"
                     value={volDistrict}
                     onChange={(e) => setVolDistrict(e.target.value)}
-                    placeholder="e.g. Kolkata / Howrah / Murshidabad"
+                    placeholder={isBengali ? 'যেমন: কলকাতা / হাওড়া / মুর্শিদাবাদ' : 'e.g. Kolkata / Howrah / Murshidabad'}
                     className="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs outline-none focus:border-blue-900"
                   />
                 </div>

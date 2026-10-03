@@ -91,7 +91,7 @@ export const EventsActivitiesView: React.FC<EventsActivitiesViewProps> = ({
                     </span>
                     {event.isFeatured && (
                       <span className="px-2 py-0.5 rounded text-[11px] font-bold bg-blue-900 text-white">
-                        Featured
+                        {isBengali ? 'বিশেষ' : 'Featured'}
                       </span>
                     )}
                   </div>
@@ -103,7 +103,7 @@ export const EventsActivitiesView: React.FC<EventsActivitiesViewProps> = ({
                   <div className="space-y-1.5 text-xs text-slate-500">
                     <div className="flex items-start gap-2">
                       <Clock className="w-3.5 h-3.5 text-slate-400 shrink-0 mt-0.5" />
-                      <span>{event.time}</span>
+                      <span>{isBengali ? (event.bengaliTime || event.time) : event.time}</span>
                     </div>
                     <div className="flex items-start gap-2">
                       <MapPin className="w-3.5 h-3.5 text-orange-500 shrink-0 mt-0.5" />
@@ -117,7 +117,7 @@ export const EventsActivitiesView: React.FC<EventsActivitiesViewProps> = ({
                 </div>
 
                 <div className="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
-                  <span className="text-xs font-medium text-slate-500">{event.attendees || 'Open to All'}</span>
+                  <span className="text-xs font-medium text-slate-500">{isBengali ? (event.bengaliAttendees || event.attendees || 'সকলের জন্য উন্মুক্ত') : (event.attendees || 'Open to All')}</span>
                   <button
                     onClick={() => setRsvpEvent(event.id)}
                     className="px-4 py-2 rounded-xl text-xs font-bold text-white bg-blue-900 hover:bg-blue-800 transition-colors shadow-xs"
@@ -152,7 +152,7 @@ export const EventsActivitiesView: React.FC<EventsActivitiesViewProps> = ({
                     required
                     value={attendeeName}
                     onChange={(e) => setAttendeeName(e.target.value)}
-                    placeholder="Enter your name"
+                    placeholder={isBengali ? 'আপনার পূর্ণ নাম লিখুন' : 'Enter your name'}
                     className="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs outline-none focus:border-blue-900"
                   />
                 </div>
@@ -163,7 +163,7 @@ export const EventsActivitiesView: React.FC<EventsActivitiesViewProps> = ({
                     required
                     value={attendeePhone}
                     onChange={(e) => setAttendeePhone(e.target.value)}
-                    placeholder="+91 98300 00000"
+                    placeholder={isBengali ? '+৯১ ৯৮৩০০ ০০০০০' : '+91 98300 00000'}
                     className="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs outline-none focus:border-blue-900"
                   />
                 </div>
@@ -230,7 +230,7 @@ export const EventsActivitiesView: React.FC<EventsActivitiesViewProps> = ({
                 <div className="shrink-0">
                   <span className="inline-flex items-center gap-1 text-xs font-bold text-emerald-800 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Archived Landmark</span>
+                    <span>{isBengali ? 'ঐতিহাসিক সম্মেলন' : 'Archived Landmark'}</span>
                   </span>
                 </div>
               </div>
@@ -278,7 +278,7 @@ export const EventsActivitiesView: React.FC<EventsActivitiesViewProps> = ({
                 <h4 className="font-bold text-sm text-blue-950">
                   {isBengali ? 'ছাত্রাবাস বার্ষিক সম্মেলন ও সংবর্ধনা' : 'Student Hostel Academic Assembly'}
                 </h4>
-                <p className="text-xs text-slate-500">52B Indian Mirror Street • Kolkata</p>
+                <p className="text-xs text-slate-500">{isBengali ? '৫২বি ইন্ডিয়ান মিরর স্ট্রিট • কলকাতা' : '52B Indian Mirror Street • Kolkata'}</p>
               </div>
             </div>
 
@@ -295,7 +295,7 @@ export const EventsActivitiesView: React.FC<EventsActivitiesViewProps> = ({
                 <h4 className="font-bold text-sm text-blue-950">
                   {isBengali ? 'বিবেকানন্দ হলে শুঁড়ি সমাজের প্রতিনিধি সম্মেলন' : 'Vivekananda Society Hall Delegate Reunion'}
                 </h4>
-                <p className="text-xs text-slate-500">151 Vivekananda Road • Kolkata</p>
+                <p className="text-xs text-slate-500">{isBengali ? '১৫১ বিবেকানন্দ রোড • কলকাতা' : '151 Vivekananda Road • Kolkata'}</p>
               </div>
             </div>
 
@@ -312,7 +312,7 @@ export const EventsActivitiesView: React.FC<EventsActivitiesViewProps> = ({
                 <h4 className="font-bold text-sm text-blue-950">
                   {isBengali ? 'ছাত্রী শাখা উদ্বোধন ও বই বিতরণ' : 'Female Student Wing & Book Distribution'}
                 </h4>
-                <p className="text-xs text-slate-500">Hostel Annex • 2018 Inauguration</p>
+                <p className="text-xs text-slate-500">{isBengali ? 'ছাত্রাবাস ভবন • ২০১৮ শুভ উদ্বোধন' : 'Hostel Annex • 2018 Inauguration'}</p>
               </div>
             </div>
           </div>

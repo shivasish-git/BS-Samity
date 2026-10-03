@@ -64,14 +64,14 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex items-center space-x-4">
             <div className="hidden md:flex items-center gap-2 text-blue-200 text-xs">
               <Phone className="w-3.5 h-3.5 text-orange-400 shrink-0" />
-              <span className="font-mono">033-22271599 / 9433041597 (M)</span>
+              <span className="font-mono">{isBengali ? '০৩৩-২২২৭১৫৯৯ / ৯৪৩৩০৪১৫৯৭' : '033-22271599 / 9433041597 (M)'}</span>
             </div>
 
             {/* Language Switcher */}
             <div 
               className="flex items-center bg-blue-900/80 rounded-lg p-0.5 border border-blue-700/60" 
               role="group" 
-              aria-label="Language selection"
+              aria-label={isBengali ? 'ভাষা নির্বাচন' : 'Language selection'}
             >
               <button
                 onClick={() => setLang('en')}
@@ -112,7 +112,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               handleLinkClick('home');
             }}
             className="flex items-center gap-3.5 sm:gap-4 text-left group focus:outline-none flex-1 min-w-0"
-            aria-label="Bangiya Saha Samity Home"
+            aria-label={isBengali ? 'বঙ্গীয় সাহা সমিতি মূল পাতা' : 'Bangiya Saha Samity Home'}
           >
             <div className="relative shrink-0">
               <TreeLogo className="w-13 h-13 sm:w-16 sm:h-16 rounded-2xl shadow-sm border border-amber-300 ring-2 ring-orange-500/20 group-hover:scale-105 transition-transform" />
@@ -142,7 +142,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="flex items-center gap-2 px-3 py-2 sm:px-3.5 sm:py-2.5 rounded-xl text-blue-950 hover:text-blue-900 bg-slate-100 hover:bg-slate-200/90 border border-slate-200 transition-all font-semibold text-xs sm:text-sm cursor-pointer shadow-xs active:scale-95"
-              aria-label="Toggle navigation menu"
+              aria-label={isBengali ? 'মেনু প্রদর্শন পরিবর্তন' : 'Toggle navigation menu'}
               aria-expanded={mobileMenuOpen}
             >
               {mobileMenuOpen ? (
@@ -166,18 +166,18 @@ export const Navbar: React.FC<NavbarProps> = ({
       {mobileMenuOpen && (
         <nav 
           id="main-navigation-drawer"
-          aria-label="Site Navigation"
+          aria-label={isBengali ? 'ওয়েবসাইট সূচিপত্র' : 'Site Navigation'}
           className="bg-white text-slate-900 border-b border-slate-200 px-4 sm:px-6 lg:px-8 pt-4 pb-6 shadow-2xl max-h-[85vh] overflow-y-auto animate-in fade-in slide-in-from-top-2 duration-200"
         >
           <div className="max-w-7xl mx-auto space-y-3">
             <div className="flex items-center justify-between px-2 pb-2.5 border-b border-slate-100">
               <span className="text-xs font-bold text-orange-600 uppercase tracking-wider">
-                {isBengali ? 'ওয়েবসাইট সূচিপত্র (৯টি বিভাগ)' : 'Website Navigation (9 Sections)'}
+                {isBengali ? 'ওয়েবসাইট সূচিপত্র' : 'Website Navigation (9 Sections)'}
               </span>
               <button 
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-slate-400 hover:text-slate-700 p-1.5 rounded-lg hover:bg-slate-100 cursor-pointer"
-                aria-label="Close navigation"
+                aria-label={isBengali ? 'মেনু বন্ধ করুন' : 'Close navigation'}
               >
                 <X className="w-4 h-4" />
               </button>

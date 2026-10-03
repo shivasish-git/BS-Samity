@@ -89,16 +89,16 @@ export const CulturalHeritageView: React.FC<CulturalHeritageViewProps> = ({
               </div>
               <div className="space-y-3 text-xs">
                 <div className="p-3 bg-white/10 rounded-lg border border-white/10">
-                  <div className="font-bold text-orange-300">1935 Government of India Act</div>
-                  <div className="text-blue-100">Statutory Scheduled Caste notification by British administration.</div>
+                  <div className="font-bold text-orange-300">{isBengali ? '১৯৩৫ গভর্নমেন্ট অব ইন্ডিয়া অ্যাক্ট' : '1935 Government of India Act'}</div>
+                  <div className="text-blue-100">{isBengali ? 'ব্রিটিশ প্রশাসনের সরকারি গেজেটে শুঁড়ি সমাজ তপশিলি জাতি হিসেবে ঘোষিত।' : 'Statutory Scheduled Caste notification by British administration.'}</div>
                 </div>
                 <div className="p-3 bg-white/10 rounded-lg border border-white/10">
-                  <div className="font-bold text-orange-300">1950 Constitution of India</div>
-                  <div className="text-blue-100">Dr. B. R. Ambedkar included Sunri in the President’s Scheduled Castes Order.</div>
+                  <div className="font-bold text-orange-300">{isBengali ? '১৯৫০ ভারতের সংবিধান' : '1950 Constitution of India'}</div>
+                  <div className="text-blue-100">{isBengali ? 'ড. বি. আর. আম্বেদকর কর্তৃক রাষ্ট্রপতির তপশিলি জাতি আদেশে শুঁড়ি সমাজ অন্তর্ভুক্ত।' : 'Dr. B. R. Ambedkar included Sunri in the President’s Scheduled Castes Order.'}</div>
                 </div>
                 <div className="p-3 bg-white/10 rounded-lg border border-white/10">
-                  <div className="font-bold text-orange-300">Sept 5, 2000 Supreme Court Verdict</div>
-                  <div className="text-blue-100">Restoration of SC certificate issuances after massive Kolkata rally.</div>
+                  <div className="font-bold text-orange-300">{isBengali ? '৫ সেপ্টেম্বর ২০০০ সুপ্রিম কোর্ট রায়' : 'Sept 5, 2000 Supreme Court Verdict'}</div>
+                  <div className="text-blue-100">{isBengali ? 'ঐতিহাসিক কলকাতা মহামিছিলের পর তপশিলি জাতি শংসাপত্র প্রদানের অধিকার পুনর্বহাল।' : 'Restoration of SC certificate issuances after massive Kolkata rally.'}</div>
                 </div>
               </div>
             </div>
@@ -121,7 +121,7 @@ export const CulturalHeritageView: React.FC<CulturalHeritageViewProps> = ({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-3">
               <div className="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center font-bold">
-                ১
+                {isBengali ? '১' : '1'}
               </div>
               <h3 className="text-lg font-bold text-blue-950">
                 {isBengali ? 'ভ্রাতৃত্ববোধ ও পারস্পরিক সহযোগিতা' : 'Fraternal Solidarity & Community Care'}
@@ -135,7 +135,7 @@ export const CulturalHeritageView: React.FC<CulturalHeritageViewProps> = ({
 
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-3">
               <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-900 flex items-center justify-center font-bold">
-                ২
+                {isBengali ? '২' : '2'}
               </div>
               <h3 className="text-lg font-bold text-blue-950">
                 {isBengali ? 'শিক্ষা বিস্তার ও কন্যা শিক্ষার মর্যাদা' : 'Deep Reverence for Education & Female Literacy'}
@@ -149,7 +149,7 @@ export const CulturalHeritageView: React.FC<CulturalHeritageViewProps> = ({
 
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-3">
               <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold">
-                ৩
+                {isBengali ? '৩' : '3'}
               </div>
               <h3 className="text-lg font-bold text-blue-950">
                 {isBengali ? 'উদ্যোক্তা চেতনা ও ব্যবসায়িক স্বাবলম্বন' : 'Commercial Enterprise & Vocational Craft'}
@@ -167,68 +167,61 @@ export const CulturalHeritageView: React.FC<CulturalHeritageViewProps> = ({
       {/* Cultural Divider */}
       <IndianPatternDivider variant="simple" />
 
-      {/* 3. FESTIVALS & CELEBRATIONS */}
+      {/* 4. EVENTS & CULTURAL PROGRAMMES */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-8">
           <div className="border-l-4 border-blue-900 pl-4 space-y-1">
             <span className="text-xs font-bold uppercase tracking-widest text-orange-600">
-              {isBengali ? 'উৎসব ও মিলনমেলা' : 'Festivals & Harmony'}
+              {isBengali ? 'অনুষ্ঠান ও সংস্কৃতি' : 'Events & Culture'}
             </span>
             <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-blue-900">
-              {isBengali ? 'উৎসব ও সামাজিক মেলবন্ধন' : 'Festivals & Celebrations'}
+              {isBengali ? 'অনুষ্ঠান ও সাংস্কৃতিক কর্মসূচি' : 'Events and Cultural Programmes'}
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-200 space-y-3">
-              <span className="text-2xl">🪔</span>
+              <span className="text-2xl">🎖️</span>
               <h3 className="text-base font-bold text-blue-950">
-                {isBengali ? 'মা জগজ্জননী পূজা ও প্রতিষ্ঠা দিবস' : 'Maa Jagathanani Puja & Foundation Day'}
+                {isBengali ? 'শহীদ গোপীনাথ সাহার জন্মজয়ন্তী উদযাপন ও প্রয়াণ দিবস স্মরণ' : 'Gopinath Saha Birth Anniversary Celebration & Death Anniversary Observance'}
               </h3>
-              <p className="text-xs text-slate-500 font-medium">📍 77 Manicktala Street, Kolkata</p>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                {isBengali
-                  ? '১৯৩৪ সালে যে পবিত্র মন্দিরে সমিতির শুভ সূচনা হয়েছিল, সেখানে প্রতি বছর শ্রদ্ধার সাথে পূজা ও সম্মেলন আয়োজিত হয়।'
-                  : 'Commemorating our 1934 founding at the historic Maa Jagathanani Estate in Simla with prayer and social assembly.'}
+              <p className="text-xs text-slate-500 font-medium">
+                📍 {isBengali ? '৫২বি ইন্ডিয়ান মিরর স্ট্রিট / কলকাতা' : '52B Indian Mirror Street / Kolkata'}
               </p>
-            </div>
-
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-200 space-y-3">
-              <span className="text-2xl">📚</span>
-              <h3 className="text-base font-bold text-blue-950">
-                {isBengali ? 'ছাত্রাবাসে সরস্বতী পূজা' : 'Saraswati Puja at Student Hostel'}
-              </h3>
-              <p className="text-xs text-slate-500 font-medium">📍 52B Indian Mirror Street (3rd & 4th Floor)</p>
               <p className="text-xs text-slate-600 leading-relaxed">
                 {isBengali
-                  ? '৫০ জন আবাসিক শিক্ষার্থীর উদ্যোগে বিদ্যাদেবীর বন্দনা, কৃতি ছাত্র সংবর্ধনা এবং সমাজের গণ্যমান্য ব্যক্তিবর্গের সমাবেশ।'
-                  : 'Vibrant academic celebration organized by resident student scholars, honoring knowledge, books, and scholarship recipients.'}
+                  ? 'ভারতের স্বাধীনতা সংগ্রামের নির্ভীক বিপ্লবী অমর শহীদ গোপীনাথ সাহার জন্মজয়ন্তী উদযাপন এবং তাঁর প্রয়াণ ও আত্মবলিদান দিবসে বিনম্র শ্রদ্ধার্ঘ্য নিবেদন, স্মৃতিচারণ সভা ও যুব সমাজের শপথ গ্রহণ।'
+                  : 'Celebrating the birth anniversary of revolutionary hero Shahid Gopinath Saha and solemnly observing his martyrdom anniversary with memorial meetings, floral tributes, and youth pledge programmes.'}
               </p>
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-200 space-y-3">
               <span className="text-2xl">⚖️</span>
               <h3 className="text-base font-bold text-blue-950">
-                {isBengali ? 'বাবাসাহেব আম্বেদকর জয়ন্তী' : 'Dr. Ambedkar Jayanti (April 14)'}
+                {isBengali ? 'ড. ভীমরাও রামজি আম্বেদকরের জন্মজয়ন্তী উদযাপন' : 'Bhimrao Ramji Ambedkar Birthday Celebration'}
               </h3>
-              <p className="text-xs text-slate-500 font-medium">📍 Head Office Auditorium</p>
+              <p className="text-xs text-slate-500 font-medium">
+                📍 {isBengali ? 'কেন্দ্রীয় কার্যালয় মিলনায়তন / কলকাতা' : 'Head Office Auditorium / Kolkata'}
+              </p>
               <p className="text-xs text-slate-600 leading-relaxed">
                 {isBengali
-                  ? '১৯৫০ সালে সংবিধানে শুঁড়ি সমাজকে তপশিলি জাতি হিসেবে অন্তর্ভুক্ত করার মহান অবদান স্মরণে বার্ষিক আলোচনা সভা ও অঙ্গীকার দিবস।'
-                  : 'Annual symposium commemorating Dr. Ambedkar’s constitutional vision, SC rights preservation, and youth empowerment.'}
+                  ? '১৪ এপ্রিল সংবিধান প্রণেতা বাবাসাহেব ড. ভীমরাও রামজি আম্বেদকরের শুভ জন্মজয়ন্তী উপলক্ষে সংবিধানে শুঁড়ি সমাজকে তপশিলি জাতি হিসেবে সংরক্ষণের ঐতিহাসিক অবদান স্মরণ ও বিশেষ সেমিনার।'
+                  : 'Grand commemoration of Dr. Bhimrao Ramji Ambedkar’s birth anniversary (April 14), honoring his monumental constitutional leadership in recognizing the Sunri community as a Scheduled Caste.'}
               </p>
             </div>
 
             <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-200 space-y-3">
-              <span className="text-2xl">🌾</span>
+              <span className="text-2xl">🤝</span>
               <h3 className="text-base font-bold text-blue-950">
-                {isBengali ? 'পয়লা বৈশাখ ও বার্ষিক মিলনমেলা' : 'Poila Boishakh & Get-Together'}
+                {isBengali ? 'বিজয়া সম্মিলনী' : 'Bijoya Sammilani'}
               </h3>
-              <p className="text-xs text-slate-500 font-medium">📍 Vivekananda Society Hall / Kolkata</p>
+              <p className="text-xs text-slate-500 font-medium">
+                📍 {isBengali ? 'বিবেকানন্দ সোসাইটি হল / কলকাতা' : 'Vivekananda Society Hall / Kolkata'}
+              </p>
               <p className="text-xs text-slate-600 leading-relaxed">
                 {isBengali
-                  ? 'বাংলা নববর্ষ উদযাপন ও রাজ্যের ২৩টি জেলার প্রতিনিধিদের নিয়ে প্রীতি সম্মেলন ও সাংস্কৃতিক অনুষ্ঠান।'
-                  : 'Grand cultural reunion welcoming delegates from all 23 districts of West Bengal with traditional music, food, and fellowship.'}
+                  ? 'শারদোৎসব পরবর্তী ঐতিহ্যবাহী প্রীতি সম্মেলন, যেখানে রাজ্যের বিভিন্ন প্রান্ত থেকে সমাজের সদস্যবৃন্দ শুভেচ্ছা বিনিময়, সৌভ্রাতৃত্বের বন্ধন সুদৃঢ়করণ ও মনোজ্ঞ সাংস্কৃতিক অনুষ্ঠানে মিলিত হন।'
+                  : 'Traditional post-Durga Puja congregation bringing together community members and delegates across West Bengal for cordial fellowship, cultural performances, and mutual greetings.'}
               </p>
             </div>
           </div>
@@ -249,25 +242,25 @@ export const CulturalHeritageView: React.FC<CulturalHeritageViewProps> = ({
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-2">
             <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-center space-y-2">
-              <div className="text-3xl font-bold font-serif-heading text-blue-900">50+</div>
+              <div className="text-3xl font-bold font-serif-heading text-blue-900">{isBengali ? '৫০+' : '50+'}</div>
               <div className="text-xs font-semibold text-slate-700">{isBengali ? 'আবাসিক শিক্ষার্থী' : 'Hostel Student Residents'}</div>
               <div className="text-[11px] text-slate-500">{isBengali ? 'প্রতি শিক্ষাবর্ষে গ্রাম থেকে আসা ছাত্রছাত্রী' : 'Subsidized stay in central Kolkata'}</div>
             </div>
 
             <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-center space-y-2">
-              <div className="text-3xl font-bold font-serif-heading text-orange-600">₹3.75L</div>
+              <div className="text-3xl font-bold font-serif-heading text-orange-600">{isBengali ? '₹৩.৭৫ লক্ষ' : '₹3.75L'}</div>
               <div className="text-xs font-semibold text-slate-700">{isBengali ? 'পুরসভা কর পরিশোধ' : 'KMC Tax Arrears Cleared'}</div>
               <div className="text-[11px] text-slate-500">{isBengali ? 'ভবনের পূর্ণাঙ্গ আইনি ও সরকারি বৈধতা' : '100% legal asset protection'}</div>
             </div>
 
             <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-center space-y-2">
-              <div className="text-3xl font-bold font-serif-heading text-blue-900">23</div>
+              <div className="text-3xl font-bold font-serif-heading text-blue-900">{isBengali ? '২৩' : '23'}</div>
               <div className="text-xs font-semibold text-slate-700">{isBengali ? 'জেলায় সামাজিক নেটওয়ার্ক' : 'Districts in West Bengal'}</div>
               <div className="text-[11px] text-slate-500">{isBengali ? 'উত্তরবঙ্গ থেকে জঙ্গলমহল পর্যন্ত পরিবার' : 'Active community touchpoints'}</div>
             </div>
 
             <div className="p-4 bg-slate-50 rounded-xl border border-slate-200 text-center space-y-2">
-              <div className="text-3xl font-bold font-serif-heading text-orange-600">88+</div>
+              <div className="text-3xl font-bold font-serif-heading text-orange-600">{isBengali ? '৮৮+' : '88+'}</div>
               <div className="text-xs font-semibold text-slate-700">{isBengali ? 'বছরের গৌরবময় সেবা' : 'Years of Legacy'}</div>
               <div className="text-[11px] text-slate-500">{isBengali ? '১৯৩৪ থেকে ২০২৬ পর্যন্ত নিরবচ্ছিন্ন সেবা' : 'Continuous community leadership'}</div>
             </div>
@@ -306,12 +299,12 @@ export const CulturalHeritageView: React.FC<CulturalHeritageViewProps> = ({
                   <div className="relative aspect-[16/10] bg-slate-100 overflow-hidden">
                     <img
                       src={item.imageUrl}
-                      alt={item.title}
+                      alt={isBengali ? item.bengaliTitle : item.title}
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute top-3 left-3 bg-blue-950/80 backdrop-blur-xs text-white text-xs font-semibold px-2.5 py-1 rounded">
-                      {item.era}
+                      {isBengali ? (item.bengaliEra || item.era) : item.era}
                     </div>
                   </div>
 
@@ -332,7 +325,7 @@ export const CulturalHeritageView: React.FC<CulturalHeritageViewProps> = ({
                 </div>
 
                 <div className="p-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
-                  <span className="font-medium text-slate-500">Document Archive</span>
+                  <span className="font-medium text-slate-500">{isBengali ? 'ঐতিহাসিক দলিল সংগ্রহ' : 'Document Archive'}</span>
                   <button
                     onClick={() => onNavigate('about')}
                     className="font-bold text-blue-900 hover:text-orange-600"
