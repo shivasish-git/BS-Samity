@@ -106,8 +106,8 @@ export const LegalEducationHub: React.FC<LegalEducationHubProps> = ({ onContactL
 
             <p className="text-xs sm:text-sm text-[#554336] leading-relaxed">
               {isBengali
-                ? 'যদি স্থানীয় থানায় এফআইআর গ্রহণে বাধা দেওয়া হয় অথবা কোনো শিক্ষার্থীকে ন্যায্য ভর্তি বা স্কলারশিপ থেকে অন্যায়ভাবে বঞ্চিত করা হয়, অবিলম্বে আমাদের দায়িত্বপ্রাপ্ত আইনজীবীর সাথে যোগাযোগ করুন।'
-                : 'If an FIR is being refused by local police or a student is being illegally denied admission or scholarship, contact our duty advocate directly.'}
+                ? 'যদি স্থানীয় থানায় এফআইআর গ্রহণে বাধা দেওয়া হয় অথবা কোনো শিক্ষার্থীকে ন্যায্য ভর্তি বা সরকারি শিক্ষাবৃত্তি থেকে অন্যায়ভাবে বঞ্চিত করা হয়, অবিলম্বে আমাদের দায়িত্বপ্রাপ্ত আইনজীবীর সাথে যোগাযোগ করুন।'
+                : 'If an FIR is being refused by local police or a student is being illegally denied admission or statutory student aid, contact our duty advocate directly.'}
             </p>
 
             <div className="space-y-2.5">

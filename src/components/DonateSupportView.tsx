@@ -70,13 +70,13 @@ export const DonateSupportView: React.FC<DonateSupportViewProps> = ({
           </div>
           <h1 className="text-3xl sm:text-5xl font-serif-heading font-bold text-white tracking-tight">
             {isBengali 
-              ? 'গ্রামীণ ছাত্রাবাস ও শিক্ষাবৃত্তিতে সাহায্য করুন' 
+              ? 'গ্রামীণ ছাত্রাবাস ও শিক্ষার উদ্দেশ্যে সামাজিক সহায়তায় অংশ নিন' 
               : 'Donate & Support Bangiya Saha Samity'}
           </h1>
           <p className="text-blue-100 text-base sm:text-lg max-w-3xl leading-relaxed">
             {isBengali
-              ? 'আপনার প্রতিটি অনুদান ৫০ জন গ্রামীণ দরিদ্র ছাত্রের কলকাতায় আবাসন, কন্যাদের শিক্ষাবৃত্তি এবং অসহায় দুস্থদের সেবায় সরাসরি ব্যবহৃত হয়।'
-              : 'Every rupee directly sustains our 50-student residential hostel at 52B Indian Mirror Street, collegiate scholarships for female students, and distress relief.'}
+              ? 'আপনার প্রতিটি অনুদান কলকাতায় ৫০ জন শিক্ষার্থীর ছাত্রাবাসের আবাসিক ব্যবস্থা, সমাজের সদস্যদের জন্য অতিথি কক্ষ (Guest Room), শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকারসহ) এবং দুস্থ ও বিপন্ন মানুষদের সেবায় সরাসরি ব্যবহৃত হয়।'
+              : 'Every rupee directly sustains our 50-student residential hostel arrangements & community Guest Room at 52B Indian Mirror Street, Social Help for Educational Purpose (Only for Our Community) highlighting a special priority for female higher education, and distress relief.'}
           </p>
         </div>
       </section>
@@ -198,7 +198,7 @@ export const DonateSupportView: React.FC<DonateSupportViewProps> = ({
 
               <div className="p-4 rounded-xl bg-blue-50/80 border border-blue-200 text-xs text-slate-600">
                 <span className="font-bold text-blue-900">{isBengali ? 'নিবন্ধন তথ্য: ' : 'Registration: '}</span>
-                <span>{isBengali ? 'নিবন্ধন নং ৪৫২২ (১৯৩৬-৩৭) • প্রধান কার্যালয়: ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩।' : 'Regd. No. 4522 of 1936–37 • Head Office: 52B Indian Mirror Street, Kolkata – 700013.'}</span>
+                <span>{isBengali ? 'নিবন্ধন নং ৪৫২২ (১৯৩৬-৩৭) • কেন্দ্রীয় কার্যালয়: ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩ (ছাত্রাবাস ও অতিথি কক্ষ সহ)।' : 'Regd. No. 4522 of 1936–37 • Central Office: 52B Indian Mirror Street, Kolkata – 700013 (with Hostel & Guest Room).'}</span>
               </div>
             </div>
           </div>
@@ -208,20 +208,20 @@ export const DonateSupportView: React.FC<DonateSupportViewProps> = ({
       {/* Cultural Divider */}
       <IndianPatternDivider variant="simple" />
 
-      {/* 2. SPONSORSHIP OPPORTUNITIES */}
+      {/* 2. SOCIAL HELP FOR EDUCATIONAL PURPOSE (ONLY FOR OUR COMMUNITY) & SPONSORSHIP */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-8">
           <div className="border-l-4 border-blue-900 pl-4 space-y-1">
             <span className="text-xs font-bold uppercase tracking-widest text-orange-600">
-              {isBengali ? 'দীর্ঘমেয়াদী পৃষ্ঠপোষকতা' : 'Dedicated Sponsorships'}
+              {isBengali ? 'শুধুমাত্র আমাদের সম্প্রদায়ের জন্য • বিশেষ অগ্রাধিকার: নারী উচ্চশিক্ষা' : 'Only for Our Community • Special Priority for Female Higher Education'}
             </span>
             <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-blue-900">
-              {isBengali ? 'বিশেষ স্পনসরশিপ ও সমাজকল্যাণ তহবিল' : 'Sponsorship Opportunities'}
+              {isBengali ? 'শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা ও পৃষ্ঠপোষকতা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য)' : 'Social Help for Educational Purpose (Only for Our Community)'}
             </h2>
-            <p className="text-slate-600 text-sm">
+            <p className="text-slate-600 text-sm max-w-3xl">
               {isBengali
-                ? 'একটি সম্পূর্ণ শিক্ষাবর্ষের জন্য গ্রামীণ ছাত্র বা মেধাবী কন্যাদের শিক্ষায় পৃষ্ঠপোষকতা করুন।'
-                : 'Directly adopt a student resident or fund specific educational endowments.'}
+                ? 'শুধুমাত্র আমাদের সম্প্রদায়ের জন্য প্রদত্ত শিক্ষা সহায়তা তহবিল—যেখানে নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার, ছাত্রাবাসের আবাসিক ব্যবস্থা এবং সদস্যদের জন্য অতিথি কক্ষ (Guest Room) রক্ষণাবেক্ষণে সরাসরি অবদান রাখতে পারেন।'
+                : 'Dedicated sponsorship opportunities supporting hostel arrangements, Guest Room facilities for community members, and Social Help for Educational Purpose — explicitly Only for Our Community, with a special priority for female higher education.'}
             </p>
           </div>
 

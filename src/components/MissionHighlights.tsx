@@ -167,8 +167,8 @@ export const MissionHighlights: React.FC<MissionHighlightsProps> = ({ onSponsorP
                   </div>
                   <div className="text-xs text-[#6C4A31] mt-1">
                     {isBengali 
-                      ? 'মা জগজ্জননী এস্টেট (মানিকতলা) থেকে ৫২বি ইন্ডিয়ান মিরর স্ট্রিট ভবন।' 
-                      : 'From Maa Jagathanani Estate to 52B Indian Mirror Street 4-storey building.'}
+                      ? 'মা জগৎ জননী মন্দির (মানিকতলা) থেকে ৫২বি ইন্ডিয়ান মিরর স্ট্রিটের কেন্দ্রীয় কার্যালয়, ছাত্রাবাস ও অতিথি কক্ষ।' 
+                      : 'From Maa Jagat Janani Temple to our 52B Indian Mirror Street 4-storey Central Office, Hostel & Guest Room.'}
                   </div>
                 </div>
 

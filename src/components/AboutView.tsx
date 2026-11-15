@@ -99,8 +99,8 @@ export const AboutView: React.FC<AboutViewProps> = ({
           <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 leading-relaxed text-slate-700 space-y-4 text-base">
             <p>
               {isBengali 
-                ? 'বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) ১৯৩৪ সালে কলকাতার ৭৭ মানিকতলা স্ট্রিটের (সিমলা) মা জগজ্জননী এস্টেটের মন্দিরে সমাজের শ্রদ্ধেয় ব্যক্তিবর্গের দ্বারা গঠিত হয়। পরবর্তীতে সমাজকল্যাণমূলক কর্মকাণ্ডের বিধিবদ্ধ কাঠামোর স্বার্থে ১৯৩৬-৩৭ সালে সোসাইটি রেজিস্ট্রেশন অ্যাক্টের অধীন নিবন্ধন নং ৪৫২২ মূলে এটি নিবন্ধিত হয়।'
-                : 'Bangiya Saha Samity (Sunri Samaj) was established in 1934 by respectable community leaders within the historic temple of Maa Jagathanani Estate, situated at 77 Manicktala Street, Kolkata – 700006 (Simla). To diffuse useful knowledge, promote education, and introduce social reforms, the organization was formally registered under Registration No. 4522 of 1936–37.'}
+                ? 'বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) ১৯৩৪ সালে কলকাতার ৭৭ মানিকতলা স্ট্রিটের (সিমলা) মা জগৎ জননী মন্দিরে সমাজের বিশিষ্ট ব্যক্তিবর্গের দ্বারা গঠিত হয়। পরবর্তীতে সমাজকল্যাণমূলক কর্মকাণ্ডের বিধিবদ্ধ কাঠামোর স্বার্থে ১৯৩৬-৩৭ সালে সোসাইটি রেজিস্ট্রেশন অ্যাক্টের অধীন নিবন্ধন নং ৪৫২২ অনুযায়ী এটি নিবন্ধিত হয়।'
+                : 'Bangiya Saha Samity (Sunri Samaj) was established in 1934 by distinguished community leaders at Maa Jagat Janani Temple, situated at 77 Manicktala Street, Kolkata – 700006 (Simla). To diffuse useful knowledge, promote education, and introduce social reforms, the organization was formally registered under Registration No. 4522 of 1936–37.'}
             </p>
             <p>
               {isBengali
@@ -109,8 +109,8 @@ export const AboutView: React.FC<AboutViewProps> = ({
             </p>
             <p>
               {isBengali
-                ? '১৯৫৬ সালে সমিতির নেতৃবৃন্দ ও সমাজের দানশীল ব্যক্তিবর্গের সহায়তায় কলকাতার ৫২বি ইন্ডিয়ান মিরর স্ট্রিটে নিজস্ব জমিতে চারতলা স্থায়ী কেন্দ্রীয় কার্যালয় ভবন ক্রয় ও নির্মাণ করা হয়। এই ভবনের ৩য় ও ৪র্থ তলায় গ্রামীণ দূরবর্তী অসহায় ছাত্রদের জন্য ছাত্রাবাস চালু করা হয়, যা বর্তমানে ৫০ জন শিক্ষার্থীর আবাসিক ব্যবস্থা প্রদান করে (২০১৮ সাল থেকে ছাত্রীদের জন্য পৃথক শাখা খোলা হয়েছে)।'
-                : 'In 1956, through community donations, the Samity acquired and constructed its permanent four-storeyed Head Office at 52B Indian Mirror Street, Kolkata – 700013. Its 3rd and 4th floors were dedicated to a student hostel for rural boys and girls pursuing higher education in Kolkata.'}
+                ? '১৯৫৬ সালে সমিতির নেতৃবৃন্দ ও সমাজের দানশীল ও প্রখ্যাত ব্যক্তিবর্গের সহায়তায় কলকাতার ৫২বি ইন্ডিয়ান মিরর স্ট্রিটে নিজস্ব জমিতে চারতলা স্থায়ী কেন্দ্রীয় কার্যালয় ভবন ক্রয় ও নির্মাণ করা হয়। এই ভবনের ৩য় ও ৪র্থ তলায় দূরবর্তী গ্রামীণ মেধাবী ও অসচ্ছল ছাত্রদের জন্য ছাত্রাবাসের আবাসিক ব্যবস্থা করা হয় (২০১৮ সাল থেকে ছাত্রীদের জন্য পৃথক শাখা চালু হয়েছে, বর্তমানে মোট ৫০ জন শিক্ষার্থীর আবাসিক ব্যবস্থা করা হয়) এবং সমাজের সদস্যদের জন্য অতিথি কক্ষের (Guest Room) সুবিধাও রয়েছে।'
+                : 'In 1956, through the contributions of philanthropic and distinguished community well-wishers, the Samity acquired and constructed its permanent four-storeyed Central Office at 52B Indian Mirror Street, Kolkata – 700013. On its 3rd and 4th floors, residential hostel arrangements are made for up to 50 rural boys and girls pursuing higher education in Kolkata (with a female wing opened in 2018), alongside a Guest Room facility for community members.'}
             </p>
             <p>
               {isBengali
@@ -167,12 +167,12 @@ export const AboutView: React.FC<AboutViewProps> = ({
             </h2>
             <p className="text-base text-slate-700 leading-relaxed">
               {isBengali
-                ? 'পশ্চিমবঙ্গের তপশিলি জাতি শুঁড়ি সমাজের প্রতিটি সদস্যের সামাজিক কল্যাণ, মানসম্মত শিক্ষা, নারী শিক্ষার ব্যাপক প্রসার, সাংস্কৃতিক ঐতিহ্যের সংরক্ষণ, গ্রামীণ শিক্ষার্থীদের আবাসিক আশ্রয় এবং অসহায় দুস্থদের পাশে দাঁড়ানো।'
-                : 'Dedicated to the holistic advancement of the Scheduled Caste Sunri community across West Bengal through legitimate social reform, spread of modern education, scholarships, female literacy, publication of journals, and relief to distressed community members.'}
+                ? 'শিক্ষা সহায়তার মাধ্যমে পশ্চিমবঙ্গের তপশিলি জাতি শুঁড়ি সমাজের সার্বিক উন্নতি—বিশেষত নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার, শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা, গ্রামীণ শিক্ষার্থীদের ছাত্রাবাসের আবাসিক ব্যবস্থা, সদস্যদের জন্য অতিথি কক্ষ (Guest Room), সাংস্কৃতিক ঐতিহ্য সংরক্ষণ এবং দুস্থ ও বিপন্ন মানুষের পাশে দাঁড়ানো।'
+                : 'Focused on educational support for the Scheduled Caste Sunri community across West Bengal—highlighting a special priority for female higher education, Social Help for Educational Purpose (Only for Our Community), residential hostel arrangements for rural students, a Guest Room facility for community members, social reform, and distress relief.'}
             </p>
             <div className="pt-2 border-t border-slate-100 space-y-2 text-sm text-slate-600">
               <div className="font-semibold text-blue-900 text-xs uppercase tracking-wider">
-                {isBengali ? 'মূল ৫টি প্রতিষ্ঠাতা উদ্দেশ্য:' : 'The 5 Founding Objectives:'}
+                {isBengali ? '৫টি প্রতিষ্ঠাতা উদ্দেশ্য:' : 'The 5 Founding Objectives:'}
               </div>
               <ul className="space-y-2 text-xs">
                 {SOCIETY_OBJECTIVES.map((obj, i) => (
@@ -197,8 +197,8 @@ export const AboutView: React.FC<AboutViewProps> = ({
             </h2>
             <p className="text-base text-slate-700 leading-relaxed">
               {isBengali
-                ? 'একটি আত্মমর্যাদাশীল, সুশিক্ষিত, ঐক্যবদ্ধ এবং সাংবিধানিক সুরক্ষায় বলীয়ান শুঁড়ি সমাজ গঠন করা—যেখানে প্রতিটি গ্রামীণ মেধাবী সন্তান উচ্চশিক্ষার পূর্ণ সুযোগ পাবে এবং কুপ্রথামুক্ত উন্নত সমাজ বিনির্মাণ সম্ভব হবে।'
-                : 'To build an empowered, enlightened, and culturally proud Sunri community that stands on the pillars of education, economic self-reliance, constitutional security, and uninterrupted social solidarity.'}
+                ? 'একটি সুশিক্ষিত, আত্মমর্যাদাশীল ও ঐক্যবদ্ধ শুঁড়ি সমাজ গঠন করা—যেখানে নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকারের মাধ্যমে প্রতিটি গ্রামীণ মেধাবী শিক্ষার্থী উচ্চশিক্ষার পূর্ণ সুযোগ পাবে এবং সমাজের সদস্যদের জন্য ছাত্রাবাস ও অতিথি কক্ষসহ সাংবিধানিক সুরক্ষা অটুট থাকবে।'
+                : 'To build an empowered, educated, and culturally proud Sunri community led by a special priority for female higher education, accessible educational support, community Guest Room and hostel hospitality, constitutional security, and social solidarity.'}
             </p>
             <div className="pt-2 border-t border-slate-100 space-y-2 text-sm text-slate-600">
               <div className="font-semibold text-orange-600 text-xs uppercase tracking-wider">
@@ -207,15 +207,15 @@ export const AboutView: React.FC<AboutViewProps> = ({
               <ul className="space-y-2 text-xs">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0 mt-0.5" />
-                  <span>{isBengali ? 'পশ্চিমবঙ্গের ২৩টি জেলাতেই মহকুমা পর্যায়ে আইনি ও ছাত্র সহায়তা কেন্দ্র স্থাপন।' : 'Establishing district welfare liaison cells across all 23 districts of W.B.'}</span>
+                  <span>{isBengali ? 'নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার এবং শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা সম্প্রসারণ।' : 'Highlighting a special priority for female higher education and expanding Social Help for Educational Purpose (Only for Our Community).'}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0 mt-0.5" />
-                  <span>{isBengali ? 'ছাত্রাবাস সম্প্রসারণ এবং উচ্চশিক্ষা ও প্রতিযোগিতামূলক পরীক্ষার বিশেষ কোচিং।' : 'Hostel expansion with civil service & professional exam preparation support.'}</span>
+                  <span>{isBengali ? 'ছাত্রাবাসের আবাসিক ব্যবস্থা ও সমাজের সদস্যদের জন্য অতিথি কক্ষের (Guest Room) আধুনিক পরিকাঠামো বজায় রাখা।' : 'Sustaining residential student hostel arrangements and Guest Room facilities for community members visiting Kolkata.'}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0 mt-0.5" />
-                  <span>{isBengali ? 'ডিজিটাল আর্কাইভ ও ঐতিহ্যবাহী গবেষণাধর্মী প্রকাশনা নিয়মিতকরণ।' : 'Publishing historical research periodicals and maintaining digital archives.'}</span>
+                  <span>{isBengali ? 'পশ্চিমবঙ্গের ২৩টি জেলাতেই আইনি ও ছাত্র সহায়তা সমন্বয় এবং ঐতিহ্যবাহী প্রকাশনা নিয়মিতকরণ।' : 'Maintaining district welfare liaison cells across all 23 districts of W.B. and historical archives.'}</span>
                 </li>
               </ul>
             </div>
@@ -601,7 +601,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 max-w-3xl">
             {isBengali
-              ? 'উপদেষ্টা পরিষদ থেকে তৃণমূল পর্যায় পর্যন্ত বঙ্গীয় সাহা সমিতির ৫-স্তরের প্রাতিষ্ঠানিক দায়িত্ব ও প্রশাসনিক বণ্টন।'
+              ? 'উপদেষ্টা পরিষদ থেকে স্থানীয় পর্যায় পর্যন্ত বঙ্গীয় সাহা সমিতির ৫-স্তরের প্রাতিষ্ঠানিক দায়িত্ব ও প্রশাসনিক বণ্টন।'
               : 'The comprehensive five-tier institutional framework governing Bangiya Saha Samity from top-level legislative guidance down to district life members.'}
           </p>
         </div>
@@ -677,7 +677,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
                 {isBengali ? 'সারসংক্ষেপ' : 'Governance Snapshot'}
               </span>
               <h4 className="text-lg font-serif-heading font-bold text-blue-900">
-                {isBengali ? 'সাংগঠনিক মূলনীতি' : 'Core Governance Principles'}
+                {isBengali ? 'সাংগঠনিক নীতিমালা' : 'Core Governance Principles'}
               </h4>
             </div>
 

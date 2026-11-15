@@ -32,7 +32,7 @@ export const IndianPatternDivider: React.FC<IndianPatternDividerProps> = ({
         <div className="h-px bg-gradient-to-r from-transparent via-blue-900/20 to-blue-900/40 flex-grow"></div>
         
         {/* Repeating Bengali folk motif in Blue and Saffron */}
-        <div className="flex items-center space-x-2.5 px-4 text-blue-900">
+        <div className="flex items-center space-x-1.5 sm:space-x-2.5 px-2 sm:px-4 text-blue-900 shrink-0">
           <svg className="w-5 h-5 text-blue-800" viewBox="0 0 24 24" fill="currentColor">
             <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" strokeWidth="1.5" />
             <circle cx="12" cy="12" r="2.5" fill="currentColor" />
@@ -43,7 +43,7 @@ export const IndianPatternDivider: React.FC<IndianPatternDividerProps> = ({
           </svg>
 
           {/* Saffron and Blue folk accents */}
-          <div className="flex items-center space-x-1">
+          <div className="hidden sm:flex items-center space-x-1 shrink-0">
             <span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
             <span className="w-2 h-2 rotate-45 border border-blue-900 bg-white"></span>
             <span className="w-2.5 h-2.5 rotate-45 bg-orange-500"></span>
@@ -51,11 +51,11 @@ export const IndianPatternDivider: React.FC<IndianPatternDividerProps> = ({
             <span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
           </div>
 
-          <div className="text-xs sm:text-sm font-serif-heading tracking-wider sm:tracking-widest text-blue-900 font-bold px-3 uppercase">
+          <div className="text-[10px] min-[360px]:text-[11px] sm:text-sm font-serif-heading tracking-wider sm:tracking-widest text-blue-900 font-bold px-2 sm:px-3 uppercase whitespace-nowrap text-center shrink-0">
             {isBengali ? 'শিক্ষা • ঐক্য • ঐতিহ্য • ন্যায়' : 'Education • Unity • Heritage • Justice'}
           </div>
 
-          <div className="flex items-center space-x-1">
+          <div className="hidden sm:flex items-center space-x-1 shrink-0">
             <span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
             <span className="w-2 h-2 rotate-45 border border-blue-900 bg-white"></span>
             <span className="w-2.5 h-2.5 rotate-45 bg-orange-500"></span>

@@ -74,11 +74,11 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0" />
-                  <span>{isBengali ? '৫২বি ইন্ডিয়ান মিরর স্ট্রিটে চারতলা ভবন (১৯৫৬)' : '4-Storey Head Office at 52B Indian Mirror St'}</span>
+                  <span>{isBengali ? '৫২বি ইন্ডিয়ান মিরর স্ট্রিটে চারতলা কেন্দ্রীয় কার্যালয় (১৯৫৬)' : '4-Storey Central Office at 52B Indian Mirror St'}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0" />
-                  <span>{isBengali ? '৫০ আসনের ছাত্রাবাস (২০১৮ সাল থেকে ছাত্রী শাখা)' : '50-Seat Hostel with Female Wing (Est. 2018)'}</span>
+                  <span>{isBengali ? '৫০ আসনের ছাত্রাবাস ও সদস্যদের জন্য অতিথি কক্ষ' : '50-Seat Hostel (Female Wing) & Member Guest Room'}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0" />
@@ -133,7 +133,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=1000&q=80"
-                      alt="Bangiya Saha Samity Head Office and Students Hostel"
+                      alt="Bangiya Saha Samity Central Office, Students Hostel and Guest Room"
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
                     />
@@ -147,8 +147,8 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
                     <div className="absolute bottom-2.5 inset-x-2.5 text-white">
                       <p className="text-[11px] italic text-blue-100 leading-snug font-serif-heading line-clamp-3">
                         {isBengali 
-                          ? '"১৯৩৪ সালে মা জগজ্জননী এস্টেটের মন্দিরে শুরু হয়ে আজ ৫০ জন শিক্ষার্থীর নিরাপদ ছাত্রাবাস ও সমগ্র পশ্চিমবঙ্গের শুঁড়ি সমাজের আশ্রয়স্থল।"'
-                          : '"Founded in 1934 in the temple of Maa Jagathanani Estate, growing into a sanctuary for 50 student residents."'}
+                          ? '"১৯৩৪ সালে মা জগৎ জননী মন্দিরে শুরু হয়ে আজ ৫০ জন শিক্ষার্থীর আবাসিক ব্যবস্থা ও সমাজের সদস্যদের অতিথি কক্ষসহ পশ্চিমবঙ্গের শুঁড়ি সমাজের আশ্রয়স্থল।"'
+                          : '"Founded in 1934 at Maa Jagat Janani Temple, growing into our Central Office with hostel arrangements for 50 students and a Guest Room for community members."'}
                       </p>
                       <p className="text-[10px] text-amber-300 font-semibold pt-0.5">
                         {isBengali ? '— বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ)' : '— Bangiya Saha Samity (Sunri Samaj)'}
@@ -176,8 +176,8 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
               </h2>
               <p className="text-slate-700 leading-relaxed text-base">
                 {isBengali 
-                  ? 'বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) ১৯৩৪ সালে কলকাতার ৭৭ মানিকতলা স্ট্রিটের (সিমলা) মা জগজ্জননী এস্টেটের মন্দিরে সমাজের শ্রদ্ধেয় ব্যক্তিবর্গের উদ্যোগে প্রতিষ্ঠিত হয় এবং ১৯৩৬-৩৭ সালে বিধিবদ্ধভাবে নিবন্ধিত হয় (নিবন্ধন নং ৪৫২২)। ১৯৫০ সালে বাবাসাহেব ড. বি. আর. আম্বেদকর ভারতের সংবিধানে শুঁড়ি সম্প্রদায়কে তপশিলি জাতি হিসেবে অন্তর্ভুক্ত করেন। ১৯৫৬ সালে ৫২বি ইন্ডিয়ান মিরর স্ট্রিটে নিজস্ব জমিতে ৪ তলা প্রধান কার্যালয় নির্মিত হয়, যার ৩য় ও ৪র্থ তলায় বর্তমানে ৫০ জন গ্রামীণ শিক্ষার্থীর জন্য ছাত্রাবাস পরিচালিত হচ্ছে (২০১৮ সালে ছাত্রীদের পৃথক শাখা চালু হয়)।'
-                  : 'Bangiya Saha Samity (Sunri Samaj) was established in 1934 in the temple of Maa Jagathanani Estate at 77 Manicktala Street, Kolkata (Simla) by respectable community leaders, and formally incorporated under Registration No. 4522 of 1936–37. In 1950, Babasaheb Dr. B. R. Ambedkar enshrined the Sunri community in the Constitution of India as a Scheduled Caste. In 1956, our four-storeyed head office was purchased and erected at 52B Indian Mirror Street, currently operating a 50-student residential hostel (with a dedicated female wing introduced in 2018).'}
+                  ? 'বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) ১৯৩৪ সালে কলকাতার ৭৭ মানিকতলা স্ট্রিটের (সিমলা) মা জগৎ জননী মন্দিরে সমাজের বিশিষ্ট ব্যক্তিবর্গের উদ্যোগে প্রতিষ্ঠিত হয় এবং ১৯৩৬-৩৭ সালে বিধিবদ্ধভাবে নিবন্ধিত হয় (নিবন্ধন নং ৪৫২২)। ১৯৫০ সালে বাবাসাহেব ড. বি. আর. আম্বেদকর ভারতের সংবিধানে শুঁড়ি সম্প্রদায়কে তপশিলি জাতি হিসেবে অন্তর্ভুক্ত করেন। ১৯৫৬ সালে ৫২বি ইন্ডিয়ান মিরর স্ট্রিটে নিজস্ব জমিতে ৪ তলা কেন্দ্রীয় কার্যালয় নির্মিত হয়, যেখানে বর্তমানে ৫০ জন গ্রামীণ শিক্ষার্থীর জন্য ছাত্রাবাসের আবাসিক ব্যবস্থা করা হয় (২০১৮ সালে ছাত্রীদের পৃথক শাখা চালু হয়) এবং সমাজের সদস্যদের জন্য অতিথি কক্ষের (Guest Room) সুবিধাও রয়েছে।'
+                  : 'Bangiya Saha Samity (Sunri Samaj) was established in 1934 at Maa Jagat Janani Temple, 77 Manicktala Street, Kolkata (Simla) by distinguished community leaders, and formally incorporated under Registration No. 4522 of 1936–37. In 1950, Babasaheb Dr. B. R. Ambedkar enshrined the Sunri community in the Constitution of India as a Scheduled Caste. In 1956, our four-storeyed Central Office was purchased and erected at 52B Indian Mirror Street, where residential hostel arrangements are made for up to 50 students (with a dedicated female wing introduced in 2018) alongside a Guest Room facility for community members.'}
               </p>
               <div className="flex flex-wrap gap-4 pt-2">
                 <a
@@ -218,8 +218,8 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
                   <div className="font-bold text-blue-900">{isBengali ? '১৯৩৪ / ১৯৩৬–৩৭ (রেজি. ৪৫২২)' : '1934 / 1936–37 (Regd. 4522)'}</div>
                 </div>
                 <div className="p-3 bg-white rounded-lg border border-slate-200">
-                  <div className="text-xs text-slate-500">{isBengali ? 'ছাত্রাবাস ক্ষমতা' : 'Hostel Capacity'}</div>
-                  <div className="font-bold text-orange-600">{isBengali ? '৫০ জন শিক্ষার্থী (ছাত্রী শাখা ২০১৮)' : 'Up to 50 Students (Female Wing 2018)'}</div>
+                  <div className="text-xs text-slate-500">{isBengali ? 'ছাত্রাবাস ও অতিথি কক্ষ' : 'Hostel & Guest Room'}</div>
+                  <div className="font-bold text-orange-600">{isBengali ? '৫০ জন শিক্ষার্থী ও সদস্যদের অতিথি কক্ষ' : 'Up to 50 Students & Member Guest Room'}</div>
                 </div>
                 <div className="p-3 bg-white rounded-lg border border-slate-200">
                   <div className="text-xs text-slate-500">{isBengali ? 'সুপ্রিম কোর্ট রায়' : 'Supreme Court Verdict'}</div>
@@ -242,8 +242,8 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
           </h2>
           <p className="text-slate-600 text-sm sm:text-base">
             {isBengali
-              ? 'বঙ্গীয় সাহা সমিতির মূল চালিকাশক্তি সমাজের সর্বাঙ্গীণ অগ্রগতি ও মানবিক বিকাশ।'
-              : 'The core tenets guiding Bangiya Saha Samity across generations of community advancement.'}
+              ? 'বঙ্গীয় সাহা সমিতির প্রধান চালিকাশক্তি হলো শিক্ষা সহায়তা—বিশেষত নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার এবং সমাজের সর্বাঙ্গীণ বিকাশ।'
+              : 'Guided by a focused commitment to educational support, highlighting a special priority for female higher education and community welfare.'}
           </p>
         </div>
 
@@ -256,23 +256,23 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
             <h3 className="text-2xl font-serif-heading font-bold text-blue-900">
               {isBengali ? 'আমাদের লক্ষ্য' : 'Our Mission'}
             </h3>
-            <p className="text-base text-slate-700 leading-relaxed font-medium line-clamp-2">
+            <p className="text-base text-slate-700 leading-relaxed font-medium">
               {isBengali 
-                ? 'পশ্চিমবঙ্গের তপশিলি জাতি শুঁড়ি সমাজের শিক্ষা, পারস্পরিক ঐক্য ও সর্বাঙ্গীণ সামাজিক উন্নয়নের বিস্তার ঘটানো।'
-                : 'Promoting education, social welfare, and unified community advancement across the Sunri community in West Bengal.'}
+                ? 'শিক্ষা সহায়তার মাধ্যমে পশ্চিমবঙ্গের তপশিলি জাতি শুঁড়ি সমাজের ক্ষমতায়ন—যেখানে নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার, ছাত্রাবাসের আবাসিক ব্যবস্থা করা হয় এবং শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা দেওয়া হয়।'
+                : 'To advance educational support for the Scheduled Caste Sunri community in West Bengal, highlighting a special priority for female higher education alongside residential hostel arrangements and community welfare.'}
             </p>
             <ul className="space-y-2.5 text-sm text-slate-600 pt-2">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-blue-900 shrink-0 mt-0.5" />
-                <span>{isBengali ? 'উচ্চশিক্ষায় মেধাবী ছাত্রছাত্রী ও বিশেষত কন্যাদের শিক্ষাবৃত্তি প্রদান।' : 'College scholarships with special priority for female higher education.'}</span>
+                <span>{isBengali ? 'নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকারসহ শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য)।' : 'Social Help for Educational Purpose (Only for Our Community), with special priority for female higher education.'}</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-blue-900 shrink-0 mt-0.5" />
-                <span>{isBengali ? 'কলকাতায় অধ্যয়নরত ৫০ জন গ্রামীণ দরিদ্র শিক্ষার্থীর জন্য ছাত্রাবাস পরিচালনা।' : 'Operating 50-student subsidized hostel at 52B Indian Mirror Street.'}</span>
+                <span>{isBengali ? '৫২বি ইন্ডিয়ান মিরর স্ট্রিটে ৫০ জন গ্রামীণ শিক্ষার্থীর জন্য ছাত্রাবাসের আবাসিক ব্যবস্থা করা হয় এবং সমাজের সদস্যদের জন্য অতিথি কক্ষের (Guest Room) সুবিধা রয়েছে।' : 'Residential hostel arrangements are made for 50 rural students at 52B Indian Mirror St, alongside a Guest Room facility for community members.'}</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-blue-900 shrink-0 mt-0.5" />
-                <span>{isBengali ? 'কুপ্রথা নির্মূল, সামাজিক সংস্কার এবং নিঃস্ব অসহায়দের সরাসরি অনুদান প্রদান।' : 'Eradicating social evils and extending distress relief to helpless members.'}</span>
+                <span>{isBengali ? 'সামাজিক কুপ্রথা নির্মূল, সমাজ সংস্কার এবং দুস্থ ও বিপন্ন মানুষের সরাসরি সহায়তা প্রদান।' : 'Eradicating social evils and extending distress relief to vulnerable community members.'}</span>
               </li>
             </ul>
           </div>
@@ -285,23 +285,23 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
             <h3 className="text-2xl font-serif-heading font-bold text-blue-900">
               {isBengali ? 'আমাদের দর্শন' : 'Our Vision'}
             </h3>
-            <p className="text-base text-slate-700 leading-relaxed font-medium line-clamp-2">
+            <p className="text-base text-slate-700 leading-relaxed font-medium">
               {isBengali 
-                ? 'একটি আত্মমর্যাদাশীল, সুশিক্ষিত, ঐক্যবদ্ধ ও সাংবিধানিক অধিকার সচেতন সমৃদ্ধ সমাজ গঠন করা।'
-                : 'Building an empowered, educated, and self-reliant community thriving with unity and constitutional dignity.'}
+                ? 'একটি সুশিক্ষিত, আত্মমর্যাদাশীল ও ঐক্যবদ্ধ সমাজ গঠন করা—যেখানে নারী উচ্চশিক্ষার পূর্ণ প্রসার ঘটবে এবং প্রতিটি মেধাবী শিক্ষার্থী সমান সুযোগ পাবে।'
+                : 'Building an empowered, highly educated, and self-reliant community led by widespread access to female higher education and constitutional dignity.'}
             </p>
             <ul className="space-y-2.5 text-sm text-slate-600 pt-2">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0 mt-0.5" />
-                <span>{isBengali ? 'ভারতের সংবিধানে প্রদত্ত তপশিলি জাতি সংরক্ষণের পূর্ণ সুরক্ষা।' : 'Defending Scheduled Caste constitutional reservation and dignity.'}</span>
+                <span>{isBengali ? 'নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকারের মাধ্যমে পরিবার ও সমাজকে শিক্ষিত ও স্বাবলম্বী করে তোলা।' : 'Elevating female higher education as a primary pillar of family and community progress.'}</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0 mt-0.5" />
-                <span>{isBengali ? 'পশ্চিমবঙ্গের ২৩টি জেলায় শক্তিশালী সামাজিক সমন্বয় পরিষদ গড়ে তোলা।' : 'Active district liaison chapters across all 23 districts of West Bengal.'}</span>
+                <span>{isBengali ? 'ভারতের সংবিধানে প্রদত্ত তপশিলি জাতি সংরক্ষণের পূর্ণ সুরক্ষা ও ২৩টি জেলায় সমন্বয়।' : 'Defending Scheduled Caste constitutional reservation and coordinating across all 23 districts of West Bengal.'}</span>
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0 mt-0.5" />
-                <span>{isBengali ? 'নবীন প্রজন্মের মধ্যে স্বাবলম্বন, উদ্যোক্তা চেতনা ও সাংস্কৃতিক অহংকার জাগরণ।' : 'Fostering youth entrepreneurship, civil service aspirants, and cultural pride.'}</span>
+                <span>{isBengali ? 'কলকাতায় আগত সমাজের সদস্যদের জন্য অতিথি কক্ষ (Guest Room) ও শিক্ষার্থীদের অধ্যয়ন পরিবেশের নিরন্তর উন্নয়ন।' : 'Maintaining welcoming Guest Room access for community members and supportive collegiate environments.'}</span>
               </li>
             </ul>
           </div>
@@ -318,7 +318,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
             {isBengali ? 'কর্মসূচিসমূহ' : 'Core Focus Areas'}
           </span>
           <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-blue-900">
-            {isBengali ? 'আমাদের পঞ্চমুখী মূল কার্যক্রম' : 'Key Activities'}
+            {isBengali ? 'আমাদের পঞ্চমুখী কার্যক্রম' : 'Key Activities'}
           </h2>
           <p className="text-slate-600 text-sm sm:text-base">
             {isBengali
@@ -527,7 +527,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
               <p className="text-blue-100 text-base leading-relaxed max-w-2xl">
                 {isBengali
                   ? 'আমাদের সংবিধানে কোনো মাসিক ফি নেই—কেবল এককালীন আজীবন সদস্যপদ তালিকাভুক্তি। সদস্যপদ সরাসরি আমাদের কেন্দ্রীয় কার্যালয় বা জেলা প্রতিনিধিদের মাধ্যমে প্রদান করা হয় (অনলাইনে সদস্যপদ প্রদান করা হয় না)।'
-                  : 'Our organization operates strictly under a Life Membership model with no recurring monthly subscriptions. Please note that membership is processed directly through our head office and district representatives (not online).'}
+                  : 'Our organization operates strictly under a Life Membership model with no recurring monthly subscriptions. Please note that membership is processed directly through our Central Office and district representatives (not online).'}
               </p>
               
               <div className="flex flex-wrap gap-4 pt-2">
@@ -569,7 +569,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onDonateClick })
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
-                  <span>{isBengali ? 'ছাত্রাবাস ও ছাত্রবৃত্তিতে পরিবারের অগ্রাধিকার' : 'Priority hostel and scholarship support for student wards'}</span>
+                  <span>{isBengali ? 'ছাত্রাবাস, অতিথি কক্ষ (Guest Room) ও শিক্ষার উদ্দেশ্যে সামাজিক সহায়তায় (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য) অগ্রাধিকার' : 'Hostel, Member Guest Room access & Social Help for Educational Purpose (Only for Our Community)'}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />

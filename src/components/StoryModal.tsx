@@ -74,8 +74,8 @@ export const StoryModal: React.FC<StoryModalProps> = ({ milestone, onClose, onDo
               </p>
               <p>
                 {isBengali
-                  ? 'প্রতিষ্ঠাতা শ্রদ্ধেয় ব্যক্তিবর্গ ও শুভানুধ্যায়ীদের ত্যাগ ও দূরদর্শিতা আজও আমাদের গ্রামীণ ছাত্রাবাস পরিচালনা, বৃত্তি প্রদান ও সমাজকল্যাণে অনুপ্রেরণা যোগায়।'
-                  : 'The dedication and vision of our founding elders and patrons continue to inspire our 3rd floor rural boys hostel, educational scholarships, and distress charities today.'}
+                  ? 'প্রতিষ্ঠাতা বিশিষ্ট ও দানশীল ব্যক্তিবর্গ ও শুভানুধ্যায়ীদের ত্যাগ ও দূরদর্শিতা আজও আমাদের গ্রামীণ ছাত্রাবাসের আবাসিক ব্যবস্থা, শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা ও সমাজকল্যাণে অনুপ্রেরণা যোগায়।'
+                  : 'The dedication and vision of our distinguished and philanthropic founders and patrons continue to inspire our rural student hostel arrangements, Social Help for Educational Purpose (Only for Our Community), and welfare initiatives today.'}
               </p>
             </div>
           </div>
@@ -106,7 +106,7 @@ export const StoryModal: React.FC<StoryModalProps> = ({ milestone, onClose, onDo
             className="px-5 py-2.5 rounded-lg text-xs sm:text-sm font-bold text-white bg-[#2D6A4F] hover:bg-[#20513B] shadow-xs flex items-center gap-2"
           >
             <HeartHandshake className="w-4 h-4" />
-            <span>{isBengali ? 'ছাত্রাবাস ও শিক্ষাবৃত্তিতে সাহায্য করুন' : 'Support Hostel & Scholarships'}</span>
+            <span>{isBengali ? 'ছাত্রাবাস ও শিক্ষার উদ্দেশ্যে সামাজিক সহায়তায় সাহায্য করুন' : 'Support Hostel & Social Help for Educational Purpose'}</span>
           </button>
         </div>
 

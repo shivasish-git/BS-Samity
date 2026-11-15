@@ -20,7 +20,7 @@ function MainApp() {
     return getPageFromPath(window.location.pathname, window.location.hash);
   });
   const [donationModalOpen, setDonationModalOpen] = useState(false);
-  const [donationCause, setDonationCause] = useState<string>('Student Hostel & Education Fund');
+  const [donationCause, setDonationCause] = useState<string>('Student Hostel, Guest Room & Social Help for Educational Purpose (Only for Our Community)');
 
   // Sync path-based routing with browser window location & history
   useEffect(() => {
@@ -80,7 +80,7 @@ function MainApp() {
         bn: 'অনুদান ও সহায়তা | বঙ্গীয় সাহা সমিতি',
       },
       contact: {
-        en: 'Contact Us & Head Office | Bangiya Saha Samity',
+        en: 'Contact Us & Central Office | Bangiya Saha Samity',
         bn: 'যোগাযোগ ও কেন্দ্রীয় কার্যালয় | বঙ্গীয় সাহা সমিতি',
       },
     };

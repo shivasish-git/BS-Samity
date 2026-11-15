@@ -22,27 +22,27 @@ export const BlogSection: React.FC = () => {
     {
       id: 'pub-2',
       title: isBengali
-        ? '৫২বি ইন্ডিয়ান মিরর স্ট্রিটের ৩য় তলায় গ্রামীণ দরিদ্র ছাত্রদের জন্য ছাত্রাবাস পরিচালনা'
-        : 'Rural Students Hostel at 52B Indian Mirror Street (3rd Floor): Higher Education Hub',
-      category: isBengali ? 'শিক্ষা ও ছাত্রাবাস' : 'Student Welfare',
+        ? '৫২বি ইন্ডিয়ান মিরর স্ট্রিটের ৩য় তলায় গ্রামীণ ছাত্রদের জন্য ছাত্রাবাস ও অতিথি কক্ষ ব্যবস্থা'
+        : 'Rural Students Hostel & Guest Room at 52B Indian Mirror Street (Central Office)',
+      category: isBengali ? 'শিক্ষা, ছাত্রাবাস ও অতিথি কক্ষ' : 'Student Welfare & Hostel',
       date: isBengali ? 'বার্ষিক বুলেটিন' : 'Annual Bulletin',
       readTime: isBengali ? '৪ মিনিট পাঠ' : '4 min read',
       excerpt: isBengali
-        ? '১৯৫৬ সালে জমি ক্রয়ের পর পুনর্নির্মিত চারতলা ভবনের ৩য় তলায় ১০-১৫ জন গ্রামীণ ছাত্রের আবাসিক সুযোগ। দূরদূরান্তের জেলা থেকে কলকাতায় পড়তে আসা মেধাবী ছাত্রদের স্থায়ী আশ্রয়।'
-        : 'Established in our four-storeyed headquarters purchased in 1956, the 3rd floor hostel accommodates 10-15 rural boys pursuing collegiate and university degrees in Kolkata.',
+        ? '১৯৫৬ সালে জমি ক্রয়ের পর পুনর্নির্মিত চারতলা কেন্দ্রীয় কার্যালয় ভবনে গ্রামীণ ছাত্রছাত্রীদের আবাসিক ব্যবস্থা করা হয় এবং সমাজের সদস্যদের জন্য অতিথি কক্ষ (Guest Room) সুবিধা রয়েছে।'
+        : 'Established in our four-storeyed Central Office purchased in 1956, residential hostel arrangements are made for rural students pursuing higher degrees in Kolkata, along with a Guest Room facility for community members.',
       source: isBengali ? 'ছাত্রকল্যাণ ও ছাত্রাবাস উপ-সমিতি' : 'Student Hostel Sub-Committee'
     },
     {
       id: 'pub-3',
       title: isBengali
-        ? 'নারী শিক্ষা বিস্তার, শিক্ষাপ্রতিষ্ঠান ও পাঠাগার প্রতিষ্ঠা: শুঁড়ি সমাজের মূল লক্ষ্য'
-        : 'Promoting Female Education, Scholarships, and Community Libraries Across West Bengal',
+        ? 'নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার, শিক্ষাপ্রতিষ্ঠান ও পাঠাগার প্রতিষ্ঠা: শুঁড়ি সমাজের প্রধান লক্ষ্য'
+        : 'Educational Support with Special Priority for Female Higher Education & Community Libraries',
       category: isBengali ? 'সমাজ সংস্কার ও শিক্ষা' : 'Social Reform & Education',
       date: isBengali ? 'সাময়িক পত্রিকা' : 'Periodical Journal',
       readTime: isBengali ? '৫ মিনিট পাঠ' : '5 min read',
       excerpt: isBengali
-        ? 'আমাদের প্রতিষ্ঠাতা সংবিধানের প্রথম উদ্দেশ্য অনুসারে সমাজে কুপ্রথা দূর করে কন্যা সন্তানদের উচ্চশিক্ষা, শিক্ষাবৃত্তি এবং জেলায় জেলায় অধ্যয়ন কেন্দ্র ও পাঠাগার স্থাপন।'
-        : 'Following Objective 1 of our society constitution: advancing female education, granting student scholarships, establishing libraries, and eradicating harmful customs.',
+        ? 'আমাদের প্রতিষ্ঠাকালীন সংবিধানের প্রথম উদ্দেশ্য অনুসারে সমাজে কুপ্রথা দূর করে নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার, শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা এবং জেলায় জেলায় অধ্যয়ন কেন্দ্র ও পাঠাগার স্থাপন।'
+        : 'Following Objective 1 of our society constitution: educational support with special priority for female higher education, Social Help for Educational Purpose (Only for Our Community), establishing libraries, and eradicating harmful customs.',
       source: isBengali ? 'সাময়িকী ও পুস্তিকা প্রকাশনা' : 'Periodical Pamphlet Division'
     }
   ];
@@ -152,8 +152,8 @@ export const BlogSection: React.FC = () => {
                 </p>
                 <p>
                   {isBengali
-                    ? 'বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) ১৯৩৬-৩৭ সালে প্রতিষ্ঠার পর থেকে অবিচলভাবে সমাজের স্বার্থে কাজ করে চলেছে। ১৯৫০ সালে ড. আম্বেদকর কর্তৃক সংবিধানে তপশিলি জাতিতে অন্তর্ভুক্তি এবং ১৯৫৬ সালে ৫২বি ইন্ডিয়ান মিরর স্ট্রিটে স্থায়ী ভবন ক্রয়ের পর থেকে সমাজ সংস্কার, প্রকাশনা ও গ্রামীণ ছাত্রাবাস পরিচালনার ধারাবাহিকতা বজায় রয়েছে।'
-                    : 'Since its foundation in 1936-37, Bangiya Saha Samity (Sunri Samaj) has relentlessly served the community. Following constitutional inclusion in 1950 by Dr. Ambedkar and acquiring 52B Indian Mirror Street in 1956, our 4-storeyed headquarters continues to publish periodicals, run the rural boys hostel, and advance higher education.'}
+                    ? 'বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) ১৯৩৬-৩৭ সালে প্রতিষ্ঠার পর থেকে অবিচলভাবে সমাজের স্বার্থে কাজ করে চলেছে। ১৯৫০ সালে ড. আম্বেদকর কর্তৃক সংবিধানে তপশিলি জাতিতে অন্তর্ভুক্তি এবং ১৯৫৬ সালে ৫২বি ইন্ডিয়ান মিরর স্ট্রিটে স্থায়ী কেন্দ্রীয় কার্যালয় ভবন ক্রয়ের পর থেকে সমাজ সংস্কার, প্রকাশনা ও গ্রামীণ ছাত্রাবাসে আবাসিক ব্যবস্থা করা এবং সমাজের সদস্যদের জন্য অতিথি কক্ষ (Guest Room) পরিচালনার ধারাবাহিকতা বজায় রয়েছে।'
+                    : 'Since its foundation in 1936-37, Bangiya Saha Samity (Sunri Samaj) has relentlessly served the community. Following constitutional inclusion in 1950 by Dr. Ambedkar and acquiring 52B Indian Mirror Street in 1956, our 4-storeyed Central Office continues to publish periodicals, make residential arrangements for the rural student hostel, make Guest Room facilities available for community members, and advance female higher education.'}
                 </p>
               </div>
 

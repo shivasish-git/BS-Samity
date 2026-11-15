@@ -40,8 +40,8 @@ export const TRANSLATIONS = {
   en: {
     // Top Bar & Navbar
     taxExemptionBadge: 'Registered Non-Profit | Est. 1936-37',
-    regDetails: 'Head Office: 52B Indian Mirror Street, Kol-13 • Birthplace: 77 Manicktala St, Kol-6',
-    helplineTitle: 'Head Office Helpline:',
+    regDetails: 'Central Office: 52B Indian Mirror Street, Kol-13 • Birthplace: 77 Manicktala St, Kol-6',
+    helplineTitle: 'Central Office Helpline:',
     orgName: 'Bangiya Saha Samity',
     orgFullTitle: 'Bangiya Saha Samity (Sunri Samaj)',
     orgSubtitle: 'A Social Organisation of the Scheduled Caste Sunri Community of W.B',
@@ -65,37 +65,37 @@ export const TRANSLATIONS = {
     btnDonateNow: 'Donate / Support Us',
 
     // Hero Section
-    preHeaderBadge: 'Founded 1936-37 • Head Office: 52B Indian Mirror Street, Kolkata',
+    preHeaderBadge: 'Founded 1936-37 • Central Office: 52B Indian Mirror Street, Kolkata',
     ambedkarQuote: '"In the Year 1950 in the Constitution of India, Dr. Baba Saheb Ambedkar included Sunri as a Scheduled Caste community thereon."',
     ambedkarAuthor: '— Constitutional Protection of Sunri Community',
     heroEyebrow: 'Social Organization of the Scheduled Caste Sunri Community of West Bengal',
     heroTitleStart: 'Dedicated to the Social, Educational & ',
     heroTitleAccent: 'Constitutional Rights',
     heroTitleEnd: ' of the Sunri Samaj.',
-    heroDescription: 'Established in 1936-37 at the temple of Maa Jagathanani Estate (77 Manicktala Street) and headquartered in our four-storeyed building at 52B Indian Mirror Street, Kolkata. Operating a dedicated 3rd floor hostel for rural boys, granting educational scholarships, defending Scheduled Caste status under the Constitution, and providing distress relief to helpless community members.',
+    heroDescription: 'Established in 1936-37 at Maa Jagat Janani Temple (77 Manicktala Street) with our Central Office in our four-storeyed building at 52B Indian Mirror Street, Kolkata. Residential hostel arrangements are made for rural students (with a Guest Room facility for community members), alongside Social Help for Educational Purpose (Only for Our Community) with a special priority for female higher education, defending Scheduled Caste status, and extending distress relief to vulnerable members.',
     heroBadge1Title: 'Established 1936-37',
-    heroBadge1Desc: 'Founded at Maa Jagathanani Estate, 77 Manicktala Street by respectable persons of Sunri Samaj.',
+    heroBadge1Desc: 'Founded at Maa Jagat Janani Temple, 77 Manicktala Street by distinguished persons of Sunri Samaj.',
     heroBadge2Title: 'Dr. Ambedkar Inclusion (1950)',
     heroBadge2Desc: 'Dr. Baba Saheb Ambedkar included Sunri as a Scheduled Caste community in the Constitution of India.',
-    heroBadge3Title: 'Rural Students Hostel (1956)',
-    heroBadge3Desc: '3rd floor hostel with capacity of 10-15 boys at 52B Indian Mirror Street for rural students.',
-    heroCtaDonate: 'Support Rural Hostel & Scholarships',
+    heroBadge3Title: 'Rural Students Hostel & Guest Room',
+    heroBadge3Desc: 'At 52B Indian Mirror Street, residential hostel arrangements are made for rural students alongside a Guest Room facility for community members.',
+    heroCtaDonate: 'Support Hostel & Educational Social Help',
     heroCtaExplore: 'Explore History & Objectives',
     heroCtaLegalAid: 'Constitutional SC Protection Desk',
     statsSubtitle: 'Historical Milestones of Bangiya Saha Samity (Sunri Samaj)',
 
     // Metrics
     metrics: [
-      { label: 'Historic Foundation', value: '1936-37', subtext: 'Maa Jagathanani Estate, 77 Manicktala St' },
+      { label: 'Historic Foundation', value: '1936-37', subtext: 'Maa Jagat Janani Temple, 77 Manicktala St' },
       { label: 'SC Constitutional Recognition', value: '1950', subtext: 'Included by Dr. Baba Saheb Ambedkar' },
-      { label: 'Head Office Acquired', value: '1956', subtext: '4-Storeyed Building, 52B Indian Mirror St' },
-      { label: 'Rural Students Hostel', value: '10-15 Boys', subtext: 'Operating on 3rd Floor for Rural Higher Studies' },
+      { label: 'Central Office Acquired', value: '1956', subtext: '4-Storeyed Building, 52B Indian Mirror St' },
+      { label: 'Hostel & Guest Room', value: 'Up to 50', subtext: 'Hostel Arrangements & Member Guest Room' },
     ],
 
     // Mission / Objectives Section
     missionBadge: 'Founding Constitutional Charter',
     missionHeading: 'The Five Sacred Objectives of the Society',
-    missionSubtitle: 'Framed by our founders and reaffirmed through our historic struggle for educational, social, economic, and constitutional advancement across West Bengal.',
+    missionSubtitle: 'Centered on educational support—highlighting a special priority for female higher education—alongside Social Help for Educational Purpose (Only for Our Community), social reform, and constitutional rights.',
     keyInitiativesHeader: 'Key Strategic Focus Areas:',
     verifiedDirectImpact: 'Constitutional Mandate',
     sponsorPillarBtn: 'Support This Objective',
@@ -109,13 +109,13 @@ export const TRANSLATIONS = {
     filterAll: 'All Milestones',
     categoryEducation: 'Foundation Era (1936-37)',
     categoryLegal: 'Dr. Ambedkar Landmark (1950)',
-    categoryCommunity: 'Head Office Acquisition (1956)',
+    categoryCommunity: 'Central Office Acquisition (1956)',
     categoryFellowship: 'Rural Students Hostel',
 
     // Donation Section
-    donationBadge: 'Community Charity & Student Fund',
-    donationHeading: 'Contribute to Rural Hostel & Student Scholarships',
-    donationSubtitle: 'Every contribution directly finances accommodation for rural students at 52B Indian Mirror Street, educational scholarships for girls and boys, and emergency charities for helpless members of the Sunri community.',
+    donationBadge: 'Social Help for Educational Purpose (Only for Our Community)',
+    donationHeading: 'Support Rural Hostel & Social Help for Educational Purpose',
+    donationSubtitle: 'Every contribution directly finances residential hostel arrangements for rural students and our Guest Room facility for community members at 52B Indian Mirror Street, Social Help for Educational Purpose (Only for Our Community) with a special priority for female higher education, and relief for distressed members.',
     frequencyOnce: 'One-Time Contribution',
     frequencyMonthly: 'Monthly Community Patron',
     selectTierHeader: 'Choose a Welfare Fund Tier:',
@@ -137,26 +137,26 @@ export const TRANSLATIONS = {
     legalHeading: 'Dr. Ambedkar Constitutional Safeguards & Retaining SC Status',
     legalSubtitle: 'In 1950, Dr. Baba Saheb Ambedkar included Sunri as a Scheduled Caste community. Explore how the Samity vigorously protects community rights, reservations, and welfare privileges.',
     practicalLegalAction: 'Community Action & Practical Support:',
-    emergencyContactBoxTitle: 'Head Office Consultation & Certificate Support',
-    emergencyContactBoxDesc: 'For guidance regarding SC digital certificates, legislative reservation queries, or hostel admission at 52B Indian Mirror Street.',
-    callLawyerBtn: 'Contact Head Office Advocate',
+    emergencyContactBoxTitle: 'Central Office Consultation & Certificate Support',
+    emergencyContactBoxDesc: 'For guidance regarding SC digital certificates, legislative reservation queries, Guest Room availability, or hostel admission at 52B Indian Mirror Street.',
+    callLawyerBtn: 'Contact Central Office Advocate',
 
     // Contact & Footer
-    contactHeadquarters: 'Head Office: 52B Indian Mirror Street, Kolkata - 700013',
-    contactBirthplace: 'Historic Birthplace: Maa Jagathanani Estate, 77 Manicktala Street, Kolkata - 700006',
-    contactHostel: 'Rural Students Hostel: 3rd Floor, 52B Indian Mirror Street, Kolkata',
+    contactHeadquarters: 'Central Office: 52B Indian Mirror Street, Kolkata - 700013',
+    contactBirthplace: 'Historic Birthplace: Maa Jagat Janani Temple, 77 Manicktala Street, Kolkata - 700006',
+    contactHostel: 'Rural Students Hostel & Guest Room: 52B Indian Mirror Street, Kolkata (Guest Room for Community Members)',
     footerAboutText: 'Bangiya Saha Samity (Sunri Samaj) is dedicated to the social, economic, educational, and constitutional development of the Scheduled Caste Sunri Community in West Bengal.',
   },
 
   bn: {
     // Top Bar & Navbar
     taxExemptionBadge: 'নিবন্ধিত জনকল্যাণ প্রতিষ্ঠান | স্থাপিত ১৯৩৬-৩৭',
-    regDetails: 'প্রধান কার্যালয়: ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কোল-১৩ • প্রতিষ্ঠাস্থল: ৭৭ মানিকতলা স্ট্রিট, কোল-৬',
-    helplineTitle: 'প্রধান কার্যালয় হেল্পলাইন:',
+    regDetails: 'কেন্দ্রীয় কার্যালয়: ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কোল-১৩ • প্রতিষ্ঠাস্থল: ৭৭ মানিকতলা স্ট্রিট, কোল-৬',
+    helplineTitle: 'কেন্দ্রীয় কার্যালয় হেল্পলাইন:',
     orgName: 'বঙ্গীয় সাহা সমিতি',
     orgFullTitle: 'বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ)',
     orgSubtitle: 'পশ্চিমবঙ্গের তপশিলি জাতি শুঁড়ি সমাজের একটি সামাজিক সংগঠন',
-    navHome: 'মূল পাতা',
+    navHome: 'প্রথম পাতা',
     navAbout: 'আমাদের সম্পর্কে',
     navHeritage: 'সাংস্কৃতিক ঐতিহ্য',
     navMembership: 'সদস্যপদ',
@@ -176,37 +176,37 @@ export const TRANSLATIONS = {
     btnDonateNow: 'সহায়তা ও অনুদান',
 
     // Hero Section
-    preHeaderBadge: 'স্থাপিত ১৯৩৬-৩৭ • প্রধান কার্যালয়: ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা',
+    preHeaderBadge: 'স্থাপিত ১৯৩৬-৩৭ • কেন্দ্রীয় কার্যালয়: ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা',
     ambedkarQuote: '"১৯৫০ সালে ভারতের সংবিধানে ড. বাবাসাহেব আম্বেদকর শুঁড়ি সম্প্রদায়কে তপশিলি জাতি হিসেবে অন্তর্ভুক্ত করেন।"',
     ambedkarAuthor: '— তপশিলি শুঁড়ি সমাজের ঐতিহাসিক সাংবিধানিক স্বীকৃতি',
     heroEyebrow: 'পশ্চিমবঙ্গের তপশিলি জাতি শুঁড়ি সমাজের সামাজিক ও সাংবিধানিক সংগঠন',
     heroTitleStart: 'শুঁড়ি সমাজের সামাজিক, শিক্ষাগত ও ',
     heroTitleAccent: 'সাংবিধানিক অধিকারের সুরক্ষায়',
     heroTitleEnd: ' নিবেদিত প্রতিষ্ঠান।',
-    heroDescription: '১৯৩৬-৩৭ সালে কলকাতার ৭৭ মানিকতলা স্ট্রিটের মা জগজ্জননী এস্টেটের মন্দিরে শুঁড়ি সমাজের শ্রদ্ধেয় ব্যক্তিবর্গের দ্বারা প্রতিষ্ঠিত। ৫২বি ইন্ডিয়ান মিরর স্ট্রিটে নিজস্ব চারতলা ভবনে কেন্দ্রীয় কার্যালয় অবস্থিত। ৩য় তলায় গ্রামীণ ছাত্রদের জন্য ১০-১৫ আসনের ছাত্রাবাস পরিচালনা, শিক্ষাবৃত্তি প্রদান, সংবিধানে তপশিলি মর্যাদা সংরক্ষণ এবং দুস্থ ও অসহায় মানুষদের সেবা করাই আমাদের মূল ব্রত।',
+    heroDescription: '১৯৩৬-৩৭ সালে কলকাতার ৭৭ মানিকতলা স্ট্রিটের মা জগৎ জননী মন্দিরে শুঁড়ি সমাজের বিশিষ্ট ব্যক্তিবর্গের দ্বারা প্রতিষ্ঠিত। ৫২বি ইন্ডিয়ান মিরর স্ট্রিটে নিজস্ব চারতলা ভবনে কেন্দ্রীয় কার্যালয় অবস্থিত। এখানে গ্রামীণ শিক্ষার্থীদের জন্য ছাত্রাবাসের আবাসিক ব্যবস্থা করা হয় এবং সমাজের সদস্যদের জন্য অতিথি কক্ষের (Guest Room) সুবিধা রয়েছে। শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা, নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার, সংবিধানে তপশিলি মর্যাদা সংরক্ষণ এবং দুস্থ ও বিপন্ন মানুষদের সেবা করাই আমাদের অঙ্গীকার।',
     heroBadge1Title: 'ঐতিহাসিক প্রতিষ্ঠা (১৯৩৬-৩৭)',
-    heroBadge1Desc: 'কলকাতার ৭৭ মানিকতলা স্ট্রিটের মা জগজ্জননী এস্টেটের মন্দিরে সমাজের গণ্যমান্য ব্যক্তিবর্গ দ্বারা গঠিত।',
+    heroBadge1Desc: 'কলকাতার ৭৭ মানিকতলা স্ট্রিটের মা জগৎ জননী মন্দিরে সমাজের বিশিষ্ট ব্যক্তিবর্গ দ্বারা গঠিত।',
     heroBadge2Title: 'ড. আম্বেদকর কর্তৃক স্বীকৃতি (১৯৫০)',
     heroBadge2Desc: 'ভারতের সংবিধানে ড. বাবাসাহেব আম্বেদকর কর্তৃক শুঁড়ি সম্প্রদায়কে তপশিলি জাতি হিসেবে অন্তর্ভুক্তকরণ।',
-    heroBadge3Title: 'গ্রামীণ ছাত্রাবাস (১৯৫৬)',
-    heroBadge3Desc: '৫২বি ইন্ডিয়ান মিরর স্ট্রিটের ৩য় তলায় দূরবর্তী ১০-১৫ জন গ্রামীণ দরিদ্র ছাত্রের আবাসিক ব্যবস্থা।',
-    heroCtaDonate: 'ছাত্রাবাস ও শিক্ষাবৃত্তিতে অনুদান দিন',
-    heroCtaExplore: 'ইতিহাস ও মূল উদ্দেশ্যসমূহ দেখুন',
+    heroBadge3Title: 'গ্রামীণ ছাত্রাবাস ও অতিথি কক্ষ',
+    heroBadge3Desc: '৫২বি ইন্ডিয়ান মিরর স্ট্রিটে দূরবর্তী গ্রামীণ শিক্ষার্থীদের জন্য আবাসিক ব্যবস্থা করা হয় এবং সমাজের সদস্যদের জন্য অতিথি কক্ষের (Guest Room) সুবিধা রয়েছে।',
+    heroCtaDonate: 'ছাত্রাবাস ও শিক্ষার সামাজিক সহায়তায় অনুদান দিন',
+    heroCtaExplore: 'ইতিহাস ও উদ্দেশ্যসমূহ দেখুন',
     heroCtaLegalAid: 'তপশিলি অধিকার ও আইনি সহায়তা ডেস্ক',
     statsSubtitle: 'পশ্চিমবঙ্গে তপশিলি জাতি শুঁড়ি সম্প্রদায়ের সেবায় ৮৮+ বছরের ঐতিহাসিক মাইলফলক',
 
     // Metrics
     metrics: [
-      { label: 'ঐতিহাসিক প্রতিষ্ঠা', value: '১৯৩৬-৩৭', subtext: 'মা জগজ্জননী এস্টেট, ৭৭ মানিকতলা স্ট্রিট' },
+      { label: 'ঐতিহাসিক প্রতিষ্ঠা', value: '১৯৩৬-৩৭', subtext: 'মা জগৎ জননী মন্দির, ৭৭ মানিকতলা স্ট্রিট' },
       { label: 'সংবিধানে তপশিলি স্বীকৃতি', value: '১৯৫০', subtext: 'ড. বাবাসাহেব আম্বেদকর কর্তৃক সংবিধানে অন্তর্ভুক্ত' },
       { label: 'স্থায়ী কেন্দ্রীয় কার্যালয়', value: '১৯৫৬', subtext: '৪ তলা ভবন, ৫২বি ইন্ডিয়ান মিরর স্ট্রিট' },
-      { label: 'গ্রামীণ ছাত্রাবাস', value: '১০-১৫ জন ছাত্র', subtext: '৩য় তলায় গ্রামীণ উচ্চশিক্ষার আবাসিক সহায়তা' },
+      { label: 'ছাত্রাবাস ও অতিথি কক্ষ', value: '৫০ আসন পর্যন্ত', subtext: 'আবাসিক ব্যবস্থা ও সদস্যদের জন্য অতিথি কক্ষ' },
     ],
 
     // Mission / Objectives Section
-    missionBadge: 'সংগঠনের মূল সংবিধান ও লক্ষ্য',
-    missionHeading: 'বঙ্গীয় সাহা সমিতির ৫টি মৌলিক উদ্দেশ্য',
-    missionSubtitle: 'প্রতিষ্ঠাতা মনীষীদের নির্ধারিত লক্ষ্য ও আদর্শ অনুসারে সমগ্র পশ্চিমবঙ্গে শুঁড়ি সমাজের শিক্ষা, সামাজিক সংস্কার, ঐক্য এবং সাংবিধানিক অধিকার রক্ষায় গৃহীত পঞ্চমুখী কর্মসূচি।',
+    missionBadge: 'সংগঠনের সংবিধান ও লক্ষ্য',
+    missionHeading: 'বঙ্গীয় সাহা সমিতির ৫টি সাংবিধানিক উদ্দেশ্য',
+    missionSubtitle: 'নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকারসহ শিক্ষা সহায়তা, শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা, সামাজিক সংস্কার ও সাংবিধানিক অধিকার রক্ষায় গৃহীত পঞ্চমুখী কর্মসূচি।',
     keyInitiativesHeader: 'প্রধান বাস্তবায়ন কর্মসূচি:',
     verifiedDirectImpact: 'সংবিধানসম্মত উদ্দেশ্য',
     sponsorPillarBtn: 'এই উদ্দেশ্যে পাশে থাকুন',
@@ -224,9 +224,9 @@ export const TRANSLATIONS = {
     categoryFellowship: 'গ্রামীণ ছাত্রাবাস ও ৪ তলা ভবন',
 
     // Donation Section
-    donationBadge: 'সমাজসেবা ও শিক্ষাবৃত্তি তহবিল',
-    donationHeading: 'গ্রামীণ ছাত্রাবাস ও ছাত্রছাত্রীদের শিক্ষাবৃত্তিতে সাহায্য করুন',
-    donationSubtitle: 'আপনার প্রতিটি অনুদান সরাসরি ৫২বি ইন্ডিয়ান মিরর স্ট্রিটের ছাত্রাবাসে আশ্রিত গ্রামীণ ছাত্রদের ভরণপোষণ, শুঁড়ি সম্প্রদায়ের কন্যা ও মেধাবী শিক্ষার্থীদের উচ্চশিক্ষা এবং সমাজের নিঃস্ব অসহায় নারী-পুরুষদের জরুরি ত্রাণের কাজে ব্যবহৃত হয়।',
+    donationBadge: 'শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য)',
+    donationHeading: 'গ্রামীণ ছাত্রাবাস ও শিক্ষার উদ্দেশ্যে সামাজিক সহায়তায় অংশ নিন',
+    donationSubtitle: 'আপনার প্রতিটি অনুদান সরাসরি ৫২বি ইন্ডিয়ান মিরর স্ট্রিটের ছাত্রাবাসে শিক্ষার্থীদের আবাসিক ব্যবস্থা ও সদস্যদের জন্য অতিথি কক্ষ (Guest Room) পরিচালনা, শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকারসহ) এবং সমাজের দুস্থ ও বিপন্ন মানুষদের জরুরি ত্রাণের কাজে ব্যবহৃত হয়।',
     frequencyOnce: 'এককালীন অনুদান',
     frequencyMonthly: 'মাসিক পৃষ্ঠপোষক অনুদান',
     selectTierHeader: 'কল্যাণ তহবিলের পরিমাণ নির্বাচন করুন:',
@@ -250,12 +250,12 @@ export const TRANSLATIONS = {
     practicalLegalAction: 'আইনি পদক্ষেপ ও সরাসরি সহায়তা:',
     emergencyContactBoxTitle: 'কেন্দ্রীয় কার্যালয় থেকে পরামর্শ ও সহায়তা',
     emergencyContactBoxDesc: 'ডিজিটাল এসসি সার্টিফিকেট প্রাপ্তি, সংরক্ষণ সংক্রান্ত সমস্যা অথবা ৫২বি ইন্ডিয়ান মিরর স্ট্রিটে ছাত্রাবাসে ভর্তির জন্য যোগাযোগ করুন।',
-    callLawyerBtn: 'প্রধান কার্যালয়ের সাথে কথা বলুন',
+    callLawyerBtn: 'কেন্দ্রীয় কার্যালয়ের সাথে কথা বলুন',
 
     // Contact & Footer
-    contactHeadquarters: 'কেন্দ্রীয় কার্যালয়: ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা - ৭০০০০১৩',
-    contactBirthplace: 'ঐতিহাসিক জন্মস্থান: মা জগজ্জননী এস্টেট, ৭৭ মানিকতলা স্ট্রিট, কলকাতা - ৭০০০০৬',
-    contactHostel: 'গ্রামীণ ছাত্রাবাস: ৩য় তল, ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা',
+    contactHeadquarters: 'কেন্দ্রীয় কার্যালয়: ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা - ৭০০০১৩',
+    contactBirthplace: 'ঐতিহাসিক জন্মস্থান: মা জগৎ জননী মন্দির, ৭৭ মানিকতলা স্ট্রিট, কলকাতা - ৭০০০০৬',
+    contactHostel: 'গ্রামীণ ছাত্রাবাস ও অতিথি কক্ষ: ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা (সমাজের সদস্যদের জন্য অতিথি কক্ষের সুবিধা)',
     footerAboutText: 'বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) পশ্চিমবঙ্গের তপশিলি জাতি শুঁড়ি সম্প্রদায়ের সামাজিক, অর্থনৈতিক, শিক্ষাগত ও সাংবিধানিক অধিকারের সার্বিক উন্নয়নে নিবেদিত একটি ঐতিহাসিক সামাজিক প্রতিষ্ঠান।',
   }
 };
@@ -264,18 +264,18 @@ export const LOCALIZED_PILLARS: Record<Language, LocalizedPillar[]> = {
   en: [
     {
       id: 'obj-education',
-      title: 'Education, Scholarships, Female Education & Libraries',
-      tagline: 'Promoting education, culture, and useful knowledge among the Sunri community.',
-      description: 'To improve and develop in all respects the position of Sunri Community (Excluding Saha) as a whole and particularly in West Bengal by all legitimate means to promote and spread education and culture and diffuse useful knowledge among the Sunri community by granting scholarships, founding and maintaining, promoting female education and foundation and maintenance of educational institutions and libraries and controlling publication of journals, periodicals, pamphlets and books, holding meetings and conferences and sending preachers amongst the Sunri Community.',
+      title: 'Educational Support, Female Higher Education & Libraries',
+      tagline: 'Promoting education with special priority for female higher education and Social Help for Educational Purpose (Only for Our Community).',
+      description: 'To improve and develop in all respects the position of Sunri Community (Excluding Saha) as a whole and particularly in West Bengal by all legitimate means to promote and spread education and culture and diffuse useful knowledge among the Sunri community through Social Help for Educational Purpose (Only for Our Community), highlighting a special priority for female higher education, founding and maintaining educational institutions and libraries, controlling publication of journals, periodicals, pamphlets and books, holding meetings and conferences and sending preachers amongst the Sunri Community.',
       keyInitiatives: [
-        'Granting merit and means scholarships to deserving Sunri students',
-        'Promoting female education aggressively across all districts of West Bengal',
+        'Social Help for Educational Purpose (Only for Our Community) for deserving students',
+        'Highlighting special priority for female higher education across West Bengal',
         'Foundation and maintenance of community educational institutions and libraries',
         'Controlling and managing publication of journals, periodical pamphlets, and books',
         'Holding regular meetings, educational conferences, and sending preachers amongst the community'
       ],
       icon: 'GraduationCap',
-      impactNumber: 'Scholarships & Books',
+      impactNumber: 'Only for Our Community',
       impactLabel: 'Objective 1'
     },
     {
@@ -325,14 +325,14 @@ export const LOCALIZED_PILLARS: Record<Language, LocalizedPillar[]> = {
     },
     {
       id: 'obj-distress-charity',
-      title: 'Distress Charities & Relief to Helpless Men and Women',
-      tagline: 'Compassionate assistance to distressed members and helpless women and men.',
-      description: 'To grant charities to the distressed of the community and to render help to the absolutely helpless women and men of the community as the funds permit.',
+      title: 'Distress Charities & Relief to Vulnerable Men and Women',
+      tagline: 'Compassionate assistance to distressed members and vulnerable women and men as funds permit.',
+      description: 'To grant charities to the distressed of the community and to render help to vulnerable women and men of the community as the funds permit.',
       keyInitiatives: [
         'Direct monetary charity to distressed community families in critical need',
-        'Sustenance help and medical grants for helpless, elderly, and widowed women',
-        'Operating the 3rd floor hostel at 52B Indian Mirror Street for 10-15 rural boys',
-        'Crisis relief, welfare distribution, and disaster support for destitute members'
+        'Sustenance help and medical grants for vulnerable, elderly, and widowed women',
+        'Residential hostel arrangements made at 52B Indian Mirror Street for rural students',
+        'Guest Room facility available for community members visiting Kolkata'
       ],
       icon: 'HeartHandshake',
       impactNumber: 'Distress Grants',
@@ -343,19 +343,19 @@ export const LOCALIZED_PILLARS: Record<Language, LocalizedPillar[]> = {
   bn: [
     {
       id: 'obj-education',
-      title: 'শিক্ষা বিস্তার, বৃত্তি প্রদান, নারী শিক্ষা ও পাঠাগার প্রতিষ্ঠা',
-      tagline: 'শুঁড়ি সমাজের মধ্যে শিক্ষা, সংস্কৃতি ও কল্যাণকর জ্ঞানের প্রসার ঘটানো।',
-      description: 'পশ্চিমবঙ্গে ও সামগ্রিকভাবে শুঁড়ি সমাজের (সাহা ব্যতীত) সর্বাঙ্গীণ উন্নতি ও অবস্থান পরিবর্তনের লক্ষ্যে বৈধ উপায়ে শিক্ষা ও সংস্কৃতির বিকাশ ঘটানো, ছাত্রছাত্রীদের বৃত্তি প্রদান, নারী শিক্ষার প্রসার, শিক্ষাপ্রতিষ্ঠান ও পাঠাগার স্থাপন ও পরিচালনা করা এবং সাময়িকী, পত্রিকা, পুস্তিকা ও বই প্রকাশনা নিয়ন্ত্রণ, সম্মেলন আয়োজন ও সমাজে প্রচারক প্রেরণ করা।',
+      title: 'শিক্ষা বিস্তার, শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা, নারী উচ্চশিক্ষা ও পাঠাগার',
+      tagline: 'নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার ও শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা প্রদান।',
+      description: 'পশ্চিমবঙ্গে ও সামগ্রিকভাবে শুঁড়ি সমাজের (সাহা ব্যতীত) সর্বাঙ্গীণ উন্নতি ও অবস্থান পরিবর্তনের লক্ষ্যে বৈধ উপায়ে শিক্ষা ও সংস্কৃতির বিকাশ ঘটানো, শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা প্রদান, নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার দেওয়া, শিক্ষাপ্রতিষ্ঠান ও পাঠাগার স্থাপন ও পরিচালনা করা এবং সাময়িকী, পত্রিকা, পুস্তিকা ও বই প্রকাশনা নিয়ন্ত্রণ, সম্মেলন আয়োজন ও সমাজে প্রচারক প্রেরণ করা।',
       keyInitiatives: [
-        'মেধাবী ও অসচ্ছল ছাত্রছাত্রীদের নিয়মিত উচ্চশিক্ষা বৃত্তি প্রদান',
-        'সমগ্র পশ্চিমবঙ্গ জুড়ে শুঁড়ি সমাজের কন্যাদের নারী শিক্ষায় বিশেষ অগ্রাধিকার',
+        'শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা প্রদান',
+        'সমগ্র পশ্চিমবঙ্গ জুড়ে নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার প্রদান',
         'সম্প্রদায়ের পাঠাগার ও অধ্যয়ন কেন্দ্র স্থাপন এবং নিয়মিত পরিচালনা',
         'সমাজ সচেতনতামূলক সাময়িকী, পত্রিকা, পুস্তিকা ও গ্রন্থ প্রকাশ ও নিয়ন্ত্রণ',
         'নিয়মিত সমাবেশ, সম্মেলন আহ্বান এবং সমাজ সংস্কারক ও প্রচারক প্রেরণ'
       ],
       icon: 'GraduationCap',
-      impactNumber: 'বৃত্তি ও গ্রন্থ প্রকাশ',
-      impactLabel: 'মূল উদ্দেশ্য ১'
+      impactNumber: 'শুধুমাত্র আমাদের সম্প্রদায়ের জন্য',
+      impactLabel: 'সাংবিধানিক উদ্দেশ্য ১'
     },
     {
       id: 'obj-social-reform',
@@ -370,7 +370,7 @@ export const LOCALIZED_PILLARS: Record<Language, LocalizedPillar[]> = {
       ],
       icon: 'Users',
       impactNumber: 'সামাজিক ঐক্য',
-      impactLabel: 'মূল উদ্দেশ্য ২'
+      impactLabel: 'সাংবিধানিক উদ্দেশ্য ২'
     },
     {
       id: 'obj-constitutional-sc',
@@ -385,7 +385,7 @@ export const LOCALIZED_PILLARS: Record<Language, LocalizedPillar[]> = {
       ],
       icon: 'ShieldCheck',
       impactNumber: 'ড. আম্বেদকর (১৯৫০)',
-      impactLabel: 'মূল উদ্দেশ্য ৩'
+      impactLabel: 'সাংবিধানিক উদ্দেশ্য ৩'
     },
     {
       id: 'obj-safeguard-interests',
@@ -400,22 +400,22 @@ export const LOCALIZED_PILLARS: Record<Language, LocalizedPillar[]> = {
       ],
       icon: 'Scale',
       impactNumber: 'পশ্চিমবঙ্গ',
-      impactLabel: 'মূল উদ্দেশ্য ৪'
+      impactLabel: 'সাংবিধানিক উদ্দেশ্য ৪'
     },
     {
       id: 'obj-distress-charity',
-      title: 'দুস্থ ও অসহায় মানুষদের ত্রাণ বিতরণ ও সাহায্য প্রদান',
-      tagline: 'তহবিলের সামর্থ্য অনুযায়ী বিপন্ন পরিবার এবং অসহায় নারী-পুরুষদের পাশে দাঁড়ানো।',
-      description: 'সমাজের নিঃস্ব ও বিপন্ন মানুষদের দাতব্য সাহায্য প্রদান করা এবং তহবিলের সংস্থান অনুযায়ী সমাজের চরম অসহায় নারী ও পুরুষদের সর্বতোভাবে সহায়তা প্রদান করা।',
+      title: 'দুস্থ ও বিপন্ন মানুষদের ত্রাণ বিতরণ ও সাহায্য প্রদান',
+      tagline: 'তহবিলের সামর্থ্য অনুযায়ী বিপন্ন পরিবার এবং দুস্থ নারী-পুরুষদের পাশে দাঁড়ানো।',
+      description: 'সমাজের দুস্থ ও বিপন্ন মানুষদের দাতব্য সাহায্য প্রদান করা এবং তহবিলের সংস্থান অনুযায়ী সমাজের বিপন্ন নারী ও পুরুষদের সর্বতোভাবে সহায়তা প্রদান করা।',
       keyInitiatives: [
         'আর্থিক সংকটে নিমজ্জিত দরিদ্র পরিবারগুলোকে এককালীন দাতব্য আর্থিক সহায়তা',
-        'অসহায়, প্রবীণ ও বিধবা মহিলাদের চিকিৎসা অনুদান ও ভরণপোষণ ভাতা',
-        '৫২বি ইন্ডিয়ান মিরর স্ট্রিটের ৩য় তলায় দূরবর্তী ১০-১৫ জন গ্রামীণ ছাত্রের আবাসন',
-        'প্রাকৃতিক দুর্যোগ ও আকস্মিক পারিবারিক বিপদে জরুরি মানবিক ত্রাণ বিতরণ'
+        'বিপন্ন, প্রবীণ ও বিধবা মহিলাদের চিকিৎসা অনুদান ও ভরণপোষণ ভাতা',
+        '৫২বি ইন্ডিয়ান মিরর স্ট্রিটে দূরবর্তী গ্রামীণ শিক্ষার্থীদের আবাসিক ব্যবস্থা করা হয়',
+        'সমাজের সদস্যদের জন্য অতিথি কক্ষের (Guest Room) সুবিধা ও জরুরি মানবিক ত্রাণ'
       ],
       icon: 'HeartHandshake',
       impactNumber: 'দাতব্য অনুদান',
-      impactLabel: 'মূল উদ্দেশ্য ৫'
+      impactLabel: 'সাংবিধানিক উদ্দেশ্য ৫'
     }
   ]
 };
@@ -426,7 +426,7 @@ export const LOCALIZED_MILESTONES: Record<Language, LocalizedMilestone[]> = {
       year: '1934 - 1935',
       title: 'Founding at 77 Maniktala St & 1935 Govt of India Act',
       location: '77, Maniktala Street, Kolkata – 700006 (Simla)',
-      description: 'Under the Government of India Act of 1935 enacted by the British administration, the economically and socially backward Sunri community was designated as a "Scheduled Caste" via official notifications due to historical occupational segregation, alongside large numbers of impoverished laborers and agricultural workers. In 1934, benevolent individuals established Bangiya Saha Samity (Sunri Samaj) at 77, Maniktala Street (Simla) in the temple of Maa Jagathanani Estate, accommodating underprivileged rural students pursuing higher education.',
+      description: 'Under the Government of India Act of 1935 enacted by the British administration, the economically and socially backward Sunri community was designated as a "Scheduled Caste" via official notifications due to historical occupational segregation, alongside large numbers of impoverished laborers and agricultural workers. In 1934, philanthropic and eminent individuals established Bangiya Saha Samity (Sunri Samaj) at 77, Manicktala Street (Simla) in Maa Jagat Janani Temple, where residential arrangements were made for rural students pursuing higher education.',
       badge: 'Foundation Era (1934-35)'
     },
     {
@@ -440,7 +440,7 @@ export const LOCALIZED_MILESTONES: Record<Language, LocalizedMilestone[]> = {
       year: '1950 & 1956',
       title: 'Dr. Ambedkar SC Inclusion & 52B Indian Mirror St Purchase',
       location: '52B, Indian Mirror Street, Kolkata – 700013 (Opp. G.D. Hospital)',
-      description: 'In 1950, Babasaheb Dr. B. R. Ambedkar reaffirmed our inclusion in the Scheduled Caste list. Later in 1956, our classification was listed as "Sunri (Excluding Saha)". Around that time, with financial assistance of well-wishers and community families, a parcel of land with a single room was purchased at 52B, Indian Mirror Street, Kolkata – 700013 (Opposite G.D. Hospital, Taltala). Within a few years, a four-storey building was erected, housing our state headquarters and rural students hostel.',
+      description: 'In 1950, Babasaheb Dr. B. R. Ambedkar reaffirmed our inclusion in the Scheduled Caste list. Later in 1956, our classification was listed as "Sunri (Excluding Saha)". Around that time, with financial assistance of well-wishers and community families, a parcel of land with a single room was purchased at 52B, Indian Mirror Street, Kolkata – 700013 (Opposite G.D. Hospital, Taltala). Within a few years, a four-storey building was erected, serving as our Central Office where rural student hostel arrangements and a Guest Room facility for community members are maintained.',
       badge: 'Ambedkar & 52B Property'
     },
     {
@@ -452,10 +452,10 @@ export const LOCALIZED_MILESTONES: Record<Language, LocalizedMilestone[]> = {
     },
     {
       year: '2018 – Present',
-      title: '50-Student Hostel Expansion & Female Wing Establishment',
+      title: '50-Student Hostel Expansion, Female Wing & Guest Room',
       location: '52B, Indian Mirror Street, Kolkata – 700013',
-      description: 'Through the dedicated efforts of the Central Executive Committee and Advisory Board, the four-storeyed building underwent extensive modern renovations, and the hostel expanded to accommodate up to 50 students (with dedicated female facilities opened in 2018). The Samity also submitted memorandums to the Backward Classes Welfare Department and the National Commission for Scheduled Castes in New Delhi.',
-      badge: '50-Bed Hostel & Modern Era'
+      description: 'Through the dedicated efforts of the Central Executive Committee and Advisory Board, the four-storeyed Central Office building underwent extensive modern renovations: residential hostel arrangements are made for up to 50 students (with dedicated female facilities opened in 2018, reflecting our special priority for female higher education), alongside a Guest Room facility for community members.',
+      badge: '50-Bed Hostel & Guest Room'
     }
   ],
 
@@ -464,21 +464,21 @@ export const LOCALIZED_MILESTONES: Record<Language, LocalizedMilestone[]> = {
       year: '১৯৩৪ - ১৯৩৫',
       title: '৭৭ মানিকতলা স্ট্রিটে শুভ প্রতিষ্ঠা ও ১৯৩৫ সালের ভারত শাসন আইন',
       location: '৭৭, মানিকতলা স্ট্রিট, কলকাতা – ৭০০০১৬ (সিমলা)',
-      description: 'ব্রিটিশ প্রশাসন প্রণীত ১৯৩৫ সালের ভারত শাসন আইনের অধীনে শুঁড়ি সমাজকে "তপশিলি জাতি" (Scheduled Caste) হিসেবে চিহ্নিত করা হয়। এই পরিস্থিতিতে সমাজের মহানুভব ব্যক্তিদের উদ্যোগে ১৯৩৪ সালে কলকাতার ৭৭, মানিকতলা স্ট্রিটে (সিমলা) মা জগজ্জননী এস্টেটের মন্দিরে বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) প্রতিষ্ঠিত হয় এবং দরিদ্র গ্রামীণ ছাত্রদের উচ্চশিক্ষার জন্য আশ্রয়ের ব্যবস্থা করা হয়।',
+      description: 'ব্রিটিশ প্রশাসন প্রণীত ১৯৩৫ সালের ভারত শাসন আইনের অধীনে শুঁড়ি সমাজকে "তপশিলি জাতি" (Scheduled Caste) হিসেবে চিহ্নিত করা হয়। এই পরিস্থিতিতে সমাজের দানশীল ও প্রখ্যাত ব্যক্তিদের উদ্যোগে ১৯৩৪ সালে কলকাতার ৭৭, মানিকতলা স্ট্রিটে (সিমলা) মা জগৎ জননী মন্দিরে বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) প্রতিষ্ঠিত হয় এবং গ্রামীণ ছাত্রদের উচ্চশিক্ষার জন্য আবাসিক ব্যবস্থা করা হয়।',
       badge: 'প্রতিষ্ঠা ও ব্রিটিশ স্বীকৃতি (১৯৩৪-৩৫)'
     },
     {
       year: '১৯৩৬–৩৭',
       title: 'বিধিবদ্ধ রেজিস্ট্রেশন: রেজিস্ট্রি নং ৪৫২২ অব ১৯৩৬–৩৭',
       location: 'কলকাতা, পশ্চিমবঙ্গ',
-      description: 'সোসাইটি রেজিস্ট্রেশন অ্যাক্টের অধীনে ৪৫২২ অব ১৯৩৬-৩৭ নম্বরে বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) বিধিবদ্ধভাবে নিবন্ধিত হয় এবং তার ৫টি মূল সাংবিধানিক উদ্দেশ্য গৃহীত হয়।',
+      description: 'সোসাইটি রেজিস্ট্রেশন অ্যাক্টের অধীনে ৪৫২২ অব ১৯৩৬-৩৭ নম্বরে বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) বিধিবদ্ধভাবে নিবন্ধিত হয় এবং তার ৫টি সাংবিধানিক উদ্দেশ্য গৃহীত হয়।',
       badge: 'বিধিবদ্ধ নিবন্ধন (১৯৩৬-৩৭)'
     },
     {
       year: '১৯৫০ ও ১৯৫৬',
       title: 'ড. আম্বেদকর কর্তৃক সংবিধানে অন্তর্ভুক্তি ও ৫২বি ইন্ডিয়ান মিরর স্ট্রিট ক্রয়',
       location: '৫২বি, ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩ (জি.ডি. হাসপাতালের বিপরীতে)',
-      description: '১৯৫০ সালে সংবিধানের প্রধান রূপকার বাবাসাহেব ড. বি. আর. আম্বেদকর শুঁড়ি সম্প্রদায়কে তপশিলি জাতি তালিকায় অন্তর্ভুক্ত করেন। ১৯৫৬ সালে সংশোধনের পর শ্রেণিবিন্যাস হয় "Sunri (Excluding Saha)"। একই সময়ে সমাজের সদস্যদের আর্থিক সহায়তায় ৫২বি, ইন্ডিয়ান মিরর স্ট্রিটে (জি.ডি. হাসপাতালের বিপরীতে, তালতলা) এক কামরাসহ জমি ক্রয় করে চারতলা ভবন নির্মাণ ও ছাত্রাবাস চালু হয়।',
+      description: '১৯৫০ সালে সংবিধানের প্রধান রূপকার বাবাসাহেব ড. বি. আর. আম্বেদকর শুঁড়ি সম্প্রদায়কে তপশিলি জাতি তালিকায় অন্তর্ভুক্ত করেন। ১৯৫৬ সালে সংশোধনের পর শ্রেণিবিন্যাস হয় "Sunri (Excluding Saha)"। একই সময়ে সমাজের সদস্যদের আর্থিক সহায়তায় ৫২বি, ইন্ডিয়ান মিরর স্ট্রিটে (জি.ডি. হাসপাতালের বিপরীতে, তালতলা) এক কামরাসহ জমি ক্রয় করে চারতলা ভবন নির্মাণ, কেন্দ্রীয় কার্যালয়, ছাত্রাবাসের আবাসিক ব্যবস্থা ও সমাজের সদস্যদের জন্য অতিথি কক্ষ (Guest Room) চালু হয়।',
       badge: 'ড. আম্বেদকর ও ৫২বি ভবন'
     },
     {
@@ -490,10 +490,10 @@ export const LOCALIZED_MILESTONES: Record<Language, LocalizedMilestone[]> = {
     },
     {
       year: '২০১৮ – বর্তমান',
-      title: '৫০ আসনের ছাত্রাবাস সম্প্রসারণ ও ছাত্রী শাখা প্রতিষ্ঠা',
+      title: '৫০ আসনের ছাত্রাবাস, ছাত্রী শাখা ও অতিথি কক্ষ',
       location: '৫২বি, ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩',
-      description: 'কেন্দ্রীয় কার্যনির্বাহী কমিটি ও উপদেষ্টা মণ্ডলীর পরিচালনায় ৫২বি ভবনের সার্বিক সংস্কার এবং ছাত্রাবাস ৫০ আসনে সম্প্রসারণ সম্পন্ন হয়েছে (২০১৮ সালে ছাত্রীদের বিশেষ বিভাগ চালু হয়)। পাশাপাশি নয়া দিল্লিতে জাতীয় তপশিলি জাতি কমিশনে সমাজের অধিকার রক্ষায় স্মারকলিপি পেশ করা হয়েছে।',
-      badge: '৫০ আসনের ছাত্রাবাস ও আধুনিক সংস্কার'
+      description: 'কেন্দ্রীয় কার্যনির্বাহী কমিটি ও উপদেষ্টা মণ্ডলীর পরিচালনায় ৫২বি কেন্দ্রীয় কার্যালয়ের সার্বিক সংস্কার এবং ৫০ জন শিক্ষার্থীর জন্য আবাসিক ব্যবস্থা করা হয় (২০১৮ সালে নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার দিয়ে ছাত্রীদের বিভাগ চালু হয়)। পাশাপাশি সমাজের সদস্যদের জন্য অতিথি কক্ষের (Guest Room) সুবিধা উপলব্ধ রয়েছে।',
+      badge: '৫০ আসনের ছাত্রাবাস ও অতিথি কক্ষ'
     }
   ]
 };
@@ -503,24 +503,24 @@ export const LOCALIZED_DONATION_TIERS: Record<Language, LocalizedDonationTier[]>
     {
       id: 'hostel-1500',
       amount: 1500,
-      title: 'Rural Student Hostel Maintenance',
-      impact: 'Supports 1 Rural Boy at 52B Indian Mirror St',
-      coverage: 'Subsidizes 3rd floor lodging, study desk, utilities, and books for a rural college student in Kolkata.',
+      title: 'Rural Student Hostel & Guest Room Maintenance',
+      impact: 'Supports Rural Student Lodging at 52B Indian Mirror St',
+      coverage: 'Supports residential hostel arrangements for rural college students and Guest Room upkeep for community members at 52B Indian Mirror Street.',
       isPopular: true,
     },
     {
       id: 'scholarship-3000',
       amount: 3000,
-      title: 'Sunri Student Scholarship & Female Education',
-      impact: '1 Semester Higher Education Book & Tuition Grant',
-      coverage: 'Provides merit-cum-means scholarship with special focus on empowering female higher education in West Bengal.',
+      title: 'Social Help for Educational Purpose (Only for Our Community)',
+      impact: 'Only for Our Community • Female Higher Education Priority',
+      coverage: 'Educational financial assistance strictly Only for Our Community, highlighting a special priority for female higher education in West Bengal.',
     },
     {
       id: 'charity-1000',
       amount: 1000,
-      title: 'Distress Relief for Helpless Community Members',
+      title: 'Distress Relief for Vulnerable Community Members',
       impact: 'Emergency Relief for 1 Destitute Family',
-      coverage: 'Direct humanitarian relief and medical support for absolutely helpless, elderly, or widowed members.',
+      coverage: 'Direct humanitarian relief and medical support for vulnerable, elderly, or widowed members.',
     },
     {
       id: 'publication-500',
@@ -535,24 +535,24 @@ export const LOCALIZED_DONATION_TIERS: Record<Language, LocalizedDonationTier[]>
     {
       id: 'hostel-1500',
       amount: 1500,
-      title: 'গ্রামীণ ছাত্রাবাস রক্ষণাবেক্ষণ অনুদান',
-      impact: '৫২বি ইন্ডিয়ান মিরর স্ট্রিটের ১ জন গ্রামীণ ছাত্রের ১ মাসের সহায়তা',
-      coverage: 'কলকাতায় অধ্যয়নরত ১ জন দরিদ্র গ্রামীণ ছাত্রের ৩য় তলার ছাত্রাবাসে আবাসন, আলো, পাঠ্যবই ও অধ্যয়ন সুবিধা প্রদান করে।',
+      title: 'গ্রামীণ ছাত্রাবাস ও অতিথি কক্ষ রক্ষণাবেক্ষণ অনুদান',
+      impact: '৫২বি ইন্ডিয়ান মিরর স্ট্রিটে ১ জন শিক্ষার্থীর ১ মাসের আবাসন সহায়তা',
+      coverage: 'কলকাতায় অধ্যয়নরত গ্রামীণ শিক্ষার্থীর আবাসিক ব্যবস্থা ও সমাজের সদস্যদের অতিথি কক্ষের (Guest Room) রক্ষণাবেক্ষণে ব্যবহৃত হয়।',
       isPopular: true,
     },
     {
       id: 'scholarship-3000',
       amount: 3000,
-      title: 'উচ্চশিক্ষা বৃত্তি ও নারী শিক্ষা তহবিল',
-      impact: '১ সেমিস্টারের কলেজ পাঠ্যবই ও টিউশন ফি অনুদান',
-      coverage: 'শুঁড়ি সমাজের অসচ্ছল মেধাবী শিক্ষার্থীদের বিশেষ করে উচ্চশিক্ষায় ছাত্রীদের বৃত্তি ও গ্রন্থ সহায়তা প্রদান।',
+      title: 'শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য)',
+      impact: 'শুধুমাত্র আমাদের সম্প্রদায়ের জন্য • নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার',
+      coverage: 'শুধুমাত্র আমাদের সম্প্রদায়ের জন্য প্রদত্ত শিক্ষাগত সামাজিক সহায়তা, বিশেষ করে নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকারসহ পাঠ্যবই ও ফি সহায়তা।',
     },
     {
       id: 'charity-1000',
       amount: 1000,
-      title: 'অসহায় ও দুস্থ মানুষদের জরুরি ত্রাণ অনুদান',
-      impact: '১টি বিপন্ন ও নিঃস্ব পরিবারের আপৎকালীন চিকিৎসা ও খাদ্য সহায়তা',
-      coverage: 'সমাজের চরম অসহায়, বয়োবৃদ্ধ অথবা বিধবা মহিলাদের সরাসরি চিকিৎসা অনুদান ও মানবিক সেবা প্রদান।',
+      title: 'দুস্থ ও বিপন্ন মানুষদের জরুরি ত্রাণ অনুদান',
+      impact: '১টি বিপন্ন পরিবারের আপৎকালীন চিকিৎসা ও খাদ্য সহায়তা',
+      coverage: 'সমাজের বিপন্ন, বয়োবৃদ্ধ অথবা বিধবা মহিলাদের সরাসরি চিকিৎসা অনুদান ও মানবিক সেবা প্রদান।',
     },
     {
       id: 'publication-500',
@@ -580,14 +580,14 @@ export const LOCALIZED_LEGAL_FAQS: Record<Language, LocalizedLegalFAQ[]> = {
       articleOrAct: 'Supreme Court Landmark Verdict (Sept 5, 2000)',
       question: 'What were the Supreme Court stays on Saha Sunri SC certificates, and how were they resolved?',
       answer: 'Issuance of Scheduled Caste certificates to the "Saha Sunri" community was stayed twice by Supreme Court orders—first in 1965, and again in 1996. The Samity waged an unyielding legal struggle and won a favorable Supreme Court verdict. Effective September 5, 2000, issuance of SC certificates was restored under directions from the Chief Secretary, Govt of West Bengal, with the instrumental intervention of then MLA, Shri Sadhan Pande.',
-      practicalStep: 'Copies of the historic Sept 5, 2000 government circular and Supreme Court judgments are available at the Head Office for reference.'
+      practicalStep: 'Copies of the historic Sept 5, 2000 government circular and Supreme Court judgments are available at the Central Office for reference.'
     },
     {
       id: 'faq-3',
-      articleOrAct: '52B Indian Mirror Street Hostel & Student Facilities',
-      question: 'How does the expanded Student Hostel operate, and what accommodations are provided?',
-      answer: 'Acquired in 1956 and located at 52B, Indian Mirror Street (opposite G.D. Hospital, Taltala), the four-storeyed building houses a student hostel for rural college and university students. Under the leadership of the Central Executive Committee, the hostel accommodates up to 50 students (with a dedicated female wing introduced in 2018) providing subsidized lodging, utilities, and a dedicated study room.',
-      practicalStep: 'Eligible college students can apply directly at the Head Office. When vacancies exist, admission is also opened to students outside the community to promote universal education.'
+      articleOrAct: '52B Indian Mirror Street Hostel & Guest Room',
+      question: 'How does the Student Hostel operate, and is a Guest Room facility available?',
+      answer: 'Acquired in 1956 and located at 52B, Indian Mirror Street (opposite G.D. Hospital, Taltala), the four-storeyed Central Office building is where residential hostel arrangements are made for up to 50 rural college and university students (with a dedicated female wing introduced in 2018), alongside a Guest Room facility for community members visiting Kolkata.',
+      practicalStep: 'Eligible students and community members seeking hostel or Guest Room accommodation can apply directly at our Central Office.'
     },
     {
       id: 'faq-4',
@@ -598,10 +598,10 @@ export const LOCALIZED_LEGAL_FAQS: Record<Language, LocalizedLegalFAQ[]> = {
     },
     {
       id: 'faq-5',
-      articleOrAct: 'Life Membership & Community Contributions',
+      articleOrAct: 'Life Membership & Social Help for Educational Purpose',
       question: 'What is the Samity’s membership model and how can community members support?',
-      answer: 'The Samity does not collect recurring monthly subscriptions; only Life Memberships are enrolled. Voluntary contributions and donations toward hostel maintenance, student scholarships, and distress relief are gratefully received and managed with complete transparency.',
-      practicalStep: 'You can enroll as a Life Member or make a voluntary donation directly through our secure portal or bank transfer.'
+      answer: 'The Samity does not collect recurring monthly subscriptions; only Life Memberships are enrolled. Voluntary contributions toward hostel maintenance, Guest Room upkeep, Social Help for Educational Purpose (Only for Our Community) with special priority for female higher education, and distress relief are gratefully received and managed transparently.',
+      practicalStep: 'You can enroll as a Life Member or make a voluntary contribution directly through our Central Office or bank transfer.'
     }
   ],
 
@@ -618,14 +618,14 @@ export const LOCALIZED_LEGAL_FAQS: Record<Language, LocalizedLegalFAQ[]> = {
       articleOrAct: 'সুপ্রিম কোর্টের ঐতিহাসিক বিজয় (৫ সেপ্টেম্বর ২০০০)',
       question: 'সাহা শুঁড়িদের তপশিলি শংসাপত্র প্রদানে সুপ্রিম কোর্টের স্থগিতাদেশ কীভাবে প্রত্যাহার হয়?',
       answer: '"সাহা শুঁড়ি" সম্প্রদায়ের তপশিলি জাতি শংসাপত্র প্রদান সুপ্রিম কোর্টের নির্দেশে দুবার স্থগিত করা হয়েছিল—প্রথমবার ১৯৬৫ সালে এবং দ্বিতীয়বার ১৯৯৬ সালে। সমিতি সুপ্রিম কোর্টে দীর্ঘ আপসহীন আইনি লড়াই পরিচালনা করে অনুকূল রায় লাভ করে এবং তৎকালীন বিধায়ক শ্রী সাধন পাণ্ডের ঐকান্তিক মধ্যস্থতায় ও পশ্চিমবঙ্গ সরকারের মুখ্যসচিবের নির্দেশে ৫ সেপ্টেম্বর ২০০০ তারিখ থেকে পুনরায় শংসাপত্র প্রদান চালু হয়।',
-      practicalStep: 'তৎকালীন নির্দেশিকা ও রায়ের সার্টিফায়েড কপি সদস্যদের সুবিধার্থে সমিতির প্রধান কার্যালয়ে সংরক্ষিত রয়েছে।'
+      practicalStep: 'তৎকালীন নির্দেশিকা ও রায়ের সার্টিফায়েড কপি সদস্যদের সুবিধার্থে সমিতির কেন্দ্রীয় কার্যালয়ে সংরক্ষিত রয়েছে।'
     },
     {
       id: 'faq-3',
-      articleOrAct: '৫২বি ইন্ডিয়ান মিরর স্ট্রিট ছাত্রাবাস ও সুযোগ-সুবিধা',
-      question: 'সম্প্রসারিত ছাত্রাবাস কীভাবে পরিচালিত হয় এবং কী কী সুযোগ-সুবিধা রয়েছে?',
-      answer: '১৯৫৬ সালে প্রতিষ্ঠিত ৫২বি, ইন্ডিয়ান মিরর স্ট্রিটে (জি.ডি. হাসপাতালের বিপরীতে, তালতলা) অবস্থিত চারতলা ভবনে গ্রামীণ শিক্ষার্থীদের জন্য ছাত্রাবাস পরিচালিত হয়। কেন্দ্রীয় কার্যনির্বাহী কমিটির তত্ত্বাবধানে ভবনটির আধুনিক সংস্কার সম্পন্ন হয়েছে এবং ৫০ জন শিক্ষার্থীর জন্য আবাসিক সুবিধা, পাঠাগার ও ২০১৮ সালে ছাত্রীদের জন্য বিশেষ শাখা চালু করা হয়েছে।',
-      practicalStep: 'উচ্চশিক্ষার জন্য আগ্রহী ছাত্রছাত্রীরা সরাসরি প্রধান কার্যালয়ে আবেদন করতে পারেন। আসন শূন্য থাকলে সমাজের বাইরের শিক্ষার্থীদেরও ভর্তির সুযোগ দেওয়া হয়।'
+      articleOrAct: '৫২বি ইন্ডিয়ান মিরর স্ট্রিট ছাত্রাবাস ও অতিথি কক্ষ',
+      question: 'সম্প্রসারিত ছাত্রাবাস কীভাবে পরিচালিত হয় এবং অতিথি কক্ষের কী কী সুবিধা রয়েছে?',
+      answer: '১৯৫৬ সালে প্রতিষ্ঠিত ৫২বি, ইন্ডিয়ান মিরর স্ট্রিটে (জি.ডি. হাসপাতালের বিপরীতে, তালতলা) অবস্থিত চারতলা কেন্দ্রীয় কার্যালয় ভবনে গ্রামীণ শিক্ষার্থীদের জন্য ৫০ আসন পর্যন্ত ছাত্রাবাসের আবাসিক ব্যবস্থা করা হয় (২০১৮ সালে ছাত্রীদের জন্য বিশেষ শাখা চালু হয়েছে) এবং সমাজের সদস্যদের জন্য অতিথি কক্ষের (Guest Room) সুবিধা উপলব্ধ রয়েছে।',
+      practicalStep: 'উচ্চশিক্ষার জন্য আগ্রহী ছাত্রছাত্রী ও অতিথি কক্ষ ব্যবহারের জন্য সমাজের সদস্যরা সরাসরি কেন্দ্রীয় কার্যালয়ে আবেদন করতে পারেন।'
     },
     {
       id: 'faq-4',
@@ -638,21 +638,21 @@ export const LOCALIZED_LEGAL_FAQS: Record<Language, LocalizedLegalFAQ[]> = {
       id: 'faq-5',
       articleOrAct: 'আজীবন সদস্যপদ ও কল্যাণ অনুদান নীতি',
       question: 'সমিতির সদস্যপদ সংক্রান্ত নিয়ম কী এবং কীভাবে আর্থিক সহযোগিতা করা যায়?',
-      answer: 'সমিতি কোনো মাসিক চাঁদা গ্রহণ করে না; শুধুমাত্র আজীবন সদস্যপদ (Life Membership) প্রদান করা হয়। ছাত্রাবাস পরিচালনা, মেধাবী শিক্ষার্থীদের শিক্ষাবৃত্তি ও আইনি সুরক্ষার লক্ষ্যে স্বেচ্ছায় প্রদত্ত সকল অনুদান সম্পূর্ণ স্বচ্ছতার সাথে পরিচালনা করা হয়।',
-      practicalStep: 'অনলাইন পোর্টাল বা সরাসরি ব্যাংক অ্যাকাউন্টের মাধ্যমে অনুদান দিয়ে তাৎক্ষণিক রসিদ সংগ্রহ করা যায়।'
+      answer: 'সমিতি কোনো মাসিক চাঁদা গ্রহণ করে না; শুধুমাত্র আজীবন সদস্যপদ (Life Membership) প্রদান করা হয়। ছাত্রাবাস পরিচালনা, অতিথি কক্ষ রক্ষণাবেক্ষণ, শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকারসহ) ও আইনি সুরক্ষার লক্ষ্যে স্বেচ্ছায় প্রদত্ত সকল অনুদান সম্পূর্ণ স্বচ্ছতার সাথে পরিচালনা করা হয়।',
+      practicalStep: 'কেন্দ্রীয় কার্যালয়ে বা সরাসরি ব্যাংক অ্যাকাউন্টের মাধ্যমে অনুদান দিয়ে অফিসিয়াল রসিদ সংগ্রহ করা যায়।'
     }
   ]
 };
 
 export const LOCALIZED_TRANSPARENCY_STATS: Record<Language, { percentage: string; label: string; description: string }[]> = {
   en: [
-    { percentage: '80%', label: 'Rural Hostel & Educational Scholarships', description: '3rd floor hostel at 52B Indian Mirror St, college book grants, female education' },
-    { percentage: '12%', label: 'Distress Charities & Helpless Member Relief', description: 'Direct assistance to destitute families, widows, and medical emergency aid' },
+    { percentage: '80%', label: 'Rural Hostel & Social Help for Educational Purpose (Only for Our Community)', description: 'Hostel arrangements & Guest Room at 52B Indian Mirror St, with special priority for female higher education' },
+    { percentage: '12%', label: 'Distress Charities & Vulnerable Member Relief', description: 'Direct assistance to destitute families, widows, and medical emergency aid' },
     { percentage: '8%', label: 'Constitutional SC Defense & Publications', description: 'Representations for retaining SC status, publishing journals, periodicals & pamphlets' },
   ],
   bn: [
-    { percentage: '৮০%', label: 'গ্রামীণ ছাত্রাবাস ও শিক্ষাবৃত্তি কর্মসূচি', description: '৫২বি ইন্ডিয়ান মিরর স্ট্রিটের ৩য় তলার ছাত্রাবাস পরিচালনা, কলেজ বৃত্তি ও নারী শিক্ষা' },
-    { percentage: '১২%', label: 'দুস্থ ও অসহায় মানুষের ত্রাণ অনুদান', description: 'নিঃস্ব পরিবার, বিধবা মহিলা ও অসুস্থ সদস্যদের আর্থিক সহায়তা প্রদান' },
+    { percentage: '৮০%', label: 'গ্রামীণ ছাত্রাবাস ও শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য)', description: '৫২বি ইন্ডিয়ান মিরর স্ট্রিটে ছাত্রাবাসের আবাসিক ব্যবস্থা ও অতিথি কক্ষ পরিচালনা এবং নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার' },
+    { percentage: '১২%', label: 'দুস্থ ও বিপন্ন মানুষের ত্রাণ অনুদান', description: 'বিপন্ন পরিবার, বিধবা মহিলা ও অসুস্থ সদস্যদের আর্থিক সহায়তা প্রদান' },
     { percentage: '৮%', label: 'সাংবিধানিক অধিকার রক্ষা ও প্রকাশনা', description: 'সংবিধানে এসসি মর্যাদা রক্ষা, সাময়িকী, পুস্তিকা ও গবেষণামূলক গ্রন্থ প্রকাশনা' },
   ],
 };

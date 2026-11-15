@@ -108,7 +108,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-[#2D6A4F]">
-                    {isBengali ? '৪ তলা কেন্দ্রীয় কার্যালয় (১৯৫৬)' : '4-Storeyed Head Office'}
+                    {isBengali ? '৪ তলা কেন্দ্রীয় কার্যালয় (১৯৫৬)' : '4-Storeyed Central Office'}
                   </h4>
                   <p className="text-xs text-[#6C4A31]">
                     {isBengali 
@@ -172,15 +172,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 {/* Village / Office Tag */}
                 <div className="absolute top-3 left-3 bg-[#2D6A4F]/95 backdrop-blur-xs text-[#FAF7F2] text-xs font-semibold px-3 py-1 rounded-full border border-white/20 flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
-                  <span>{isBengali ? '৫২বি ইন্ডিয়ান মিরর স্ট্রিট • কেন্দ্রীয় কার্যালয়' : '52B Indian Mirror Street • Head Office'}</span>
+                  <span>{isBengali ? '৫২বি ইন্ডিয়ান মিরর স্ট্রিট • কেন্দ্রীয় কার্যালয়' : '52B Indian Mirror Street • Central Office'}</span>
                 </div>
 
                 {/* Bottom Story Quote */}
                 <div className="absolute bottom-3 inset-x-3 text-white">
                   <p className="text-xs italic text-white/95 leading-relaxed font-serif-heading">
                     {isBengali
-                      ? '"৫২বি ইন্ডিয়ান মিরর স্ট্রিটে আমাদের চারতলা ভবনের ছাত্রাবাস বর্তমানে সম্প্রসারিত হয়ে ৫০ জন ছাত্রের আবাসন নিশ্চিত করেছে (২০১৮ সালে ছাত্রীদের পৃথক শাখা চালু হয়)।"'
-                      : '"At 52B Indian Mirror Street, our four-storeyed building hostel currently accommodates up to 50 students, with dedicated facilities for female students introduced in 2018."'}
+                      ? '"৫২বি ইন্ডিয়ান মিরর স্ট্রিটে আমাদের চারতলা কেন্দ্রীয় কার্যালয় ভবনের ছাত্রাবাসে ৫০ জন ছাত্রছাত্রীর আবাসিক ব্যবস্থা করা হয় (নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার সহ), পাশাপাশি সমাজের সদস্যদের জন্য অতিথি কক্ষ (Guest Room) সুবিধা রয়েছে।"'
+                      : '"At 52B Indian Mirror Street, residential hostel arrangements are made for up to 50 students (with special priority for female higher education), alongside a Guest Room facility for community members."'}
                   </p>
                   <p className="text-[11px] text-white/80 font-medium pt-1">
                     {isBengali ? '— বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ)' : '— Bangiya Saha Samity (Sunri Samaj)'}
@@ -220,8 +220,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <span className="w-2.5 h-2.5 rounded-full bg-[#2D6A4F] shrink-0"></span>
                 <span className="text-[#3A4E3F] font-medium">
                   {isBengali 
-                    ? 'তপশিলি জাতি শংসাপত্র, ছাত্রাবাসে ভর্তি অথবা আইনি পরামর্শের প্রয়োজন?'
-                    : 'Need SC Certificate guidance, hostel admission, or legal advice?'}
+                    ? 'তপশিলি জাতি শংসাপত্র, ছাত্রাবাস ও অতিথি কক্ষ (Guest Room) অথবা আইনি পরামর্শের প্রয়োজন?'
+                    : 'Need SC Certificate guidance, hostel/Guest Room inquiry, or legal advice?'}
                 </span>
               </div>
               <button

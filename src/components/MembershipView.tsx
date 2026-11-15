@@ -162,8 +162,8 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                   <div className="font-bold text-blue-950">{isBengali ? 'সংবিধানের প্রতি আনুগত্য' : 'Commitment to Objectives'}</div>
                   <p className="text-xs text-slate-600 pt-0.5">
                     {isBengali 
-                      ? '১৯৩৪ সালের মূল সংবিধানের ৫টি মৌলিক উদ্দেশ্য, কুপ্রথা বিলোপ ও নারী শিক্ষা প্রসারে শ্রদ্ধাশীল।' 
-                      : 'Pledge to actively uphold the 5 founding objectives of social reform, education, and mutual fellowship.'}
+                      ? '১৯৩৪ সালের প্রতিষ্ঠাকালীন সংবিধানের ৫টি মৌলিক উদ্দেশ্য, কুপ্রথা বিলোপ ও নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকারের প্রতি শ্রদ্ধাশীল।' 
+                      : 'Pledge to actively uphold the 5 founding objectives of social reform, educational support with special priority for female higher education, and mutual fellowship.'}
                   </p>
                 </div>
               </div>
@@ -222,7 +222,7 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
                   {isBengali
-                    ? 'মা জগজ্জননী পূজা, ড. আম্বেদকর জয়ন্তী, বিবেকানন্দ হল প্রীতি সম্মেলন ও ঐতিহ্যবাহী প্রকাশনায় নিয়মিত যোগদান।'
+                    ? 'মা জগৎ জননী পূজা, ড. আম্বেদকর জয়ন্তী, বিবেকানন্দ হল প্রীতি সম্মেলন ও ঐতিহ্যবাহী প্রকাশনায় নিয়মিত যোগদান।'
                     : 'Privileged invitations to annual reunions, heritage seminars, research journal launches, and festive celebrations.'}
                 </p>
               </div>
@@ -233,12 +233,12 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
                   4
                 </div>
                 <h3 className="text-base font-bold text-blue-950">
-                  {isBengali ? '৪. সমাজকল্যাণ সহায়তা' : 'Social Welfare Support'}
+                  {isBengali ? '৪. সমাজকল্যাণ, অতিথি কক্ষ ও শিক্ষা সহায়তা' : 'Social Welfare, Guest Room & Educational Help'}
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
                   {isBengali
-                    ? 'কলকাতায় ৫০ আসনের ছাত্রাবাসে পরিবারের সন্তানদের অগ্রাধিকার, শিক্ষাবৃত্তি অনুদান এবং বিনামূল্যে এসসি শংসাপত্র ও আইনি সহায়তা।'
-                    : 'Priority hostel accommodation in Kolkata, student scholarships, and free SC caste certificate guidance cell access.'}
+                    ? 'কলকাতায় ৫০ আসনের ছাত্রাবাসে পরিবারের সন্তানদের আবাসিক ব্যবস্থা, সমাজের সদস্যদের জন্য অতিথি কক্ষের (Guest Room) সুবিধা, শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য) এবং এসসি শংসাপত্র ও আইনি সহায়তা।'
+                    : 'Hostel accommodation arrangements in Kolkata, Guest Room facility for community members, Social Help for Educational Purpose (Only for Our Community), and SC caste certificate guidance.'}
                 </p>
               </div>
             </div>
@@ -274,10 +274,10 @@ export const MembershipView: React.FC<MembershipViewProps> = ({ onNavigate }) =>
               <h3 className="text-2xl font-serif-heading font-bold text-emerald-950">
                 {isBengali ? 'আবেদন সফলভাবে গৃহীত হয়েছে!' : 'Application Successfully Received!'}
               </h3>
-              <p className="text-slate-700 text-sm max-w-md mx-auto">
+                <p className="text-slate-700 text-sm max-w-md mx-auto">
                 {isBengali
-                  ? `আপনার সদস্যপদ আবেদন নং ${appId} সিস্টেমে নথিভুক্ত হয়েছে। ৫২বি ইন্ডিয়ান মিরর স্ট্রিটের প্রধান কার্যালয় থেকে আপনার সাথে যোগাযোগ করা হবে।`
-                  : `Your membership application reference ID is ${appId}. Our Secretariat will contact you for membership card issuance.`}
+                  ? `আপনার সদস্যপদ আবেদন নং ${appId} সিস্টেমে নথিভুক্ত হয়েছে। ৫২বি ইন্ডিয়ান মিরর স্ট্রিটের কেন্দ্রীয় কার্যালয় থেকে আপনার সাথে যোগাযোগ করা হবে।`
+                  : `Your membership application reference ID is ${appId}. Our Central Office Secretariat will contact you for membership card issuance.`}
               </p>
 
               <div className="bg-white p-4 rounded-xl border border-emerald-200 text-left max-w-md mx-auto text-xs space-y-1.5">

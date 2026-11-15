@@ -26,7 +26,7 @@ export const DonationModal: React.FC<DonationModalProps> = ({
 }) => {
   const { lang, isBengali } = useLanguage();
 
-  const [cause, setCause] = useState(initialCause || 'Student Hostel & Education Fund');
+  const [cause, setCause] = useState(initialCause || 'Student Hostel, Guest Room & Social Help for Educational Purpose (Only for Our Community)');
   const [selectedAmount, setSelectedAmount] = useState<number>(1000);
   const [customAmount, setCustomAmount] = useState<string>('');
   const [donorName, setDonorName] = useState('');
@@ -46,9 +46,9 @@ export const DonationModal: React.FC<DonationModalProps> = ({
   const getLocalizedCause = (c: string) => {
     if (!isBengali) return c;
     const causeMap: Record<string, string> = {
-      'Student Hostel & Education Fund': 'ছাত্রাবাস ও শিক্ষা তহবিল',
-      'Sponsor a Rural Student Bed (₹18,000/yr)': '১ জন ছাত্রের বার্ষিক আবাসন (₹১৮,০০০)',
-      'Female Higher Education Scholarship': 'নারী শিক্ষা বৃত্তি',
+      'Student Hostel, Guest Room & Social Help for Educational Purpose (Only for Our Community)': 'ছাত্রাবাস, অতিথি কক্ষ ও শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য)',
+      'Sponsor a Rural Student Bed (₹18,000/yr)': '১ জন ছাত্রের বার্ষিক আবাসন ব্যবস্থা (₹১৮,০০০)',
+      'Social Help for Educational Purpose (Only for Our Community) — Female Higher Education': 'শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য) — নারী উচ্চশিক্ষা',
       'Community Library & Publications': 'পাঠাগার ও প্রকাশনা',
       'General Social Welfare & Health Relief': 'সাধারণ সমাজকল্যাণ ও স্বাস্থ্য ত্রাণ',
       'Legal Aid & SC Rights Protection': 'আইনি সহায়তা ও তপশিলি অধিকার সংরক্ষণ'
@@ -105,7 +105,7 @@ export const DonationModal: React.FC<DonationModalProps> = ({
                 {isBengali ? 'বঙ্গীয় সাহা সমিতি অনুদান ডেস্ক' : 'Online Donation & Support'}
               </h3>
               <p className="text-[11px] text-blue-200">
-                {isBengali ? '৫০ আসনের গ্রামীণ ছাত্রাবাস ও শিক্ষাবৃত্তি তহবিল' : 'Student Hostel & Scholarship Support'}
+                {isBengali ? '৫০ আসনের গ্রামীণ ছাত্রাবাস, অতিথি কক্ষ ও শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য)' : 'Student Hostel, Guest Room & Social Help for Educational Purpose (Only for Our Community)'}
               </p>
             </div>
           </div>
@@ -192,9 +192,9 @@ export const DonationModal: React.FC<DonationModalProps> = ({
                   onChange={(e) => setCause(e.target.value)}
                   className="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:border-blue-900 text-xs sm:text-sm bg-white outline-none"
                 >
-                  <option value="Student Hostel & Education Fund">{isBengali ? 'ছাত্রাবাস ও শিক্ষা তহবিল' : 'Student Hostel & Education Fund (ছাত্রাবাস ও শিক্ষা তহবিল)'}</option>
-                  <option value="Sponsor a Rural Student Bed (₹18,000/yr)">{isBengali ? '১ জন ছাত্রের বার্ষিক আবাসন (₹১৮,০০০)' : 'Sponsor a Rural Student Bed (১ জন ছাত্রের বার্ষিক আবাসন - ₹১৮,০০০)'}</option>
-                  <option value="Female Higher Education Scholarship">{isBengali ? 'নারী শিক্ষা বৃত্তি' : 'Female Higher Education Scholarship (নারী শিক্ষা বৃত্তি)'}</option>
+                  <option value="Student Hostel, Guest Room & Social Help for Educational Purpose (Only for Our Community)">{isBengali ? 'ছাত্রাবাস, অতিথি কক্ষ ও শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য)' : 'Hostel, Guest Room & Social Help for Educational Purpose (Only for Our Community)'}</option>
+                  <option value="Sponsor a Rural Student Bed (₹18,000/yr)">{isBengali ? '১ জন ছাত্রের বার্ষিক আবাসন ব্যবস্থা (₹১৮,০০০)' : 'Sponsor a Rural Student Bed (১ জন ছাত্রের বার্ষিক আবাসন - ₹১৮,০০০)'}</option>
+                  <option value="Social Help for Educational Purpose (Only for Our Community) — Female Higher Education">{isBengali ? 'শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য) — নারী উচ্চশিক্ষা' : 'Social Help for Educational Purpose (Only for Our Community) — Female Higher Education'}</option>
                   <option value="Community Library & Publications">{isBengali ? 'পাঠাগার ও প্রকাশনা' : 'Community Library & Publications (পাঠাগার ও প্রকাশনা)'}</option>
                   <option value="General Social Welfare & Health Relief">{isBengali ? 'সাধারণ সমাজকল্যাণ ও স্বাস্থ্য ত্রাণ' : 'General Social Welfare & Health Relief (সাধারণ সমাজকল্যাণ ও ত্রাণ)'}</option>
                 </select>

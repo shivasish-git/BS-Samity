@@ -163,7 +163,7 @@ export const EmergencyLegalModal: React.FC<EmergencyLegalModalProps> = ({ isOpen
                       {isBengali ? 'থানায় এফআইআর নিতে অস্বীকৃতি' : 'FIR Registration Refusal (Police refusal to apply SC/ST Act)'}
                     </option>
                     <option value="School / College Caste Discrimination">
-                      {isBengali ? 'স্কুল/কলেজে বৈষম্য বা স্কলারশিপ বঞ্চনা' : 'School / College Discrimination or Scholarship Denial'}
+                      {isBengali ? 'স্কুল/কলেজে বৈষম্য বা সরকারি শিক্ষাবৃত্তি বঞ্চনা' : 'School / College Discrimination or Statutory Aid Denial'}
                     </option>
                     <option value="Physical Atrocity or Threat">
                       {isBengali ? 'শারীরিক নির্যাতন বা ভীতি প্রদর্শন' : 'Physical Atrocity or Caste Abuse Threat'}

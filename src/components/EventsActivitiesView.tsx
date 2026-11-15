@@ -60,8 +60,8 @@ export const EventsActivitiesView: React.FC<EventsActivitiesViewProps> = ({
           </h1>
           <p className="text-blue-100 text-base sm:text-lg max-w-3xl leading-relaxed">
             {isBengali
-              ? 'বার্ষিক রাজ্য সম্মেলন, ড. আম্বেদকর স্মারক বক্তৃতা, ছাত্রবৃত্তি প্রদান অনুষ্ঠান এবং ঐতিহাসিক মহাসমাবেশের সমন্বিত কার্যসূচি।'
-              : 'Participate in upcoming community conventions, student felicitation ceremonies, legal seminars, and explore archives of our historic assemblies.'}
+              ? 'বার্ষিক রাজ্য সম্মেলন, ড. আম্বেদকর স্মারক বক্তৃতা, শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা অনুষ্ঠান এবং ঐতিহাসিক মহাসমাবেশের সমন্বিত কার্যসূচি।'
+              : 'Participate in upcoming community conventions, student felicitation ceremonies, Social Help for Educational Purpose (Only for Our Community) programmes, and archives of our historic assemblies.'}
           </p>
         </div>
       </section>

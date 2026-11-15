@@ -6,10 +6,10 @@ export const NGO_DETAILS = {
   hindiName: 'বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ)',
   subHeading: "West Bengal 'Sunri' Samaj",
   establishedYear: '1934 (Regd. 1936–37)',
-  birthplace: '77, Maniktala Street, Kolkata – 700006 (Simla) — Temple of Maa Jagathanani Estate',
-  headquarters: '52B, INDIAN MIRROR STREET, KOLKATA-700013 (Opposite G. D. Hospital), Taltala',
-  hostelInfo: 'Student Hostel (Capacity: Up to 50 Students, including Female Wing since 2018)',
-  buildingInfo: 'Four-Storeyed Head Office Building at 52B, INDIAN MIRROR STREET, KOLKATA-700013 (Opposite G. D. Hospital), Taltala',
+  birthplace: '77, Maniktala Street, Kolkata – 700006 (Simla) — Maa Jagat Janani Temple',
+  headquarters: '52B, INDIAN MIRROR STREET, KOLKATA-700013 (Opposite G. D. Hospital), Taltala (Central Office)',
+  hostelInfo: 'Student Hostel (Residential arrangements made for up to 50 students, including Female Wing since 2018) & Guest Room for Community Members',
+  buildingInfo: 'Four-Storeyed Central Office Building at 52B, INDIAN MIRROR STREET, KOLKATA-700013 (Opposite G. D. Hospital), Taltala, with Student Hostel & Guest Room Facility',
   constitutionalRecognition: 'British Govt of India Act 1935 & Indian Constitution 1950 by Dr. B.R. Ambedkar',
   registrationNo: '4522 of 1936–37',
   darpanId: 'WB/2018/0192841',
@@ -21,7 +21,7 @@ export const NGO_DETAILS = {
   regionalOffice: '77, Maniktala Street, Kolkata – 700006 (Simla)',
   headOffice: {
     address: '52B, INDIAN MIRROR STREET, KOLKATA-700013',
-    landmark: '(Opposite G. D. Hospital), Taltala',
+    landmark: '(Opposite G. D. Hospital), Taltala — Central Office, Hostel & Guest Room Facility',
     regdNo: 'Regd. No. 4522 of 1936–37',
     phone: '033-22271599 / 9433041597 (M)',
     email: 'bangiyasahasamity1@gmail.com',
@@ -29,21 +29,21 @@ export const NGO_DETAILS = {
   },
   bengaliHeadOffice: {
     address: '৫২বি, ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩',
-    landmark: '(জি.ডি. হাসপাতালের বিপরীতে), তালতলা',
+    landmark: '(জি.ডি. হাসপাতালের বিপরীতে), তালতলা — কেন্দ্রীয় কার্যালয়, ছাত্রাবাস ও অতিথি কক্ষ',
     regdNo: 'রেজিস্ট্রি নং ৪৫২২ অব ১৯৩৬–৩৭',
     phone: '033-22271599 / 9433041597 (M)',
     email: 'bangiyasahasamity1@gmail.com',
     visitingHours: 'সোম - শনি: সকাল ১০:০০ - সন্ধ্যা ৭:০০ | রবি: সকাল ১১:০০ - বিকাল ৪:০০',
   },
   registeredSite: {
-    templeName: 'Temple of Maa Jagathanani Estate',
+    templeName: 'Maa Jagat Janani Temple',
     address: '77, Manicktala Street, Kolkata – 700006 (Simla)',
-    historicalSignificance: 'Birthplace where community elders established the Samity in 1934.',
+    historicalSignificance: 'Birthplace where distinguished community leaders established the Samity in 1934.',
   },
   bengaliRegisteredSite: {
-    templeName: 'মা জগজ্জননী এস্টেটের মন্দির',
+    templeName: 'মা জগৎ জননী মন্দির',
     address: '৭৭, মানিকতলা স্ট্রিট, কলকাতা – ৭০০০১৬ (সিমলা)',
-    historicalSignificance: '১৯৩৪ সালে যে পবিত্র স্থানে সমাজের শ্রদ্ধেয় ব্যক্তিবর্গ সমিতি প্রতিষ্ঠা করেছিলেন।',
+    historicalSignificance: '১৯৩৪ সালে যে পবিত্র স্থানে সমাজের বিশিষ্ট ব্যক্তিবর্গ সমিতি প্রতিষ্ঠা করেছিলেন।',
   },
   membershipPolicy: 'Life Membership Enrolment (No recurring monthly subscriptions) & Voluntary Contributions',
   motto: 'Education • Unity • Social Reform • Constitutional Rights | শিক্ষা, ঐক্য, সমাজ সংস্কার ও সাংবিধানিক অধিকার'
@@ -52,8 +52,8 @@ export const NGO_DETAILS = {
 export const IMPACT_METRICS = [
   { label: 'Foundation & Regd.', value: '1934 / 1936-37', subtext: '77 Maniktala St, Simla (Regd. No. 4522)' },
   { label: 'SC Recognition', value: '1935 & 1950', subtext: 'British Act 1935 & Babasaheb Dr. Ambedkar' },
-  { label: 'Headquarters Acquired', value: '1956', subtext: '52B Indian Mirror St (Opp. G.D. Hospital)' },
-  { label: 'Hostel Capacity', value: 'Up to 50 Students', subtext: 'Expanded with Female Wing (Est. 2018)' },
+  { label: 'Central Office Acquired', value: '1956', subtext: '52B Indian Mirror St (Opp. G.D. Hospital)' },
+  { label: 'Hostel & Guest Room', value: 'Up to 50 Students', subtext: 'Female Wing (Est. 2018) & Member Guest Room' },
   { label: 'Supreme Court Victory', value: 'Sept 5, 2000', subtext: 'SC Certificates Restored via Sadhan Pande' },
   { label: 'Community Service', value: '90+ Years', subtext: 'Continuous educational & social welfare programs' }
 ];
@@ -65,8 +65,8 @@ export const HISTORICAL_MILESTONES = [
     bengaliTitle: '৭৭ মানিকতলা স্ট্রিটে শুভ প্রতিষ্ঠা ও ১৯৩৫ সালের ভারত শাসন আইন',
     location: '77, Maniktala Street, Kolkata – 700006 (Simla)',
     bengaliLocation: '৭৭, মানিকতলা স্ট্রিট, কলকাতা – ৭০০০১৬ (সিমলা)',
-    description: 'Under the Government of India Act of 1935 enacted by the British administration, the economically and socially backward Sunri community was designated as a "Scheduled Caste" due to official government notifications citing occupational segregation, alongside large numbers of impoverished laborers and agricultural workers. Under these circumstances, benevolent individuals established Bangiya Saha Samity (Sunri Samaj) in 1934 at 77, Maniktala Street (Simla) in the temple of Maa Jagathanani Estate, accommodating underprivileged rural students pursuing higher education.',
-    bengaliDescription: 'ব্রিটিশ প্রশাসনের ১৯৩৫ সালের ভারত শাসন আইনের অধীনে শুঁড়ি সমাজকে "তপশিলি জাতি" (Scheduled Caste) হিসেবে চিহ্নিত করা হয়। এই পরিস্থিতিতে সমাজের মহানুভব ব্যক্তিদের উদ্যোগে ১৯৩৪ সালে কলকাতার ৭৭, মানিকতলা স্ট্রিটে (সিমলা) মা জগজ্জননী এস্টেটের মন্দিরে বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) প্রতিষ্ঠিত হয় এবং দরিদ্র গ্রামীণ ছাত্রদের উচ্চশিক্ষার জন্য আশ্রয়ের ব্যবস্থা করা হয়।',
+    description: 'Under the Government of India Act of 1935 enacted by the British administration, the economically and socially backward Sunri community was designated as a "Scheduled Caste" due to official government notifications citing occupational segregation, alongside large numbers of impoverished laborers and agricultural workers. Under these circumstances, philanthropic and eminent individuals established Bangiya Saha Samity (Sunri Samaj) in 1934 at 77, Maniktala Street (Simla) in Maa Jagat Janani Temple, making residential arrangements for rural students pursuing higher education.',
+    bengaliDescription: 'ব্রিটিশ প্রশাসনের ১৯৩৫ সালের ভারত শাসন আইনের অধীনে শুঁড়ি সমাজকে "তপশিলি জাতি" (Scheduled Caste) হিসেবে চিহ্নিত করা হয়। এই পরিস্থিতিতে সমাজের দানশীল ও প্রখ্যাত ব্যক্তিদের উদ্যোগে ১৯৩৪ সালে কলকাতার ৭৭, মানিকতলা স্ট্রিটে (সিমলা) মা জগৎ জননী মন্দিরে বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) প্রতিষ্ঠিত হয় এবং গ্রামীণ ছাত্রদের উচ্চশিক্ষার জন্য আবাসিক ব্যবস্থা করা হয়।',
     badge: 'Foundation Era',
     bengaliBadge: 'প্রতিষ্ঠা পর্ব (১৯৩৪-৩৫)'
   },
@@ -77,7 +77,7 @@ export const HISTORICAL_MILESTONES = [
     location: 'Kolkata, West Bengal',
     bengaliLocation: 'কলকাতা, পশ্চিমবঙ্গ',
     description: 'The society was formally incorporated and registered under the Societies Registration Act as Bangiya Saha Samity (Sunri Samaj) under Registration No. 4522 of 1936–37 with its 5 sacred objectives.',
-    bengaliDescription: 'সোসাইটি রেজিস্ট্রেশন অ্যাক্টের অধীনে ৪৫২২ অব ১৯৩৬-৩৭ নম্বরে বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) বিধিবদ্ধভাবে নিবন্ধিত হয় এবং তার ৫টি মূল সাংবিধানিক উদ্দেশ্য গৃহীত হয়।',
+    bengaliDescription: 'সোসাইটি রেজিস্ট্রেশন অ্যাক্টের অধীনে ৪৫২২ অব ১৯৩৬-৩৭ নম্বরে বঙ্গীয় সাহা সমিতি (শুঁড়ি সমাজ) বিধিবদ্ধভাবে নিবন্ধিত হয় এবং তার ৫টি সাংবিধানিক উদ্দেশ্য গৃহীত হয়।',
     badge: 'Official Registration',
     bengaliBadge: 'বিধিবদ্ধ নিবন্ধন (১৯৩৬-৩৭)'
   },
@@ -87,9 +87,9 @@ export const HISTORICAL_MILESTONES = [
     bengaliTitle: 'ড. আম্বেদকর কর্তৃক সংবিধানে অন্তর্ভুক্তি ও ৫২বি ইন্ডিয়ান মিরর স্ট্রিট ক্রয়',
     location: 'Constitution of India & 52B Indian Mirror St, Kol-13',
     bengaliLocation: 'ভারতের সংবিধান ও ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কোল-১৩',
-    description: 'In 1950, the chief architect of the Indian Constitution, Babasaheb Dr. B. R. Ambedkar, reaffirmed our inclusion in the Scheduled Caste list. Later in 1956, our classification was listed as "Sunri (Excluding Saha)". Around that time, with financial assistance of well-wishers and community families, a parcel of land with a single room was purchased at 52B, Indian Mirror Street, Kolkata – 700013 (Opposite G.D. Hospital, Taltala). Within a few years, a four-storey building was erected, serving as state headquarters and free hostel for rural students.',
-    bengaliDescription: '১৯৫০ সালে ভারতীয় সংবিধানের প্রধান রূপকার বাবাসাহেব ড. বি. আর. আম্বেদকর শুঁড়ি সম্প্রদায়কে তপশিলি জাতি তালিকায় অন্তর্ভুক্ত করেন। ১৯৫৬ সালে সংশোধনের পর শ্রেণিবিন্যাস হয় "Sunri (Excluding Saha)"। একই সময়ে সমাজের সদস্যদের আর্থিক সহায়তায় ৫২বি, ইন্ডিয়ান মিরর স্ট্রিটে (জি.ডি. হাসপাতালের বিপরীতে, তালতলা) এক কামরাসহ জমি ক্রয় করা হয় ও চারতলা ভবন নির্মাণ করে প্রধান কার্যালয় ও ছাত্রাবাস চালু হয়।',
-    badge: 'Ambedkar & Headquarters',
+    description: 'In 1950, the chief architect of the Indian Constitution, Babasaheb Dr. B. R. Ambedkar, reaffirmed our inclusion in the Scheduled Caste list. Later in 1956, our classification was listed as "Sunri (Excluding Saha)". Around that time, with financial assistance of well-wishers and community families, a parcel of land with a single room was purchased at 52B, Indian Mirror Street, Kolkata – 700013 (Opposite G.D. Hospital, Taltala). Within a few years, a four-storey building was erected, serving as the Central Office where hostel arrangements for rural students and Guest Room facilities for community members are made.',
+    bengaliDescription: '১৯৫০ সালে ভারতীয় সংবিধানের প্রধান রূপকার বাবাসাহেব ড. বি. আর. আম্বেদকর শুঁড়ি সম্প্রদায়কে তপশিলি জাতি তালিকায় অন্তর্ভুক্ত করেন। ১৯৫৬ সালে সংশোধনের পর শ্রেণিবিন্যাস হয় "Sunri (Excluding Saha)"। একই সময়ে সমাজের সদস্যদের আর্থিক সহায়তায় ৫২বি, ইন্ডিয়ান মিরর স্ট্রিটে (জি.ডি. হাসপাতালের বিপরীতে, তালতলা) এক কামরাসহ জমি ক্রয় করা হয় ও চারতলা ভবন নির্মাণ করে কেন্দ্রীয় কার্যালয়, ছাত্রাবাস ও সমাজের সদস্যদের জন্য অতিথি কক্ষের ব্যবস্থা করা হয়।',
+    badge: 'Ambedkar & Central Office',
     bengaliBadge: 'ড. আম্বেদকর ও ৫২বি ভবন'
   },
   {
@@ -105,12 +105,12 @@ export const HISTORICAL_MILESTONES = [
   },
   {
     year: '2018 – Present',
-    title: 'Hostel Expansion to 50 Students & Dedicated Female Wing',
-    bengaliTitle: 'ছাত্রাবাস সম্প্রসারণ (৫০ জন ছাত্র-ছাত্রী) ও ছাত্রী বিভাগ স্থাপন',
+    title: 'Hostel Expansion to 50 Students, Female Wing & Guest Room',
+    bengaliTitle: 'ছাত্রাবাস সম্প্রসারণ (৫০ জন শিক্ষার্থী), ছাত্রী বিভাগ ও অতিথি কক্ষ',
     location: '52B, Indian Mirror Street, Kolkata – 700013',
     bengaliLocation: '৫২বি, ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩',
-    description: 'Under the guidance of the Executive Committee, the hostel facilities were modernized to accommodate up to 50 rural students with dedicated female student facilities instituted in 2018. The Samity continues its welfare outreach, organizing medical camps, educational stipends, and constitutional advocacy across West Bengal.',
-    bengaliDescription: 'কার্যনির্বাহী সমিতির পরিচালনায় কেন্দ্রীয় ছাত্রাবাস আধুনিকীকরণ করে ৫০ জন দরিদ্র গ্রামীণ ছাত্র-ছাত্রীর বাসযোগ্য করা হয় এবং ২০১৮ সালে ছাত্রীদের জন্য স্বতন্ত্র আবাসন ব্যবস্থা চালু হয়। সমিতি নিয়মিত শিক্ষাবৃত্তি, স্বাস্থ্যশিবির ও সমাজকল্যাণমূলক কর্মকাণ্ড অব্যাহত রেখেছে।',
+    description: 'Under the guidance of the Executive Committee, residential hostel arrangements were modernized for up to 50 rural students with dedicated female student facilities instituted in 2018, alongside a Guest Room facility for community members. The Samity continues Social Help for Educational Purpose (Only for Our Community), prioritizing female higher education.',
+    bengaliDescription: 'কার্যনির্বাহী সমিতির পরিচালনায় কেন্দ্রীয় ছাত্রাবাসের আধুনিকীকরণ করে ৫০ জন গ্রামীণ শিক্ষার্থীর আবাসিক ব্যবস্থা করা হয় এবং ২০১৮ সালে ছাত্রীদের জন্য স্বতন্ত্র আবাসন ব্যবস্থা ও সমাজের সদস্যদের জন্য অতিথি কক্ষের (Guest Room) সুবিধা চালু হয়। সমিতি শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা ও নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার দিয়ে কাজ করে চলেছে।',
     badge: 'Modern Revival',
     bengaliBadge: 'আধুনিক সংস্কার ও ৫০ আসন'
   }
@@ -119,19 +119,19 @@ export const HISTORICAL_MILESTONES = [
 export const SOCIETY_OBJECTIVES: MissionPillar[] = [
   {
     id: 'education-scholarships',
-    title: 'Education, Scholarships, Female Education & Libraries',
-    hindiTitle: 'শিক্ষা বিস্তার, বৃত্তি প্রদান, নারী শিক্ষা ও পাঠাগার প্রতিষ্ঠা',
-    tagline: 'Promoting education, culture, and useful knowledge among the Sunri community.',
-    description: 'To improve and develop in all respects the position of Sunri Community (Excluding Saha) as a whole and particularly in West Bengal by all legitimate means to promote and spread education and culture and diffuse useful knowledge among the Sunri community by granting scholarships, founding and maintaining, promoting female education and foundation and maintenance of educational institutions and libraries and controlling publication of journals, periodicals, pamphlets and books, holding meetings and conferences and sending preachers amongst the Sunri Community.',
+    title: 'Educational Support, Female Higher Education & Libraries',
+    hindiTitle: 'শিক্ষা বিস্তার, শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা, নারী উচ্চশিক্ষা ও পাঠাগার',
+    tagline: 'Promoting education with special priority for female higher education and Social Help for Educational Purpose (Only for Our Community).',
+    description: 'To improve and develop in all respects the position of Sunri Community (Excluding Saha) as a whole and particularly in West Bengal by all legitimate means to promote and spread education and culture and diffuse useful knowledge among the Sunri community through Social Help for Educational Purpose (Only for Our Community), highlighting a special priority for female higher education, founding and maintaining educational institutions and libraries, controlling publication of journals, periodicals, pamphlets and books, holding meetings and conferences and sending preachers amongst the Sunri Community.',
     keyInitiatives: [
-      'Granting college and university scholarships to deserving Sunri students',
-      'Actively promoting and supporting female education across West Bengal',
+      'Social Help for Educational Purpose (Only for Our Community) for deserving students',
+      'Highlighting special priority for female higher education across West Bengal',
       'Establishing and maintaining community libraries and study resources',
       'Controlling publication of journals, periodical pamphlets, and community books',
       'Convening social assemblies, educational conferences, and youth symposiums'
     ],
     icon: 'GraduationCap',
-    impactNumber: 'Scholarships & Books',
+    impactNumber: 'Only for Our Community',
     impactLabel: 'Core Objective 1'
   },
   {
@@ -184,15 +184,15 @@ export const SOCIETY_OBJECTIVES: MissionPillar[] = [
   },
   {
     id: 'distress-charities',
-    title: 'Charities to Distressed & Relief to Helpless Men and Women',
+    title: 'Charities to Distressed & Relief to Vulnerable Men and Women',
     hindiTitle: 'দুস্থ ও সহায়-সম্বলহীন মানুষের জন্য কল্যাণকর সেবা ও অনুদান',
-    tagline: 'Extending benevolence to distressed families and helpless members as funds permit.',
-    description: 'To grant charities to the distressed of the community and to render help to the absolutely helpless women and men of the community as the funds permit.',
+    tagline: 'Extending benevolence to distressed families and vulnerable members as funds permit.',
+    description: 'To grant charities to the distressed of the community and to render help to vulnerable women and men of the community as the funds permit.',
     keyInitiatives: [
       'Direct charitable financial assistance to destitute families in distress',
       'Emergency medical aid and sustenance grants to elderly and widowed women',
-      'Hostel accommodations on 3rd floor for rural boys pursuing higher education in Kolkata',
-      'Disaster and crisis welfare support for vulnerable community households'
+      'Residential hostel arrangements made at 52B Indian Mirror Street for rural students',
+      'Guest Room facility available for community members visiting Kolkata'
     ],
     icon: 'HeartHandshake',
     impactNumber: 'Distress Grants',
@@ -208,22 +208,22 @@ export const DONATION_TIERS: DonationTier[] = [
     amount: 1500,
     title: 'Rural Student Hostel Maintenance',
     impact: 'Supports 1 Rural Student at 52B Indian Mirror St',
-    coverage: 'Subsidizes 3rd floor hostel lodging, study desks, and electricity for rural boys studying in Kolkata colleges.',
+    coverage: 'Supports the 3rd & 4th floor hostel residential arrangements, study desks, and electricity for rural students studying in Kolkata colleges.',
     isPopular: true
   },
   {
     id: 'scholarship-3000',
     amount: 3000,
-    title: 'Sunri Student Scholarship & Female Education',
-    impact: '1 Semester Higher Education Book & Fee Grant',
-    coverage: 'Funds scholarships for deserving Sunri students with special priority for female higher education.',
+    title: 'Social Help for Educational Purpose (Only for Our Community)',
+    impact: 'Only for Our Community • Female Higher Education Priority',
+    coverage: 'Educational financial support strictly Only for Our Community, with a special priority for female higher education in West Bengal.',
   },
   {
     id: 'charity-1000',
     amount: 1000,
-    title: 'Charity Aid for Helpless Men and Women',
+    title: 'Charity Aid for Distressed Men and Women',
     impact: 'Emergency Relief for 1 Destitute Community Member',
-    coverage: 'Provides direct relief grants to absolutely helpless, elderly, or widowed members of the community.',
+    coverage: 'Direct relief grants to distressed, elderly, or widowed members of the community.',
   },
   {
     id: 'publication-500',
@@ -246,28 +246,28 @@ export const LEGAL_FAQS: LegalFAQ[] = [
     id: 'faq-2',
     articleOrAct: 'Constitutional Objective 3 of Bangiya Saha Samity',
     question: 'What actions does the Samity take to retain Sunri in the Scheduled Caste list?',
-    answer: 'The primary constitutional objective of the Samity is to move the Government for retaining Sunri Community in the list of Scheduled Caste under the Constitution of India, resist any attempt to exclude the community, and safeguard all benefits and legislative seat reservations.',
+    answer: 'The constitutional objective of the Samity is to move the Government for retaining Sunri Community in the list of Scheduled Caste under the Constitution of India, resist any attempt to exclude the community, and safeguard all benefits and legislative seat reservations.',
     practicalStep: 'We maintain ongoing vigilance and legal documentation with the Ministry of Social Justice & Empowerment and the National Commission for Scheduled Castes.'
   },
   {
     id: 'faq-3',
-    articleOrAct: 'Rural Students Welfare Initiative (Est. 1956)',
-    question: 'Who can apply for the 3rd Floor Student Hostel at 52B Indian Mirror Street?',
-    answer: 'The 3rd floor hostel of our four-storeyed head office has a capacity of 10-15 boys, established specifically to house needy rural students from districts of West Bengal pursuing higher education in Kolkata colleges.',
-    practicalStep: 'Students can submit an application along with their college admission slip and Sunri caste certificate directly at 52B Indian Mirror Street, Kolkata - 700013.'
+    articleOrAct: 'Rural Students Welfare Initiative & Guest Room (Est. 1956)',
+    question: 'Who can apply for the Student Hostel and Guest Room at 52B Indian Mirror Street?',
+    answer: 'In our four-storeyed Central Office building, residential hostel arrangements are made for up to 50 rural students (with a dedicated female wing introduced in 2018) pursuing higher education in Kolkata colleges, and a Guest Room facility is also available for community members.',
+    practicalStep: 'Students and community members seeking hostel or Guest Room accommodation can submit an application directly at our Central Office, 52B Indian Mirror Street, Kolkata - 700013.'
   },
   {
     id: 'faq-4',
     articleOrAct: 'Charity & Distress Relief Rules',
-    question: 'How does the Samity render help to distressed and helpless community members?',
-    answer: 'As mandated by our founding objectives, the Samity grants charities to the distressed of the community and renders help to absolutely helpless women and men of the community as funds permit.',
-    practicalStep: 'Applications for medical emergencies, widow sustenance, or education distress can be submitted to the General Secretary at the Head Office.'
+    question: 'How does the Samity render help to distressed community members?',
+    answer: 'As mandated by our founding objectives, the Samity grants charities to the distressed of the community and renders help to vulnerable women and men of the community as funds permit.',
+    practicalStep: 'Applications for medical emergencies, widow sustenance, or Social Help for Educational Purpose (Only for Our Community) can be submitted to the General Secretary at the Central Office.'
   }
 ];
 
 export const TRANSPARENCY_STATS = [
-  { percentage: '80%', label: 'Student Hostel & Education Scholarships', description: 'Hostel maintenance at 52B Indian Mirror St, book grants, female education' },
-  { percentage: '12%', label: 'Distress Charities & Helpless Member Relief', description: 'Direct assistance to destitute families, widows, and medical emergency aid' },
+  { percentage: '80%', label: 'Student Hostel & Social Help for Educational Purpose (Only for Our Community)', description: 'Hostel arrangements at 52B Indian Mirror St, book grants, and special priority for female higher education' },
+  { percentage: '12%', label: 'Distress Charities & Vulnerable Member Relief', description: 'Direct assistance to destitute families, widows, and medical emergency aid' },
   { percentage: '8%', label: 'Constitutional SC Advocacy & Publications', description: 'Legal representations, publishing community journals, periodicals & pamphlets' },
 ];
 
@@ -333,7 +333,7 @@ export const KEY_ACTIVITIES = [
     bengaliDescription: 'সমাজের চরম দরিদ্র, বৃদ্ধ, বিধবা ও বিপন্ন পরিবারবর্গকে সরাসরি আর্থিক অনুদান, আপৎকালীন চিকিৎসা সহায়তা এবং সামাজিক সুরক্ষা প্রদান।',
     icon: 'HeartHandshake',
     highlights: ['Medical emergency relief funds', 'Support for destitute widows and elderly', 'Disaster & crisis interventions', 'Helpline assistance'],
-    bengaliHighlights: ['আপৎকালীন চিকিৎসা ত্রাণ তহবিল', 'অসহায় বিধবা ও প্রবীণদের সহায়তা', 'সংকটকালীন ও দুর্যোগে পাশে দাঁড়ানো', 'জরুরি সহায়তা হেল্পলাইন'],
+    bengaliHighlights: ['আপৎকালীন চিকিৎসা ত্রাণ তহবিল', 'দুস্থ বিধবা ও প্রবীণদের সহায়তা', 'সংকটকালীন ও দুর্যোগে পাশে দাঁড়ানো', 'জরুরি সহায়তা হেল্পলাইন'],
     badge: 'Benevolence',
     bengaliBadge: 'নিঃস্ব সেবা'
   },
@@ -342,11 +342,11 @@ export const KEY_ACTIVITIES = [
     title: 'Community Development',
     bengaliTitle: 'সামাজিক উন্নয়ন ও পরিকাঠামো',
     category: 'Community Development',
-    description: 'Fostering grassroots solidarity, commercial enterprise, clearing institutional liabilities, and establishing district liaison sub-divisions across West Bengal.',
-    bengaliDescription: 'পশ্চিমবঙ্গের প্রতিটি জেলা ও মহকুমায় শাখা গঠন, তরুণ উদ্যোক্তাদের বাণিজ্যিক সহায়তা এবং সামাজিক ঐক্য সুদৃঢ়করণ।',
+    description: 'Fostering grassroots solidarity, commercial enterprise, clearing institutional liabilities, Guest Room arrangements for community members, and district liaison sub-divisions across West Bengal.',
+    bengaliDescription: 'পশ্চিমবঙ্গের প্রতিটি জেলা ও মহকুমায় শাখা গঠন, সদস্যদের জন্য অতিথি কক্ষ (Guest Room)-এর ব্যবস্থা, তরুণ উদ্যোক্তাদের বাণিজ্যিক সহায়তা এবং সামাজিক ঐক্য সুদৃঢ়করণ।',
     icon: 'Building2',
-    highlights: ['Head Office 4-storey infrastructure', 'District coordination councils', 'Youth self-reliance initiatives', 'Community assemblies'],
-    bengaliHighlights: ['প্রধান কার্যালয়ের ৪ তলা পরিকাঠামো', 'জেলা সমন্বয় ও শাখা কাউন্সিল', 'যুব সম্প্রদায়ের স্বনির্ভরতা উদ্যোগ', 'সামাজিক সম্মেলন ও সমাবেশ'],
+    highlights: ['Central Office 4-storey infrastructure', 'Guest Room for community members', 'Youth self-reliance initiatives', 'Community assemblies'],
+    bengaliHighlights: ['কেন্দ্রীয় কার্যালয়ের ৪ তলা পরিকাঠামো', 'সদস্যদের জন্য অতিথি কক্ষ (Guest Room)', 'যুব সম্প্রদায়ের স্বনির্ভরতা উদ্যোগ', 'সামাজিক সম্মেলন ও সমাবেশ'],
     badge: 'Empowerment',
     bengaliBadge: 'ক্ষমতায়ন'
   },
@@ -358,21 +358,21 @@ export const KEY_ACTIVITIES = [
     description: 'Preserving Sunri historical identity, celebrating traditional festivals, publishing heritage periodicals, and chronicling community history.',
     bengaliDescription: 'শুঁড়ি সমাজের প্রাচীন ঐতিহ্য, লোকসংস্কৃতি ও ইতিহাস সংরক্ষণ, ঐতিহাসিক সাময়িকী ও গবেষণা পুস্তিকা প্রকাশনা।',
     icon: 'Sparkles',
-    highlights: ['Maa Jagathanani & Jagaddhatri Puja', 'Publication of journals & pamphlets', 'Historical documentation', 'Annual commemorative gatherings'],
-    bengaliHighlights: ['মা জগজ্জননী ও জগদ্ধাত্রী পূজা', 'ঐতিহাসিক সাময়িকী ও পুস্তিকা প্রকাশনা', 'গবেষণাধর্মী নথি সংরক্ষণ', 'বার্ষিক স্মৃতি সম্মেলন ও মিলনমেলা'],
+    highlights: ['Maa Jagat Janani & Jagaddhatri Puja', 'Publication of journals & pamphlets', 'Historical documentation', 'Annual commemorative gatherings'],
+    bengaliHighlights: ['মা জগৎ জননী ও জগদ্ধাত্রী পূজা', 'ঐতিহাসিক সাময়িকী ও পুস্তিকা প্রকাশনা', 'গবেষণাধর্মী নথি সংরক্ষণ', 'বার্ষিক স্মৃতি সম্মেলন ও মিলনমেলা'],
     badge: 'Heritage',
     bengaliBadge: 'ঐতিহ্য'
   },
   {
     id: 'educational-support',
-    title: 'Educational Support',
-    bengaliTitle: 'শিক্ষা বিস্তার ও ছাত্রাবাস',
+    title: 'Educational Support & Social Help (Only for Our Community)',
+    bengaliTitle: 'শিক্ষা বিস্তার, ছাত্রাবাস ও সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য)',
     category: 'Educational Support',
-    description: 'Maintaining the student hostel at 52B Indian Mirror St for up to 50 rural students, granting higher education scholarships, and advancing female literacy.',
-    bengaliDescription: 'কলকাতায় উচ্চশিক্ষারত ৫০ জন গ্রামীণ শিক্ষার্থীর জন্য ছাত্রাবাস পরিচালনা (২০১৮ সাল থেকে ছাত্রী শাখা) এবং বিশেষ নারী শিক্ষা বৃত্তি।',
+    description: 'Residential arrangements are made at 52B Indian Mirror St for up to 50 rural students, alongside Social Help for Educational Purpose (Only for Our Community) with special priority for female higher education.',
+    bengaliDescription: 'কলকাতায় উচ্চশিক্ষারত ৫০ জন গ্রামীণ শিক্ষার্থীর জন্য আবাসিক ব্যবস্থা করা হয় (২০১৮ সাল থেকে ছাত্রী শাখা) এবং শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা ও নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার।',
     icon: 'GraduationCap',
-    highlights: ['50-student capacity hostel (4th floor)', 'Female student facilities (since 2018)', 'Merit-cum-means college scholarships', 'Educational book grants'],
-    bengaliHighlights: ['৫০ আসনের ছাত্রাবাস (৪র্থ তল)', 'ছাত্রী আবাসিক সুবিধা (২০১৮ থেকে)', 'মেধা-ভিত্তিক কলেজ শিক্ষাবৃত্তি', 'বিনামূল্যে পাঠ্যপুস্তক অনুদান'],
+    highlights: ['50-student hostel arrangements', 'Female higher education priority', 'Social Help for Educational Purpose (Only for Our Community)', 'Educational book grants'],
+    bengaliHighlights: ['৫০ আসনের ছাত্রাবাসে আবাসিক ব্যবস্থা', 'নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার', 'শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য)', 'বিনামূল্যে পাঠ্যপুস্তক অনুদান'],
     badge: 'Education',
     bengaliBadge: 'শিক্ষা বিস্তার'
   },
@@ -416,7 +416,7 @@ export const ADVISORY_BOARD_MEMBERS = [
     bengaliRole: 'প্রধান উপদেষ্টা',
     tier: 'Advisory' as const,
     bio: 'Affectionately known across the community as "Kesto Da", serving as Chief Advisor with decades of dedication to community harmony, student welfare, and cultural preservation.',
-    bengaliBio: 'সমগ্র সমাজে পরম শ্রদ্ধেয় "কেষ্ট দা" নামে পরিচিত অভিজ্ঞ অভিভাবক ও প্রধান উপদেষ্টা; দীর্ঘদিন ধরে সমাজের ঐক্য, ছাত্রকল্যাণ ও অধিকার রক্ষায় নিরলস ভূমিকা পালন করছেন।',
+    bengaliBio: 'সমগ্র সমাজে বিশিষ্ট অভিভাবক "কেষ্ট দা" নামে পরিচিত প্রধান উপদেষ্টা; দীর্ঘদিন ধরে সমাজের ঐক্য, ছাত্রকল্যাণ ও অধিকার রক্ষায় নিরলস ভূমিকা পালন করছেন।',
     contactNote: 'Advisory Board, Bangiya Saha Samity',
     imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
   }
@@ -454,8 +454,8 @@ export const CENTRAL_OFFICE_BEARERS = [
     bengaliName: 'আশিস কুমার সাহা',
     bengaliRole: 'কোষাধ্যক্ষ',
     tier: 'OfficeBearer' as const,
-    bio: 'Oversees organizational financial stewardship, annual statutory audits, student scholarship funds, and transparent institutional accounting.',
-    bengaliBio: 'কোষাধ্যক্ষ হিসেবে সমিতির আর্থিক হিসাবরক্ষণ, বার্ষিক বিধিবদ্ধ অডিট ও ছাত্রাবাস-শিক্ষাবৃত্তি তহবিলের স্বচ্ছ পরিচালনা নিশ্চিত করছেন।',
+    bio: 'Oversees organizational financial stewardship, annual statutory audits, Social Help for Educational Purpose (Only for Our Community) funds, and transparent institutional accounting.',
+    bengaliBio: 'কোষাধ্যক্ষ হিসেবে সমিতির আর্থিক হিসাবরক্ষণ, বার্ষিক বিধিবদ্ধ অডিট ও ছাত্রাবাস এবং শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য) তহবিলের স্বচ্ছ পরিচালনা নিশ্চিত করছেন।',
     contactNote: 'Finance Desk, 52B Indian Mirror St',
     imageUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80'
   },
@@ -597,7 +597,7 @@ export const EXECUTIVE_COMMITTEE_LIST = [
   { slNo: 2, name: 'Rajendra Kr. Saha', bengaliName: 'রাজেন্দ্র কুমার সাহা', portfolio: 'Hostel Maintenance & Infrastructure', bengaliPortfolio: 'ছাত্রাবাস সংস্কার ও পরিকাঠামো' },
   { slNo: 3, name: 'Amal Mullick', bengaliName: 'অমল মল্লিক', portfolio: 'General Administration & Secretariat', bengaliPortfolio: 'সাধারণ প্রশাসন ও সচিবালয়' },
   { slNo: 4, name: 'Amal Saha', bengaliName: 'অমল সাহা', portfolio: 'Community Welfare & Relief', bengaliPortfolio: 'সমাজকল্যাণ ও দুস্থ সাহায্য' },
-  { slNo: 5, name: 'Dipak Saha', bengaliName: 'দীপক সাহা', portfolio: 'Student Scholarship Evaluation', bengaliPortfolio: 'শিক্ষাবৃত্তি যাচাই ও অনুদান' },
+  { slNo: 5, name: 'Dipak Saha', bengaliName: 'দীপক সাহা', portfolio: 'Social Help for Educational Purpose (Only for Our Community)', bengaliPortfolio: 'শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য)' },
   { slNo: 6, name: 'Chittaranjan Mondal', district: 'Bankura', bengaliName: 'চিত্তরঞ্জন মণ্ডল', bengaliDistrict: 'বাঁকুড়া', portfolio: 'District Coordination (Bankura)', bengaliPortfolio: 'জেলা সমন্বয় (বাঁকুড়া)' },
   { slNo: 7, name: 'Prasanta Kr. Saha', district: 'Burdwan-E', bengaliName: 'প্রশান্ত কুমার সাহা', bengaliDistrict: 'পূর্ব বর্ধমান', portfolio: 'District Coordination (East Burdwan)', bengaliPortfolio: 'জেলা সমন্বয় (পূর্ব বর্ধমান)' },
   { slNo: 8, name: 'Tarak Nath Saha', bengaliName: 'তারক নাথ সাহা', portfolio: 'Conventions & Cultural Events', bengaliPortfolio: 'সম্মেলন ও সাংস্কৃতিক অনুষ্ঠান' },
@@ -620,7 +620,7 @@ export const LEADERSHIP_MEMBERS = [
     role: 'Chairperson (Ex. M.L.A)',
     bengaliRole: 'সভানেত্রী, উপদেষ্টা মণ্ডলী (প্রাক্তন বিধায়ক)',
     tier: 'Advisory' as const,
-    bio: 'Respected Chairperson of the Advisory Board and former Member of the Legislative Assembly (Ex. M.L.A), providing veteran guidance, legislative perspective, and moral leadership to Bangiya Saha Samity.',
+    bio: 'Distinguished Chairperson of the Advisory Board and former Member of the Legislative Assembly (Ex. M.L.A), providing veteran guidance, legislative perspective, and moral leadership to Bangiya Saha Samity.',
     bengaliBio: 'উপদেষ্টা মণ্ডলীর সভানেত্রী ও প্রাক্তন বিধায়িকা; বঙ্গীয় সাহা সমিতির সার্বিক দিকনির্দেশনা ও সমাজের অগ্রগতিতে অভিভাবক হিসেবে পথ প্রদর্শন করছেন।',
     contactNote: 'Advisory Board, Bangiya Saha Samity',
     imageUrl: '/Namita-Saha.jpg'
@@ -633,7 +633,7 @@ export const LEADERSHIP_MEMBERS = [
     bengaliRole: 'প্রধান উপদেষ্টা',
     tier: 'Advisory' as const,
     bio: 'Affectionately known across the community as "Kesto Da", serving as Chief Advisor with decades of selfless service for community unity, student hostel support, and social welfare.',
-    bengaliBio: 'সমগ্র সমাজে পরম শ্রদ্ধেয় "কেষ্ট দা" নামে পরিচিত অভিভাবক ও প্রধান উপদেষ্টা; দীর্ঘদিন ধরে সমাজের ঐক্য, ছাত্রকল্যাণ ও অধিকার রক্ষায় নিরলস ভূমিকা পালন করছেন।',
+    bengaliBio: 'সমগ্র সমাজে বিশিষ্ট অভিভাবক "কেষ্ট দা" নামে পরিচিত প্রধান উপদেষ্টা; দীর্ঘদিন ধরে সমাজের ঐক্য, ছাত্রকল্যাণ ও অধিকার রক্ষায় নিরলস ভূমিকা পালন করছেন।',
     contactNote: 'Advisory Board, Bangiya Saha Samity',
     imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'
   },
@@ -670,8 +670,8 @@ export const LEADERSHIP_MEMBERS = [
     role: 'Treasurer',
     bengaliRole: 'কোষাধ্যক্ষ',
     tier: 'OfficeBearer' as const,
-    bio: 'Oversees organizational finances, annual statutory audits, banking operations, student scholarships, and institutional compliance.',
-    bengaliBio: 'সমিতির কোষাধ্যক্ষ হিসেবে আর্থিক হিসাবরক্ষণ, বিধিবদ্ধ বার্ষিক অডিট ও ছাত্রবৃত্তি তহবিলের স্বচ্ছ পরিচালনা নিশ্চিত করছেন।',
+    bio: 'Oversees organizational finances, annual statutory audits, banking operations, Social Help for Educational Purpose (Only for Our Community), and institutional compliance.',
+    bengaliBio: 'সমিতির কোষাধ্যক্ষ হিসেবে আর্থিক হিসাবরক্ষণ, বিধিবদ্ধ বার্ষিক অডিট ও শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য) তহবিলের স্বচ্ছ পরিচালনা নিশ্চিত করছেন।',
     contactNote: 'Finance Desk, 52B Indian Mirror St',
     imageUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80'
   },
@@ -761,7 +761,7 @@ export const LEADERSHIP_MEMBERS = [
     bengaliRole: 'সহ-সভাপতি (বাঁকুড়া)',
     tier: 'VicePresident' as const,
     bio: 'Vice President guiding educational welfare and grassroots outreach in Bankura district and Western Rarh Bengal.',
-    bengaliBio: 'বাঁকুড়া জেলায় শিক্ষাবৃত্তি, গ্রামীণ ছাত্রাবাস যোগাযোগ ও সামাজিক কার্যক্রমের সমন্বয়কারী সহ-সভাপতি।',
+    bengaliBio: 'বাঁকুড়া জেলায় শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য), গ্রামীণ ছাত্রাবাস যোগাযোগ ও সামাজিক কার্যক্রমের সমন্বয়কারী সহ-সভাপতি।',
     contactNote: 'Bankura District Region',
     imageUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=400&q=80'
   },
@@ -784,8 +784,8 @@ export const LEADERSHIP_MEMBERS = [
     role: 'Vice President',
     bengaliRole: 'সহ-সভাপতি',
     tier: 'VicePresident' as const,
-    bio: 'Vice President championing women empowerment, female student hostel admissions, and family counseling.',
-    bengaliBio: 'নারী উন্নয়ন, ছাত্রীদের উচ্চশিক্ষা ও সামাজিক কল্যাণমূলক কার্যক্রমে বিশেষ নেতৃত্ব দিচ্ছেন সহ-সভাপতি শ্রীমতী হাসি সাহা।',
+    bio: 'Vice President championing women empowerment, female higher education priority, student hostel admissions, and family counseling.',
+    bengaliBio: 'নারী উন্নয়ন, নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার ও সামাজিক কল্যাণমূলক কার্যক্রমে বিশেষ নেতৃত্ব দিচ্ছেন সহ-সভাপতি শ্রীমতী হাসি সাহা।',
     contactNote: "Women's Empowerment Cell",
     imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80'
   },
@@ -825,7 +825,7 @@ export const LEADERSHIP_MEMBERS = [
     bengaliRole: 'সহ-সভাপতি (বাঁকুড়া)',
     tier: 'VicePresident' as const,
     bio: 'Vice President advancing grassroots community organization and rural student welfare in Bankura district.',
-    bengaliBio: 'বাঁকুড়া জেলায় তৃণমূল স্তরে সামাজিক ঐক্য ও গ্রামীণ ছাত্রদের কল্যাণে নিয়োজিত সহ-সভাপতি।',
+    bengaliBio: 'বাঁকুড়া জেলায় স্থানীয় স্তরে সামাজিক ঐক্য ও গ্রামীণ ছাত্রদের কল্যাণে নিয়োজিত সহ-সভাপতি।',
     contactNote: 'Bankura District Region',
     imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80'
   },
@@ -852,8 +852,8 @@ export const LEADERSHIP_MEMBERS = [
     role: 'Executive Member (Howrah)',
     bengaliRole: 'কার্যনির্বাহী সদস্য (হাওড়া)',
     tier: 'Committee' as const,
-    bio: 'Executive committee member coordinating youth initiatives, educational bursaries, and community outreach across Howrah.',
-    bengaliBio: 'হাওড়া জেলার কার্যনির্বাহী সদস্য; তরুণ প্রজন্মকে সামাজিক কাজে উদ্বুদ্ধকরণ ও শিক্ষাবৃত্তির সমন্বয়কারী।',
+    bio: 'Executive committee member coordinating youth initiatives, Social Help for Educational Purpose (Only for Our Community), and community outreach across Howrah.',
+    bengaliBio: 'হাওড়া জেলার কার্যনির্বাহী সদস্য; তরুণ প্রজন্মকে সামাজিক কাজে উদ্বুদ্ধকরণ ও শিক্ষার উদ্দেশ্যে সামাজিক সহায়তার (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য) সমন্বয়কারী।',
     contactNote: 'Howrah District Coordination',
     imageUrl: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=400&q=80'
   },
@@ -897,8 +897,8 @@ export const ORGANIZATIONAL_HIERARCHY = [
   {
     level: 'Tier 2: Apex Office Bearers (Central Administration)',
     bengaliLevel: 'দ্বিতীয় স্তর: কেন্দ্রীয় পদাধিকারী পরিষদ (Apex Executive)',
-    desc: 'President Bikash Biswas, Secretary Subir Saha, and Treasurer Ashis Kumar Saha holding primary executive authority over the 52B Indian Mirror Street headquarters, hostel, and finances.',
-    bengaliDesc: 'সভাপতি বিকাশ বিশ্বাস, সম্পাদক সুবীর সাহা ও কোষাধ্যক্ষ আশিস কুমার সাহা—কেন্দ্রীয় কার্যালয় পরিচালনা, ছাত্রাবাস প্রশাসন ও আর্থিক ব্যবস্থার মূল চালিকাশক্তি।'
+    desc: 'President Bikash Biswas, Secretary Subir Saha, and Treasurer Ashis Kumar Saha holding primary executive authority over the 52B Indian Mirror Street Central Office, student hostel, Guest Room facility, and finances.',
+    bengaliDesc: 'সভাপতি বিকাশ বিশ্বাস, সম্পাদক সুবীর সাহা ও কোষাধ্যক্ষ আশিস কুমার সাহা—কেন্দ্রীয় কার্যালয় পরিচালনা, ছাত্রাবাস ও অতিথি কক্ষ (Guest Room) প্রশাসন ও আর্থিক ব্যবস্থার প্রধান চালিকাশক্তি।'
   },
   {
     level: 'Tier 3: Vice Presidents’ Council & Joint Secretariat',
@@ -909,14 +909,14 @@ export const ORGANIZATIONAL_HIERARCHY = [
   {
     level: 'Tier 4: General Executive Committee (16 Members)',
     bengaliLevel: 'চতুর্থ স্তর: কার্যনির্বাহী পরিষদ (১৬ জন সদস্য)',
-    desc: '16 elected Executive Committee members representing districts across West Bengal (Bankura, Burdwan-E, Howrah, North 24 Parganas, Kolkata) managing healthcare, hostel, scholarships, and legal desks.',
-    bengaliDesc: 'পশ্চিমবঙ্গের বিভিন্ন জেলার ১৬ জন নির্বাচিত সদস্য—যাঁরা ছাত্রাবাস, শিক্ষাবৃত্তি, স্বাস্থ্য সহায়তা ও আইনি সেল পরিচালনায় প্রত্যক্ষ দায়িত্ব পালন করেন।'
+    desc: '16 elected Executive Committee members representing districts across West Bengal (Bankura, Burdwan-E, Howrah, North 24 Parganas, Kolkata) managing healthcare, hostel, Guest Room, Social Help for Educational Purpose (Only for Our Community), and legal desks.',
+    bengaliDesc: 'পশ্চিমবঙ্গের বিভিন্ন জেলার ১৬ জন নির্বাচিত সদস্য—যাঁরা ছাত্রাবাস, অতিথি কক্ষ, শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য), স্বাস্থ্য সহায়তা ও আইনি সেল পরিচালনায় প্রত্যক্ষ দায়িত্ব পালন করেন।'
   },
   {
     level: 'Tier 5: District Liaison Councils & Life Members',
     bengaliLevel: 'পঞ্চম স্তর: জেলা সমন্বয় সেল ও সাধারণ আজীবন সদস্যমণ্ডলী',
-    desc: 'Grassroots community network connecting Sunri community families across 23 districts of West Bengal, providing SC certificate facilitation and exercising democratic voting rights.',
-    bengaliDesc: 'পশ্চিমবঙ্গের ২৩টি জেলায় তৃণমূল স্তরের সমন্বয়, তপশিলি জাতি শংসাপত্র সহায়তা ও আজীবন সদস্যদের সক্রিয় অংশগ্রহণ।'
+    desc: 'Local community network connecting Sunri community families across 23 districts of West Bengal, providing SC certificate facilitation and exercising democratic voting rights.',
+    bengaliDesc: 'পশ্চিমবঙ্গের ২৩টি জেলায় স্থানীয় স্তরের সমন্বয়, তপশিলি জাতি শংসাপত্র সহায়তা ও আজীবন সদস্যদের সক্রিয় অংশগ্রহণ।'
   }
 ];
 
@@ -935,13 +935,13 @@ export const CULTURAL_HERITAGE_ITEMS = [
       'Historical vocational classification associated with trade and agro-craft',
       'Widespread rural population engaged as agricultural workers and laborers',
       'British notification in 1935 providing first statutory recognition of socio-economic backwardness',
-      'Congregation of respected community elders at 77 Manicktala Street in 1934 to form an enduring protective society'
+      'Congregation of distinguished community elders at 77 Manicktala Street in 1934 to form an enduring protective society'
     ],
     bengaliDetails: [
       'ঐতিহ্যগত পেশা ও কৃষিভিত্তিক গ্রামীণ জীবনের দীর্ঘ ঐতিহ্য',
       'চরম দারিদ্র্য ও অনগ্রসরতা দূরীকরণে ব্রিটিশ গেজেট বিজ্ঞপ্তি',
-      '১৯৩৪ সালে মা জগজ্জননী এস্টেটের মন্দিরে শুঁড়ি সমাজের গণ্যমান্য ব্যক্তিদের সমন্বয়',
-      'গ্রামীণ দরিদ্র ছাত্রদের উচ্চশিক্ষার জন্য কলকাতায় আশ্রয়কেন্দ্র প্রতিষ্ঠা'
+      '১৯৩৪ সালে মা জগৎ জননী মন্দিরে শুঁড়ি সমাজের বিশিষ্ট ব্যক্তিবর্গের সমন্বয়',
+      'গ্রামীণ ছাত্রদের উচ্চশিক্ষার জন্য কলকাতায় আবাসিক ব্যবস্থা করা হয়'
     ],
     imageUrl: 'https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=800&q=80'
   },
@@ -958,14 +958,14 @@ export const CULTURAL_HERITAGE_ITEMS = [
     details: [
       'Inclusion under The Constitution (Scheduled Castes) Order, 1950',
       'Later codified in 1956 as Sunri (Excluding Saha) following state re-organizations',
-      'Establishment of the permanent head office at 52B Indian Mirror Street in 1956',
+      'Establishment of the permanent Central Office at 52B Indian Mirror Street in 1956',
       'Four-storey building construction funded through community donations and well-wishers'
     ],
     bengaliDetails: [
       '১৯৫০ সালের সংবিধান আদেশে তপশিলি জাতির স্বীকৃতি',
       '১৯৫৬ সালে রাজ্য পুনর্গঠনের পর শ্রেণীবিভাগ সংরক্ষণ',
       '১৯৫৬ সালে সদস্যদের সহযোগিতায় ৫২বি ইন্ডিয়ান মিরর স্ট্রিটে স্থায়ী জমি ক্রয়',
-      'চারতলা ভবন নির্মাণ ও স্থায়ী প্রধান কার্যালয় প্রতিষ্ঠা'
+      'চারতলা ভবন নির্মাণ ও স্থায়ী কেন্দ্রীয় কার্যালয় প্রতিষ্ঠা'
     ],
     imageUrl: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80'
   },
@@ -995,23 +995,23 @@ export const CULTURAL_HERITAGE_ITEMS = [
   },
   {
     id: 'festivals-rituals',
-    title: 'Festivals, Cultural Traditions & Maa Jagathanani',
-    bengaliTitle: 'উৎসব, ঐতিহ্য ও শ্রীশ্রী মা জগজ্জননী পূজা',
+    title: 'Festivals, Cultural Traditions & Maa Jagat Janani',
+    bengaliTitle: 'উৎসব, ঐতিহ্য ও শ্রীশ্রী মা জগৎ জননী পূজা',
     era: 'Living Tradition',
     bengaliEra: 'জীবন্ত ঐতিহ্য',
-    summary: 'Celebration of sacred community observances centered around Maa Jagathanani, Saraswati Puja, and Ambedkar Jayanti.',
-    bengaliSummary: 'মা জগজ্জননী ও জগদ্ধাত্রী পূজা, সরস্বতী পূজা, আম্বেদকর জয়ন্তী ও পহেলা বৈশাখ উদযাপন।',
+    summary: 'Celebration of sacred community observances centered around Maa Jagat Janani, Saraswati Puja, and Ambedkar Jayanti.',
+    bengaliSummary: 'মা জগৎ জননী ও জগদ্ধাত্রী পূজা, সরস্বতী পূজা, আম্বেদকর জয়ন্তী ও পহেলা বৈশাখ উদযাপন।',
     culturalSignificance: 'Strengthens community fraternity and cultural identity across generations.',
     bengaliCulturalSignificance: 'প্রজন্মের পর প্রজন্ম ধরে পারস্পরিক সৌহার্দ্য ও সাংস্কৃতিক ঐক্য অক্ষুণ্ণ রাখে।',
     details: [
-      'Foundational worship at Maa Jagathanani Estate (77 Manicktala Street)',
+      'Foundational worship at Maa Jagat Janani Temple (77 Manicktala Street)',
       'Hostel Saraswati Puja organized annually by rural resident students',
       'Babasaheb Dr. B. R. Ambedkar Jayanti observed with constitutional awareness programs',
       'Poila Boishakh cultural get-togethers and scholarly felicitations'
     ],
     bengaliDetails: [
-      '৭৭ মানিকতলা স্ট্রিটের মা জগজ্জননী এস্টেটে ঐতিহ্যবাহী পুজো',
-      'ছাত্রাবাসের আবাসিক শিক্ষার্থীদের পরিচালনায় সরস্বতী পুজো',
+      '৭৭ মানিকতলা স্ট্রিটের মা জগৎ জননী মন্দিরে ঐতিহ্যবাহী পূজা',
+      'ছাত্রাবাসের আবাসিক শিক্ষার্থীদের পরিচালনায় সরস্বতী পূজা',
       'বাবাসাহেব আম্বেদকর জয়ন্তী ও সংবিধান সচেতনতা দিবস পালন',
       'পহেলা বৈশাখ ও মিলনমেলা উৎসব'
     ],
@@ -1045,8 +1045,8 @@ export const UPCOMING_EVENTS = [
     bengaliDate: '১০ মে ২০২৬',
     time: '2:00 PM – 6:00 PM',
     bengaliTime: 'দুপুর ২:০০ – সন্ধ্যা ৬:০০',
-    venue: 'Head Office Auditorium, 52B Indian Mirror Street, Kolkata – 700013',
-    bengaliVenue: 'প্রধান কার্যালয় প্রেক্ষাগৃহ, ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩',
+    venue: 'Central Office Auditorium, 52B Indian Mirror Street, Kolkata – 700013',
+    bengaliVenue: 'কেন্দ্রীয় কার্যালয় প্রেক্ষাগৃহ, ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩',
     category: 'Upcoming' as const,
     description: 'Career counseling for Sunri college students, guidance on West Bengal Civil Service (WBCS) examinations, and digital SC certificate verification.',
     bengaliDescription: 'কলেজের ছাত্রছাত্রীদের জন্য কর্মমুখী প্রশিক্ষণ, ডব্লিউবিসিএস পরীক্ষার প্রস্তুতি ও ডিজিটাল কাস্ট সার্টিফিকেট সংক্রান্ত সহায়তা।',
@@ -1055,8 +1055,8 @@ export const UPCOMING_EVENTS = [
   },
   {
     id: 'event-3',
-    title: 'Sunri Student Merit Scholarship & Book Distribution Drive',
-    bengaliTitle: 'মেধাবী ছাত্রবৃত্তি ও পাঠ্যপুস্তক বিতরণ উৎসব',
+    title: 'Social Help for Educational Purpose (Only for Our Community) & Book Distribution',
+    bengaliTitle: 'শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য) ও পাঠ্যপুস্তক বিতরণ',
     date: 'June 21, 2026',
     bengaliDate: '২১ জুন ২০২৬',
     time: '11:00 AM – 3:30 PM',
@@ -1064,10 +1064,10 @@ export const UPCOMING_EVENTS = [
     venue: 'Student Hostel Annex, 52B Indian Mirror Street (4th Floor), Kolkata',
     bengaliVenue: 'ছাত্রাবাস প্রাঙ্গণ, ৫২বি ইন্ডিয়ান মিরর স্ট্রিট (৪র্থ তল), কলকাতা',
     category: 'Upcoming' as const,
-    description: 'Distribution of semester book grants and scholarships for undergraduate and postgraduate Sunri students, prioritizing female higher education.',
-    bengaliDescription: 'উচ্চশিক্ষারত ছাত্রছাত্রীদের শিক্ষাবৃত্তি ও বিনামূল্যে পাঠ্যপুস্তক বিতরণ, বিশেষ করে ছাত্রীদের অগ্রাধিকার।',
-    attendees: 'Scholarship Recipients & Guardians',
-    bengaliAttendees: 'বৃত্তিপ্রাপ্ত শিক্ষার্থী ও অভিভাবকবৃন্দ'
+    description: 'Distribution of semester book grants and Social Help for Educational Purpose (Only for Our Community) for undergraduate and postgraduate students, highlighting a special priority for female higher education.',
+    bengaliDescription: 'শুধুমাত্র আমাদের সম্প্রদায়ের জন্য উচ্চশিক্ষারত ছাত্রছাত্রীদের শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা ও পাঠ্যপুস্তক বিতরণ, যেখানে নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার দেওয়া হয়।',
+    attendees: 'Community Students & Guardians',
+    bengaliAttendees: 'সম্প্রদায়ের শিক্ষার্থী ও অভিভাবকবৃন্দ'
   }
 ];
 
@@ -1090,11 +1090,11 @@ export const PAST_EVENTS = [
     bengaliTitle: '৫২বি ইন্ডিয়ান মিরর স্ট্রিটে ছাত্রী শাখার শুভ উদ্বোধন',
     date: 'August 15, 2018',
     bengaliDate: '১৫ আগস্ট ২০১৮',
-    venue: 'Head Office Building, 52B Indian Mirror Street, Kolkata – 700013',
-    bengaliVenue: 'প্রধান কার্যালয় ভবন, ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩',
+    venue: 'Central Office Building, 52B Indian Mirror Street, Kolkata – 700013',
+    bengaliVenue: 'কেন্দ্রীয় কার্যালয় ভবন, ৫২বি ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩',
     category: 'Past' as const,
-    description: 'Dedicated residential accommodation for female college students pursuing higher studies in Kolkata, fulfilling the founder mandate on female education.',
-    bengaliDescription: 'কলকাতায় কলেজে পাঠরত দূরবর্তী জেলার ছাত্রীদের জন্য পৃথক নিরাপদ আবাসিক সুবিধার ঐতিহাসিক সূচনা।'
+    description: 'Dedicated residential arrangements made for female college students pursuing higher studies in Kolkata, fulfilling the society mission of special priority for female higher education.',
+    bengaliDescription: 'কলকাতায় কলেজে পাঠরত দূরবর্তী জেলার ছাত্রীদের জন্য পৃথক নিরাপদ আবাসিক ব্যবস্থা করা হয়, যা নারী উচ্চশিক্ষায় আমাদের বিশেষ অগ্রাধিকারের প্রতীক।'
   },
   {
     id: 'past-3',
@@ -1121,8 +1121,8 @@ export const LATEST_NEWS_UPDATES = [
     bengaliCategory: 'বিজ্ঞপ্তি',
     summary: 'The Executive Committee announces upgraded hostel amenities and digital study resources for collegiate students.',
     bengaliSummary: 'কার্যনির্বাহী সমিতির উদ্যোগে ছাত্রাবাসের সুযোগ-সুবিধা ও ডিজিটাল অধ্যয়ন কেন্দ্রের মানোন্নয়ন সম্পন্ন।',
-    content: 'Bangiya Saha Samity has completed modernization works at the four-storey head office and central student hostel at 52B Indian Mirror Street. Rural students from economically backward backgrounds pursuing higher studies in Kolkata now enjoy expanded hostel accommodations, dedicated quiet study rooms, and enhanced welfare support.',
-    bengaliContent: '৫২বি ইন্ডিয়ান মিরর স্ট্রিটের চারতলা ভবনে গ্রামীণ ছাত্রদের জন্য উন্নত স্টাডি হল, বিশুদ্ধ পানীয় জল এবং শিক্ষাগত সহায়তা প্রকল্প পুরোদমে কার্যকর রয়েছে।',
+    content: 'Bangiya Saha Samity has completed modernization works at the four-storey Central Office, student hostel, and Guest Room for community members at 52B Indian Mirror Street. Residential arrangements are made for rural students pursuing higher studies in Kolkata, alongside dedicated quiet study rooms and enhanced welfare support.',
+    bengaliContent: '৫২বি ইন্ডিয়ান মিরর স্ট্রিটের চারতলা কেন্দ্রীয় কার্যালয়ে গ্রামীণ শিক্ষার্থীদের জন্য আবাসিক ব্যবস্থা করা হয় এবং উন্নত স্টাডি হল, বিশুদ্ধ পানীয় জল ও সমাজের সদস্যদের জন্য অতিথি কক্ষ (Guest Room) সুবিধা চালু রয়েছে।',
     author: 'Executive Committee',
     bengaliAuthor: 'কার্যনির্বাহী সমিতি',
     readTime: '3 min read',
@@ -1159,8 +1159,8 @@ export const LATEST_NEWS_UPDATES = [
     bengaliCategory: 'সমাজ সংবাদ',
     summary: 'Applications invited from underprivileged students from West Bengal districts admitted to colleges in Kolkata.',
     bengaliSummary: 'কলকাতার কলেজ ও বিশ্ববিদ্যালয়ে পাঠরত দূরবর্তী জেলার শিক্ষার্থীদের জন্য স্বল্পব্যয়ে আবাসনের আবেদন শুরু।',
-    content: 'The 4th floor hostel provides clean lodging, study desks, electricity, and community mentorship. Under our open educational charter, vacant seats are also extended to deserving students outside our community.',
-    bengaliContent: 'পড়াশোনার সুব্যবস্থাসহ আসন শূন্য থাকলে সমাজের বাইরের শিক্ষার্থীদেরও সমান সুযোগ দেওয়া হয়।',
+    content: 'The 4th floor hostel is a sanctuary where clean lodging arrangements are made alongside study desks, electricity, and community mentorship. Additionally, Guest Room facilities are available for community members visiting Kolkata.',
+    bengaliContent: 'পড়াশোনার সুব্যবস্থাসহ ছাত্রছাত্রীদের আবাসিক ব্যবস্থা করা হয় এবং আসন শূন্য থাকলে নিয়মানুযায়ী আবেদন করা যায়। পাশাপাশি সমাজের সদস্যদের জন্য অতিথি কক্ষের (Guest Room) সুবিধাও রয়েছে।',
     author: 'Hostel Superintendent',
     bengaliAuthor: 'ছাত্রাবাস তত্ত্বাবধায়ক',
     readTime: '2 min read',
@@ -1178,8 +1178,8 @@ export const LATEST_NEWS_UPDATES = [
     bengaliCategory: 'বুলেটিন',
     summary: 'Featuring articles on Sunri community history, constitutional reservation jurisprudence, and student academic honors.',
     bengaliSummary: 'শুঁড়ি সমাজের ইতিহাস, আইনগত অধিকার ও কৃতি শিক্ষার্থীদের সাফল্যের বিবরণ সম্বলিত নতুন সংখ্যা প্রকাশিত।',
-    content: 'Available for digital download or collection from the library room at 52B Indian Mirror Street, Kolkata – 700013.',
-    bengaliContent: 'প্রধান কার্যালয়ের পাঠাগার থেকে সরাসরি অথবা অনলাইনে পিডিএফ আকারে সংগ্রহের সুব্যবস্থা রয়েছে।',
+    content: 'Available for digital download or collection from the library room at our Central Office, 52B Indian Mirror Street, Kolkata – 700013.',
+    bengaliContent: 'কেন্দ্রীয় কার্যালয়ের পাঠাগার থেকে সরাসরি অথবা অনলাইনে পিডিএফ আকারে সংগ্রহের সুব্যবস্থা রয়েছে।',
     author: 'Editorial Board',
     bengaliAuthor: 'সম্পাদনা পর্ষদ',
     readTime: '5 min read',
@@ -1193,13 +1193,13 @@ export const LATEST_NEWS_UPDATES = [
 export const GALLERY_ITEMS = [
   {
     id: 'gal-1',
-    title: 'Head Office & Student Hostel at 52B Indian Mirror Street',
-    bengaliTitle: '৫২বি ইন্ডিয়ান মিরর স্ট্রিটে কেন্দ্রীয় প্রধান কার্যালয় ও ছাত্রাবাস',
+    title: 'Central Office, Student Hostel & Guest Room at 52B Indian Mirror Street',
+    bengaliTitle: '৫২বি ইন্ডিয়ান মিরর স্ট্রিটে কেন্দ্রীয় কার্যালয়, ছাত্রাবাস ও অতিথি কক্ষ',
     category: 'Photos' as const,
     bengaliCategory: 'আলোকচিত্র',
     imageUrl: 'https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80',
-    description: 'The renovated four-storeyed building in Kolkata housing central offices, library, and 50-student residential hostel.',
-    bengaliDescription: 'কলকাতায় অবস্থিত চারতলা ভবন—যেখানে প্রধান কার্যালয়, পাঠাগার ও ৫০ আসনের ছাত্রাবাস রয়েছে।',
+    description: 'The renovated four-storeyed Central Office building in Kolkata housing offices, library, 50-student residential hostel arrangements, and a Guest Room facility for community members.',
+    bengaliDescription: 'কলকাতায় অবস্থিত চারতলা ভবন—যেখানে কেন্দ্রীয় কার্যালয়, পাঠাগার, ৫০ জন শিক্ষার্থীর আবাসিক ব্যবস্থা ও সমাজের সদস্যদের জন্য অতিথি কক্ষ (Guest Room) রয়েছে।',
     date: 'Established 1956 • Renovated 2018–2022',
     bengaliDate: 'স্থাপিত ১৯৫৬ • সংস্কার ২০১৮–২০২২',
     location: '52B, Indian Mirror Street, Kolkata – 700013 (Opp. G.D. Hospital, Taltala)',
@@ -1207,13 +1207,13 @@ export const GALLERY_ITEMS = [
   },
   {
     id: 'gal-2',
-    title: 'Foundational Birthplace: Temple of Maa Jagathanani Estate',
-    bengaliTitle: 'ঐতিহাসিক জন্মস্থান: শ্রীশ্রী মা জগজ্জননী এস্টেটের মন্দির',
+    title: 'Foundational Birthplace: Maa Jagat Janani Temple',
+    bengaliTitle: 'ঐতিহাসিক জন্মস্থান: শ্রীশ্রী মা জগৎ জননী মন্দির',
     category: 'Cultural Programs' as const,
     bengaliCategory: 'সাংস্কৃতিক',
     imageUrl: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80',
-    description: 'The revered site in Simla, North Kolkata where community elders founded Bangiya Saha Samity in 1934.',
-    bengaliDescription: '১৯৩৪ সালে যে পবিত্র স্থানে সমাজের গণ্যমান্য ব্যক্তিরা বঙ্গীয় সাহা সমিতির সূচনা করেছিলেন।',
+    description: 'The historic site in Simla, North Kolkata where distinguished community elders founded Bangiya Saha Samity in 1934.',
+    bengaliDescription: '১৯৩৪ সালে যে পবিত্র স্থানে সমাজের বিশিষ্ট ব্যক্তিবর্গ বঙ্গীয় সাহা সমিতির সূচনা করেছিলেন।',
     date: 'Founded 1934 (Regd. 1936–37)',
     bengaliDate: 'প্রতিষ্ঠা ১৯৩৪ (নিবন্ধন ১৯৩৬-৩৭)',
     location: '77, Manicktala Street, Kolkata – 700006 (Simla)',
@@ -1286,18 +1286,18 @@ export const SPONSORSHIP_PROGRAMS = [
     amount: 18000,
     frequency: 'Per Student / Year',
     bengaliFrequency: 'প্রতি ছাত্র / বার্ষিক',
-    description: 'Provides year-round subsidized lodging, study desk, electricity, and drinking water at 52B Indian Mirror Street.',
+    description: 'Makes residential arrangements for year-round subsidized lodging, study desk, electricity, and drinking water at 52B Indian Mirror Street.',
     bengaliDescription: '৫২বি ভবনে ১ জন দরিদ্র গ্রামীণ ছাত্রের সারাবছরের থাকা, বিদ্যুৎ ও পড়াশোনার খরচ বহন করে।'
   },
   {
     id: 'spon-female-scholarship',
-    title: 'Female Higher Education Scholarship Fund',
-    bengaliTitle: 'উচ্চশিক্ষায় নারী শিক্ষা বৃত্তি তহবিল',
+    title: 'Social Help for Educational Purpose (Only for Our Community) — Female Higher Education',
+    bengaliTitle: 'শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য) — নারী উচ্চশিক্ষা',
     amount: 10000,
-    frequency: 'Per Student / Degree',
-    bengaliFrequency: 'প্রতি ছাত্রী / শিক্ষাবর্ষ',
-    description: 'Direct grant for college tuition, competitive exam preparation, and textbooks for deserving Sunri girls.',
-    bengaliDescription: 'মেধাবী ছাত্রীদের স্নাতক ও স্নাতকোত্তর পড়াশোনা এবং পাঠ্যবইয়ের জন্য এককালীন অনুদান।'
+    frequency: 'Only for Our Community',
+    bengaliFrequency: 'শুধুমাত্র আমাদের সম্প্রদায়ের জন্য',
+    description: 'Direct educational support strictly Only for Our Community, with a special priority for female higher education tuition and textbooks.',
+    bengaliDescription: 'শুধুমাত্র আমাদের সম্প্রদায়ের জন্য প্রদত্ত শিক্ষাগত সামাজিক সহায়তা, যেখানে নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার দেওয়া হয়।'
   },
   {
     id: 'spon-library-endowment',
@@ -1360,8 +1360,8 @@ export const NEWSLETTER_ARCHIVE = [
     bengaliPublishDate: 'মার্চ ২০২৬',
     title: 'Constitutional Safeguards & Sunri Scheduled Caste Heritage',
     bengaliTitle: 'সাংবিধানিক রক্ষাকবচ ও শুঁড়ি সমাজের তপশিলি ঐতিহ্য',
-    description: 'Quarterly review of higher education scholarships, hostel improvements, and historic court precedents.',
-    bengaliDescription: 'উচ্চশিক্ষা বৃত্তি, ছাত্রাবাস উন্নয়ন এবং সুপ্রিম কোর্টের নজিরসমূহ নিয়ে বিশদ আলোচনা।',
+    description: 'Quarterly review of Social Help for Educational Purpose (Only for Our Community), female higher education priority, hostel improvements, and historic court precedents.',
+    bengaliDescription: 'শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা, নারী উচ্চশিক্ষায় অগ্রাধিকার, ছাত্রাবাস উন্নয়ন এবং সুপ্রিম কোর্টের নজিরসমূহ নিয়ে বিশদ আলোচনা।',
     pages: '36 Pages',
     bengaliPages: '৩৬ পৃষ্ঠা',
     pdfUrl: '#'

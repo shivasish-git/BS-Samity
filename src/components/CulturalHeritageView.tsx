@@ -56,7 +56,7 @@ export const CulturalHeritageView: React.FC<CulturalHeritageViewProps> = ({
         <div className="space-y-8">
           <div className="border-l-4 border-blue-900 pl-4 space-y-1">
             <span className="text-xs font-bold uppercase tracking-widest text-orange-600">
-              {isBengali ? 'মূল শিকড় ও ইতিবৃত্ত' : 'Roots & Journey'}
+              {isBengali ? 'শিকড় ও ইতিবৃত্ত' : 'Roots & Journey'}
             </span>
             <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-blue-900">
               {isBengali ? 'শুঁড়ি সমাজের প্রাচীন ইতিহাস ও সাংবিধানিক পথচলা' : 'History of the Sunri Community'}
@@ -128,8 +128,8 @@ export const CulturalHeritageView: React.FC<CulturalHeritageViewProps> = ({
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed">
                 {isBengali
-                  ? 'শুঁড়ি সমাজের অন্যতম প্রধান বৈশিষ্ট্য হলো সংকটের সময়ে একে অপরের পাশে দাঁড়ানো। ১৯৩৪ সালে মা জগজ্জননী এস্টেটের মন্দিরে শুরু হওয়া যৌথ সমাজকল্যাণের ধারা আজও অক্ষুণ্ণ রয়েছে।'
-                  : 'Unwavering mutual aid during distress. Families across rural Bengal pool resources to support student education, medical relief, and community welfare without hesitation.'}
+                  ? 'শুঁড়ি সমাজের অন্যতম প্রধান বৈশিষ্ট্য হলো সংকটের সময়ে একে অপরের পাশে দাঁড়ানো। ১৯৩৪ সালে মা জগৎ জননী মন্দিরে শুরু হওয়া যৌথ সমাজকল্যাণের ধারা আজও অক্ষুণ্ণ রয়েছে।'
+                  : 'Unwavering mutual aid during distress. Families across Bengal pool resources to support student education, medical relief, and community welfare without hesitation.'}
               </p>
             </div>
 
@@ -138,12 +138,12 @@ export const CulturalHeritageView: React.FC<CulturalHeritageViewProps> = ({
                 {isBengali ? '২' : '2'}
               </div>
               <h3 className="text-lg font-bold text-blue-950">
-                {isBengali ? 'শিক্ষা বিস্তার ও কন্যা শিক্ষার মর্যাদা' : 'Deep Reverence for Education & Female Literacy'}
+                {isBengali ? 'শিক্ষা সহায়তা ও নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার' : 'Educational Support & Special Priority for Female Higher Education'}
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed">
                 {isBengali
-                  ? 'সমিতির প্রথম দিন থেকেই কন্যা শিক্ষা ও পাঠাগার রক্ষণাবেক্ষণকে প্রধান উদ্দেশ্য হিসেবে ঘোষণা করা হয়েছিল। গ্রামীণ ছাত্রাবাস ও বৃত্তি তহবিল সেই অঙ্গীকারেরই উজ্জ্বল দৃষ্টান্ত।'
-                  : 'Since our 1936-37 charter, female education and community library establishment were consecrated as core religious and social duties, transforming generations.'}
+                  ? 'সমিতির প্রথম দিন থেকেই নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার ও পাঠাগার রক্ষণাবেক্ষণকে প্রধান উদ্দেশ্য হিসেবে ঘোষণা করা হয়েছিল। গ্রামীণ ছাত্রাবাস ও শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা সেই অঙ্গীকারেরই উজ্জ্বল দৃষ্টান্ত।'
+                  : 'Since our 1936-37 charter, educational support with special priority for female higher education and community libraries were consecrated as key duties, reflected in our hostel and Social Help for Educational Purpose (Only for Our Community).'}
               </p>
             </div>
 
@@ -201,7 +201,7 @@ export const CulturalHeritageView: React.FC<CulturalHeritageViewProps> = ({
                 {isBengali ? 'ড. ভীমরাও রামজি আম্বেদকরের জন্মজয়ন্তী উদযাপন' : 'Bhimrao Ramji Ambedkar Birthday Celebration'}
               </h3>
               <p className="text-xs text-slate-500 font-medium">
-                📍 {isBengali ? 'কেন্দ্রীয় কার্যালয় মিলনায়তন / কলকাতা' : 'Head Office Auditorium / Kolkata'}
+                📍 {isBengali ? 'কেন্দ্রীয় কার্যালয় মিলনায়তন / কলকাতা' : 'Central Office Auditorium / Kolkata'}
               </p>
               <p className="text-xs text-slate-600 leading-relaxed">
                 {isBengali
@@ -348,8 +348,8 @@ export const CulturalHeritageView: React.FC<CulturalHeritageViewProps> = ({
             </h3>
             <p className="text-white/90 text-sm max-w-xl">
               {isBengali
-                ? 'ঐতিহাসিক দলিল, পুরাতন ছবি, গবেষণা নিবন্ধ প্রকাশ বা ছাত্রাবাসের পাঠাগার সমৃদ্ধ করতে আজই বঙ্গীয় সাহা সমিতির সাথে যুক্ত হন।'
-                : 'Contribute historical papers, ancestral photographs, or donate towards the Student Hostel Library & Research Endowment.'}
+                ? 'ঐতিহাসিক দলিল, পুরাতন ছবি, নিবন্ধ প্রকাশ বা ছাত্রাবাস, অতিথি কক্ষ (Guest Room) ও পাঠাগার সমৃদ্ধ করতে আজই বঙ্গীয় সাহা সমিতির সাথে যুক্ত হন।'
+                : 'Contribute historical papers, ancestral photographs, or donate towards the Student Hostel, Guest Room & Library Endowment.'}
             </p>
           </div>
 

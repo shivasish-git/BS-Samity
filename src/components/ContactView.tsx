@@ -97,7 +97,7 @@ export const ContactView: React.FC = () => {
             <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-4">
               <div className="flex items-center gap-2 text-xs font-bold text-orange-600 uppercase tracking-wider">
                 <Building2 className="w-4 h-4" />
-                <span>{isBengali ? 'কেন্দ্রীয় প্রধান কার্যালয় ও ছাত্রাবাস' : 'Registered Head Office & Hostel'}</span>
+                <span>{isBengali ? 'কেন্দ্রীয় কার্যালয়, ছাত্রাবাস ও অতিথি কক্ষ' : 'Registered Central Office, Hostel & Guest Room'}</span>
               </div>
               
               <div className="space-y-2 text-sm text-slate-700">
@@ -105,7 +105,12 @@ export const ContactView: React.FC = () => {
                   {isBengali ? (NGO_DETAILS.bengaliHeadOffice?.address || '৫২বি, ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩ (তালতলা)') : NGO_DETAILS.headOffice.address}
                 </p>
                 <p className="text-xs text-slate-500">
-                  {isBengali ? (NGO_DETAILS.bengaliHeadOffice?.landmark || 'জি. ডি. হাসপাতালের বিপরীতে') : NGO_DETAILS.headOffice.landmark}
+                  {isBengali ? (NGO_DETAILS.bengaliHeadOffice?.landmark || 'জি. ডি. হাসপাতালের বিপরীতে — কেন্দ্রীয় কার্যালয়, ছাত্রাবাস ও অতিথি কক্ষ') : NGO_DETAILS.headOffice.landmark}
+                </p>
+                <p className="text-xs font-semibold text-blue-900 bg-blue-50/70 px-3 py-2 rounded-lg border border-blue-100">
+                  {isBengali
+                    ? '• সমাজের সদস্যদের জন্য অতিথি কক্ষের (Guest Room) সুবিধা উপলব্ধ রয়েছে • ৫০ আসনের ছাত্রাবাসে আবাসিক ব্যবস্থা করা হয়'
+                    : '• Guest Room facility available for community members • Hostel residential arrangements made for up to 50 students'}
                 </p>
                 <div className="inline-block px-2.5 py-1 rounded bg-blue-50 text-blue-900 font-mono text-xs font-bold">
                   {isBengali ? (NGO_DETAILS.bengaliHeadOffice?.regdNo || 'সোসাইটি রেজিস্ট্রেশন নং ৪৫২২ (১৯৩৬-৩৭)') : NGO_DETAILS.headOffice.regdNo}
@@ -135,9 +140,9 @@ export const ContactView: React.FC = () => {
                 <span>{isBengali ? 'ঐতিহাসিক জন্মস্থান (প্রতিষ্ঠা ১৯৩৪)' : 'Foundational Birthplace (1934)'}</span>
               </div>
               <div className="text-sm text-slate-700 space-y-1">
-                <div className="font-bold text-blue-950">{isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.templeName || 'মা জগজ্জননী এস্টেট মন্দির') : NGO_DETAILS.registeredSite.templeName}</div>
+                <div className="font-bold text-blue-950">{isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.templeName || 'মা জগৎ জননী মন্দির') : NGO_DETAILS.registeredSite.templeName}</div>
                 <div className="text-xs text-slate-600">{isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.address || '৭৭ মানিকতলা স্ট্রিট, সিমলা, কলকাতা') : NGO_DETAILS.registeredSite.address}</div>
-                <div className="text-[11px] text-slate-500">{isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.historicalSignificance || '১৯৩৪ সালে স্থাপিত মূল জন্মস্থান ও ঐতিহাসিক তীর্থ') : NGO_DETAILS.registeredSite.historicalSignificance}</div>
+                <div className="text-[11px] text-slate-500">{isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.historicalSignificance || '১৯৩৪ সালে যে পবিত্র স্থানে সমাজের বিশিষ্ট ব্যক্তিবর্গ সমিতি প্রতিষ্ঠা করেছিলেন।') : NGO_DETAILS.registeredSite.historicalSignificance}</div>
               </div>
             </div>
 

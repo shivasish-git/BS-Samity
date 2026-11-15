@@ -214,8 +214,8 @@ export const NewsUpdatesView: React.FC<NewsUpdatesViewProps> = ({ onNavigate }) 
                     onClick={(e) => {
                       e.preventDefault();
                       alert(isBengali 
-                        ? `বুলেটিন ${isBengali ? (issue.bengaliIssue || issue.issue) : issue.issue} ডিজিটাল কপি শীঘ্রই উন্মুক্ত হবে। প্রধান কার্যালয়ের পাঠাগার থেকে সংগৃহীত কপি সংগ্রহ করতে পারেন।`
-                        : `Digital copy of ${issue.issue} is available at the Head Office library, 52B Indian Mirror Street.`);
+                        ? `বুলেটিন ${isBengali ? (issue.bengaliIssue || issue.issue) : issue.issue} ডিজিটাল কপি শীঘ্রই উন্মুক্ত হবে। কেন্দ্রীয় কার্যালয়ের পাঠাগার থেকে সংগৃহীত কপি সংগ্রহ করতে পারেন।`
+                        : `Digital copy of ${issue.issue} is available at the Central Office library, 52B Indian Mirror Street.`);
                     }}
                     className="inline-flex items-center gap-1.5 font-bold text-blue-900 hover:text-orange-600"
                   >

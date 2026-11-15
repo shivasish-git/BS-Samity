@@ -75,8 +75,8 @@ export const GalleryView: React.FC<GalleryViewProps> = ({ onNavigate }) => {
           </h1>
           <p className="text-blue-100 text-base sm:text-lg max-w-3xl leading-relaxed">
             {isBengali
-              ? '৭৭ মানিকতলা স্ট্রিটের জন্মস্থান, ৫২বি ভবনের চারতলা ছাত্রাবাস, বিবেকানন্দ হল সম্মেলন ও সাংস্কৃতিক মুহূর্তের স্মৃতিমালা।'
-              : 'Visual moments of community gatherings, our 50-student hostel at 52B Indian Mirror Street, foundational Maa Jagathanani temple, and academic ceremonies.'}
+              ? '৭৭ মানিকতলা স্ট্রিটের জন্মস্থান, ৫২বি ভবনের চারতলা ছাত্রাবাস ও অতিথি কক্ষ (Guest Room), মা জগৎ জননী মন্দির, বিবেকানন্দ হল সম্মেলন ও সাংস্কৃতিক মুহূর্তের স্মৃতিমালা।'
+              : 'Visual moments of community gatherings, our 50-student hostel & community Guest Room at 52B Indian Mirror Street, foundational Maa Jagat Janani Temple, and academic ceremonies.'}
           </p>
         </div>
       </section>

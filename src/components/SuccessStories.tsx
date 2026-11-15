@@ -90,7 +90,7 @@ export const SuccessStories: React.FC<SuccessStoriesProps> = ({ onDonateClick })
                 </button>
 
                 <button
-                  onClick={() => onDonateClick('Hostel & Scholarships')}
+                  onClick={() => onDonateClick('Social Help for Educational Purpose')}
                   className="px-3 py-1.5 rounded-lg text-xs font-semibold text-[#8A5A36] bg-[#8A5A36]/10 hover:bg-[#8A5A36]/20 transition-colors"
                 >
                   {isBengali ? 'সহায়তা করুন' : 'Support Cause'}
@@ -109,13 +109,13 @@ export const SuccessStories: React.FC<SuccessStoriesProps> = ({ onDonateClick })
               </span>
               <h3 className="text-2xl sm:text-3xl font-serif-heading font-bold">
                 {isBengali
-                  ? '৫২বি ইন্ডিয়ান মিরর স্ট্রিট: চারতলা প্রধান কার্যালয় ও গ্রামীণ ছাত্রাবাস'
-                  : '52B Indian Mirror Street: 4-Storeyed Head Office & Rural Student Hostel'}
+                  ? '৫২বি ইন্ডিয়ান মিরর স্ট্রিট: চারতলা কেন্দ্রীয় কার্যালয়, গ্রামীণ ছাত্রাবাস ও অতিথি কক্ষ'
+                  : '52B Indian Mirror Street: 4-Storeyed Central Office, Rural Student Hostel & Guest Room'}
               </h3>
               <p className="text-sm text-emerald-100/90 leading-relaxed max-w-3xl">
                 {isBengali
-                  ? '১৯৫৬ সালে জমি ক্রয়ের পর সমাজের দানশীল সদস্যদের অবদানে পুনর্নির্মিত চারতলা ভবন। ৩য় তলায় কলকাতা বিশ্ববিদ্যালয়ের বিভিন্ন কলেজে অধ্যয়নরত ১০-১৫ জন গ্রামীণ দরিদ্র ছাত্রের জন্য আবাসিক ছাত্রাবাস পরিচালিত হয়।'
-                  : 'Purchased in 1956 through community contributions and reconstructed into a 4-storeyed headquarters. The 3rd floor houses a dedicated hostel for 10-15 rural students pursuing higher education in Kolkata.'}
+                  ? '১৯৫৬ সালে জমি ক্রয়ের পর সমাজের দানশীল ও প্রখ্যাত সদস্যদের অবদানে পুনর্নির্মিত চারতলা কেন্দ্রীয় কার্যালয় ভবন। ৩য় তলায় কলকাতা বিশ্ববিদ্যালয়ের বিভিন্ন কলেজে অধ্যয়নরত গ্রামীণ ছাত্রছাত্রীদের জন্য আবাসিক ব্যবস্থা করা হয় এবং সমাজের সদস্যদের জন্য অতিথি কক্ষ (Guest Room) সুবিধা রয়েছে।'
+                  : 'Purchased in 1956 through contributions from philanthropic and eminent community members and reconstructed into a 4-storeyed Central Office. Residential hostel arrangements are made for rural students pursuing higher education in Kolkata (with special priority for female higher education), alongside a Guest Room facility for community members.'}
               </p>
             </div>
 
@@ -127,7 +127,7 @@ export const SuccessStories: React.FC<SuccessStoriesProps> = ({ onDonateClick })
                 {isBengali ? 'ছাত্রাবাসে অনুদান দিন' : 'Donate to Rural Hostel'}
               </button>
               <div className="text-center text-xs text-emerald-200/90">
-                {isBengali ? 'ধারণক্ষমতা: ১০-১৫ জন ছাত্র (৩য় তল)' : 'Hostel Capacity: 10-15 Boys (3rd Floor)'}
+                {isBengali ? 'আবাসিক ছাত্রাবাস ও অতিথি কক্ষ (Guest Room)' : 'Hostel & Guest Room Facility'}
               </div>
             </div>
           </div>

@@ -25,7 +25,7 @@ export const DonationSection: React.FC<DonationSectionProps> = ({ initialCause }
   const [donorPhone, setDonorPhone] = useState('');
   const [donorPan, setDonorPan] = useState('');
   const [selectedCause, setSelectedCause] = useState(
-    initialCause || (isBengali ? 'গ্রামীণ পাঠাগার ও পাঠশালা' : 'Village Education & Libraries')
+    initialCause || (isBengali ? 'গ্রামীণ ছাত্রাবাস ও অতিথি কক্ষ তহবিল' : 'Rural Student Hostel & Guest Room Fund')
   );
 
   // Receipt state
@@ -299,17 +299,17 @@ export const DonationSection: React.FC<DonationSectionProps> = ({ initialCause }
                   onChange={(e) => setSelectedCause(e.target.value)}
                   className="w-full px-3 py-2.5 rounded-lg bg-white border border-[#8A5A36]/30 text-xs sm:text-sm text-[#4A3B32] font-medium focus:outline-none focus:ring-2 focus:ring-[#2D6A4F]"
                 >
-                  <option value={isBengali ? 'গ্রামীণ পাঠাগার ও শিক্ষা সহায়তা' : 'Village Education & Libraries (Abhyasika)'}>
-                    {isBengali ? 'গ্রামীণ পাঠাগার ও শিক্ষা সহায়তা (Abhyasika)' : 'Village Education & Libraries (Abhyasika)'}
+                  <option value={isBengali ? 'গ্রামীণ ছাত্রাবাস ও অতিথি কক্ষ তহবিল' : 'Rural Student Hostel & Guest Room Fund'}>
+                    {isBengali ? 'গ্রামীণ ছাত্রাবাস ও অতিথি কক্ষ (Guest Room) তহবিল' : 'Rural Student Hostel & Guest Room Fund'}
                   </option>
-                  <option value={isBengali ? 'তপশিলি অধিকার, আইনি সুরক্ষা ও পুনর্বাসন' : 'SC/ST Constitutional Legal Defense & Atrocity Relief'}>
-                    {isBengali ? 'তপশিলি অধিকার, আইনি সুরক্ষা ও পুনর্বাসন' : 'SC/ST Constitutional Legal Defense & Atrocity Relief'}
+                  <option value={isBengali ? 'শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য)' : 'Social Help for Educational Purpose (Only for Our Community) — Female Higher Education'}>
+                    {isBengali ? 'শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য) — নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার' : 'Social Help for Educational Purpose (Only for Our Community) — Female Higher Education'}
                   </option>
-                  <option value={isBengali ? 'তপশিলি ছাত্রীদের উচ্চশিক্ষা ও ফেলোশিপ' : 'Savitribai Phule Dalit Girls Higher Education Fellowship'}>
-                    {isBengali ? 'তপশিলি ছাত্রীদের উচ্চশিক্ষা ও ফেলোশিপ' : 'Savitribai Phule Dalit Girls Higher Education Fellowship'}
+                  <option value={isBengali ? 'তপশিলি অধিকার ও আইনি সুরক্ষা' : 'SC Constitutional Legal Defense & Advocacy'}>
+                    {isBengali ? 'তপশিলি অধিকার ও আইনি সুরক্ষা' : 'SC Constitutional Legal Defense & Advocacy'}
                   </option>
-                  <option value={isBengali ? 'সাধারণ সমাজকল্যাণ তহবিল' : 'General Grassroots Corpus (Where Most Urgently Needed)'}>
-                    {isBengali ? 'সাধারণ সমাজকল্যাণ তহবিল (যেখানে সবচেয়ে জরুরি)' : 'General Grassroots Corpus (Where Most Urgently Needed)'}
+                  <option value={isBengali ? 'সাধারণ সমাজকল্যাণ তহবিল' : 'General Social Welfare Corpus'}>
+                    {isBengali ? 'সাধারণ সমাজকল্যাণ তহবিল (যেখানে সবচেয়ে জরুরি)' : 'General Social Welfare Corpus (Where Most Urgently Needed)'}
                   </option>
                 </select>
               </div>
@@ -483,8 +483,8 @@ export const DonationSection: React.FC<DonationSectionProps> = ({ initialCause }
                 </div>
                 <p>
                   {isBengali 
-                    ? 'অনুদান সরাসরি গ্রামীণ ছাত্রাবাস ও দুঃস্থ শিক্ষার্থীদের কল্যানে ব্যবহৃত হয়।'
-                    : 'Contributions directly sustain our student hostel and scholarships.'}
+                    ? 'অনুদান সরাসরি গ্রামীণ ছাত্রাবাসের আবাসিক ব্যবস্থা, সদস্যদের অতিথি কক্ষ এবং শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তায় ব্যবহৃত হয়।'
+                    : 'Contributions directly sustain our student hostel arrangements, Guest Room, and Social Help for Educational Purpose (Only for Our Community).'}
                 </p>
               </div>
 
@@ -519,12 +519,12 @@ export const DonationSection: React.FC<DonationSectionProps> = ({ initialCause }
                 </div>
                 <div className="text-sm font-bold text-[#4A3B32]">
                   {isBengali
-                    ? (idx === 0 ? 'সরাসরি শিক্ষা ও পাঠাগার কর্মসূচি' : idx === 1 ? 'আইনি প্রতিরক্ষা ও জরুরি সহায়তা' : 'প্রশাসনিক ও নিরীক্ষণ খরচ')
+                    ? (idx === 0 ? 'ছাত্রাবাস ও শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (শুধুমাত্র আমাদের সম্প্রদায়ের জন্য)' : idx === 1 ? 'দুস্থ ও বিপন্ন সদস্যদের সহায়তা ও অতিথি কক্ষ' : 'সাংবিধানিক অধিকার রক্ষা ও প্রকাশনা')
                     : stat.label}
                 </div>
                 <p className="text-xs text-[#6C4A31] leading-relaxed">
                   {isBengali
-                    ? (idx === 0 ? 'বই, সৌরবাতি, স্টাডি সেন্টার শিক্ষক ভাতা ও গ্রামীণ পাঠাগার পরিচালনার জন্য।' : idx === 1 ? 'জরুরি এফআইআর, উকিল ফি, আইনি সচেতনতা ও আইনি পরামর্শের জন্য।' : 'অডিট, ব্যাংক চার্জ, ওয়েবসাইট ও সরকারি কমপ্লায়েন্স সংক্রান্ত সীমিত খরচ।')
+                    ? (idx === 0 ? '৫২বি ইন্ডিয়ান মিরর স্ট্রিটে ছাত্রাবাসের আবাসিক ব্যবস্থা, নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার ও পাঠাগার পরিচালনার জন্য।' : idx === 1 ? 'বিপন্ন পরিবার ও বিধবা মহিলাদের আর্থিক সহায়তা এবং সদস্যদের অতিথি কক্ষ রক্ষণাবেক্ষণের জন্য।' : 'আইনি সচেতনতা, সাময়িকী প্রকাশ ও অফিসিয়াল কমপ্লায়েন্স সংক্রান্ত খরচ।')
                     : stat.description}
                 </p>
               </div>

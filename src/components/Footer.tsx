@@ -44,7 +44,7 @@ export const Footer: React.FC<FooterProps> = ({
   };
 
   const navLinks: { id: PageId; labelEn: string; labelBn: string }[] = [
-    { id: 'home', labelEn: 'Home', labelBn: 'মূল পাতা' },
+    { id: 'home', labelEn: 'Home', labelBn: 'প্রথম পাতা' },
     { id: 'about', labelEn: 'About Us', labelBn: 'আমাদের কথা' },
     { id: 'heritage', labelEn: 'Cultural Heritage', labelBn: 'সাংস্কৃতিক ঐতিহ্য' },
     { id: 'membership', labelEn: 'Membership Form', labelBn: 'সদস্যপদ ফরম' },
@@ -97,8 +97,8 @@ export const Footer: React.FC<FooterProps> = ({
             </h3>
             <p className="text-xs sm:text-sm text-blue-100 max-w-2xl">
               {isBengali
-                ? 'কলকাতায় ৫০ জন ছাত্রের আবাসন, নারী শিক্ষাবৃত্তি ও আইনি অধিকার সুরক্ষায় যুক্ত হোন।'
-                : 'Support collegiate student hostel living in Central Kolkata, female degree scholarships, and constitutional rights.'}
+                ? 'কলকাতায় ছাত্রাবাসের আবাসিক ব্যবস্থা, সদস্যদের জন্য অতিথি কক্ষ, শুধুমাত্র আমাদের সম্প্রদায়ের জন্য শিক্ষার উদ্দেশ্যে সামাজিক সহায়তা (নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকার) ও আইনি অধিকার সুরক্ষায় যুক্ত হোন।'
+                : 'Support collegiate student hostel living & community Guest Room in Central Kolkata, Social Help for Educational Purpose (Only for Our Community) with special priority for female higher education, and constitutional rights.'}
             </p>
           </div>
 
@@ -152,8 +152,8 @@ export const Footer: React.FC<FooterProps> = ({
 
             <p className="text-xs text-slate-300 leading-relaxed">
               {isBengali
-                ? '১৯৩৪ সালে শ্রীশ্রী মা জগজ্জননী এস্টেটের মন্দিরে প্রতিষ্ঠিত। শিক্ষা বিস্তার, গ্রামীণ ছাত্রাবাস পরিচালনা, কুপ্রথা নিবারণ ও সাংবিধানিক অধিকার সুরক্ষায় বিগত ৮৮ বছর ধরে নিরবচ্ছিন্নভাবে নিবেদিত।'
-                : 'Founded in 1934 at the Temple of Maa Jagathanani Estate. Dedicated to the educational advancement, female literacy, residential hostel operation, and constitutional rights of the Sunri community across West Bengal.'}
+                ? '১৯৩৪ সালে শ্রীশ্রী মা জগৎ জননী মন্দিরে প্রতিষ্ঠিত। নারী উচ্চশিক্ষায় বিশেষ অগ্রাধিকারসহ শিক্ষা বিস্তার, গ্রামীণ ছাত্রাবাসের আবাসিক ব্যবস্থা, সদস্যদের জন্য অতিথি কক্ষ (Guest Room), কুপ্রথা নিবারণ ও সাংবিধানিক অধিকার সুরক্ষায় বিগত ৮৮ বছর ধরে নিরবচ্ছিন্নভাবে নিবেদিত।'
+                : 'Founded in 1934 at Maa Jagat Janani Temple. Dedicated to educational support with special priority for female higher education, rural student hostel residential arrangements, Guest Room facilities for community members, and constitutional rights across West Bengal.'}
             </p>
 
             <div className="p-3.5 rounded-xl bg-slate-800/80 border border-slate-700 text-xs space-y-1.5 text-slate-300">
@@ -198,14 +198,14 @@ export const Footer: React.FC<FooterProps> = ({
             </h5>
 
             <div className="space-y-3 text-xs text-slate-300">
-              {/* Head Office */}
+              {/* Central Office */}
               <div className="p-3 bg-slate-800/60 rounded-xl border border-slate-700 space-y-1">
                 <div className="font-bold text-white flex items-center gap-1.5">
                   <Building2 className="w-3.5 h-3.5 text-orange-400" />
-                  <span>{isBengali ? 'কেন্দ্রীয় প্রধান কার্যালয় ও ৫০ আসনের ছাত্রাবাস' : 'Head Office & 50-Seat Hostel'}</span>
+                  <span>{isBengali ? 'কেন্দ্রীয় কার্যালয়, ৫০ আসনের ছাত্রাবাস ও অতিথি কক্ষ' : 'Central Office, 50-Seat Hostel & Guest Room'}</span>
                 </div>
                 <p className="text-[11px] text-slate-300">{isBengali ? (NGO_DETAILS.bengaliHeadOffice?.address || '৫২বি, ইন্ডিয়ান মিরর স্ট্রিট, কলকাতা – ৭০০০১৩ (তালতলা)') : NGO_DETAILS.headOffice.address}</p>
-                <p className="text-[11px] text-slate-400">{isBengali ? (NGO_DETAILS.bengaliHeadOffice?.landmark || 'জি. ডি. হাসপাতালের বিপরীতে') : NGO_DETAILS.headOffice.landmark}</p>
+                <p className="text-[11px] text-slate-400">{isBengali ? (NGO_DETAILS.bengaliHeadOffice?.landmark || 'জি. ডি. হাসপাতালের বিপরীতে — অতিথি কক্ষের (Guest Room) সুবিধা উপলব্ধ') : NGO_DETAILS.headOffice.landmark}</p>
                 <div className="text-[11px] text-orange-300 pt-0.5">
                   📞 {isBengali ? (NGO_DETAILS.bengaliHeadOffice?.phone || '০৩৩-২২২৭১৫৯৯ / ৯৪৩৩০৪১৫৯৭') : NGO_DETAILS.headOffice.phone} | ✉️ {NGO_DETAILS.headOffice.email}
                 </div>
@@ -217,8 +217,8 @@ export const Footer: React.FC<FooterProps> = ({
                   <MapPin className="w-3.5 h-3.5 text-blue-400" />
                   <span>{isBengali ? 'ঐতিহাসিক জন্মস্থান (প্রতিষ্ঠা ১৯৩৪)' : 'Foundational Birthplace (1934)'}</span>
                 </div>
-                <p className="text-[11px] text-slate-300">{isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.templeName || 'মা জগজ্জননী এস্টেট মন্দির') : NGO_DETAILS.registeredSite.templeName}, {isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.address || '৭৭ মানিকতলা স্ট্রিট, সিমলা, কলকাতা') : NGO_DETAILS.registeredSite.address}</p>
-                <p className="text-[11px] text-slate-400">{isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.historicalSignificance || '১৯৩৪ সালে স্থাপিত মূল জন্মস্থান ও ঐতিহাসিক তীর্থ') : NGO_DETAILS.registeredSite.historicalSignificance}</p>
+                <p className="text-[11px] text-slate-300">{isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.templeName || 'মা জগৎ জননী মন্দির') : NGO_DETAILS.registeredSite.templeName}, {isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.address || '৭৭ মানিকতলা স্ট্রিট, সিমলা, কলকাতা') : NGO_DETAILS.registeredSite.address}</p>
+                <p className="text-[11px] text-slate-400">{isBengali ? (NGO_DETAILS.bengaliRegisteredSite?.historicalSignificance || '১৯৩৪ সালে স্থাপিত ঐতিহাসিক জন্মস্থান ও তীর্থ') : NGO_DETAILS.registeredSite.historicalSignificance}</p>
               </div>
 
               {/* Newsletter subscription */}
